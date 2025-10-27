@@ -37,3 +37,15 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+.mySwiper .swiper-pagination-bullet {
+  background: #ffffff; /* Default bullet color */
+  opacity: 0.5;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #ffffff; /* Active bullet color */
+  opacity: 1;
+}
+
+
+

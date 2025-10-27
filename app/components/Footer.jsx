@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Hardware from "../../public/hardware.svg";
-
+import fbIcon from "../../public/facebook.svg";
+import linkedin from "../../public/linkedin.svg";
 export default function Footer() {
   return (
-    <footer className="text-center py-[54px] px-[364px] bg-[#DFDFDF] text-gray-400 text-sm flex flex-col">
+    <footer className="text-center py-[54px] px-[200px] bg-[#DFDFDF] text-gray-400 text-sm flex flex-col">
                 <Image src={Hardware} alt="Hardware Icon" className="w-[76px]" />
-                <div className="flex text-black gap-[146px]">
+                <div className="flex text-black justify-between">
                   <div className="flex flex-col items-start pt-[38px]">
                     <a className="text-[24px]">Learn More</a>
                   <div className="flex flex-col align-start items-start gap-4 pt-[15px]">
@@ -28,10 +29,17 @@ export default function Footer() {
                   </div>
                   </div>
                 </div>
-                <div className="flex align-baseline">
-                 <div className="flex gap-9"></div>
+                <div className="flex justify-between ">
+                 <div className="flex gap-9">
+                  <Image src={fbIcon}/>
+                  <Image src={linkedin}/>
+                 </div>
+                 <button className="bg-[#31B56A] rounded-md px-4 py-3 text-white">Send message</button>
                 </div>
-      <p>© {new Date().getFullYear()} The Shop. All rights reserved.</p>
+                <div className="flex justify-between">
+      <p className="text-[#52525B]">©  Copyright {new Date().getFullYear()} All rights reserved.</p>
+      <p className="text-[#52525B] text-right">+37455342262 <br/> info@hardwarehouses.com</p>
+      </div>
     </footer>
   );
 }

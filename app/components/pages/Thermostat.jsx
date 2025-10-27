@@ -20,26 +20,25 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import ThermostatSwiper from '../../../public/thermostat/ThermostatSwiper.png';
-import { useEffect, useRef } from "react";
-
+import { useRef } from "react";
+import '../../globals.css';
 export default function Thermostat() {
   const swiperRef = useRef(null);
-
-  // Function to update slide opacities
   const updateSlideOpacities = (swiper) => {
     const slides = swiper.slides;
     slides.forEach((slide, index) => {
       if (index === swiper.activeIndex) {
-        slide.style.opacity = 1; // Middle slide full opacity
+        slide.style.opacity = 1; 
       } else {
-        slide.style.opacity = 0.5; // Side slides reduced opacity
+        slide.style.opacity = 0.5; 
       }
     });
   };
 
   return (
-    <div className="flex flex-col mx-[171px] mt-[91px] gap-[50px] m-auto">
-      <div className="flex gap-3.5 m-auto">
+    <div className="flex flex-col  mt-[91px] gap-[50px] m-auto">
+      <div className="w-[1098px]   mx-auto">
+        <div className="flex justify-end gap-12">
         <Image
           src={ThermostatIcon}
           alt="Smart thermostat system for home climate control with energy-saving automation and wireless temperature management"
@@ -60,8 +59,9 @@ export default function Thermostat() {
             tools, ensuring smooth setup and efficient operation.
           </p>
         </div>
+        </div>
       </div>
-      <div className="bg-[#dfdfe4] h-[502px] flex gap-[38px] rounded-[30px] p-8">
+      <div className="bg-[#dfdfe4] h-[502px] mx-[171px] flex gap-[38px] rounded-[30px] p-8">
         <Image
           src={ThermostatHvac}
           width={396}
@@ -171,28 +171,22 @@ export default function Thermostat() {
           title="Contractor-Friendly Support and Integration in Smart Thermostat System"
         />
       </div>
-      {/* Swiper Component */}
-      <div className="m-auto w-[1098px] mt-[50px]">
+  <p className="font-bold text-3xl mx-auto">Product Gallery</p>
+<div className="relative m-auto w-full mt-5"> 
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          onSwiper={(swiper) => {
-            swiperRef.current = swiper;
-            updateSlideOpacities(swiper);
-          }}
-          onSlideChange={(swiper) => updateSlideOpacities(swiper)}
-          className="mySwiper"
-        >
+        slidesPerView={5.5}
+        spaceBetween={10}
+        className="mySwiper"
+        centeredSlides={true}
+        pagination={{ clickable: true }}
+        navigation={false} // ❌ Disable default arrows
+        modules={[Autoplay, Pagination]}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+          updateSlideOpacities(swiper);
+        }}
+        onSlideChange={(swiper) => updateSlideOpacities(swiper)}
+      >
           <SwiperSlide>
             <Image
               src={ThermostatSwiper}
@@ -205,7 +199,7 @@ export default function Thermostat() {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src={ThermostatHvac}
+              src={ThermostatSwiper}
               alt="Smart thermostat system with HVAC control"
               title="HVAC Control Thermostat"
               width={366}
@@ -215,7 +209,7 @@ export default function Thermostat() {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src={WirelessThermostat}
+              src={ThermostatSwiper}
               alt="Wireless thermostat system"
               title="Wireless Thermostat System"
               width={366}
@@ -225,7 +219,7 @@ export default function Thermostat() {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src={SystemIntegration}
+              src={ThermostatSwiper}
               alt="Thermostat system integration"
               title="System Integration"
               width={366}
@@ -235,7 +229,7 @@ export default function Thermostat() {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src={SystemContractor}
+              src={ThermostatSwiper}
               alt="Contractor training for thermostat system"
               title="Contractor Training"
               width={366}
@@ -245,7 +239,7 @@ export default function Thermostat() {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src={ModularHardware}
+              src={ThermostatSwiper}
               alt="Modular hardware design for thermostat"
               title="Modular Hardware Design"
               width={366}
@@ -253,8 +247,34 @@ export default function Thermostat() {
               className="object-cover"
             />
           </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={ThermostatSwiper}
+              alt="Modular hardware design for thermostat"
+              title="Modular Hardware Design"
+              width={366}
+              height={400}
+              className="object-cover"
+            />
+          </SwiperSlide>
+          
         </Swiper>
+        <button
+    onClick={() => swiperRef.current?.slidePrev()}
+    className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75"
+  >
+    <img src="/Arrow.svg" className=" w-5 h-5" />
+  </button>
+
+  <button
+    onClick={() => swiperRef.current?.slideNext()}
+    className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75"
+  >
+    <img src="/Arrow.svg" className="w-5 h-5 rotate-180" />
+  </button>
       </div>
+      <p className="font-bold text-4xl mx-auto">Final Result</p>
+      <p className="font-bold  mx-auto w-[491px] text-center mb-14">The Smart Thermostat System makes home climate control simple, efficient, and reliable. Easy to install and use, it’s built to support homeowners while staying ready for future upgrades.</p>
     </div>
   );
 }
