@@ -20,8 +20,23 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import ThermostatSwiper from '../../../public/thermostat/ThermostatSwiper.png';
+import { useEffect, useRef } from "react";
 
 export default function Thermostat() {
+  const swiperRef = useRef(null);
+
+  // Function to update slide opacities
+  const updateSlideOpacities = (swiper) => {
+    const slides = swiper.slides;
+    slides.forEach((slide, index) => {
+      if (index === swiper.activeIndex) {
+        slide.style.opacity = 1; // Middle slide full opacity
+      } else {
+        slide.style.opacity = 0.5; // Side slides reduced opacity
+      }
+    });
+  };
+
   return (
     <div className="flex flex-col mx-[171px] mt-[91px] gap-[50px] m-auto">
       <div className="flex gap-3.5 m-auto">
@@ -159,6 +174,7 @@ export default function Thermostat() {
       {/* Swiper Component */}
       <div className="m-auto w-[1098px] mt-[50px]">
         <Swiper
+          slidesPerView={3}
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
@@ -170,6 +186,11 @@ export default function Thermostat() {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+            updateSlideOpacities(swiper);
+          }}
+          onSlideChange={(swiper) => updateSlideOpacities(swiper)}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -177,7 +198,7 @@ export default function Thermostat() {
               src={ThermostatSwiper}
               alt="Smart thermostat system showcase"
               title="Smart Thermostat System"
-              width={1098}
+              width={366}
               height={400}
               className="object-cover"
             />
@@ -187,7 +208,7 @@ export default function Thermostat() {
               src={ThermostatHvac}
               alt="Smart thermostat system with HVAC control"
               title="HVAC Control Thermostat"
-              width={1098}
+              width={366}
               height={400}
               className="object-cover"
             />
@@ -197,7 +218,7 @@ export default function Thermostat() {
               src={WirelessThermostat}
               alt="Wireless thermostat system"
               title="Wireless Thermostat System"
-              width={1098}
+              width={366}
               height={400}
               className="object-cover"
             />
@@ -207,7 +228,7 @@ export default function Thermostat() {
               src={SystemIntegration}
               alt="Thermostat system integration"
               title="System Integration"
-              width={1098}
+              width={366}
               height={400}
               className="object-cover"
             />
@@ -217,7 +238,7 @@ export default function Thermostat() {
               src={SystemContractor}
               alt="Contractor training for thermostat system"
               title="Contractor Training"
-              width={1098}
+              width={366}
               height={400}
               className="object-cover"
             />
@@ -227,7 +248,7 @@ export default function Thermostat() {
               src={ModularHardware}
               alt="Modular hardware design for thermostat"
               title="Modular Hardware Design"
-              width={1098}
+              width={366}
               height={400}
               className="object-cover"
             />
