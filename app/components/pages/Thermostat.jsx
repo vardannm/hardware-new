@@ -139,6 +139,7 @@ export default function Thermostat() {
           src={EnergyEfficiency}
           alt="Smart thermostat system for home climate control with adaptive energy-saving thermostat features"
           title="Adaptive Control for Energy Efficiency in Smart Thermostat System"
+          width={352}
         />
         <PerkCard
           headline="Precision Sensors and Reliable Connectivity"
@@ -146,6 +147,7 @@ export default function Thermostat() {
           src={PrecisionSensors}
           alt="Smart thermostat system with thermostat sensors and wireless connectivity"
           title="Precision Sensors and Reliable Connectivity in Smart Thermostat System"
+          width={352}
         />
         <PerkCard
           headline="Intuitive Interface and Self-Diagnostics"
@@ -153,6 +155,7 @@ export default function Thermostat() {
           src={IntuitiveInterface}
           alt="Smart thermostat system with intuitive interface and self-diagnostics"
           title="Intuitive Interface and Self-Diagnostics in Smart Thermostat System"
+          width={352}
         />
       </div>
       <div className="flex gap-5 m-auto">
@@ -162,6 +165,7 @@ export default function Thermostat() {
           src={ModularScalable}
           alt="Smart thermostat system with modular and scalable thermostat hardware"
           title="Modular and Scalable Hardware Design in Smart Thermostat System"
+          width={352}
         />
         <PerkCard
           headline="Contractor-Friendly Support and Integration"
@@ -169,6 +173,7 @@ export default function Thermostat() {
           src={ContractorSupport}
           alt="Energy-saving thermostat with contractor-friendly support, installation guides, and troubleshooting tools"
           title="Contractor-Friendly Support and Integration in Smart Thermostat System"
+          width={352}
         />
       </div>
   <p className="font-bold text-3xl mx-auto">Product Gallery</p>
