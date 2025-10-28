@@ -42,8 +42,8 @@ export default function Zlight() {
      <div className="flex justify-end gap-12 items-center">
   <Image
     src={ZlightIcon}
-    alt="Smart thermostat system for home climate control with energy-saving automation and wireless temperature management"
-    title="Smart Thermostat System for Home Climate Control z-0"
+    alt="A smart bedroom lighting system that gently guides your sleep and wake cycle with soothing light"
+    title="Smart Bedroom Lighting System"
   />
   <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent">
     <h1 className="text-[56px] font-bold leading-14">zLight</h1>
