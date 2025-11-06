@@ -35,22 +35,71 @@ export default function moon() {
       }
     });
   };
-
+  const perks = [
+    {
+      headline: "Central Processing Unit (CPU)",
+      text: "High-performance, low-power CPU for complex computations, seamless multitasking, and efficient automation.",
+      src: SmartHomeSecuritySystem,
+      alt: "Smart home security system with high-performance low-power CPU designed for efficient automation, seamless multitasking, and reliable smart home technology",
+      title: "High-Performance CPU for Smart Home Automation Hub",
+      width: 352,
+    },
+    {
+      headline: "Connectivity",
+      text: "Supports Wi-Fi, Bluetooth, Zigbee, and Z-Wave, enabling seamless communication and compatibility with a wide range of smart devices.",
+      src: MultiProtocolConnectivity,
+      alt: "Smart device integration and reliable home automation",
+      title: "Smart Home Hub with Multi-Protocol Connectivity",
+      width: 352,
+    },
+    {
+      headline: "Sensors",
+      text: "Ambient light, temperature, and motion sensors for real-time environmental monitoring, intelligent adjustments and automation across the smart home ecosystem.",
+      src: SensorsAutomation,
+      alt: "Smart home hub with ambient light, temperature, and motion sensors for intelligent automation and real-time monitoring across the smart home ecosystem",
+      title: "Smart Home Hub with Ambient Light, Temperature, and Motion Sensors",
+      width: 352,
+    },
+    {
+      headline: "Camera System",
+      text: "360-degree HD panoramic camera providing comprehensive home surveillance and activity monitoring.",
+      src: HomeAutomationSystem,
+      alt: "Smart home hub camera system with HD panoramic view for comprehensive home surveillance and intelligent monitoring within the smart home security system",
+      title: "HD Panoramic Camera System for Smart Home Security",
+      width: 352,
+    },
+    {
+      headline: "Sound-Responsive Detection",
+      text: "Equipped with a camera on one side and microphones on all four sides, the device reacts to nearby sounds by sending alerts or starting a live stream to your phone.",
+      src: CameraSystem,
+      alt: "Smart home hub camera system with HD panoramic view for comprehensive home surveillance and intelligent monitoring within the smart home security system",
+      title: "HD Panoramic Camera System for Smart Home Security",
+      width: 352,
+    },
+    {
+      headline: "Automation & Security",
+      text: "Customizable automation and security features that are energy-efficient and designed to protect your home.",
+      src: HomeAutomationController,
+      alt: "Home automation controller with customizable automation and energy-efficient smart home security features for reliable protection and home control",
+      title: "Customizable Automation and Security in Smart Home Hub",
+      width: 352,
+    },
+  ];
   return (
-    <div className="flex flex-col  mt-[91px] gap-[50px] m-auto">
-      <div className="w-[1098px]   mx-auto">
-        <div className="flex justify-end gap-12">
+    <div className="flex flex-col  mt-[91px] gap-[50px] m-auto max-sm:mt-0">
+      <div className="w-[1098px]   mx-auto max-sm:w-auto">
+        <div className="flex justify-end gap-3">
           <Image
             src={MoonIcon}
             alt="Advanced smart home hub for home automation and security with 360-degree monitoring and centralized device control"
             title="Advanced Smart Home Hub for Automation and Security"
           />
-          <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent">
-            <h1 className="text-[56px] font-bold leading-14">Moon by 1-Ring</h1>
-            <p className="font-bold text-2xl">
+          <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
+            <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">Moon by 1-Ring</h1>
+            <p className="font-bold text-2xl max-sm:text-xl">
               Transforming Smart Home Technology
             </p>
-            <p>
+            <p className="max-sm:hidden">
               Moon by 1-Ring is a smart home security and automation system that
               brings all your devices together in one place. It keeps an eye on
               your home, automates everyday tasks, and offers all-around
@@ -59,16 +108,23 @@ export default function moon() {
             </p>
           </div>
         </div>
+        
+        <p className="hidden max-sm:block p-4">
+              Moon by 1-Ring is a smart home security and automation system that
+              brings all your devices together in one place. It keeps an eye on
+              your home, automates everyday tasks, and offers all-around
+              coverage, while working with Wi-Fi, Bluetooth, Zigbee, and Z-Wave
+              so everything just connects and works smoothly.
+            </p>
       </div>
-      <div className="bg-[#dfdfe4] h-[502px] mx-[171px] flex gap-[38px] rounded-[30px] p-8">
+      <div className="bg-[#dfdfe4] h-[502px] mx-[171px] flex gap-[38px] rounded-[30px] p-8 max-sm:p-0 max-sm:flex-col max-sm:mx-0 max-sm:h-auto max-sm:rounded-xs">
         <Image
           src={SmartHomeHub}
-          width={396}
-          height={426}
+          className="max-sm:w-full"
           alt="Smart thermostat system with wireless sensors for HVAC control, featuring web access, display interface, and energy-efficient automation"
           title="Smart Thermostat System with Wireless Sensors and HVAC Control"
         />
-        <div className="flex flex-col gap-[38px]">
+        <div className="flex flex-col gap-[38px] max-sm:p-4">
           <p className="font-bold text-3xl">Technical approach</p>
           <p>
             The Moon project was designed to be the central home automation hub
@@ -92,7 +148,7 @@ export default function moon() {
         <Image src={MoonBox} alt="" />
       </div>
       <p className="m-auto text-3xl font-bold">Process Highlights</p>
-      <div className="flex gap-6 m-auto">
+      <div className="flex gap-6 m-auto max-sm:flex-col max-sm:mx-3">
         <div className="flex flex-col gap-3">
           <Highlight
             src={MoonBy1Ring}
@@ -126,10 +182,10 @@ export default function moon() {
           />
         </div>
       </div>
-      <div className="m-auto w-[1098px]">
+      <div className="m-auto w-[1098px] max-sm:w-auto">
         <p className="font-bold text-[32px] text-left">Perks</p>
       </div>
-      <div className="flex gap-5 m-auto">
+       <div className="flex gap-5 m-auto max-sm:hidden">
         <PerkCard
           headline="Central Processing Unit (CPU)"
           text="High-performance, low-power CPU for complex computations, seamless multitasking, and efficient automation."
@@ -155,7 +211,7 @@ export default function moon() {
           width={352}
         />
       </div>
-      <div className="flex gap-5 m-auto">
+      <div className="flex gap-5 m-auto max-sm:hidden">
         <PerkCard
           headline="Camera System"
           text="360-degree HD panoramic camera providing comprehensive home surveillance and activity monitoring."
@@ -181,28 +237,50 @@ export default function moon() {
           width={352}
         />
       </div>
+
+      {/* Mobile swiper */}
+      <div className="sm:hidden pl-5">
+  <Swiper
+    slidesPerView={1.3}
+    spaceBetween={0}
+    pagination={false}
+    navigation={false}
+  >
+    {perks.map((perk, index) => (
+      <SwiperSlide key={index}>
+        <PerkCard {...perk} />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+
       <p className="font-bold text-3xl mx-auto">Product Gallery</p>
       <div className="relative m-auto w-full mt-5">
         <Swiper
-          slidesPerView={2.8}
-          spaceBetween={10}
-          className="mySwiper"
-          centeredSlides={true}
-          pagination={{ clickable: true }}
-          navigation={false} 
-          modules={[Autoplay, Pagination]}
-          onSwiper={(swiper) => {
-            swiperRef.current = swiper;
-            updateSlideOpacities(swiper);
-          }}
-          onSlideChange={(swiper) => updateSlideOpacities(swiper)}
-        >
+  slidesPerView={2.8}
+  spaceBetween={10}
+  className="mySwiper"
+  centeredSlides={true}
+  pagination={{ clickable: true }}
+  navigation={false}
+  modules={[Autoplay, Pagination]}
+  breakpoints={{
+    0: { slidesPerView: 1, centeredSlides: true },      
+    640: { slidesPerView: 2, centeredSlides: false },  
+    1024: { slidesPerView: 2.8, centeredSlides: true }, 
+  }}
+  onSwiper={(swiper) => {
+    swiperRef.current = swiper;
+    updateSlideOpacities(swiper);
+  }}
+  onSlideChange={(swiper) => updateSlideOpacities(swiper)}
+>
           <SwiperSlide>
             <Image
               src={ThermostatSwiper}
               alt="Compact smart home hub with integrated sensors and camera"
               title="Compact Smart Home Hub with Sensors and Camera"
-              width={366}
+              width={420}
               height={400}
               className="object-cover"
             />
@@ -212,7 +290,7 @@ export default function moon() {
               src={ThermostatSwiper}
               alt="Smart home hub showing seamless smart device integration within a home automation ecosystem"
               title="Smart Home Hub for Device Integration"
-              width={366}
+              width={420}
               height={400}
               className="object-cover"
             />
@@ -222,7 +300,7 @@ export default function moon() {
               src={ThermostatSwiper}
               alt="Moon by 1-Ring providing home automation and smart home security system control in one device"
               title="Automation and Security"
-              width={366}
+              width={420}
               height={400}
               className="object-cover"
             />
@@ -232,7 +310,7 @@ export default function moon() {
               src={ThermostatSwiper}
               alt="Thermostat system integration"
               title="System Integration"
-              width={366}
+              width={420}
               height={400}
               className="object-cover"
             />
@@ -242,7 +320,7 @@ export default function moon() {
               src={ThermostatSwiper}
               alt="Contractor training for thermostat system"
               title="Contractor Training"
-              width={366}
+              width={420}
               height={400}
               className="object-cover"
             />
@@ -252,7 +330,7 @@ export default function moon() {
               src={ThermostatSwiper}
               alt="Modular hardware design for thermostat"
               title="Modular Hardware Design"
-              width={366}
+              width={420}
               height={400}
               className="object-cover"
             />
@@ -262,7 +340,7 @@ export default function moon() {
               src={ThermostatSwiper}
               alt="Modular hardware design for thermostat"
               title="Modular Hardware Design"
-              width={366}
+              width={420}
               height={400}
               className="object-cover"
             />
@@ -270,20 +348,23 @@ export default function moon() {
         </Swiper>
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75"
+          className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
+          max-sm: max-sm:top-[450px] max-sm:-translate-x-30
+          "
         >
           <img src="/Arrow.svg" className=" w-5 h-5" />
         </button>
 
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75"
+          className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
+          max-sm: max-sm:top-[450px] max-sm:translate-x-30"
         >
           <img src="/Arrow.svg" className="w-5 h-5 rotate-180" />
         </button>
       </div>
       <p className="font-bold text-4xl mx-auto">Final Result</p>
-      <p className="font-bold  mx-auto w-[491px] text-center mb-14">
+      <p className="font-bold  mx-auto w-[491px] text-center mb-14 max-sm:w-auto">
         The Moon project created a smart home hub that brings devices together,
         automates tasks, and provides all-around home monitoring. Its sensors,
         high-performance CPU, and innovative design show a practical and

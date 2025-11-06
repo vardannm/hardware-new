@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        gilroy: ["var(--font-gilroy)", "sans-serif"],
+        gilroy: ["Gilroy", "sans-serif"],
       },
     },
   },

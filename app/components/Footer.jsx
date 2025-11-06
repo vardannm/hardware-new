@@ -4,9 +4,9 @@ import fbIcon from "../../public/facebook.svg";
 import linkedin from "../../public/linkedin.svg";
 export default function Footer() {
   return (
-    <footer className="text-center py-[54px] px-[200px] bg-[#DFDFDF] text-gray-400 text-sm flex flex-col">
+    <footer className="text-center py-[54px] px-[200px] bg-[#DFDFDF] text-gray-400 text-sm flex flex-col max-sm:px-1.5">
                 <Image src={Hardware} alt="Hardware Icon" className="w-[76px]" />
-                <div className="flex text-black justify-between">
+                <div className="flex text-black justify-between max-sm:flex-col-reverse">
                   <div className="flex flex-col items-start pt-[38px]">
                     <a className="text-[24px]">Learn More</a>
                   <div className="flex flex-col align-start items-start gap-4 pt-[15px]">

@@ -4,7 +4,7 @@ import Moon from './components/pages/Moon';
 export default function Home() {
   return (
     <>
-    <Moon />
+    <Thermostat />
     </>
   );
 }
