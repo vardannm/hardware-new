@@ -86,6 +86,7 @@ const perks = [
             src={ThermostatIconSecond}
             alt="Smart thermostat system for home climate control with energy-saving automation and wireless temperature management"
             title="Smart Thermostat System for Home Climate Control"
+            className="w-[510px] max-sm:w-[300px]"
           />
            <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
             <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">
@@ -233,7 +234,7 @@ const perks = [
       <div className="sm:hidden pl-5">
         <Swiper
           slidesPerView={1.3}
-          spaceBetween={0}
+          spaceBetween={10}
           pagination={false}
           navigation={false}
         >

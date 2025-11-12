@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PerkCard({ headline, text, alt, title, src, width }) {
   return (
-    <div className="bg-[#f4f5f6] p-1 rounded-2xl border-2 border-[#EDEEF0]">
+    <div className="bg-[#f4f5f6] p-1 rounded-2xl border-2 border-[#EDEEF0] max-sm:max-w-[280px] flex justify-center">
     <div
       className="flex flex-col justify-between bg-white h-[445px] rounded-2xl  overflow-hidden max-sm:h-[414px] max-sm:max-w-[260px]  border border-[#D3D5D9]"
       style={{ width: `${width}px` }}
