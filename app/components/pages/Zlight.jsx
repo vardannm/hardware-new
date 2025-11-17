@@ -35,38 +35,77 @@ export default function Zlight() {
       }
     });
   };
+const perks = [
+  {
+    headline: "Smart Wake-Up Lighting",
+    text: "Gentle, comfortable light gradually activates to signal wake-up time, adjusting to ambient conditions and supporting your sleep-wake cycle.",
+    src: EnergyEfficiency,
+    alt: "Smart wake up lighting with gentle gradual brightness",
+    title: "Smart Wake Up Lighting",
+    width: 260,
+  },
+  {
+    headline: "Wireless Charging",
+    text: "Fast and convenient wireless charging for mobile devices, built into the nightstand for easy access.",
+    src: WirelessCharging,
+    alt: "Wireless charging nightstand with fast and convenient charging for mobile devices integrated into the smart bedroom system",
+    title: "Wireless Charging Nightstand",
+    width: 260,
+  },
+  {
+    headline: "App-Controlled Lighting",
+    text: "App-based control for scheduling, brightness adjustment, and color, adapting to ambient light and bedroom conditions.",
+    src: SmartBedroom,
+    alt: "App controlled smart bedroom lighting system for scheduling brightness and color adjustment based on ambient conditions",
+    title: "App Controlled Smart Bedroom Lighting",
+    width: 260,
+  },
+  {
+    headline: "Smart Environmental Sensors",
+    text: "Integrated sensors for precise measurements of air quality (CO₂e and TVOC), temperature, and humidity.",
+    src: SmartEnvironmental,
+    alt: "Smart bedroom lighting system with integrated sensors that monitor air quality temperature and humidity for a healthier environment",
+    title: "Smart Environmental Sensors",
+    width: 260,
+  },
+];
 
   return (
-    <div className="flex flex-col   gap-[50px] m-auto">
-      <div className="w-[1098px]   mx-auto">
-     <div className="flex justify-end gap-12 items-center">
+    <div className="flex flex-col  mt-[91px] gap-[40px] m-auto max-sm:mt-0">
+      <div className="w-[1098px] mx-auto max-sm:w-auto">
+     <div className="flex justify-end gap-3 items-center">
   <Image
     src={ZlightIcon}
     alt="A smart bedroom lighting system that gently guides your sleep and wake cycle with soothing light"
     title="Smart Bedroom Lighting System"
   />
-  <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent">
-    <h1 className="text-[56px] font-bold leading-14">zLight</h1>
+ <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
+    <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">zLight</h1>
     <p className="font-bold text-2xl">
     Smart Bedroom Lighting System
     </p>
-    <p>
+    <p className="max-sm:hidden">
       A sleep box that uses gentle light to guide your sleep and wake
       cycle.
     </p>
+   
   </div>
 </div>
-
+   <p className="hidden max-sm:block p-4">
+      A sleep box that uses gentle light to guide your sleep and wake
+      cycle.
+    </p>
       </div>
-      <div className="bg-[#dfdfe4] h-[502px] w-[76.25%] m-auto flex gap-[38px] rounded-[30px] p-8">
+      <div className="bg-[#dfdfe4] h-[502px] mx-[171px] flex gap-[38px] rounded-[30px] p-8 max-sm:p-0 max-sm:flex-col max-sm:mx-0 max-sm:h-auto max-sm:rounded-xs">
         <Image
           src={SmartBedroomHub}
           width={396}
           height={426}
+          className="max-sm:w-full"
           alt="Smart thermostat system with wireless sensors for HVAC control, featuring web access, display interface, and energy-efficient automation"
           title="Smart Thermostat System with Wireless Sensors and HVAC Control"
         />
-        <div className="flex flex-col gap-[38px]">
+        <div className="flex flex-col gap-[38px] max-sm:p-4">
           <p className="font-bold text-3xl">Technical approach</p>
           <p>
             The project was focused on developing a smart sleep-lighting system
@@ -94,7 +133,7 @@ export default function Zlight() {
         <Image src={ZlightBox} alt="" />
       </div>
       <p className="m-auto text-3xl font-bold">Process Highlights</p>
-      <div className="flex gap-6 m-auto">
+      <div className="flex gap-6 m-auto max-sm:flex-col max-sm:mx-3">
         <div className="flex flex-col gap-3">
           <Highlight
             src={WirelessThermostat}
@@ -128,10 +167,10 @@ export default function Zlight() {
           />
         </div>
       </div>
-      <div className="m-auto w-[1098px]">
+      <div className="m-auto w-[1098px] max-sm:w-auto">
         <p className="font-bold text-[32px] text-left">Perks</p>
       </div>
-      <div className="flex gap-5 m-auto">
+     <div className="hidden sm:flex flex-wrap justify-center gap-5 m-auto max-sm:hidden">
         <PerkCard
           headline="Smart Wake-Up Lighting"
           text="Gentle, comfortable light gradually activates to signal wake-up time, adjusting to ambient conditions and supporting your sleep-wake cycle."
@@ -165,16 +204,35 @@ export default function Zlight() {
           width={260}
         />
       </div>
-      <p className="font-bold text-3xl mx-auto">Product Gallery</p>
+         <div className="sm:hidden pl-5">
+              <Swiper
+                slidesPerView={1.3}
+                spaceBetween={1}
+                pagination={false}
+                navigation={false}
+              >
+                {perks.map((perk, index) => (
+                  <SwiperSlide key={index}>
+                    <PerkCard {...perk} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+     <p className="font-bold text-3xl mx-auto">Product Gallery</p>
       <div className="relative m-auto w-full mt-5">
         <Swiper
-          slidesPerView={7}
-          spaceBetween={10}
+      slidesPerView={5.5}
+          spaceBetween={0}
           className="mySwiper"
           centeredSlides={true}
           pagination={{ clickable: true }}
-          navigation={false}
+          navigation={false} 
           modules={[Autoplay, Pagination]}
+           breakpoints={{
+    0: { slidesPerView: 1, centeredSlides: true },      
+    640: { slidesPerView: 2, centeredSlides: false },  
+    1024: { slidesPerView: 2.8, centeredSlides: true }, 
+  }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
             updateSlideOpacities(swiper);
@@ -186,7 +244,7 @@ export default function Zlight() {
               src={zlighSwipper}
               alt="Smart thermostat system showcase"
               title="Smart Thermostat System"
-              width={366}
+              width={430}
               height={400}
               className="object-cover"
             />
@@ -196,7 +254,7 @@ export default function Zlight() {
               src={zlighSwipper}
               alt="Smart thermostat system with HVAC control"
               title="HVAC Control Thermostat"
-              width={366}
+              width={430}
               height={400}
               className="object-cover"
             />
@@ -206,7 +264,7 @@ export default function Zlight() {
               src={zlighSwipper}
               alt="Wireless thermostat system"
               title="Wireless Thermostat System"
-              width={366}
+              width={430}
               height={400}
               className="object-cover"
             />
@@ -216,7 +274,7 @@ export default function Zlight() {
               src={zlighSwipper}
               alt="Thermostat system integration"
               title="System Integration"
-              width={366}
+              width={430}
               height={400}
               className="object-cover"
             />
@@ -226,7 +284,7 @@ export default function Zlight() {
               src={zlighSwipper}
               alt="Contractor training for thermostat system"
               title="Contractor Training"
-              width={366}
+              width={430}
               height={400}
               className="object-cover"
             />
@@ -236,7 +294,7 @@ export default function Zlight() {
               src={zlighSwipper}
               alt="Modular hardware design for thermostat"
               title="Modular Hardware Design"
-              width={366}
+              width={430}
               height={400}
               className="object-cover"
             />
@@ -246,7 +304,7 @@ export default function Zlight() {
               src={zlighSwipper}
               alt="Modular hardware design for thermostat"
               title="Modular Hardware Design"
-              width={366}
+              width={430}
               height={400}
               className="object-cover"
             />
@@ -254,20 +312,23 @@ export default function Zlight() {
         </Swiper>
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75"
+          className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
+          max-sm: max-sm:top-[88%] max-sm:-translate-x-30
+          "
         >
           <img src="/Arrow.svg" className=" w-5 h-5" />
         </button>
 
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75"
+          className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
+          max-sm: max-sm:top-[88%] max-sm:translate-x-30"
         >
           <img src="/Arrow.svg" className="w-5 h-5 rotate-180" />
         </button>
       </div>
       <p className="font-bold text-4xl mx-auto">Final Result</p>
-      <p className="font-bold  mx-auto w-[491px] text-center mb-14">
+           <p className="font-bold  mx-auto w-[491px] text-center mb-14 max-sm:w-auto">
         The zLight is a small, all-in-one device that brings together wireless
         charging, smart lighting, and environmental sensing. It contributes to a
         more restful and healthy bedtime routine. 

@@ -79,7 +79,7 @@ const perks = [
 ];
 
   return (
-    <div className="flex flex-col  mt-[91px] gap-[40px] m-auto max-sm:mt-0">
+    <div className="flex flex-col  mt-[91px] gap-10 m-auto max-sm:mt-0">
       <div className="w-[1098px]   mx-auto max-sm:w-auto">
         <div className="flex justify-end gap-3">
           <Image
@@ -340,7 +340,7 @@ const perks = [
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
-          max-sm: max-sm:top-[450px] max-sm:-translate-x-30
+          max-sm: max-sm:top--[88%] max-sm:-translate-x-30
           "
         >
           <img src="/Arrow.svg" className=" w-5 h-5" />
@@ -349,7 +349,7 @@ const perks = [
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
-          max-sm: max-sm:top-[450px] max-sm:translate-x-30"
+          max-sm: max-sm:top--[88%] max-sm:translate-x-30"
         >
           <img src="/Arrow.svg" className="w-5 h-5 rotate-180" />
         </button>
