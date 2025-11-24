@@ -39,7 +39,7 @@ body {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
 }
 
-/* Swiper styles */
+
 .mySwiper .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 0.5;
@@ -51,7 +51,7 @@ body {
 }
 .hero-background {
   object-fit: cover;
-  object-position: center; /* default for desktop */
+  object-position: center; 
 }
 
 @media screen and (max-width: 640px) {
