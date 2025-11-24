@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Shop Website",
+  title: "Hardware Projects",
   description: "Basic informative site for the shop",
 };
 

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import React from "react";
 import { Share1Icon } from "@radix-ui/react-icons";
 import { GlobeIcon } from "@radix-ui/react-icons";
 import FlashIcon from "../../public/consulting/flash-outline.svg";
@@ -18,6 +19,44 @@ import "swiper/css/navigation";
 import Testimonial from "../components/Testimonial.jsx";
 import ServiceCard from "../components/ServiceGridItem";
 function Consulting() {
+  const serviceCards = [
+    {
+      title: "Technology and Product Development Advisory",
+      description:
+        "HDH delivers tailored technology advisory services and product development consulting, supporting both startups and established companies. Our guidance helps optimize design choices, reduce technical risks, and accelerate time-to-market.",
+      icon: <Image src={FlashIcon} alt="Flash" width={48} height={48} />,
+    },
+    {
+      title: "Comprehensive Embedded System Architecture Services",
+      description:
+        "HDH provides end-to-end IoT consulting services and engineering consulting services, guiding clients through every stage of product development. From concept evaluation to system optimization, our expertise ensures projects are both technically sound and strategically aligned.",
+      icon: <Share1Icon width={48} height={48} />,
+    },
+    {
+      title: "Customized Technical Advisory Services",
+      description:
+        "Every client has unique requirements. HDH provides technical advisory services customized to project needs, including embedded software consulting, manufacturing engineering consulting, and industrial engineering consulting.",
+      icon: <Image src={ExtensionPuzzleIcon} alt="Puzzle" width={48} height={48} />,
+    },
+    {
+      title: "Strategic IoT and Embedded Systems Consulting",
+      description:
+        "We offer IoT strategy consulting and engineering consulting that aligns technology with business goals. HDH helps clients identify opportunities, select the right platforms, and ensure seamless integration across complex systems.",
+      icon: <Image src={HardwareChipIcon} alt="Chip" width={48} height={48} />,
+    },
+    {
+      title: "Expertise Across Embedded Systems and IoT",
+      description:
+        "Our team of IoT consultants and embedded systems consulting experts brings deep experience in hardware and embedded systems with the right architecture to address any technical challenge and optimize product performance.",
+      icon: <GlobeIcon width={43} height={48} />,
+    },
+    {
+      title: "End-to-End Support from Concept to Production",
+      description:
+        "HDH bridges technical planning and operational execution. Our consulting ensures that insights are translated into actionable solutions, guiding projects from early concept through development, validation, and production.",
+      icon: <CodeIcon width={43} height={48} />,
+    },
+  ];
   const faq = [
     {
       id: "consulting-services",
@@ -101,8 +140,8 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-[120px] mt-[60px] mb-16 mx-auto w-[90%]">
-        <div>
+      <div className="flex flex-col gap-[120px] mt-[60px] mb-16 mx-auto w-[90%] max-sm:gap-[60px]">
+        <div className="sm:hidden">
           <button className="self-start text-2xl">{"< Back"}</button>
           <div className="flex flex-col gap-[7px]">
             <p className="text-3xl font-bold ">
@@ -119,8 +158,8 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
             product evolution and long-term market success.
           </p>
         </div>
-        <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-[88%]">
-          <p className="font-bold text-3xl">Our Expertise</p>
+        <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-full">
+          <p className="font-bold text-3xl max-sm:text-start max-sm:text-2xl">Our Expertise</p>
           <div className="px-[18px] py-3.5 flex flex-col bg-[#F6F6F6] rounded-[10px] gap-2.5 text-start">
             <p className="font-bold text-2xl max-sm:text-xl">Embedded System Integration</p>
             <div className="pl-5">
@@ -184,92 +223,56 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
           </div>
         </div>
         <div className="flex flex-col mx-auto">
-          <p className="text-2xl font-bold text-center mb-18">
+          <p className="text-2xl font-bold text-center mb-18 max-sm:mb-0">
             Why Choose HDH for Prototype Development?
           </p>
           <div className="grid grid-rows-13 grid-cols-5 gap-2 max-sm:hidden">
             <div className="row-span-7 bg-[#F6F6F6] p-3 rounded-md"></div>
             <div className="row-span-3 bg-[#F6F6F6] p-3 rounded-md"></div>
-            <ServiceCard
-              title="Technology and Product Development Advisory"
-              description="HDH delivers tailored technology advisory services and product
-                development consulting, supporting both startups and established
-                companies. Our guidance helps optimize design choices, reduce
-                technical risks, and accelerate time-to-market."
-              icon={<Image src={FlashIcon} alt="Flash" />}
-              className="row-span-4"
-            />
+            <ServiceCard {...serviceCards[0]} className="row-span-4" />
             <div className="row-span-3 bg-[#F6F6F6] p-3 rounded-md"></div>
             <div className="row-span-7 bg-[#F6F6F6] p-3 rounded-md"></div>
-            <ServiceCard
-              title="Comprehensive Embedded System Architecture Services"
-              description="HDH provides end-to-end IoT consulting services and engineering
-                consulting services, guiding clients through every stage of
-                product development. From concept evaluation to system
-                optimization, our expertise ensures projects are both
-                technically sound and strategically aligned."
-              icon={<Share1Icon />}
-              className="row-span-5"
-            />
-            <ServiceCard
-              title="Customized Technical Advisory Services"
-              description="Every client has unique requirements. HDH provides technical
-                advisory services customized to project needs, including
-                embedded software consulting, manufacturing engineering
-                consulting, and industrial engineering consulting."
-              icon={<Image src={ExtensionPuzzleIcon} alt="Puzzle" />}
-              className="row-span-6"
-            />
-            <ServiceCard
-              title="Strategic IoT and Embedded Systems Consulting"
-              description="We offer IoT strategy consulting and engineering consulting that
-                aligns technology with business goals. HDH helps clients
-                identify opportunities, select the right platforms, and ensure
-                seamless integration across complex systems."
-              icon={<Image src={HardwareChipIcon} alt="Chip" />}
-              className="row-span-6"
-            />
+            <ServiceCard {...serviceCards[1]} className="row-span-5" />
+            <ServiceCard {...serviceCards[2]} className="row-span-6" />
+            <ServiceCard {...serviceCards[3]} className="row-span-6" />
             <div className="row-span-2 bg-[#F6F6F6] p-3 rounded-md"></div>
             <div className="row-span-2 bg-[#F6F6F6] p-3 rounded-md"></div>
-            <ServiceCard
-              title="Expertise Across Embedded Systems and IoT"
-              description="Our team of IoT consultants and embedded systems consulting
-                experts brings deep experience in hardware and embedded systems
-                with the right architecture to address any technical challenge
-                and optimize product performance. We help clients design,
-                implement, and scale IoT solutions and embedded systems
-                efficiently."
-              icon={<GlobeIcon />}
-              iconWidth={43}
-              className="row-span-5"
-            />
+            <ServiceCard {...serviceCards[4]} className="row-span-5" />
             <div className="row-span-4 bg-[#F6F6F6] p-3 rounded-md"></div>
-            <ServiceCard
-              title="End-to-End Support from Concept to Production"
-              description="HDH bridges technical planning and operational execution. Our
-                consulting ensures that insights are translated into actionable
-                solutions, guiding projects from early concept through
-                development, validation, and production."
-              icon={<CodeIcon />}
-              iconWidth={43}
-              className="row-span-4"
-            />
+            <ServiceCard {...serviceCards[5]} className="row-span-4" />
             <div className="row-span-4 bg-[#F6F6F6] p-3 rounded-md"></div>
             <div className="row-span-3 bg-[#F6F6F6] p-3 rounded-md"></div>
           </div>
-          <div className="sm:hidden">
-<Swiper
-            slidesPerView={1.3}
-            spaceBetween={10}
-            pagination={false}
-            navigation={false}
-          >
-            <div>
-              
-            </div>
-          </Swiper>
-          </div>
+         
         </div>
+         <div className="sm:hidden">
+   <Swiper
+          slidesPerView={1}
+          spaceBetween={16}
+          centeredSlides={true}
+          loop={false}
+          pagination={{ clickable: true }}
+          className="pb-10"
+        >
+          {serviceCards.map((card, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-[#F6F6F6] p-5 rounded-xl shadow-sm flex flex-col justify-between h-[270px]">
+                <div className="flex gap-4 items-start mb-4">
+                  <div className="flex-shrink-0">
+                    {React.cloneElement(card.icon, { width: 48, height: 48 })}
+                  </div>
+                  <h3 className="text-xl font-bold leading-tight">
+                    {card.title}
+                  </h3>
+                </div>
+                <p className="text-sm text-gray-700  ">
+                  {card.description}
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+          </div>
         <div className=" mx-auto flex flex-col gap-7 w-[63%] max-sm:w-[87%]">
           <p className="font-bold text-2xl text-center">
             FAQ - Product Testing and Validation
@@ -321,7 +324,7 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
         <div className="sm:hidden pl-5">
           <Swiper
             slidesPerView={1.1}
-            spaceBetween={15}
+            spaceBetween={25}
             pagination={false}
             navigation={false}
           >
