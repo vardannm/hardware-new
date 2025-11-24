@@ -16,7 +16,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -39,7 +39,7 @@ body {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
 }
 
-/* Swiper styles */
+
 .mySwiper .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 0.5;
@@ -48,4 +48,14 @@ body {
 .mySwiper .swiper-pagination-bullet-active {
   background: #ffffff;
   opacity: 1;
+}
+.hero-background {
+  object-fit: cover;
+  object-position: center; 
+}
+
+@media screen and (max-width: 640px) {
+  .hero-background {
+    object-position:19% 0rem; 
+  }
 }

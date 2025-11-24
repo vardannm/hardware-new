@@ -86,13 +86,14 @@ export default function moon() {
     },
   ];
   return (
-    <div className="flex flex-col  mt-[91px] gap-[50px] m-auto max-sm:mt-0">
+    <div className="flex flex-col  mt-[91px] gap-10 m-auto max-sm:mt-0">
       <div className="w-[1098px]   mx-auto max-sm:w-auto">
         <div className="flex justify-end gap-3">
           <Image
             src={MoonIcon}
             alt="Advanced smart home hub for home automation and security with 360-degree monitoring and centralized device control"
             title="Advanced Smart Home Hub for Automation and Security"
+            className="max-sm:w-3/6 "
           />
           <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
             <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">Moon by 1-Ring</h1>
@@ -237,8 +238,6 @@ export default function moon() {
           width={352}
         />
       </div>
-
-      {/* Mobile swiper */}
       <div className="sm:hidden pl-5">
   <Swiper
     slidesPerView={1.3}
@@ -257,24 +256,24 @@ export default function moon() {
       <p className="font-bold text-3xl mx-auto">Product Gallery</p>
       <div className="relative m-auto w-full mt-5">
         <Swiper
-  slidesPerView={2.8}
-  spaceBetween={10}
-  className="mySwiper"
-  centeredSlides={true}
-  pagination={{ clickable: true }}
-  navigation={false}
-  modules={[Autoplay, Pagination]}
-  breakpoints={{
+          slidesPerView={5.5}
+          spaceBetween={10}
+          className="mySwiper"
+          centeredSlides={true}
+          pagination={{ clickable: true }}
+          navigation={false} 
+          modules={[Autoplay, Pagination]}
+           breakpoints={{
     0: { slidesPerView: 1, centeredSlides: true },      
     640: { slidesPerView: 2, centeredSlides: false },  
     1024: { slidesPerView: 2.8, centeredSlides: true }, 
   }}
-  onSwiper={(swiper) => {
-    swiperRef.current = swiper;
-    updateSlideOpacities(swiper);
-  }}
-  onSlideChange={(swiper) => updateSlideOpacities(swiper)}
->
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+            updateSlideOpacities(swiper);
+          }}
+          onSlideChange={(swiper) => updateSlideOpacities(swiper)}
+        >
           <SwiperSlide>
             <Image
               src={ThermostatSwiper}
@@ -282,7 +281,7 @@ export default function moon() {
               title="Compact Smart Home Hub with Sensors and Camera"
               width={420}
               height={400}
-              className="object-cover"
+              className="object-cover max-sm:mx-auto"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -292,7 +291,7 @@ export default function moon() {
               title="Smart Home Hub for Device Integration"
               width={420}
               height={400}
-              className="object-cover"
+              className="object-cover max-sm:mx-auto"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -302,7 +301,7 @@ export default function moon() {
               title="Automation and Security"
               width={420}
               height={400}
-              className="object-cover"
+              className="object-cover max-sm:mx-auto"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -312,7 +311,7 @@ export default function moon() {
               title="System Integration"
               width={420}
               height={400}
-              className="object-cover"
+              className="object-cover max-sm:mx-auto"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -322,7 +321,7 @@ export default function moon() {
               title="Contractor Training"
               width={420}
               height={400}
-              className="object-cover"
+              className="object-cover max-sm:mx-auto"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -332,7 +331,7 @@ export default function moon() {
               title="Modular Hardware Design"
               width={420}
               height={400}
-              className="object-cover"
+              className="object-cover max-sm:mx-auto"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -342,14 +341,14 @@ export default function moon() {
               title="Modular Hardware Design"
               width={420}
               height={400}
-              className="object-cover"
+              className="object-cover max-sm:mx-auto"
             />
           </SwiperSlide>
         </Swiper>
-        <button
+      <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
-          max-sm: max-sm:top-[450px] max-sm:-translate-x-30
+          max-sm: max-sm:top--[88%] max-sm:-translate-x-30
           "
         >
           <img src="/Arrow.svg" className=" w-5 h-5" />
@@ -358,7 +357,7 @@ export default function moon() {
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
-          max-sm: max-sm:top-[450px] max-sm:translate-x-30"
+          max-sm: max-sm:top--[88%] max-sm:translate-x-30"
         >
           <img src="/Arrow.svg" className="w-5 h-5 rotate-180" />
         </button>
