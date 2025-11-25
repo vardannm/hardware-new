@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Hardware from "../../public/hardware.svg";
-import fbIcon from "../../public/facebook.svg";
-import linkedin from "../../public/linkedin.svg";
+import Hardware from "@/public/hardware.svg";
+import fbIcon from "@/public/facebook.svg";
+import linkedin from "@/public/linkedin.svg";
+
 export default function Footer() {
   return (
     <footer className="text-center py-[54px] px-[200px] bg-[#DFDFDF] text-gray-400 text-sm flex flex-col max-sm:px-1.5">
@@ -31,8 +32,8 @@ export default function Footer() {
                 </div>
                 <div className="flex justify-between ">
                  <div className="flex gap-9">
-                  <Image src={fbIcon}/>
-                  <Image src={linkedin}/>
+                  <Image src={fbIcon} alt=""/>
+                  <Image src={linkedin} alt=""/>
                  </div>
                  <button className="bg-[#31B56A] rounded-md px-4 py-3 text-white">Send message</button>
                 </div>
