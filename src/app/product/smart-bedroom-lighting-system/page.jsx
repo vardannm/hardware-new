@@ -1,28 +1,26 @@
 "use client";
-import ZlightIcon from "../../../public/zlight/smart-bedroom-lighting-system.jpg";
+import ZlightIcon from "@/public/zlight/smart-bedroom-lighting-system.jpg";
 import Image from "next/image";
-import SmartBedroomHub from "../../../public/zlight/smart-bedroom-hub.png";
-import ZlightBox from "../../../public/zlight/ZlightBox.svg";
-import Highlight from "../Highlight";
-import WirelessThermostat from "../../../public/zlight/smart-bedroom-hub-second.png";
-import SystemIntegration from "../../../public/zlight/smart-bedroom-lighting-system-engineering.png";
-import SystemContractor from "../../../public/zlight/smart-bedroom-lighting-system-development.png";
-import ModularHardware from "../../../public/zlight/smart-bedroom-lighting-system-sensor-design.png";
-import PerkCard from "../PerkCard";
-import EnergyEfficiency from "../../../public/zlight/smart-wake-up-lighting.png";
-import WirelessCharging from "../../../public/zlight/wireless-charging-nightstand.png";
-import SmartBedroom from "../../../public/zlight/app-controlled-smart-bedroom-lighting.png";
-import SmartEnvironmental from "../../../public/zlight/smart-environmental-sensors.png";
-import ModularScalable from "../../../public/thermostat/modular-and-scalable-hardware.png";
-import ContractorSupport from "../../../public/thermostat/contractor-support.png";
+import SmartBedroomHub from "@/public/zlight/smart-bedroom-hub.png";
+import ZlightBox from "@/public/zlight/ZlightBox.svg";
+import Highlight from "@/components/ui/Highlight";
+import WirelessThermostat from "@/public/zlight/smart-bedroom-hub-second.png";
+import SystemIntegration from "@/public/zlight/smart-bedroom-lighting-system-engineering.png";
+import SystemContractor from "@/public/zlight/smart-bedroom-lighting-system-development.png";
+import ModularHardware from "@/public/zlight/smart-bedroom-lighting-system-sensor-design.png";
+import PerkCard from "@/components/ui/PerkCard";
+import EnergyEfficiency from "@/public/zlight/smart-wake-up-lighting.png";
+import WirelessCharging from "@/public/zlight/wireless-charging-nightstand.png";
+import SmartBedroom from "@/public/zlight/app-controlled-smart-bedroom-lighting.png";
+import SmartEnvironmental from "@/public/zlight/smart-environmental-sensors.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import zlighSwipper from "../../../public/zlight/zlight-swiper.png";
+import { Autoplay, Pagination } from "swiper/modules";
+import zlighSwipper from "@/public/zlight/zlight-swiper.png";
 import { useRef } from "react";
-import "../../globals.css";
+import Arrow from "@/public/Arrow.svg";
 export default function Zlight() {
   const swiperRef = useRef(null);
   const updateSlideOpacities = (swiper) => {
@@ -35,66 +33,64 @@ export default function Zlight() {
       }
     });
   };
-const perks = [
-  {
-    headline: "Smart Wake-Up Lighting",
-    text: "Gentle, comfortable light gradually activates to signal wake-up time, adjusting to ambient conditions and supporting your sleep-wake cycle.",
-    src: EnergyEfficiency,
-    alt: "Smart wake up lighting with gentle gradual brightness",
-    title: "Smart Wake Up Lighting",
-    width: 260,
-  },
-  {
-    headline: "Wireless Charging",
-    text: "Fast and convenient wireless charging for mobile devices, built into the nightstand for easy access.",
-    src: WirelessCharging,
-    alt: "Wireless charging nightstand with fast and convenient charging for mobile devices integrated into the smart bedroom system",
-    title: "Wireless Charging Nightstand",
-    width: 260,
-  },
-  {
-    headline: "App-Controlled Lighting",
-    text: "App-based control for scheduling, brightness adjustment, and color, adapting to ambient light and bedroom conditions.",
-    src: SmartBedroom,
-    alt: "App controlled smart bedroom lighting system for scheduling brightness and color adjustment based on ambient conditions",
-    title: "App Controlled Smart Bedroom Lighting",
-    width: 260,
-  },
-  {
-    headline: "Smart Environmental Sensors",
-    text: "Integrated sensors for precise measurements of air quality (CO₂e and TVOC), temperature, and humidity.",
-    src: SmartEnvironmental,
-    alt: "Smart bedroom lighting system with integrated sensors that monitor air quality temperature and humidity for a healthier environment",
-    title: "Smart Environmental Sensors",
-    width: 260,
-  },
-];
+  const perks = [
+    {
+      headline: "Smart Wake-Up Lighting",
+      text: "Gentle, comfortable light gradually activates to signal wake-up time, adjusting to ambient conditions and supporting your sleep-wake cycle.",
+      src: EnergyEfficiency,
+      alt: "Smart wake up lighting with gentle gradual brightness",
+      title: "Smart Wake Up Lighting",
+      width: 260,
+    },
+    {
+      headline: "Wireless Charging",
+      text: "Fast and convenient wireless charging for mobile devices, built into the nightstand for easy access.",
+      src: WirelessCharging,
+      alt: "Wireless charging nightstand with fast and convenient charging for mobile devices integrated into the smart bedroom system",
+      title: "Wireless Charging Nightstand",
+      width: 260,
+    },
+    {
+      headline: "App-Controlled Lighting",
+      text: "App-based control for scheduling, brightness adjustment, and color, adapting to ambient light and bedroom conditions.",
+      src: SmartBedroom,
+      alt: "App controlled smart bedroom lighting system for scheduling brightness and color adjustment based on ambient conditions",
+      title: "App Controlled Smart Bedroom Lighting",
+      width: 260,
+    },
+    {
+      headline: "Smart Environmental Sensors",
+      text: "Integrated sensors for precise measurements of air quality (CO₂e and TVOC), temperature, and humidity.",
+      src: SmartEnvironmental,
+      alt: "Smart bedroom lighting system with integrated sensors that monitor air quality temperature and humidity for a healthier environment",
+      title: "Smart Environmental Sensors",
+      width: 260,
+    },
+  ];
 
   return (
-    <div className="flex flex-col  mt-[91px] gap-[40px] m-auto max-sm:mt-0">
+    <div className="flex flex-col gap-10 m-auto max-sm:mt-0">
       <div className="w-[1098px] mx-auto max-sm:w-auto">
-     <div className="flex justify-end gap-3 items-center">
-  <Image
-    src={ZlightIcon}
-    alt="A smart bedroom lighting system that gently guides your sleep and wake cycle with soothing light"
-    title="Smart Bedroom Lighting System"
-  />
- <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
-    <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">zLight</h1>
-    <p className="font-bold text-2xl">
-    Smart Bedroom Lighting System
-    </p>
-    <p className="max-sm:hidden">
-      A sleep box that uses gentle light to guide your sleep and wake
-      cycle.
-    </p>
-   
-  </div>
-</div>
-   <p className="hidden max-sm:block p-4">
-      A sleep box that uses gentle light to guide your sleep and wake
-      cycle.
-    </p>
+        <div className="flex justify-end gap-3 items-center">
+          <Image
+            src={ZlightIcon}
+            alt="A smart bedroom lighting system that gently guides your sleep and wake cycle with soothing light"
+            title="Smart Bedroom Lighting System"
+          />
+          <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
+            <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">
+              zLight
+            </h1>
+            <p className="font-bold text-2xl">Smart Bedroom Lighting System</p>
+            <p className="max-sm:hidden">
+              A sleep box that uses gentle light to guide your sleep and wake
+              cycle.
+            </p>
+          </div>
+        </div>
+        <p className="hidden max-sm:block p-4">
+          A sleep box that uses gentle light to guide your sleep and wake cycle.
+        </p>
       </div>
       <div className="bg-[#dfdfe4] h-[502px] mx-[171px] flex gap-[38px] rounded-[30px] p-8 max-sm:p-0 max-sm:flex-col max-sm:mx-0 max-sm:h-auto max-sm:rounded-xs">
         <Image
@@ -170,7 +166,7 @@ const perks = [
       <div className="m-auto w-[1098px] max-sm:w-auto">
         <p className="font-bold text-[32px] text-left">Perks</p>
       </div>
-     <div className="hidden sm:flex flex-wrap justify-center gap-5 m-auto max-sm:hidden">
+      <div className="hidden sm:flex flex-wrap justify-center gap-5 m-auto max-sm:hidden">
         <PerkCard
           headline="Smart Wake-Up Lighting"
           text="Gentle, comfortable light gradually activates to signal wake-up time, adjusting to ambient conditions and supporting your sleep-wake cycle."
@@ -204,35 +200,35 @@ const perks = [
           width={260}
         />
       </div>
-         <div className="sm:hidden pl-5">
-              <Swiper
-                slidesPerView={1.3}
-                spaceBetween={1}
-                pagination={false}
-                navigation={false}
-              >
-                {perks.map((perk, index) => (
-                  <SwiperSlide key={index}>
-                    <PerkCard {...perk} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-     <p className="font-bold text-3xl mx-auto">Product Gallery</p>
+      <div className="sm:hidden pl-5">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={1}
+          pagination={false}
+          navigation={false}
+        >
+          {perks.map((perk, index) => (
+            <SwiperSlide key={index}>
+              <PerkCard {...perk} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <p className="font-bold text-3xl mx-auto">Product Gallery</p>
       <div className="relative m-auto w-full mt-5">
         <Swiper
-      slidesPerView={5.5}
+          slidesPerView={5.5}
           spaceBetween={0}
           className="mySwiper"
           centeredSlides={true}
           pagination={{ clickable: true }}
-          navigation={false} 
+          navigation={false}
           modules={[Autoplay, Pagination]}
-           breakpoints={{
-    0: { slidesPerView: 1, centeredSlides: true },      
-    640: { slidesPerView: 2, centeredSlides: false },  
-    1024: { slidesPerView: 2.8, centeredSlides: true }, 
-  }}
+          breakpoints={{
+            0: { slidesPerView: 1, centeredSlides: true },
+            640: { slidesPerView: 2, centeredSlides: false },
+            1024: { slidesPerView: 2.8, centeredSlides: true },
+          }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
             updateSlideOpacities(swiper);
@@ -316,7 +312,7 @@ const perks = [
           max-sm: max-sm:top-[88%] max-sm:-translate-x-30
           "
         >
-          <img src="/Arrow.svg" className=" w-5 h-5" />
+          <Image src={Arrow} alt="" className=" w-5 h-5" />
         </button>
 
         <button
@@ -324,11 +320,11 @@ const perks = [
           className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
           max-sm: max-sm:top-[88%] max-sm:translate-x-30"
         >
-          <img src="/Arrow.svg" className="w-5 h-5 rotate-180" />
+          <Image src={Arrow} alt="" className="w-5 h-5 rotate-180" />
         </button>
       </div>
       <p className="font-bold text-4xl mx-auto">Final Result</p>
-           <p className="font-bold  mx-auto w-[491px] text-center mb-14 max-sm:w-auto">
+      <p className="font-bold  mx-auto w-[491px] text-center mb-14 max-sm:w-auto">
         The zLight is a small, all-in-one device that brings together wireless
         charging, smart lighting, and environmental sensing. It contributes to a
         more restful and healthy bedtime routine. 

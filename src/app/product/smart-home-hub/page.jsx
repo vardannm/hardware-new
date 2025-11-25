@@ -1,29 +1,29 @@
 "use client";
-import MoonIcon from "../../../public/moon/smart-home-hub.jpg";
+import MoonIcon from "@/public/moon/smart-home-hub.jpg";
 import Image from "next/image";
-import SmartHomeHub from "../../../public/moon/smart-home-hub-360-degree-camera.png";
-import MoonBox from "../../../public/moon/MoonBox.svg";
-import Highlight from "../Highlight";
-import MoonBy1Ring from "../../../public/moon/moon-by-1-ring.png";
-import IntegratedSensors from "../../../public/moon/integrated-sensors.png";
-import SmartDeviceIntegration from "../../../public/moon/smart-device-integration.png";
-import MagneticLevitationDesign from "../../../public/moon/magnetic-levitation-design.png";
-import PerkCard from "../PerkCard";
-import SmartHomeSecuritySystem from "../../../public/moon/smart-home-security-system.png";
-import MultiProtocolConnectivity from "../../../public/moon/multi-protocol-connectivity.png";
-import SensorsAutomation from "../../../public/moon/sensors-automation.png";
-import HomeAutomationSystem from "../../../public/moon/home-automation-system.png";
-import CameraSystem from "../../../public/moon/camera-system.png";
-import HomeAutomationController from "../../../public/moon/home-automation-controller.png";
+import SmartHomeHub from "@/public/moon/smart-home-hub-360-degree-camera.png";
+import MoonBox from "@/public/moon/MoonBox.svg";
+import Highlight from "@/components/ui/Highlight";
+import MoonBy1Ring from "@/public/moon/moon-by-1-ring.png";
+import IntegratedSensors from "@/public/moon/integrated-sensors.png";
+import SmartDeviceIntegration from "@/public/moon/smart-device-integration.png";
+import MagneticLevitationDesign from "@/public/moon/magnetic-levitation-design.png";
+import PerkCard from "@/components/ui/PerkCard";
+import SmartHomeSecuritySystem from "@/public/moon/smart-home-security-system.png";
+import MultiProtocolConnectivity from "@/public/moon/multi-protocol-connectivity.png";
+import SensorsAutomation from "@/public/moon/sensors-automation.png";
+import HomeAutomationSystem from "@/public/moon/home-automation-system.png";
+import CameraSystem from "@/public/moon/camera-system.png";
+import HomeAutomationController from "@/public/moon/home-automation-controller.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import ThermostatSwiper from "../../../public/thermostat/ThermostatSwiper.png";
+import { Autoplay, Pagination } from "swiper/modules";
+import ThermostatSwiper from "@/public/thermostat/ThermostatSwiper.png";
 import { useRef } from "react";
-import "../../globals.css";
-export default function moon() {
+import Arrow from "@/public/Arrow.svg";
+export default function Moon() {
   const swiperRef = useRef(null);
   const updateSlideOpacities = (swiper) => {
     const slides = swiper.slides;
@@ -57,7 +57,8 @@ export default function moon() {
       text: "Ambient light, temperature, and motion sensors for real-time environmental monitoring, intelligent adjustments and automation across the smart home ecosystem.",
       src: SensorsAutomation,
       alt: "Smart home hub with ambient light, temperature, and motion sensors for intelligent automation and real-time monitoring across the smart home ecosystem",
-      title: "Smart Home Hub with Ambient Light, Temperature, and Motion Sensors",
+      title:
+        "Smart Home Hub with Ambient Light, Temperature, and Motion Sensors",
       width: 352,
     },
     {
@@ -96,7 +97,9 @@ export default function moon() {
             className="max-sm:w-3/6 "
           />
           <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
-            <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">Moon by 1-Ring</h1>
+            <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">
+              Moon by 1-Ring
+            </h1>
             <p className="font-bold text-2xl max-sm:text-xl">
               Transforming Smart Home Technology
             </p>
@@ -109,14 +112,14 @@ export default function moon() {
             </p>
           </div>
         </div>
-        
+
         <p className="hidden max-sm:block p-4">
-              Moon by 1-Ring is a smart home security and automation system that
-              brings all your devices together in one place. It keeps an eye on
-              your home, automates everyday tasks, and offers all-around
-              coverage, while working with Wi-Fi, Bluetooth, Zigbee, and Z-Wave
-              so everything just connects and works smoothly.
-            </p>
+          Moon by 1-Ring is a smart home security and automation system that
+          brings all your devices together in one place. It keeps an eye on your
+          home, automates everyday tasks, and offers all-around coverage, while
+          working with Wi-Fi, Bluetooth, Zigbee, and Z-Wave so everything just
+          connects and works smoothly.
+        </p>
       </div>
       <div className="bg-[#dfdfe4] h-[502px] mx-[171px] flex gap-[38px] rounded-[30px] p-8 max-sm:p-0 max-sm:flex-col max-sm:mx-0 max-sm:h-auto max-sm:rounded-xs">
         <Image
@@ -186,7 +189,7 @@ export default function moon() {
       <div className="m-auto w-[1098px] max-sm:w-auto">
         <p className="font-bold text-[32px] text-left">Perks</p>
       </div>
-       <div className="flex gap-5 m-auto max-sm:hidden">
+      <div className="flex gap-5 m-auto max-sm:hidden">
         <PerkCard
           headline="Central Processing Unit (CPU)"
           text="High-performance, low-power CPU for complex computations, seamless multitasking, and efficient automation."
@@ -239,19 +242,19 @@ export default function moon() {
         />
       </div>
       <div className="sm:hidden pl-5">
-  <Swiper
-    slidesPerView={1.3}
-    spaceBetween={0}
-    pagination={false}
-    navigation={false}
-  >
-    {perks.map((perk, index) => (
-      <SwiperSlide key={index}>
-        <PerkCard {...perk} />
-      </SwiperSlide>
-    ))}
-  </Swiper>
-</div>
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={0}
+          pagination={false}
+          navigation={false}
+        >
+          {perks.map((perk, index) => (
+            <SwiperSlide key={index}>
+              <PerkCard {...perk} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
       <p className="font-bold text-3xl mx-auto">Product Gallery</p>
       <div className="relative m-auto w-full mt-5">
@@ -261,13 +264,13 @@ export default function moon() {
           className="mySwiper"
           centeredSlides={true}
           pagination={{ clickable: true }}
-          navigation={false} 
+          navigation={false}
           modules={[Autoplay, Pagination]}
-           breakpoints={{
-    0: { slidesPerView: 1, centeredSlides: true },      
-    640: { slidesPerView: 2, centeredSlides: false },  
-    1024: { slidesPerView: 2.8, centeredSlides: true }, 
-  }}
+          breakpoints={{
+            0: { slidesPerView: 1, centeredSlides: true },
+            640: { slidesPerView: 2, centeredSlides: false },
+            1024: { slidesPerView: 2.8, centeredSlides: true },
+          }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
             updateSlideOpacities(swiper);
@@ -345,13 +348,13 @@ export default function moon() {
             />
           </SwiperSlide>
         </Swiper>
-      <button
+        <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
           max-sm: max-sm:top--[88%] max-sm:-translate-x-30
           "
         >
-          <img src="/Arrow.svg" className=" w-5 h-5" />
+          <Image src={Arrow} alt="" className=" w-5 h-5" />
         </button>
 
         <button
@@ -359,7 +362,7 @@ export default function moon() {
           className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
           max-sm: max-sm:top--[88%] max-sm:translate-x-30"
         >
-          <img src="/Arrow.svg" className="w-5 h-5 rotate-180" />
+          <Image src={Arrow} alt="" className="w-5 h-5 rotate-180" />
         </button>
       </div>
       <p className="font-bold text-4xl mx-auto">Final Result</p>
@@ -367,12 +370,13 @@ export default function moon() {
         The Moon project created a smart home hub that brings devices together,
         automates tasks, and provides all-around home monitoring. Its sensors,
         high-performance CPU, and innovative design show a practical and
-        forward-thinking approach to smart home technology.<br/> <br/> The Moon project was
-        fully developed and successfully completed on our side, including a
-        working prototype, though production was not implemented due to
-        marketing considerations. For future collaborators: We invite you to
-        discover the potential for collaboration in bringing the Moon project to
-        life and set new standards in smart home technology.
+        forward-thinking approach to smart home technology.
+        <br /> <br /> The Moon project was fully developed and successfully
+        completed on our side, including a working prototype, though production
+        was not implemented due to marketing considerations. For future
+        collaborators: We invite you to discover the potential for collaboration
+        in bringing the Moon project to life and set new standards in smart home
+        technology.
       </p>
     </div>
   );

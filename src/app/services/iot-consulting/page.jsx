@@ -1,23 +1,21 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { Share1Icon } from "@radix-ui/react-icons";
-import { GlobeIcon } from "@radix-ui/react-icons";
-import FlashIcon from "../../public/consulting/flash-outline.svg";
-import HardwareChipIcon from "../../public/consulting/hardware-chip-outline.svg";
-import ExtensionPuzzleIcon from "../../public/consulting/extension-puzzle-outline.svg";
+import { Share1Icon, GlobeIcon, CodeIcon, ChevronDownIcon } from "@radix-ui/react-icons";
+import FlashIcon from "@/public/consulting/flash-outline.svg";
+import HardwareChipIcon from "@/public/consulting/hardware-chip-outline.svg";
+import ExtensionPuzzleIcon from "@/public/consulting/extension-puzzle-outline.svg";
+import TauroTechnologies from "@/public/consulting/tauro-technologies-review.png";
+import NuveReview from "@/public/consulting/nuve-review.png";
+import QaylTech from "@/public/consulting/qayltech-review.png";
 import * as Accordion from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
-import TauroTechnologies from "../../public/consulting/tauro-technologies-review.png";
-import NuveReview from "../../public/consulting/nuve-review.png";
-import QaylTech from "../../public/consulting/qayltech-review.png";
-import { CodeIcon } from "@radix-ui/react-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Testimonial from "../components/Testimonial.jsx";
-import ServiceCard from "../components/ServiceGridItem";
+import Testimonial from "@/components/ui/Testimonial";
+import ServiceCard from "@/components/ui/ServiceGridItem";
+import ConsultingBg from '@/public/consulting/consulting-background.png'
 function Consulting() {
   const serviceCards = [
     {
@@ -111,12 +109,11 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
       position: "Founder & CEO at QaylTech and Muvia",
     },
   ];
-  
   return (
     <div className="flex flex-col">
       <div className="w-full h-[645px] relative max-sm:h-[400px]">
         <Image
-          src="/consulting/consulting-background.png"
+          src={ConsultingBg}
           alt="Consulting background"
           fill
           unoptimized

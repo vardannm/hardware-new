@@ -1,7 +1,6 @@
 import { Menu } from "lucide-react";
 import Image from "next/image";
-import Hardware from "../../public/hardware.svg";
-
+import Hardware from "@/public/hardware.svg";
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-8 py-4 bg-white sticky top-0 z-50 border-b border-[#DCDBE1] shadow-sm">

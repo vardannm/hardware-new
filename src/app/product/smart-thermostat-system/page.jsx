@@ -1,28 +1,27 @@
 "use client";
-import ThermostatIcon from "../../../public/thermostat/smart-thermostat-system-copy.jpg";
-import ThermostatIconSecond from "../../../public/thermostat/smart-thermostat-systemsecond.jpg";
+import ThermostatIconSecond from "@/public/thermostat/smart-thermostat-systemsecond.jpg";
 import Image from "next/image";
-import ThermostatHvac from "../../../public/thermostat/smart-thermostat-system-hvac-control.png";
-import ThermoBox from "../../../public/thermostat/thermostatBox.svg";
-import Highlight from "../Highlight";
-import WirelessThermostat from "../../../public/thermostat/wireless-thermostat-system.png";
-import SystemIntegration from "../../../public/thermostat/smart-thermostat-system-integration.png";
-import SystemContractor from "../../../public/thermostat/smart-thermostat-system-contractor-training.png";
-import ModularHardware from "../../../public/thermostat/modular-hardware-design.png";
-import PerkCard from "../PerkCard";
-import EnergyEfficiency from "../../../public/thermostat/energy-efficiency.png";
-import PrecisionSensors from "../../../public/thermostat/precision-sensors.png";
-import IntuitiveInterface from "../../../public/thermostat/intuitive-interface.png";
-import ModularScalable from "../../../public/thermostat/modular-and-scalable-hardware.png";
-import ContractorSupport from "../../../public/thermostat/contractor-support.png";
+import ThermostatHvac from "@/public/thermostat/smart-thermostat-system-hvac-control.png";
+import ThermoBox from "@/public/thermostat/thermostatBox.svg";
+import Highlight from "@/components/ui/Highlight";
+import WirelessThermostat from "@/public/thermostat/wireless-thermostat-system.png";
+import SystemIntegration from "@/public/thermostat/smart-thermostat-system-integration.png";
+import SystemContractor from "@/public/thermostat/smart-thermostat-system-contractor-training.png";
+import ModularHardware from "@/public/thermostat/modular-hardware-design.png";
+import PerkCard from "@/components/ui/PerkCard";
+import EnergyEfficiency from "@/public/thermostat/energy-efficiency.png";
+import PrecisionSensors from "@/public/thermostat/precision-sensors.png";
+import IntuitiveInterface from "@/public/thermostat/intuitive-interface.png";
+import ModularScalable from "@/public/thermostat/modular-and-scalable-hardware.png";
+import ContractorSupport from "@/public/thermostat/contractor-support.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import ThermostatSwiper from "../../../public/thermostat/ThermostatSwiper.png";
+import ThermostatSwiper from "@/public/thermostat/ThermostatSwiper.png";
 import { useRef } from "react";
-import "../../globals.css";
+import Arrow from "@/public/Arrow.svg";
 export default function Thermostat() {
   const swiperRef = useRef(null);
   const updateSlideOpacities = (swiper) => {
@@ -35,48 +34,52 @@ export default function Thermostat() {
       }
     });
   };
-const perks = [
-  {
-    headline: "Adaptive Control for Energy Efficiency",
-    text: "Regulates heating, cooling, and ventilation through smart scheduling, weather integration, and air quality feedback to enhance comfort and improve HVAC energy efficiency.",
-    src: EnergyEfficiency,
-    alt: "Smart thermostat system for home climate control with adaptive energy-saving thermostat features",
-    title: "Adaptive Control for Energy Efficiency in Smart Thermostat System",
-    width: 352,
-  },
-  {
-    headline: "Precision Sensors and Reliable Connectivity",
-    text: "Equipped with multiple temperature and pressure sensors, adaptive algorithms, and optimized RF components to ensure accurate readings and stable communication.",
-    src: PrecisionSensors,
-    alt: "Smart thermostat system with thermostat sensors and wireless connectivity",
-    title: "Precision Sensors and Reliable Connectivity in Smart Thermostat System",
-    width: 352,
-  },
-  {
-    headline: "Intuitive Interface and Self-Diagnostics",
-    text: "Features a clear, easy-to-use interface with real-time status indicators and built-in self-diagnostics for dependable operation across different seasons and environments.",
-    src: IntuitiveInterface,
-    alt: "Smart thermostat system with intuitive interface and self-diagnostics",
-    title: "Intuitive Interface and Self-Diagnostics in Smart Thermostat System",
-    width: 352,
-  },
-  {
-    headline: "Modular and Scalable Hardware Design",
-    text: "Built on a modular main unit and backplate structure for easy maintenance, future upgrades, and efficient power management to extend battery life in wireless versions.",
-    src: ModularScalable,
-    alt: "Smart thermostat system with modular and scalable thermostat hardware",
-    title: "Modular and Scalable Hardware Design in Smart Thermostat System",
-    width: 352,
-  },
-  {
-    headline: "Contractor-Friendly Support and Integration",
-    text: "Designed with professionals in mind, offering clear installation guides, troubleshooting tools, and training to simplify setup, maintenance, and system updates.",
-    src: ContractorSupport,
-    alt: "Energy-saving thermostat with contractor-friendly support, installation guides, and troubleshooting tools",
-    title: "Contractor-Friendly Support and Integration in Smart Thermostat System",
-    width: 352,
-  },
-];
+  const perks = [
+    {
+      headline: "Adaptive Control for Energy Efficiency",
+      text: "Regulates heating, cooling, and ventilation through smart scheduling, weather integration, and air quality feedback to enhance comfort and improve HVAC energy efficiency.",
+      src: EnergyEfficiency,
+      alt: "Smart thermostat system for home climate control with adaptive energy-saving thermostat features",
+      title:
+        "Adaptive Control for Energy Efficiency in Smart Thermostat System",
+      width: 352,
+    },
+    {
+      headline: "Precision Sensors and Reliable Connectivity",
+      text: "Equipped with multiple temperature and pressure sensors, adaptive algorithms, and optimized RF components to ensure accurate readings and stable communication.",
+      src: PrecisionSensors,
+      alt: "Smart thermostat system with thermostat sensors and wireless connectivity",
+      title:
+        "Precision Sensors and Reliable Connectivity in Smart Thermostat System",
+      width: 352,
+    },
+    {
+      headline: "Intuitive Interface and Self-Diagnostics",
+      text: "Features a clear, easy-to-use interface with real-time status indicators and built-in self-diagnostics for dependable operation across different seasons and environments.",
+      src: IntuitiveInterface,
+      alt: "Smart thermostat system with intuitive interface and self-diagnostics",
+      title:
+        "Intuitive Interface and Self-Diagnostics in Smart Thermostat System",
+      width: 352,
+    },
+    {
+      headline: "Modular and Scalable Hardware Design",
+      text: "Built on a modular main unit and backplate structure for easy maintenance, future upgrades, and efficient power management to extend battery life in wireless versions.",
+      src: ModularScalable,
+      alt: "Smart thermostat system with modular and scalable thermostat hardware",
+      title: "Modular and Scalable Hardware Design in Smart Thermostat System",
+      width: 352,
+    },
+    {
+      headline: "Contractor-Friendly Support and Integration",
+      text: "Designed with professionals in mind, offering clear installation guides, troubleshooting tools, and training to simplify setup, maintenance, and system updates.",
+      src: ContractorSupport,
+      alt: "Energy-saving thermostat with contractor-friendly support, installation guides, and troubleshooting tools",
+      title:
+        "Contractor-Friendly Support and Integration in Smart Thermostat System",
+      width: 352,
+    },
+  ];
 
   return (
     <div className="flex flex-col  mt-[91px] gap-10 m-auto max-sm:mt-0">
@@ -88,7 +91,7 @@ const perks = [
             title="Smart Thermostat System for Home Climate Control"
             className="w-[510px] max-sm:w-[300px]"
           />
-           <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
+          <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
             <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">
               Smart Thermostat System
             </h1>
@@ -105,17 +108,16 @@ const perks = [
             </p>
           </div>
         </div>
-          <p className="hidden max-sm:block p-4">
-             The Smart Thermostat System is a smart system that simplifies home
-              climate control with an intuitive interface and optimized energy
-              management. Featuring custom schedules, live weather updates, and
-              air quality monitoring, it gives users complete control over
-              heating, cooling, and ventilation.
-              <br /> <br /> Designed with homeowners in mind, the system
-              combines ease of use with accessible installation guides and
-              troubleshooting tools, ensuring smooth setup and efficient
-              operation.
-            </p>
+        <p className="hidden max-sm:block p-4">
+          The Smart Thermostat System is a smart system that simplifies home
+          climate control with an intuitive interface and optimized energy
+          management. Featuring custom schedules, live weather updates, and air
+          quality monitoring, it gives users complete control over heating,
+          cooling, and ventilation.
+          <br /> <br /> Designed with homeowners in mind, the system combines
+          ease of use with accessible installation guides and troubleshooting
+          tools, ensuring smooth setup and efficient operation.
+        </p>
       </div>
       <div className="bg-[#dfdfe4] h-[502px] mx-[171px] flex gap-[38px] rounded-[30px] p-8 max-sm:p-0 max-sm:flex-col max-sm:mx-0 max-sm:h-auto max-sm:rounded-xs">
         <Image
@@ -184,10 +186,10 @@ const perks = [
           />
         </div>
       </div>
-    <div className="m-auto w-[1098px] max-sm:w-auto">
+      <div className="m-auto w-[1098px] max-sm:w-auto">
         <p className="font-bold text-[32px] text-left">Perks</p>
       </div>
-        <div className="hidden sm:flex flex-wrap justify-center gap-5 m-auto max-sm:hidden">
+      <div className="hidden sm:flex flex-wrap justify-center gap-5 m-auto max-sm:hidden">
         <PerkCard
           headline="Adaptive Control for Energy Efficiency"
           text="Regulates heating, cooling, and ventilation through smart scheduling, weather integration, and air quality feedback to enhance comfort and improve HVAC energy efficiency."
@@ -253,13 +255,13 @@ const perks = [
           className="mySwiper"
           centeredSlides={true}
           pagination={{ clickable: true }}
-          navigation={false} 
+          navigation={false}
           modules={[Autoplay, Pagination]}
-           breakpoints={{
-    0: { slidesPerView: 1, centeredSlides: true },      
-    640: { slidesPerView: 2, centeredSlides: false },  
-    1024: { slidesPerView: 2.8, centeredSlides: true }, 
-  }}
+          breakpoints={{
+            0: { slidesPerView: 1, centeredSlides: true },
+            640: { slidesPerView: 2, centeredSlides: false },
+            1024: { slidesPerView: 2.8, centeredSlides: true },
+          }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
             updateSlideOpacities(swiper);
@@ -340,18 +342,18 @@ const perks = [
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="absolute left-1/3 cursor-pointer top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
-          max-sm: max-sm:top--[88%] max-sm:-translate-x-30
-          "
+                  max-sm: max-sm:top--[88%] max-sm:-translate-x-30
+                  "
         >
-          <img src="/Arrow.svg" className=" w-5 h-5" />
+          <Image src={Arrow} alt="" className=" w-5 h-5" />
         </button>
 
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="absolute right-1/3 top-1/2 transform  cursor-pointer -translate-y-1/2 w-10 h-10 bg-[#FFFFFF66] rounded-full flex items-center justify-center shadow z-50 hover:bg-gray-400 transition-all duration-75
-          max-sm: max-sm:top--[88%] max-sm:translate-x-30"
+                  max-sm: max-sm:top--[88%] max-sm:translate-x-30"
         >
-          <img src="/Arrow.svg" className="w-5 h-5 rotate-180" />
+          <Image src={Arrow} alt="" className="w-5 h-5 rotate-180" />
         </button>
       </div>
       <p className="font-bold text-4xl mx-auto">Final Result</p>

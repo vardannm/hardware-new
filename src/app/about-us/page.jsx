@@ -1,5 +1,5 @@
-import Arthur from "../../public/aboutus/arthur-movsesyan.png";
-import Gevorg from "../../public/aboutus/gevorg-martirosyan.png";
+import Arthur from "@/public/aboutus/arthur-movsesyan.png";
+import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import Image from "next/image";
 function Aboutus() {
   return (
