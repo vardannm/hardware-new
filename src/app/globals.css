@@ -54,8 +54,9 @@ body {
   object-position: center; 
 }
 
-@media screen and (max-width: 640px) {
-  .hero-background {
-    object-position:19% 0rem; 
-  }
-}
+
+    @theme {
+      --color-primary: #2FB66A;
+      --color-secondary: #F6F6F6;
+      --color-chocolate: #86563C; 
+    }

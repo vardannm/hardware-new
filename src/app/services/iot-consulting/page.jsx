@@ -157,7 +157,7 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
         </div>
         <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-full">
           <p className="font-bold text-3xl max-sm:text-start max-sm:text-2xl">Our Expertise</p>
-          <div className="px-[18px] py-3.5 flex flex-col bg-[#F6F6F6] rounded-[10px] gap-2.5 text-start">
+          <div className="px-[18px] py-3.5 flex flex-col bg-secondary rounded-[10px] gap-2.5 text-start">
             <p className="font-bold text-2xl max-sm:text-xl">Embedded System Integration</p>
             <div className="pl-5">
               <li>Feasibility studies and risk assessment</li>
@@ -181,37 +181,37 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
           </div>
           <div>
             <div className="flex flex-col items-start space-y-8 relative pl-6">
-              <div className="absolute left-[11px] top-2 h-[94%] w-px bg-[#2FB66A]"></div>
+              <div className="absolute left-[11px] top-2 h-[94%] w-px bg-primary"></div>
               <div className="relative flex items-center">
-                <div className="w-2 h-2 rounded-full bg-[#2FB66A] ring-4 ring-[#2FB66A]/30 absolute -left-[17px] top-1/2 -translate-y-1/2 "></div>
+                <div className="w-2 h-2 rounded-full bg-primary ring-4 ring-primary/30 absolute -left-[17px] top-1/2 -translate-y-1/2 "></div>
                 <p className="pl-[30px] font-bold">
                   Requirement and Technology Analysis
                 </p>
               </div>
               <div className="relative flex items-center">
-                <div className="w-2 h-2 rounded-full bg-[#2FB66A] ring-4 ring-[#2FB66A]/30 absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
+                <div className="w-2 h-2 rounded-full bg-primary ring-4 ring-primary/30 absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
                 <p className="pl-[30px] font-bold">
                   Feasibility and Risk Assessment
                 </p>
               </div>
               <div className="relative flex items-center">
-                <div className="w-2 h-2 rounded-full bg-[#2FB66A] ring-4 ring-[#2FB66A]/30  absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
+                <div className="w-2 h-2 rounded-full bg-primary ring-4 ring-primary/30  absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
                 <p className="pl-[30px] font-bold">
                   Strategy and Solution Planning
                 </p>
               </div>
               <div className="relative flex items-center">
-                <div className="w-2 h-2 rounded-full bg-[#2FB66A] ring-4 ring-[#2FB66A]/30  absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
+                <div className="w-2 h-2 rounded-full bg-primary ring-4 ring-primary/30  absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
                 <p className="pl-[30px] font-bold">
                   Technical Guidance and Recommendations
                 </p>
               </div>
               <div className="relative flex items-center">
-                <div className="w-2 h-2 rounded-full bg-[#2FB66A] ring-4 ring-[#2FB66A]/30  absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
+                <div className="w-2 h-2 rounded-full bg-primary ring-4 ring-primary/30  absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
                 <p className="pl-[30px] font-bold">Implementation Support</p>
               </div>
               <div className="relative flex items-center">
-                <div className="w-2 h-2 rounded-full bg-[#2FB66A] ring-4 ring-[#2FB66A]/30  absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
+                <div className="w-2 h-2 rounded-full bg-primary ring-4 ring-primary/30  absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
                 <p className="pl-[30px] font-bold">
                   Ongoing Advisory and Optimization
                 </p>
@@ -224,21 +224,21 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
             Why Choose HDH for Prototype Development?
           </p>
           <div className="grid grid-rows-13 grid-cols-5 gap-2 max-sm:hidden">
-            <div className="row-span-7 bg-[#F6F6F6] p-3 rounded-md"></div>
-            <div className="row-span-3 bg-[#F6F6F6] p-3 rounded-md"></div>
+            <div className="row-span-7 bg-secondary p-3 rounded-md"></div>
+            <div className="row-span-3 bg-secondary p-3 rounded-md"></div>
             <ServiceCard {...serviceCards[0]} className="row-span-4" />
-            <div className="row-span-3 bg-[#F6F6F6] p-3 rounded-md"></div>
-            <div className="row-span-7 bg-[#F6F6F6] p-3 rounded-md"></div>
+            <div className="row-span-3 bg-secondary p-3 rounded-md"></div>
+            <div className="row-span-7 bg-secondary p-3 rounded-md"></div>
             <ServiceCard {...serviceCards[1]} className="row-span-5" />
             <ServiceCard {...serviceCards[2]} className="row-span-6" />
             <ServiceCard {...serviceCards[3]} className="row-span-6" />
-            <div className="row-span-2 bg-[#F6F6F6] p-3 rounded-md"></div>
-            <div className="row-span-2 bg-[#F6F6F6] p-3 rounded-md"></div>
+            <div className="row-span-2 bg-secondary p-3 rounded-md"></div>
+            <div className="row-span-2 bg-secondary p-3 rounded-md"></div>
             <ServiceCard {...serviceCards[4]} className="row-span-5" />
-            <div className="row-span-4 bg-[#F6F6F6] p-3 rounded-md"></div>
+            <div className="row-span-4 bg-secondary p-3 rounded-md"></div>
             <ServiceCard {...serviceCards[5]} className="row-span-4" />
-            <div className="row-span-4 bg-[#F6F6F6] p-3 rounded-md"></div>
-            <div className="row-span-3 bg-[#F6F6F6] p-3 rounded-md"></div>
+            <div className="row-span-4 bg-secondary p-3 rounded-md"></div>
+            <div className="row-span-3 bg-secondary p-3 rounded-md"></div>
           </div>
          
         </div>
@@ -253,7 +253,7 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
         >
           {serviceCards.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#F6F6F6] p-5 rounded-xl shadow-sm flex flex-col justify-between h-[270px]">
+              <div className="bg-secondary p-5 rounded-xl shadow-sm flex flex-col justify-between h-[270px]">
                 <div className="flex gap-4 items-start mb-4">
                   <div className="flex-shrink-0">
                     {React.cloneElement(card.icon, { width: 48, height: 48 })}

@@ -18,7 +18,7 @@ export default function Navbar() {
         <li>
           <a
             href="/contact"
-            className="hover:text-gray-400 rounded-full text-white p-3 bg-[#2FB66A] transition-colors"
+            className="hover:text-gray-400 rounded-full text-white p-3 bg-primary transition-colors"
           >
             Contact Us
           </a>
