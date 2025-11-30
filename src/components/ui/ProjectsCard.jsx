@@ -7,10 +7,11 @@ export default function ProjectsCard({
   title,
   description,
   buttonText = "Learn more",
-  href
+  href,
+  textHeight
 }) {
   return (
-<div className="bg-white shadow-md rounded-lg overflow-hidden max-w-sm mx-auto flex flex-col">
+<div className="bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col ">
   <Image
     src={image}
     alt={alt}
@@ -19,7 +20,7 @@ export default function ProjectsCard({
     unoptimized
   />
 
-  <div className="p-4 flex flex-col h-full">
+  <div className="p-4 flex flex-col h-full max-sm:h-[360px]">
     <div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>

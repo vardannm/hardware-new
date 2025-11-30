@@ -1,142 +1,34 @@
-import React from "react";
-import { IoStorefrontOutline } from "react-icons/io5";
-import { IoSettingsOutline } from "react-icons/io5";
-import Incognito from "@/public/projects/incognito.svg";
-import { IoMedkitOutline } from "react-icons/io5";
-import ProjectsCard from "../../components/ui/ProjectsCard";
-import Zlight from "@/public/projects/smart-bedroom-lighting-hardware.png";
-import Thermostat from "@/public/projects/smart-thermostat-hardware-design-project.png";
-import Moon from "@/public/projects/smart-home-hardware-design-project.png";
-import HighPrecision from "@/public/projects/high-precision-autonomous-navigation.png";
-import HighSensitive from "@/public/projects/high-sensitive-vibration-tracking.png";
-import EncryptedCommunications from "@/public/projects/encrypted-communications-hardware-design-project.png";
-import SecureUsb from "@/public/projects/secure-usb-flash-drive-hardware-design-project.png";
-import PoweredExoskeleton from "@/public/projects/powered-exoskeleton-hardware-design-project.png";
+'use client';
 import Image from "next/image";
-function Projects() {
-  const retail = [
-    {
-      image: Zlight,
-      Imagetitle: "Smart Bedroom Lighting",
-      alt: "Smart bedroom lighting hardware design project with wireless charging and environmental sensing",
-      title: "zLight Smart Bedroom Lighting System",
-      description:
-        "The zLight is a compact, all-in-one device that brings together wireless charging, smart lighting, and environmental sensing. It contributes to a more restful and healthy bedtime routine by automatically adjusting light and temperature conditions to promote relaxation and better sleep quality.",
-      buttonText: "Learn more",
-      href: "/product/smart-bedroom-lighting-system",
-    },
-    {
-      image: Thermostat,
-      Imagetitle: "Smart Thermostat Hardware Design Project",
-      alt: "Smart thermostat hardware design project for climate control with scheduling and air quality monitoring",
-      title: "Smart Thermostat System",
-      description:
-        "The Smart Thermostat System makes home climate control effortless with an intuitive, user-friendly design.With features like custom schedules, live weather updates, and air quality monitoring, it gives you full control over heating, cooling, and ventilation, without the hassle.",
-      buttonText: "Learn more",
-      href: "/product/smart-thermostat-system",
-    },
-    {
-      image: Moon,
-      Imagetitle: "Smart Home Hardware Design Project",
-      alt: "Smart home hardware design projects with integrated system prototype development",
-      title: "Moon by 1-Ring: Transforming Smart Home Technology",
-      description:
-        "The project aimed to be a big step forward in smart home technology, and it progressed to a working prototype phase. Even though it was paused at that stage due to technical constraints, it gave us a lot of valuable insights into system integration that we still carry into our projects today.",
-      buttonText: "Learn more",
-      href: "/product/smart-home-hub",
-    },
-  ];
-  const industrial = [
-    {
-      image: HighSensitive,
-      Imagetitle: "High Sensitive Vibration Tracking",
-      alt: "High sensitive vibration tracking hardware design projects for monitoring high power motors with predictive analytics",
-      title: "High-Sensitive Vibration Tracking System for High-Power Motors",
-      description:
-        "A high-sensitive vibration tracking system designed for precision monitoring of high-power motors. Combining robust hardware with AI-driven analytics, the system detects potential issues early, enables predictive maintenance, identifies anomalies, and optimizes motor performance. Built for demanding industrial environments, it reduces downtime, extends equipment lifespan, and provides real-time, actionable insights for smarter operational decisions.",
-      buttonText: "Learn more",
-      onButtonClick: "ss",
-    },
-    {
-      image: HighPrecision,
-      Imagetitle: "High Precision Autonomous Navigation",
-      alt: "High precision autonomous navigation hardware design projects for emergency responders with real time tracking",
-      title: "High-Precision Autonomous Navigation Systems for U.S.",
-      description:
-        "The high-precision autonomous navigation system is designed to help U.S. emergency responders, especially firefighters, navigate safely and efficiently through the toughest conditions. By combining advanced location tracking, real-time data, and rugged hardware, the system gives teams the guidance they need when every second counts. It can pinpoint the exact location of individual firefighters with an accuracy of up to 5 centimeters, providing unmatched situational awareness and safety in critical moments.",
-      buttonText: "Learn more",
-      onButtonClick: "ss",
-    },
-  ];
-  const privateHardware = [
-    {
-      image: EncryptedCommunications,
-      Imagetitle: "Encrypted Communications Hardware Design Project",
-      alt: "Encrypted communications hardware design projects for secure autonomous wireless connectivity",
-      title: "Autonomous System of Encrypted Communications",
-      description:
-        "The Highly Secure Wireless Autonomous Communication System (HSWACS) sets a new benchmark in secure, autonomous connectivity. Designed for demanding environments, it delivers reliable communication, advanced data protection, and intelligent control, all within a modular, future-ready framework. Built to perform when stability and security matter most, HSWACS represents the next step in resilient communication technology.",
-      buttonText: "Learn more",
-      onButtonClick: "ss",
-    },
-    {
-      image: SecureUsb,
-      Imagetitle: "Secure USB Flash Drive Hardware Design Project",
-      alt: "Secure USB flash drive hardware design projects with advanced fingerprint recognition for sensitive data",
-      title: "Highly Secure USB Flash Drive with Fingerprint Technology",
-      description:
-        "The high-precision autonomous navigation system is designed to help U.S. emergency responders, especially firefighters, navigate safely and efficiently through the toughest conditions. By combining advanced location tracking, real-time data, and rugged hardware, the system gives teams the guidance they need when every second counts. It can pinpoint the exact",
-      buttonText: "Learn more",
-      onButtonClick: "ss",
-    },
-  ];
-  const medical = [
-    {
-      image: PoweredExoskeleton,
-      Imagetitle: "Encrypted Communications Hardware Design Project",
-      alt: "Powered exoskeleton hardware design projects for movement disabilities and nervous system rehabilitation",
-      title: "Powered Exoskeleton for Mobility and Neural Recovery",
-      description:
-        "The advancement of rehabilitation technology presents a new frontier in the treatment and support of individuals with movement disabilities and nervous system impairments. This project is a cutting-edge rehabilitation device designed to help individuals regain mobility and independence. Combining advanced sensors, responsive actuators, and an intuitive control interface, it adapts to each user's movements while supporting personalized therapy programs.",
-      buttonText: "Learn more",
-      onButtonClick: "ss",
-    },
-  ];
+import { IoStorefrontOutline, IoSettingsOutline, IoMedkitOutline } from "react-icons/io5";
+import ProjectsCard from "../../components/ui/ProjectsCard";
+import { projectsData , pageContent } from "./data/page";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+export default function Projects() {
+  const { categories } = projectsData;
+const { title, subtitle, categoriesTitle } = pageContent;
   return (
-    <main className="mt-[93px] flex flex-col gap-6 ">
+    <main className="mt-[93px] flex flex-col gap-6">
       <div className="flex flex-col gap-6 mx-[12.5%]">
-        <p className="text-3xl font-bold w-[38%]">
-          Our Hardware Design Projects
-        </p>
-        <p>
-          At Hardware Design House, we specialize in delivering end-to-end
-          hardware design projects, from concept and electronics engineering to
-          embedded firmware, prototyping, and production support. Our team has
-          built solutions across industrial, medical, consumer electronics, and
-          secure communication systems, helping businesses turn innovative ideas
-          into reliable, market-ready devices.
-        </p>
-        <p className="text-2xl font-bold">Categories and Projects</p>
+        <p className="text-3xl font-bold w-[38%]">{title}</p>
+        <p>{subtitle}</p>
+        <p className="text-2xl font-bold">{categoriesTitle}</p>
       </div>
-      <div className="bg-secondary px-[12.5%] py-10">
-        <div className="my-[60px] flex flex-col gap-6">
+      <div className="bg-secondary px-[12.5%] py-10 max-sm:px-0">
+        <div className="my-[60px] flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
           <div className="flex gap-6 items-center">
             <IoStorefrontOutline className="text-primary text-3xl" />
-            <p className="text-xl font-bold">Retail Hardware Design Projects</p>
+            <p className="text-xl font-bold">{categories.retail.title}</p>
           </div>
-          <p>
-            Our retail projects deliver smart, practical solutions that blend
-            innovative technology, precision sensing, and thoughtful design. We
-            create connected devices that enhance comfort, well-being, and
-            safety, while optimizing energy use and everyday convenience. Each
-            solution is built to be reliable, intuitive, and seamlessly
-            integrated into daily life, making homes smarter and more efficient.
-          </p>
+          <p>{categories.retail.description}</p>
         </div>
-        <div className="flex">
-          {retail.map((project, projectIndex) => (
+        <div className="flex flex-wrap gap-8 justify-start max-sm:hidden">
+          {categories.retail.projects.map((project, i) => (
             <ProjectsCard
-              key={projectIndex}
+              key={i}
               image={project.image}
               Imagetitle={project.Imagetitle}
               alt={project.alt}
@@ -147,103 +39,169 @@ function Projects() {
             />
           ))}
         </div>
+        <div className="sm:hidden pl-5 h-full">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {categories.retail.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      <div className="bg-secondary px-[12.5%] py-10">
-        <div className="my-[60px] flex flex-col gap-6">
+      </div>
+
+     <div className="bg-secondary px-[12.5%] py-10 max-sm:px-0">
+        <div className="my-[60px] flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
           <div className="flex gap-6 items-center">
             <IoSettingsOutline className="text-primary text-3xl" />
-            <p className="text-xl font-bold">
-              Industrial Embedded Hardware Projects
-            </p>
+            <p className="text-xl font-bold">{categories.industrial.title}</p>
           </div>
-          <p>
-            Our industrial projects focus on advancing hardware design with
-            intelligent, data-driven solutions. We develop reliable,
-            high-performance systems built for demanding environments, improving
-            precision, safety, and operational efficiency. From vibration
-            tracking in high-power motors to autonomous navigation for emergency
-            responders, our embedded hardware projects combine durable
-            engineering with real-time data analysis to support smarter, more
-            dependable operations.
-          </p>
+          <p>{categories.industrial.description}</p>
         </div>
-        <div className="flex">
-          {industrial.map((project, projectIndex) => (
+        <div className="flex flex-wrap gap-8 justify-start max-sm:hidden">
+          {categories.industrial.projects.map((project, i) => (
             <ProjectsCard
-              key={projectIndex}
+              key={i}
               image={project.image}
               Imagetitle={project.Imagetitle}
               alt={project.alt}
               title={project.title}
               description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
             />
           ))}
         </div>
+        <div className="sm:hidden pl-5">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {categories.industrial.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      <div className="bg-secondary px-[12.5%] py-10">
-        <div className="my-[60px] flex flex-col gap-6">
+      </div>
+      <div className="bg-secondary px-[12.5%] py-10 max-sm:px-0">
+        <div className="my-[60px] flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
           <div className="flex gap-6 items-center">
-            <Image className="text-primary text-3xl" src={Incognito} />
-            <p className="text-xl font-bold">
-              Private Hardware Design Projects
-            </p>
+            <Image className="w-8 h-8" src={categories.private.icon} alt="Private" />
+            <p className="text-xl font-bold">{categories.private.title}</p>
           </div>
-          <p>
-            Our medical projects focus on developing advanced hardware that
-            supports rehabilitation and recovery. By combining precise
-            engineering with medical expertise, we create reliable technologies
-            that enhance mobility, strengthen therapy outcomes, and improve
-            quality of life. We design each solution for safety, effectiveness,
-            and real-world impact, ranging from powered exoskeletons to
-            intelligent rehabilitation systems.
-          </p>
+          <p>{categories.private.description}</p>
         </div>
-        <div className="flex">
-          {privateHardware.map((project, projectIndex) => (
+        <div className="flex flex-wrap gap-8 justify-start max-sm:hidden">
+          {categories.private.projects.map((project, i) => (
             <ProjectsCard
-              key={projectIndex}
+              key={i}
               image={project.image}
               Imagetitle={project.Imagetitle}
               alt={project.alt}
               title={project.title}
               description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
             />
           ))}
         </div>
+        <div className="sm:hidden pl-5">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {categories.private.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      <div className="bg-secondary px-[12.5%] py-10">
-        <div className="my-[60px] flex flex-col gap-6">
+      </div>
+      <div className="bg-secondary px-[12.5%] py-10 max-sm:px-0">
+        <div className="my-[60px] flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
           <div className="flex gap-6 items-center">
             <IoMedkitOutline className="text-primary text-3xl" />
-            <p className="text-xl font-bold">
-              Medical Hardware Development Projects
-            </p>
+            <p className="text-xl font-bold">{categories.medical.title}</p>
           </div>
-          <p>
-            Our medical projects focus on developing advanced hardware that
-            supports rehabilitation and recovery. By combining precise
-            engineering with medical expertise, we create reliable technologies
-            that enhance mobility, strengthen therapy outcomes, and improve
-            quality of life. We design each solution for safety, effectiveness,
-            and real-world impact, ranging from powered exoskeletons to
-            intelligent rehabilitation systems.
-          </p>
+          <p>{categories.medical.description}</p>
         </div>
-        <div className="flex">
-          {medical.map((project, projectIndex) => (
+        <div className="flex flex-wrap gap-8 justify-start max-sm:hidden">
+          {categories.medical.projects.map((project, i) => (
             <ProjectsCard
-              key={projectIndex}
+              key={i}
               image={project.image}
               Imagetitle={project.Imagetitle}
               alt={project.alt}
               title={project.title}
               description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
             />
           ))}
         </div>
+        <div className="sm:hidden pl-5">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {categories.medical.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
       </div>
     </main>
   );
 }
-
-export default Projects;
