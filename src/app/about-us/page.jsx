@@ -3,8 +3,8 @@ import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import Image from "next/image";
 function Aboutus() {
   return (
-    <div className="w-[76%] mx-auto text-start mt-[93px] gap-[60px] flex flex-col mb-[60px] max-sm:mt-6">
-      <div className="flex flex-col gap-[60px] max-sm:gap-0">
+    <div className="w-[76%] mx-auto text-start mt-[93px] gap-60 flex flex-col mb-60 max-sm:mt-6">
+      <div className="flex flex-col gap-60 max-sm:gap-0">
       <p className="text-4xl font-bold text-black max-sm:text-2xl">
         About Hardware Design House
       </p>

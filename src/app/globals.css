@@ -59,4 +59,8 @@ body {
       --color-primary: #2FB66A;
       --color-secondary: #F6F6F6;
       --color-chocolate: #86563C; 
+
+      --spacing-60: 60px;
+      --spacing-90: 90%;
+      --spacing-125: 12.5%;
     }

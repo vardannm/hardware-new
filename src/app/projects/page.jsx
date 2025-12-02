@@ -12,13 +12,13 @@ export default function Projects() {
 const { title, subtitle, categoriesTitle } = pageContent;
   return (
     <main className="mt-[93px] flex flex-col gap-6">
-      <div className="flex flex-col gap-6 mx-[12.5%]">
+      <div className="flex flex-col gap-6 mx-12.5">
         <p className="text-3xl font-bold w-[38%]">{title}</p>
         <p>{subtitle}</p>
         <p className="text-2xl font-bold">{categoriesTitle}</p>
       </div>
-      <div className="bg-secondary px-[12.5%] py-10 max-sm:px-0">
-        <div className="my-[60px] flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
+      <div className="bg-secondary px-12.5 py-10 max-sm:px-0">
+        <div className="my-60 flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
           <div className="flex gap-6 items-center">
             <IoStorefrontOutline className="text-primary text-3xl" />
             <p className="text-xl font-bold">{categories.retail.title}</p>
@@ -64,8 +64,8 @@ const { title, subtitle, categoriesTitle } = pageContent;
       </div>
       </div>
 
-     <div className="bg-secondary px-[12.5%] py-10 max-sm:px-0">
-        <div className="my-[60px] flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
+     <div className="bg-secondary px-12.5 py-10 max-sm:px-0">
+        <div className="my-60 flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
           <div className="flex gap-6 items-center">
             <IoSettingsOutline className="text-primary text-3xl" />
             <p className="text-xl font-bold">{categories.industrial.title}</p>
@@ -110,8 +110,8 @@ const { title, subtitle, categoriesTitle } = pageContent;
         </Swiper>
       </div>
       </div>
-      <div className="bg-secondary px-[12.5%] py-10 max-sm:px-0">
-        <div className="my-[60px] flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
+      <div className="bg-secondary px-12.5 py-10 max-sm:px-0">
+        <div className="my-60 flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
           <div className="flex gap-6 items-center">
             <Image className="w-8 h-8" src={categories.private.icon} alt="Private" />
             <p className="text-xl font-bold">{categories.private.title}</p>
@@ -156,8 +156,8 @@ const { title, subtitle, categoriesTitle } = pageContent;
         </Swiper>
       </div>
       </div>
-      <div className="bg-secondary px-[12.5%] py-10 max-sm:px-0">
-        <div className="my-[60px] flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
+      <div className="bg-secondary px-12.5 py-10 max-sm:px-0">
+        <div className="my-60 flex flex-col gap-6 max-sm:w-[90%] max-sm:mx-auto">
           <div className="flex gap-6 items-center">
             <IoMedkitOutline className="text-primary text-3xl" />
             <p className="text-xl font-bold">{categories.medical.title}</p>

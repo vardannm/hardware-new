@@ -2,7 +2,7 @@ import React from "react";
 
 function Contactus() {
   return (
-    <div className="mx-auto  text-center pt-16 flex flex-col gap-6 w-[50%] pb-[60px] max-sm:w-[95%] max-sm:text-start max-sm:gap-2">
+    <div className="mx-auto  text-center pt-16 flex flex-col gap-6 w-[50%] pb-60 max-sm:w-[95%] max-sm:text-start max-sm:gap-2">
       <p className="font-bold text-4xl max-sm:text-xl">Contact Hardware Design House</p>
       <p>
         Get in touch with our team of experienced hardware design experts to

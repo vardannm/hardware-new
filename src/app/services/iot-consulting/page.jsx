@@ -137,7 +137,7 @@ I’ve been working with them for many years, and I highly recommend HDH to anyo
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-[120px] mt-[60px] mb-16 mx-auto w-[90%] max-sm:gap-[60px]">
+      <div className="flex flex-col gap-[120px] mt-60 mb-16 mx-auto w-[90%] max-sm:gap-60">
         <div className="sm:hidden">
           <button className="self-start text-2xl">{"< Back"}</button>
           <div className="flex flex-col gap-[7px]">
