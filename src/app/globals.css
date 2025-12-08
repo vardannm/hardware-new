@@ -106,7 +106,17 @@ body {
     object-position: calc(50% + 150px) center; 
   }
 }
+.service-background {
+  object-fit: cover;
+  object-position: center;
+}
 
+
+@media (max-width: 640px) {
+  .service-background {
+    object-position: 20% 10px;
+  }
+}
 
     @theme {
       --color-primary: #2FB66A;

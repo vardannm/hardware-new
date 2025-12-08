@@ -8,17 +8,17 @@ import ProjectsCard from "../../components/ui/ProjectsCard";
 import Link from "next/link";
 function Services() {
   return (
-    <div className="flex flex-col mx-[12%] my-[65px] gap-6">
+    <div className="flex flex-col mx-[12%] my-[65px] gap-6 max-sm:mx-0 max-sm:my-8">
         {ServiceHeading.map((heading)=>(
-      <div key={heading.title} className="flex flex-col gap-3">
-        <p className="text-5xl font-bold">
+      <div key={heading.title} className="flex flex-col gap-3 max-sm:mx-[3%]">
+        <p className="text-5xl font-bold max-sm:text-2xl">
           {heading.title}
         </p>
-        <p className="w-1/2 font-normal text-xl">
+        <p className="w-1/2 font-normal text-xl max-sm:w-[95%]">
          {heading.description}
         </p>
       </div>))}
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-26 ">
         {ServiceCards.map((service,Index)=>(
             <ServiceCard key={Index}
             src={service.src}
@@ -27,6 +27,7 @@ function Services() {
             textTitle={service.textTitle}
              description={service.description}
              href={service.href}
+             mobileBg={service.mobileBg}
             />
         ))}
         </div>
