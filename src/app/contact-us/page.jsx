@@ -20,11 +20,11 @@ function Contactus() {
         41 777 704
       </p>
       <p className="font-bold text-3xl">Drop Us a Message</p>
-      <div className="flex flex-col   gap-3 pt-[15px] mx-auto">
-        <input placeholder="Name Surname" className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 " />
-        <input placeholder="Email Address" className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 " />
-        <textarea placeholder="Message" className="w-[334px]  rounded-md bg-[#F3F3F3] px-4 " rows="4" />
-                         <button className="bg-[#31B56A] rounded-md px-4 py-3 mx-auto text-white w-[43%]">Send message</button>
+      <div className="flex flex-col   gap-3 pt-[15px] mx-auto max-sm:mx-0 ">
+        <input placeholder="Name Surname" className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full " />
+        <input placeholder="Email Address" className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full " />
+        <textarea placeholder="Message" className="w-[334px]  rounded-md bg-[#F3F3F3] px-4 max-sm:w-full " rows="4" />
+        <button className="bg-[#31B56A] rounded-md px-4  py-3 mx-auto text-white w-[43%]">Send message</button>
 
       </div>
     </div>

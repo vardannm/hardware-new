@@ -1,14 +1,66 @@
+
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  src: url("../public/fonts/Gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  src: url("../public/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -19,12 +71,7 @@
   --foreground: #000000;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -34,9 +81,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
 
@@ -51,7 +97,14 @@ body {
 }
 .hero-background {
   object-fit: cover;
-  object-position: center; 
+  object-position: center;
+}
+
+
+@media (max-width: 640px) {
+  .hero-background {
+    object-position: calc(50% + 150px) center; 
+  }
 }
 
 

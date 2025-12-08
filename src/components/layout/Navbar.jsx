@@ -4,17 +4,17 @@ import Hardware from "@/public/hardware.svg";
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-8 py-4 bg-white sticky top-0 z-50 border-b border-[#DCDBE1] shadow-sm">
-      <div className="flex items-center">
+      <div className="flex items-center order-1 max-sm:order-3">
         <Menu className="bg-[rgba(194,194,194,0.4)] w-8 h-8 cursor-pointer p-1 border border-[#C2C2C2] rounded" />
       </div>
 
-      <div className="absolute left-1/2 transform -translate-x-1/2">
-        <a href="/">
+
+        <a href="/" className="order-2 max-sm:order-1">
           <Image src={Hardware} alt="Hardware Icon" className="w-[49px]" />
         </a>
-      </div>
 
-      <ul className="flex gap-6">
+
+      <ul className="flex gap-6 order-3 max-sm:hidden">
         <li>
           <a
             href="/contact"

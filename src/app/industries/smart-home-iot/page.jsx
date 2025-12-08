@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import SmartHomeAutomationSystems from "@/public/industries/smart-home-automation-systems.png";
 import SmartHomeAutomation from "@/public/industries/smart-home-automation.png";
@@ -7,6 +8,10 @@ import IndustrialAutomation from "@/public/industries/industrial-automation.png"
 import IndustryCard from "../../../components/ui/IndustryCard";
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDownIcon } from '@radix-ui/react-icons'
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 function SmartHome() {
   const otherIndustries = [
     {
@@ -132,18 +137,18 @@ function SmartHome() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-[40%] mx-auto text-center  justify-center items-center">
-        <p className="font bold text-3xl">
+      <div className="flex flex-col w-[40%] mx-auto text-center  justify-center items-center max-sm:w-90 max-sm:text-start">
+        <p className="font-bold text-3xl max-sm:text-xl">
           Benefits of Our Smart Home Automation and IoT Devices services
         </p>
-        <p className="leading-12 w-[80%]">
-          Custom home automation systems tailored to your vision High
+        <p className="leading-12 w-[80%] max-sm:w-90 max-sm:leading-normal">
+          Custom home automation systems tailored to your vision <br className="sm:hidden"/> High
           reliability and security for smart home IoT devices Scalable
           automation solutions for future expansions Full-cycle support: smart
           home product design, prototyping, testing, and deployment
         </p>
       </div>
-      <div className="mx-auto flex flex-col gap-6">
+      <div className="mx-auto flex flex-col gap-6 max-sm:hidden">
         <p className="text-3xl font-bold mx-auto">Other Industries We Serve</p>
         <div className="flex gap-6">
           {otherIndustries.map((industry, i) => (
