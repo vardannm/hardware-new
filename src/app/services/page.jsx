@@ -1,4 +1,5 @@
 "use client";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -31,9 +32,9 @@ function Services() {
             />
         ))}
         </div>
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-7 max-sm:mt-10">
 <div className="flex justify-between">
-<p className="font-bold text-4xl">{ProjectSection.title}</p>
+<p className="font-bold text-4xl max-sm:text-xl max-sm:w-2/3">{ProjectSection.title}</p>
 <div className="flex  w-[116px] mb-4">
             <Link
               href={ProjectSection.href}
@@ -57,6 +58,29 @@ function Services() {
                       />
                     ))}
                   </div>
+                   <div className="sm:hidden pl-5">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {ProjectSection.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
         </div>
     </div>
   );

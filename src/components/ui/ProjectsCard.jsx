@@ -20,20 +20,20 @@ export default function ProjectsCard({
     unoptimized
   />
 
-  <div className="p-4 flex flex-col h-full max-sm:h-[360px]">
+  <div className="p-4 flex flex-col h-[320px] max-sm:h-[380px] relative">
     <div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
     </div>
   {href && (
-      <div className="mt-auto flex justify-center">
-       <Link
-              href={href}
-             className="px-4 py-2 bg-transparent text-primary border border-primary rounded hover:bg-primary hover:text-white transition"
-            >
-              {buttonText}
-            </Link>
-      </div>)}
+      <div className="absolute bottom-3 -translate-y-1/3 left-1/2 -translate-x-1/2 ">
+  <Link
+    href={href}
+    className="px-4 py-2 bg-transparent text-primary border border-primary rounded hover:bg-primary hover:text-white transition"
+  >
+    {buttonText}
+  </Link>
+</div>)}
     
   </div>
 </div>
