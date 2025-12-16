@@ -79,8 +79,6 @@ export default function ServicePage({ params }) {
             </div>
           </div>
         </div>
-
-        {/* Process */}
         <div className="bg-[#FAFAFA] flex justify-center gap-28 py-8 items-center max-sm:flex-col">
           <div className="flex flex-col gap-6 max-w-[27%] max-sm:max-w-[87%]">
             <p className="font-bold text-3xl">{process.title}</p>

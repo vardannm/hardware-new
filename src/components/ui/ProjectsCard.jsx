@@ -8,7 +8,9 @@ export default function ProjectsCard({
   description,
   buttonText = "Learn more",
   href,
-  textHeight
+  textHeight,
+  height ="h-[320px]",
+  maxSmHeight = "max-sm:h-[380px]",
 }) {
   return (
 <div className="bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col ">
@@ -20,7 +22,7 @@ export default function ProjectsCard({
     unoptimized
   />
 
-  <div className="p-4 flex flex-col h-[320px] max-sm:h-[380px] relative">
+  <div className={`p-4 flex flex-col ${height} ${maxSmHeight} relative`}>
     <div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>

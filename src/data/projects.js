@@ -107,7 +107,7 @@ export const projectsData = {
           alt: "Secure USB flash drive hardware design projects with advanced fingerprint recognition for sensitive data",
           title: "Highly Secure USB Flash Drive with Fingerprint Technology",
           description:
-            "A compact USB flash drive with built-in fingerprint authentication and military-grade encryption. Perfect for sensitive data, it ensures only authorized users can access files while automatically encrypting everything on the fly.",
+            "The primary objective of this project is to engineer a highly secure USB flash drive that incorporates advanced fingerprint recognition technology, aimed specifically at meeting the stringent security requirements of special services. This development project focuses on creating a hardware solution that ensures the utmost protection and privacy for sensitive data.",
           buttonText: "Learn more",
           href: "/product/secure-usb",
         },

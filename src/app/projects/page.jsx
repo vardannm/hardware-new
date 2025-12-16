@@ -13,7 +13,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
   return (
     <main className="mt-[93px] flex flex-col gap-6 max-sm:mt-8">
       <div className="flex flex-col gap-6 mx-12.5 max-sm:mx-4">
-        <p className="text-3xl font-bold w-[38%] max-sm:w-auto">{title}</p>
+        <p className="text-[56px] font-bold w-[48%] max-sm:w-auto max-sm:text-[32px]">{title}</p>
         <p>{subtitle}</p>
         <p className="text-2xl font-bold">{categoriesTitle}</p>
       </div>
@@ -57,6 +57,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
               description={project.description}
               buttonText={project.buttonText}
               href={project.href}
+              maxSmHeight="max-sm:h-[410px]"
             />
             </SwiperSlide>
           ))}
@@ -82,7 +83,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
               title={project.title}
               description={project.description}
               buttonText={project.buttonText}
-              href={project.href}
+              height="h-[430px]"
             />
           ))}
         </div>
@@ -103,7 +104,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
               title={project.title}
               description={project.description}
               buttonText={project.buttonText}
-              href={project.href}
+               maxSmHeight="max-sm:h-[560px]"
             />
             </SwiperSlide>
           ))}
@@ -128,7 +129,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
               title={project.title}
               description={project.description}
               buttonText={project.buttonText}
-              href={project.href}
+              height="h-[340px]"
             />
           ))}
         </div>
@@ -149,7 +150,8 @@ const { title, subtitle, categoriesTitle } = pageContent;
               title={project.title}
               description={project.description}
               buttonText={project.buttonText}
-              href={project.href}
+              height="h-[380px]"
+              maxSmHeight="max-sm:h-[540px]"
             />
             </SwiperSlide>
           ))}
@@ -174,7 +176,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
               title={project.title}
               description={project.description}
               buttonText={project.buttonText}
-              href={project.href}
+              height="h-[380px]"
             />
           ))}
         </div>
@@ -195,7 +197,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
               title={project.title}
               description={project.description}
               buttonText={project.buttonText}
-              href={project.href}
+              maxSmHeight="max-sm:h-[540px]"
             />
             </SwiperSlide>
           ))}
