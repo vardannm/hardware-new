@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import BackButton from "../../../components/ui/BackButton";
 import IndustryCard from "../../../components/ui/IndustryCard";
