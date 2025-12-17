@@ -1,9 +1,71 @@
 import Arthur from "@/public/aboutus/arthur-movsesyan.png";
 import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Leading Hardware Design Company | HDH",
+  description:
+    "Learn about Hardware Design House, a leading hardware design company with over 10 years of experience in custom hardware, electronic design, and full-cycle product development for industries ranging from defense to consumer electronics.",
+};
+
+function _StructuredData() {
+  return (
+    <>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Hardware Design House",
+          "alternateName": "HDH",
+          "url": "https://www.hardwarehouses.com/",
+          "description": "Hardware Design House (HDH) is a hardware design company delivering custom hardware development, prototyping, testing, and full-cycle engineering solutions for IoT, defense, healthcare, industrial automation, and more.",
+          "email": "info@hardwarehouses.com",
+          "telephone": [
+            "+37455342262",
+            "+37441777704"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3 Hakob Hakobyan Street",
+            "addressLocality": "Yerevan",
+            "postalCode": "0033",
+            "addressCountry": "AM"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/hardware-design-house-hdh/",
+            "https://www.facebook.com/hardwaredesignhouse/"
+          ]
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://www.hardwarehouses.com/",
+          "name": "Hardware Design House (HDH)",
+          "description": "HDH is a hardware design company delivering custom product development, prototyping, testing, and full-cycle solutions for IoT, defense, healthcare, and more.",
+          "inLanguage": "en"
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "url": "https://www.hardwarehouses.com/about-us",
+          "name": "Leading Hardware Design Company | HDH",
+          "headline": "About Hardware Design House",
+          "description": "Learn about Hardware Design House, a leading hardware design company with over 10 years of experience in custom hardware, electronic design, and full-cycle product development for industries ranging from defense to consumer electronics.",
+          "inLanguage": "en"
+        })}
+      </script>
+    </>
+  );
+}
+
 function Aboutus() {
   return (
     <div className="w-[76%] mx-auto text-start mt-[93px] gap-60 flex flex-col mb-60 max-sm:mt-6">
+      <_StructuredData />
       <div className="flex flex-col gap-60 max-sm:gap-0">
       <p className="text-4xl font-bold text-black max-sm:text-2xl">
         About Hardware Design House

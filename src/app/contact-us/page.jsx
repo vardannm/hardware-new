@@ -1,15 +1,84 @@
-import React from "react";
+export const metadata = {
+  title: "Contact Hardware Design Company | HDH",
+  description:
+    "Contact Hardware Design House for hardware design services and consultations. Reach out to our experts to discuss your project ideas, technical challenges, and hardware needs, or request a detailed hardware design quote.",
+};
 
-function Contactus() {
+function _StructuredData() {
   return (
-    <div className="mx-auto  text-center pt-16 flex flex-col gap-6 w-[50%] pb-60 max-sm:w-[95%] max-sm:text-start max-sm:gap-2">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Hardware Design House",
+            "alternateName": "HDH",
+            "url": "https://www.hardwarehouses.com/",
+            "description": "Hardware Design House (HDH) is a hardware design company delivering custom hardware development, prototyping, testing, and full-cycle engineering solutions for IoT, defense, healthcare, industrial automation, and more.",
+            "email": "info@hardwarehouses.com",
+            "telephone": [
+              "+37455342262",
+              "+37441777704"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "3 Hakob Hakobyan Street",
+              "addressLocality": "Yerevan",
+              "postalCode": "0033",
+              "addressCountry": "AM"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/company/hardware-design-house-hdh/",
+              "https://www.facebook.com/hardwaredesignhouse/"
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.hardwarehouses.com/",
+            "name": "Hardware Design House (HDH)",
+            "description": "HDH is a hardware design company delivering custom product development, prototyping, testing, and full-cycle solutions for IoT, defense, healthcare, and more.",
+            "inLanguage": "en"
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "url": "https://www.hardwarehouses.com/contact-us",
+            "name": "Contact Hardware Design Company | HDH",
+            "headline": "Contact Hardware Design House",
+            "description": "Contact Hardware Design House for hardware design services and consultations. Reach out to our experts to discuss your project ideas, technical challenges, and hardware needs, or request a detailed hardware design quote.",
+            "inLanguage": "en"
+          })
+        }}
+      />
+    </>
+  );
+}
+
+export default function Contactus() {
+  return (
+    <div className="mx-auto text-center pt-16 flex flex-col gap-6 w-[50%] pb-60 max-sm:w-[95%] max-sm:text-start max-sm:gap-2">
+      <_StructuredData />
+
       <p className="font-bold text-4xl max-sm:text-xl">Contact Hardware Design House</p>
       <p>
         Get in touch with our team of experienced hardware design experts to
         discover effective, innovative solutions focused on your project needs.
         Whether you are developing a new concept or enhancing an existing
         product, our engineers are here to guide you at every stage of
-        development.You can request a detailed hardware design quote or schedule
+        development. You can request a detailed hardware design quote or schedule
         a personalized consultation with our specialists to discuss your ideas,
         technical challenges, and potential solutions in depth. We value clear
         communication and timely collaboration, ensuring every project moves
@@ -20,15 +89,14 @@ function Contactus() {
         41 777 704
       </p>
       <p className="font-bold text-3xl">Drop Us a Message</p>
-      <div className="flex flex-col   gap-3 pt-[15px] mx-auto max-sm:mx-0 ">
-        <input placeholder="Name Surname" className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full " />
-        <input placeholder="Email Address" className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full " />
-        <textarea placeholder="Message" className="w-[334px]  rounded-md bg-[#F3F3F3] px-4 max-sm:w-full " rows="4" />
-        <button className="bg-[#31B56A] rounded-md px-4  py-3 mx-auto text-white w-[43%]">Send message</button>
-
+      <div className="flex flex-col gap-3 pt-[15px] mx-auto max-sm:mx-0">
+        <input placeholder="Name Surname" className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full" />
+        <input placeholder="Email Address" className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full" />
+        <textarea placeholder="Message" className="w-[334px] rounded-md bg-[#F3F3F3] px-4 max-sm:w-full" rows="4" />
+        <button className="bg-[#31B56A] rounded-md px-4 py-3 mx-auto text-white w-[43%]">
+          Send message
+        </button>
       </div>
     </div>
   );
 }
-
-export default Contactus;

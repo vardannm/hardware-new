@@ -11,13 +11,28 @@ export default function IndustryPage({ params }) {
     const resolvedParams = React.use(params);
  const slug = resolvedParams.slug;
   const industry = INDUSTRY_DETAILS[slug];
+function _StructuredData({ industry }) {
+  const extraSchemas = industry.structuredData || {};
 
+  return (
+    <>
+      {Object.values(extraSchemas).map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+    </>
+  );
+}
   if (!industry) {
     notFound();
   }
 
   return (
     <div className="flex flex-col gap-60 mb-60">
+      <_StructuredData industry={industry} />
       <div className="w-full h-[645px] relative max-sm:h-[400px]">
         <Image
           src={industry.hero.icon}
