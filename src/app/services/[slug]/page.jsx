@@ -13,6 +13,23 @@ import "swiper/css/navigation";
 import Testimonial from "@/components/ui/Testimonial";
 import ServiceCard from "@/components/ui/ServiceGridItem";
 import BackButton from "../../../components/ui/BackButton";
+
+function _StructuredData({ service }) {
+  const extraSchemas = service?.structuredData || {};
+
+  return (
+    <>
+      {Object.values(extraSchemas).map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+    </>
+  );
+}
+
 export default function ServicePage({ params }) {
   const resolvedParams = React.use(params);
   const slug = resolvedParams.slug;
@@ -35,6 +52,7 @@ export default function ServicePage({ params }) {
 
   return (
     <div className="flex flex-col">
+      <_StructuredData service={service} />
       <div className="w-full h-[645px] relative max-sm:h-[400px]">
         <Image
           src={hero.backgroundImage}

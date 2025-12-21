@@ -16,6 +16,77 @@ import ProductTestingAndValidation from "@/public/services/servicePage/product-t
 import HardwareDesignServices from "@/public/services/servicePage/hardware-design-services.png";
 export const SERVICE_DETAILS = {
   "iot-consulting-services": {
+    structuredData: {
+      service: {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "IoT Consulting Services",
+        description:
+          "Engineering consulting and technical support services across the full hardware development lifecycle, including feasibility studies, component selection, design reviews, compliance strategy, certification guidance, troubleshooting, failure analysis, and long-term lifecycle advisory. HDH provides IoT consulting, embedded systems consulting, and technical advisory from concept through deployment and production support.",
+        url: "https://www.hardwarehouses.com/services/iot-consulting-services",
+        provider: {
+          "@type": "Organization",
+          name: "Hardware Design House",
+          url: "https://www.hardwarehouses.com/",
+        },
+        serviceType: [
+          "IoT Consulting Services",
+          "Engineering Consulting Services",
+          "Technical Advisory Services",
+          "Embedded Systems Consulting",
+          "Embedded Software Consulting",
+          "Certification Guidance and Compliance Strategy",
+          "Troubleshooting and Failure Analysis",
+        ],
+        areaServed: "Worldwide",
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Businesses and product teams building IoT, embedded, and electronic products",
+        },
+      },
+      faqPage: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        url: "https://www.hardwarehouses.com/services/iot-consulting-services",
+        name: "IoT Consulting Services FAQ | HDH",
+        inLanguage: "en",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What consulting services does HDH provide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "HDH offers IoT consulting, engineering consulting services, and product development consulting, covering embedded systems, hardware, firmware, and manufacturing guidance.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can HDH help with IoT strategy and system planning?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. HDH provides IoT consulting and system design advisory, helping clients plan, optimize, and implement connected solutions that are reliable, scalable, and aligned with business goals.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Does HDH assist with embedded software consulting?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. We provide expert embedded systems consulting and embedded software consulting to ensure hardware and firmware operate seamlessly.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can HDH support manufacturing and industrial engineering consulting?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Our engineering consulting services help clients with production planning, workflow optimization, and scalable system design.",
+            },
+          },
+        ],
+      },
+    },
     slug: "iot-consulting-services",
     pageTitle: "Consulting & Technical Advisory Services",
     hero: {
@@ -139,6 +210,77 @@ export const SERVICE_DETAILS = {
     ],
   },
   "embedded-system-architecture": {
+    structuredData: {
+      service: {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Embedded System Architecture Design",
+        description:
+          "Embedded system architecture design and optimization services that integrate hardware, firmware, and connectivity into scalable, reliable systems. HDH designs modular architectures, communication interfaces, hardware-firmware co-design, subsystem integration, thermal and mechanical optimization, and security-focused architectures for IoT and industrial environments.",
+        url: "https://www.hardwarehouses.com/services/embedded-system-architecture",
+        provider: {
+          "@type": "Organization",
+          name: "Hardware Design House",
+          url: "https://www.hardwarehouses.com/",
+        },
+        serviceType: [
+          "Embedded System Architecture",
+          "System Architecture and Optimization",
+          "Embedded System Integration",
+          "Hardware-Firmware Co-Design",
+          "IoT System Design",
+          "Software Architecture of Embedded Systems",
+          "Hardware Architecture of Embedded Systems",
+        ],
+        areaServed: "Worldwide",
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Businesses and product teams building IoT, embedded, and electronic products",
+        },
+      },
+      faqPage: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        url: "https://www.hardwarehouses.com/services/embedded-system-architecture",
+        name: "Embedded System Architecture FAQ | HDH",
+        inLanguage: "en",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What services does HDH offer for embedded system architecture?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "HDH provides full system architecture and design services, including embedded system design, hardware architecture of embedded systems, and software architecture of embedded systems.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can HDH develop custom embedded systems?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. We offer custom embedded system development tailored to your project requirements, including both hardware and software integration.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Does HDH provide IoT system design services?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Our team specializes in IoT system design, system design engineering, and system architecture and design for connected devices and industrial applications.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can I hire embedded systems engineers through HDH?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. You can hire embedded systems engineers directly or collaborate with HDH as your embedded system development partner for complete project support.",
+            },
+          },
+        ],
+      },
+    },
     slug: "embedded-system-architecture",
     pageTitle: "IoT Consulting Services",
     hero: {
@@ -262,6 +404,77 @@ export const SERVICE_DETAILS = {
     ],
   },
   "electronics-manufacturing-services": {
+    structuredData: {
+      service: {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Electronics Manufacturing Services",
+        description:
+          "Full-cycle electronics manufacturing readiness and manufacturing support services from prototype to production, including DFM/DFA/DFT optimization, BOM optimization, vendor coordination, pilot batch testing, statistical quality control, final functional testing, programming, packaging, and supply chain and logistics management through trusted fabrication and assembly partners.",
+        url: "https://www.hardwarehouses.com/services/electronics-manufacturing-services",
+        provider: {
+          "@type": "Organization",
+          name: "Hardware Design House",
+          url: "https://www.hardwarehouses.com/",
+        },
+        serviceType: [
+          "Electronics Manufacturing Services",
+          "Design for Manufacturing (DFM)",
+          "BOM Optimization",
+          "Manufacturing Support Services",
+          "Prototype-to-Production Transition",
+          "Supply Chain and Logistics Management",
+          "Production Management and Quality Control",
+        ],
+        areaServed: "Worldwide",
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Businesses and product teams manufacturing electronic devices",
+        },
+      },
+      faqPage: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        url: "https://www.hardwarehouses.com/services/electronics-manufacturing-services",
+        name: "Electronics Manufacturing Services FAQ | HDH",
+        inLanguage: "en",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What electronics manufacturing services does HDH provide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "HDH offers complete electronic product manufacturing support, including electronic contract manufacturing coordination, prototype-to-production support, and full lifecycle manufacturing readiness services.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can HDH support design for manufacturing?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Our DFM services optimize product designs for efficient production, cost savings, and improved reliability.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Does HDH manage manufacturing logistics?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. We handle sourcing, workflow planning, and supply chain management to ensure smooth manufacturing support from start to finish.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can HDH scale from prototypes to mass production?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. HDH specializes in transitioning products from prototype development to full-scale production while maintaining quality, compliance, and performance standards.",
+            },
+          },
+        ],
+      },
+    },
     slug: "electronics-manufacturing-services",
     pageTitle: "Electronics Manufacturing Services",
     hero: {
@@ -384,6 +597,76 @@ export const SERVICE_DETAILS = {
     ],
   },
   "prototype-development-services": {
+    structuredData: {
+      service: {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Prototype Development Services",
+        description:
+          "End-to-end prototype development and product prototyping services to turn concepts into functional, demonstration-ready prototypes that closely match final production intent. HDH supports rapid prototype fabrication and assembly, low-volume pilot runs, firmware integration, iterative testing, and documentation to bridge the gap between concept and manufacturing readiness.",
+        url: "https://www.hardwarehouses.com/services/prototype-development-services",
+        provider: {
+          "@type": "Organization",
+          name: "Hardware Design House",
+          url: "https://www.hardwarehouses.com/",
+        },
+        serviceType: [
+          "Prototype Development Services",
+          "Product Prototyping",
+          "Hardware Prototyping",
+          "Electronics Prototyping",
+          "Embedded System Integration",
+          "Pilot Runs and Pre-Production Validation",
+        ],
+        areaServed: "Worldwide",
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Businesses and product teams building electronic devices and hardware products",
+        },
+      },
+      faqPage: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        url: "https://www.hardwarehouses.com/services/prototype-development-services",
+        name: "Prototype Development Services FAQ | HDH",
+        inLanguage: "en",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What prototype development services does HDH provide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "HDH offers comprehensive product prototyping services, including hardware prototyping, electronics prototyping, and embedded system prototype development, ensuring seamless concept-to-product transformation.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How fast can HDH deliver prototypes?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "With our rapid prototyping services, HDH can deliver early-stage prototypes within short development cycles, depending on complexity and component availability.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Does HDH handle both product and electronic design development?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. As a full-service prototype design and development company, HDH manages electronic prototype manufacturing, hardware design, and integration under one roof.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can HDH customize prototypes to specific requirements?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. HDH works closely with clients to tailor prototypes to precise specifications, ensuring the final product meets functional, aesthetic, and performance requirements.",
+            },
+          },
+        ],
+      },
+    },
     slug: "prototype-development-services",
     pageTitle: "Prototype Development Services",
     hero: {
@@ -508,6 +791,84 @@ export const SERVICE_DETAILS = {
     ],
   },
   "hardware-updates-and-improvements": {
+    structuredData: {
+      service: {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Hardware Updates and Improvements",
+        description:
+          "Continuous product enhancement and hardware updates, redesigning legacy systems for improved performance, cost reduction, and modern component availability. Services include PCB redesign and optimization, signal integrity and thermal improvements, EMC mitigation, legacy-to-modern MCU/FPGA conversion, power-efficiency optimization, validation, and post-production support.",
+        url: "https://www.hardwarehouses.com/services/hardware-updates-and-improvements",
+        provider: {
+          "@type": "Organization",
+          name: "Hardware Design House",
+          url: "https://www.hardwarehouses.com/",
+        },
+        serviceType: [
+          "Hardware Updates and Improvements",
+          "Hardware Lifecycle Management",
+          "PCB Redesign and Optimization",
+          "Legacy Hardware Modernization",
+          "Embedded Hardware Upgrades",
+          "Hardware Maintenance and Post-Production Support",
+        ],
+        areaServed: "Worldwide",
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Businesses and product teams maintaining and modernizing electronic hardware products",
+        },
+      },
+      faqPage: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        url: "https://www.hardwarehouses.com/services/hardware-updates-and-improvements",
+        name: "Hardware Updates and Improvements FAQ | HDH",
+        inLanguage: "en",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What types of hardware updates do you provide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We offer a complete range of updates, including PCB redesign, embedded hardware enhancements, and full hardware modernization for both consumer electronics and industrial systems.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How do you approach hardware improvement projects?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We begin with a detailed analysis of the hardware to identify opportunities for hardware modifications and product iteration. Each update is then prototyped, tested, and validated before final integration.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can you improve the performance of older hardware products?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. HDH performs hardware refresh cycles to optimize older systems through hardware improvements, PCB optimization, and embedded hardware updates, ensuring they remain compatible with modern standards.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you provide testing and validation for system updates?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Absolutely. We perform thorough validation testing to ensure safe, reliable performance.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can you support long-term hardware maintenance after updates?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. We provide ongoing maintenance and iterative updates to ensure your products remain efficient and up-to-date.",
+            },
+          },
+        ],
+      },
+    },
     slug: "hardware-updates-and-improvements",
     pageTitle: "Hardware Updates and Improvements",
     hero: {
@@ -636,6 +997,76 @@ export const SERVICE_DETAILS = {
     ],
   },
   "product-testing-and-validation": {
+    structuredData: {
+      service: {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Product Testing and Validation Services",
+        description:
+          "Comprehensive product testing and validation services to ensure performance, reliability, and compliance before production. HDH supports electronic product testing, IoT product testing, embedded systems verification, firmware validation, and hardware-in-the-loop testing using automated fixtures and advanced validation methods.",
+        url: "https://www.hardwarehouses.com/services/product-testing-and-validation",
+        provider: {
+          "@type": "Organization",
+          name: "Hardware Design House",
+          url: "https://www.hardwarehouses.com/",
+        },
+        serviceType: [
+          "Product Testing and Validation",
+          "Electronic Product Testing",
+          "IoT Product Testing",
+          "Embedded Systems Verification",
+          "Firmware Validation",
+          "Design Verification and Validation",
+        ],
+        areaServed: "Worldwide",
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Businesses and product teams developing electronics, IoT, and embedded systems",
+        },
+      },
+      faqPage: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        url: "https://www.hardwarehouses.com/services/product-testing-and-validation",
+        name: "Product Testing and Validation Services FAQ | HDH",
+        inLanguage: "en",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What product testing and validation services does HDH provide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "HDH offers comprehensive product testing and validation services, including electronic product testing and IoT product testing, to ensure performance, reliability, and compliance before production.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What expertise does HDH have in embedded systems?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Our team specializes in embedded systems testing, design verification and validation, and system integration testing, covering both hardware and firmware to ensure seamless operation.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What types of testing does HDH perform?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We conduct system testing, electrical safety tests, and functional, thermal, and design validation testing. Our services also include automated test fixtures, ICT, JTAG, HALT/HASS, and hardware-in-the-loop validation.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can HDH tailor testing for different product types?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. We provide customized product qualification and validation services for prototypes and production units, whether for consumer electronics, IoT devices, or industrial embedded systems.",
+            },
+          },
+        ],
+      },
+    },
     slug: "product-testing-and-validation",
     pageTitle: "Product Testing and Validation Services",
     hero: {
@@ -760,6 +1191,77 @@ export const SERVICE_DETAILS = {
     ],
   },
   "custom-hardware-design": {
+    structuredData: {
+      service: {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Custom Hardware Design Services",
+        description:
+          "End-to-end electronic and hardware design services from concept and schematic design to production-ready custom hardware. HDH designs digital, analog, RF, power, wireless, and embedded systems optimized for performance, manufacturability, and long-term reliability.",
+        url: "https://www.hardwarehouses.com/services/custom-hardware-design",
+        provider: {
+          "@type": "Organization",
+          name: "Hardware Design House",
+          url: "https://www.hardwarehouses.com/",
+        },
+        serviceType: [
+          "Custom Hardware Design",
+          "Electronic Design Services",
+          "PCB Design",
+          "Analog & RF Design",
+          "Power Design",
+          "Wireless Design",
+          "Embedded Hardware Design",
+        ],
+        areaServed: "Worldwide",
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Businesses and product teams developing electronic devices",
+        },
+      },
+      faqPage: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        url: "https://www.hardwarehouses.com/services/custom-hardware-design",
+        name: "Custom Hardware Design Services FAQ | HDH",
+        inLanguage: "en",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What types of custom hardware solutions do you provide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We provide flexible custom hardware design solutions, including embedded systems, electronic devices, and hardware prototypes, designed to meet your unique requirements.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How does your hardware prototyping process work?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We use market-available modules to create functional concepts based on your requirements to prove feasibility. Once validated, we move to hardware product development and DFM, where the final custom design may differ from the prototype but maintains the same functionality.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What areas do your hardware engineering services cover?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Our hardware engineering services include hardware design and development, embedded hardware design, electronic design services, and hardware product design. We combine technical expertise with practical experience to deliver efficient, scalable, and innovative custom hardware solutions.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can you support hardware development for consumer electronics?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. We provide end-to-end hardware design services for consumer electronics, from initial hardware design and embedded systems to final product development. Our solutions are tailored to your specifications to support a smooth path from concept to production.",
+            },
+          },
+        ],
+      },
+    },
     slug: "custom-hardware-design",
     pageTitle: "Custom Hardware Design Services",
     hero: {

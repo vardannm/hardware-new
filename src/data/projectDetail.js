@@ -37,6 +37,14 @@ import SensorsAutomation from "@/public/moon/sensors-automation.png";
 import HomeAutomationSystem from "@/public/moon/home-automation-system.png";
 import CameraSystem from "@/public/moon/camera-system.png";
 import HomeAutomationController from "@/public/moon/home-automation-controller.png";
+
+//thermostat swiper images
+import ThermoSlideFirst from "@/public/thermostat/slide1.jpg";
+import ThermoSlideSecond from "@/public/thermostat/slide2.jpg";
+import ThermoSlideThird from "@/public/thermostat/slide3.jpg";
+import ThermoSlideFourth from "@/public/thermostat/slide4.jpg";
+import ThermoSlideFive from "@/public/thermostat/slide5.jpg";
+import ThermoSlideSix from "@/public/thermostat/slide6.jpg";
 export const PROJECT_DETAILS = {
   "smart-bedroom-lighting-system": {
     slug: "smart-bedroom-lighting-system",
@@ -81,7 +89,7 @@ export const PROJECT_DETAILS = {
         text: "In order to reduce the impact of possible humidity and temperature alterations, system mechanical components such as plexiglass, an appropriate type of wood and glue were selected.",
         isLeft: true,
       },
-       {
+      {
         src: SmartBedroomLightingSystemDevelopment,
         alt: "Training and support for installing and maintaining the smart thermostat system for efficient home automation",
         title: "Contractor Training and Support for Smart Thermostat System",
@@ -96,7 +104,7 @@ export const PROJECT_DETAILS = {
         text: "Our team combined expertise in PCB design, firmware optimization, mechanical integration, and sensor calibration to bring the zLight to life. Careful hardware-software collaboration ensured seamless control through an app, while precision engineering allowed integration of sensors for temperature, humidity, and CO₂ monitoring. The system uses energy-efficient components, delivering reliable performance while fitting naturally in the bedroom environment.",
         isLeft: true,
       },
-     
+
       {
         src: SmartBedroomLightingSystemSensorDesign,
         alt: "Smart thermostat system with modular hardware design and scalable PCB layout",
@@ -145,8 +153,6 @@ export const PROJECT_DETAILS = {
       "The zLight is a small, all-in-one device that brings together wireless charging, smart lighting, and environmental sensing. It contributes to a more restful and healthy bedtime routine.",
   },
 
-
-
   "smart-thermostat-system": {
     slug: "smart-thermostat-system",
     pageTitle: "Smart Thermostat System for Home Climate Control",
@@ -170,7 +176,7 @@ Even minor cosmetic enhancements introduced mechanical and electrical challenges
 The thermostat is made up of a main unit and a backplate. The main unit includes the main processor and the user interface display, while the backplate provides connection with the HVAC system and represents the switching system. For switching, solid-state relays were used in pairs with overcurrent protection circuitry.`,
     },
     boxImage: ThermoBox,
-   processHighlights: [
+    processHighlights: [
       {
         src: WirelessThermostat,
         alt: "Wireless Thermostat System with Upgraded Hardware and Software",
@@ -178,7 +184,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         text: "In order to reduce the impact of possible humidity and temperature alterations, system mechanical components such as plexiglass, an appropriate type of wood and glue were selected.",
         isLeft: true,
       },
-       {
+      {
         src: SystemContractor,
         alt: "Training and support for installing and maintaining the smart thermostat system for efficient home automation",
         title: "Contractor Training and Support for Smart Thermostat System",
@@ -193,7 +199,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         text: "Our team combined expertise in PCB design, firmware optimization, mechanical integration, and sensor calibration to bring the zLight to life. Careful hardware-software collaboration ensured seamless control through an app, while precision engineering allowed integration of sensors for temperature, humidity, and CO₂ monitoring. The system uses energy-efficient components, delivering reliable performance while fitting naturally in the bedroom environment.",
         isLeft: true,
       },
-     
+
       {
         src: ModularHardware,
         alt: "Smart thermostat system with modular hardware design and scalable PCB layout",
@@ -204,57 +210,63 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
       },
     ],
     perks: [
-       {
-            headline: "Adaptive Control for Energy Efficiency",
-            text: "Regulates heating, cooling, and ventilation through smart scheduling, weather integration, and air quality feedback to enhance comfort and improve HVAC energy efficiency.",
-            src: EnergyEfficiency,
-            alt: "Smart thermostat system for home climate control with adaptive energy-saving thermostat features",
-            title:
-              "Adaptive Control for Energy Efficiency in Smart Thermostat System",
-            width: 352,
-          },
-          {
-            headline: "Precision Sensors and Reliable Connectivity",
-            text: "Equipped with multiple temperature and pressure sensors, adaptive algorithms, and optimized RF components to ensure accurate readings and stable communication.",
-            src: PrecisionSensors,
-            alt: "Smart thermostat system with thermostat sensors and wireless connectivity",
-            title:
-              "Precision Sensors and Reliable Connectivity in Smart Thermostat System",
-            width: 352,
-          },
-          {
-            headline: "Intuitive Interface and Self-Diagnostics",
-            text: "Features a clear, easy-to-use interface with real-time status indicators and built-in self-diagnostics for dependable operation across different seasons and environments.",
-            src: IntuitiveInterface,
-            alt: "Smart thermostat system with intuitive interface and self-diagnostics",
-            title:
-              "Intuitive Interface and Self-Diagnostics in Smart Thermostat System",
-            width: 352,
-          },
-          {
-            headline: "Modular and Scalable Hardware Design",
-            text: "Built on a modular main unit and backplate structure for easy maintenance, future upgrades, and efficient power management to extend battery life in wireless versions.",
-            src: ModularScalable,
-            alt: "Smart thermostat system with modular and scalable thermostat hardware",
-            title: "Modular and Scalable Hardware Design in Smart Thermostat System",
-            width: 352,
-          },
-          {
-            headline: "Contractor-Friendly Support and Integration",
-            text: "Designed with professionals in mind, offering clear installation guides, troubleshooting tools, and training to simplify setup, maintenance, and system updates.",
-            src: ContractorSupport,
-            alt: "Energy-saving thermostat with contractor-friendly support, installation guides, and troubleshooting tools",
-            title:
-              "Contractor-Friendly Support and Integration in Smart Thermostat System",
-            width: 352,
-          },
+      {
+        headline: "Adaptive Control for Energy Efficiency",
+        text: "Regulates heating, cooling, and ventilation through smart scheduling, weather integration, and air quality feedback to enhance comfort and improve HVAC energy efficiency.",
+        src: EnergyEfficiency,
+        alt: "Smart thermostat system for home climate control with adaptive energy-saving thermostat features",
+        title:
+          "Adaptive Control for Energy Efficiency in Smart Thermostat System",
+        width: 352,
+      },
+      {
+        headline: "Precision Sensors and Reliable Connectivity",
+        text: "Equipped with multiple temperature and pressure sensors, adaptive algorithms, and optimized RF components to ensure accurate readings and stable communication.",
+        src: PrecisionSensors,
+        alt: "Smart thermostat system with thermostat sensors and wireless connectivity",
+        title:
+          "Precision Sensors and Reliable Connectivity in Smart Thermostat System",
+        width: 352,
+      },
+      {
+        headline: "Intuitive Interface and Self-Diagnostics",
+        text: "Features a clear, easy-to-use interface with real-time status indicators and built-in self-diagnostics for dependable operation across different seasons and environments.",
+        src: IntuitiveInterface,
+        alt: "Smart thermostat system with intuitive interface and self-diagnostics",
+        title:
+          "Intuitive Interface and Self-Diagnostics in Smart Thermostat System",
+        width: 352,
+      },
+      {
+        headline: "Modular and Scalable Hardware Design",
+        text: "Built on a modular main unit and backplate structure for easy maintenance, future upgrades, and efficient power management to extend battery life in wireless versions.",
+        src: ModularScalable,
+        alt: "Smart thermostat system with modular and scalable thermostat hardware",
+        title:
+          "Modular and Scalable Hardware Design in Smart Thermostat System",
+        width: 352,
+      },
+      {
+        headline: "Contractor-Friendly Support and Integration",
+        text: "Designed with professionals in mind, offering clear installation guides, troubleshooting tools, and training to simplify setup, maintenance, and system updates.",
+        src: ContractorSupport,
+        alt: "Energy-saving thermostat with contractor-friendly support, installation guides, and troubleshooting tools",
+        title:
+          "Contractor-Friendly Support and Integration in Smart Thermostat System",
+        width: 352,
+      },
     ],
-    galleryImages: Array(7).fill(zlighSwipper), // կամ տարբեր նկարներ
+    galleryImages: [
+      ThermoSlideFirst,
+      ThermoSlideSecond,
+      ThermoSlideThird,
+      ThermoSlideFourth,
+      ThermoSlideFive,
+      ThermoSlideSix,
+    ],
     finalText:
       "The Smart Thermostat System makes home climate control simple, efficient, and reliable. Easy to install and use, it’s built to support homeowners while staying ready for future upgrades.",
   },
-  
-
 
   "smart-home-hub": {
     slug: "smart-home-hub",
@@ -288,88 +300,89 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
     },
     boxImage: MoonBox,
     processHighlights: [
-  {
-    src: MoonBy1Ring,
-    alt: "Moon by 1-Ring smart home hub combining smart home sensors and automation features",
-    title: "Moon by 1-Ring Smart Home Hub with Sensors and Automation",
-    text: "The ball-shaped device includes a camera on one side and microphones on all four sides, providing full environmental awareness. It actively responds to sound, detects nearby activity, and automatically sends alerts or starts live streaming to your phone when events occur.",
-    isLeft: true,
-  },
-  {
-    src: IntegratedSensors,
-    alt: "Compact smart home hub with integrated sensors and camera optics",
-    title: "Compact Smart Home Hub with Integrated Sensors and Camera Optics",
-    text: "The compact size of the hub required careful integration of high-quality sensors, a proper matrix, and camera optics for streaming. Using a System on Module (SOM) enabled smooth live streaming while addressing space, thermal management, and system prioritization challenges.",
-    isLeft: true,
-  },
-  {
-    src: SmartDeviceIntegration,
-    alt: "Moon by 1-Ring smart home hub designed for efficient smart device integration",
-    title: "Efficient Smart Device Integration",
-    text: "The Moon hub was designed to unify multiple smart devices into a single, efficient system. Development focused on achieving a compact, high-performance design with full 360-degree coverage, balancing power consumption, reliability, and overall system efficiency through extensive testing.",
-    isLeft: false,
-  },
-  {
-    src: MagneticLevitationDesign,
-    alt: "Moon by 1-Ring smart home hub with levitating magnetic ball",
-    title: "Magnetic Levitation Design for Moon by 1-Ring",
-    text: "Precise magnetic calculations and mechanical engineering allowed the ball to levitate steadily and move smoothly up and down. The lightweight design includes built-in magnets, enabling easy placement on refrigerators or other metal surfaces, enhancing both usability and practicality.",
-    isLeft: false,
-  },
-],
-    
+      {
+        src: MoonBy1Ring,
+        alt: "Moon by 1-Ring smart home hub combining smart home sensors and automation features",
+        title: "Moon by 1-Ring Smart Home Hub with Sensors and Automation",
+        text: "The ball-shaped device includes a camera on one side and microphones on all four sides, providing full environmental awareness. It actively responds to sound, detects nearby activity, and automatically sends alerts or starts live streaming to your phone when events occur.",
+        isLeft: true,
+      },
+      {
+        src: IntegratedSensors,
+        alt: "Compact smart home hub with integrated sensors and camera optics",
+        title:
+          "Compact Smart Home Hub with Integrated Sensors and Camera Optics",
+        text: "The compact size of the hub required careful integration of high-quality sensors, a proper matrix, and camera optics for streaming. Using a System on Module (SOM) enabled smooth live streaming while addressing space, thermal management, and system prioritization challenges.",
+        isLeft: true,
+      },
+      {
+        src: SmartDeviceIntegration,
+        alt: "Moon by 1-Ring smart home hub designed for efficient smart device integration",
+        title: "Efficient Smart Device Integration",
+        text: "The Moon hub was designed to unify multiple smart devices into a single, efficient system. Development focused on achieving a compact, high-performance design with full 360-degree coverage, balancing power consumption, reliability, and overall system efficiency through extensive testing.",
+        isLeft: false,
+      },
+      {
+        src: MagneticLevitationDesign,
+        alt: "Moon by 1-Ring smart home hub with levitating magnetic ball",
+        title: "Magnetic Levitation Design for Moon by 1-Ring",
+        text: "Precise magnetic calculations and mechanical engineering allowed the ball to levitate steadily and move smoothly up and down. The lightweight design includes built-in magnets, enabling easy placement on refrigerators or other metal surfaces, enhancing both usability and practicality.",
+        isLeft: false,
+      },
+    ],
+
     perks: [
-        {
-          headline: "Central Processing Unit (CPU)",
-          text: "High-performance, low-power CPU for complex computations, seamless multitasking, and efficient automation.",
-          src: SmartHomeSecuritySystem,
-          alt: "Smart home security system with high-performance low-power CPU designed for efficient automation, seamless multitasking, and reliable smart home technology",
-          title: "High-Performance CPU for Smart Home Automation Hub",
-          width: 352,
-        },
-        {
-          headline: "Connectivity",
-          text: "Supports Wi-Fi, Bluetooth, Zigbee, and Z-Wave, enabling seamless communication and compatibility with a wide range of smart devices.",
-          src: MultiProtocolConnectivity,
-          alt: "Smart device integration and reliable home automation",
-          title: "Smart Home Hub with Multi-Protocol Connectivity",
-          width: 352,
-        },
-        {
-          headline: "Sensors",
-          text: "Ambient light, temperature, and motion sensors for real-time environmental monitoring, intelligent adjustments and automation across the smart home ecosystem.",
-          src: SensorsAutomation,
-          alt: "Smart home hub with ambient light, temperature, and motion sensors for intelligent automation and real-time monitoring across the smart home ecosystem",
-          title:
-            "Smart Home Hub with Ambient Light, Temperature, and Motion Sensors",
-          width: 352,
-        },
-        {
-          headline: "Camera System",
-          text: "360-degree HD panoramic camera providing comprehensive home surveillance and activity monitoring.",
-          src: HomeAutomationSystem,
-          alt: "Smart home hub camera system with HD panoramic view for comprehensive home surveillance and intelligent monitoring within the smart home security system",
-          title: "HD Panoramic Camera System for Smart Home Security",
-          width: 352,
-        },
-        {
-          headline: "Sound-Responsive Detection",
-          text: "Equipped with a camera on one side and microphones on all four sides, the device reacts to nearby sounds by sending alerts or starting a live stream to your phone.",
-          src: CameraSystem,
-          alt: "Smart home hub camera system with HD panoramic view for comprehensive home surveillance and intelligent monitoring within the smart home security system",
-          title: "HD Panoramic Camera System for Smart Home Security",
-          width: 352,
-        },
-        {
-          headline: "Automation & Security",
-          text: "Customizable automation and security features that are energy-efficient and designed to protect your home.",
-          src: HomeAutomationController,
-          alt: "Home automation controller with customizable automation and energy-efficient smart home security features for reliable protection and home control",
-          title: "Customizable Automation and Security in Smart Home Hub",
-          width: 352,
-        },
-      ],
-    galleryImages: Array(7).fill(zlighSwipper), 
+      {
+        headline: "Central Processing Unit (CPU)",
+        text: "High-performance, low-power CPU for complex computations, seamless multitasking, and efficient automation.",
+        src: SmartHomeSecuritySystem,
+        alt: "Smart home security system with high-performance low-power CPU designed for efficient automation, seamless multitasking, and reliable smart home technology",
+        title: "High-Performance CPU for Smart Home Automation Hub",
+        width: 352,
+      },
+      {
+        headline: "Connectivity",
+        text: "Supports Wi-Fi, Bluetooth, Zigbee, and Z-Wave, enabling seamless communication and compatibility with a wide range of smart devices.",
+        src: MultiProtocolConnectivity,
+        alt: "Smart device integration and reliable home automation",
+        title: "Smart Home Hub with Multi-Protocol Connectivity",
+        width: 352,
+      },
+      {
+        headline: "Sensors",
+        text: "Ambient light, temperature, and motion sensors for real-time environmental monitoring, intelligent adjustments and automation across the smart home ecosystem.",
+        src: SensorsAutomation,
+        alt: "Smart home hub with ambient light, temperature, and motion sensors for intelligent automation and real-time monitoring across the smart home ecosystem",
+        title:
+          "Smart Home Hub with Ambient Light, Temperature, and Motion Sensors",
+        width: 352,
+      },
+      {
+        headline: "Camera System",
+        text: "360-degree HD panoramic camera providing comprehensive home surveillance and activity monitoring.",
+        src: HomeAutomationSystem,
+        alt: "Smart home hub camera system with HD panoramic view for comprehensive home surveillance and intelligent monitoring within the smart home security system",
+        title: "HD Panoramic Camera System for Smart Home Security",
+        width: 352,
+      },
+      {
+        headline: "Sound-Responsive Detection",
+        text: "Equipped with a camera on one side and microphones on all four sides, the device reacts to nearby sounds by sending alerts or starting a live stream to your phone.",
+        src: CameraSystem,
+        alt: "Smart home hub camera system with HD panoramic view for comprehensive home surveillance and intelligent monitoring within the smart home security system",
+        title: "HD Panoramic Camera System for Smart Home Security",
+        width: 352,
+      },
+      {
+        headline: "Automation & Security",
+        text: "Customizable automation and security features that are energy-efficient and designed to protect your home.",
+        src: HomeAutomationController,
+        alt: "Home automation controller with customizable automation and energy-efficient smart home security features for reliable protection and home control",
+        title: "Customizable Automation and Security in Smart Home Hub",
+        width: 352,
+      },
+    ],
+    galleryImages: Array(7).fill(zlighSwipper),
     finalText:
       "The Moon project created a smart home hub that brings devices together,automates tasks, and provides all-around home monitoring. Its sensors, high-performance CPU, and innovative design show a practical and forward-thinking approach to smart home technology.The Moon project was fully developed and successfully completed on our side, including a working prototype, though production was not implemented due to marketing considerations. For future collaborators: We invite you to discover the potential for collaboration in bringing the Moon project to life and set new standards in smart home technology.",
   },

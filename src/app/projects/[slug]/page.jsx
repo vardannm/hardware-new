@@ -52,26 +52,35 @@ export default function ProjectPage({ params }) {
         </div>
         <p className="hidden max-sm:block p-4">{project.hero.text}</p>
       </div>
-      <div className="bg-[#dfdfe4] h-[502px] mx-[171px] flex gap-[38px] rounded-[30px] p-8 max-sm:p-0 max-sm:flex-col max-sm:mx-0 max-sm:h-auto max-sm:rounded-xs">
-        <Image
-          src={project.technicalApproach.image}
-          width={396}
-          height={426}
-          className="max-sm:w-full"
-          alt={project.technicalApproach.title}
-        />
-        <div className="flex flex-col gap-[38px] max-sm:p-4">
-          <p className="font-bold text-3xl">
-            {project.technicalApproach.title}
-          </p>
-          <p>{project.technicalApproach.text}</p>
-        </div>
-      </div>
+     <div className="bg-[#dfdfe4] mx-[171px] flex gap-[38px] rounded-[30px] p-8
+                max-sm:p-0 max-xl:flex-col max-sm:mx-0 ">
+  
+  {/* Image wrapper */}
+  <div className="relative w-[396px] h-[426px] shrink-0
+                  max-xl:w-full max-sm:h-[280px]">
+    <Image
+      src={project.technicalApproach.image}
+      alt={project.technicalApproach.title}
+      fill
+      className="object-cover "
+      sizes="(max-width: 1280px) 100vw, 396px"
+    />
+  </div>
+
+  {/* Text */}
+  <div className="flex flex-col gap-[38px] max-sm:p-4">
+    <p className="font-bold text-3xl">
+      {project.technicalApproach.title}
+    </p>
+    <p>{project.technicalApproach.text}</p>
+  </div>
+</div>
+
       <div className="m-auto p-1 rounded-[10px] border-[#dedede] border bg-[#f1f1f1]">
         <Image src={project.boxImage} alt="" />
       </div>
       <p className="m-auto text-3xl font-bold">Process Highlights</p>
-      <div className="flex gap-6 m-auto max-sm:flex-col max-sm:mx-3">
+      <div className="flex gap-6 m-auto max-xl:flex-col max-sm:mx-3">
         <div className="flex flex-col gap-3">
           {project.processHighlights
             .filter((_, i) => i % 2 === 0)
@@ -141,17 +150,21 @@ export default function ProjectPage({ params }) {
           }}
           onSlideChange={(swiper) => updateSlideOpacities(swiper)}
         >
-          {project.galleryImages.map((img, i) => (
-            <SwiperSlide key={i}>
-              <Image
-                src={img}
-                alt={`Gallery image ${i + 1}`}
-                width={430}
-                height={400}
-                className="object-cover"
-              />
-            </SwiperSlide>
-          ))}
+         {project.galleryImages.map((img, i) => (
+  <SwiperSlide key={i}>
+    <div className="relative w-[430px] h-[400px] overflow-hidden">
+      <Image
+        src={img}
+        alt={`Gallery image ${i + 1}`}
+        fill
+        className="object-cover"
+        sizes="430px"
+        priority={i === 0}
+      />
+    </div>
+  </SwiperSlide>
+))}
+
         </Swiper>
         <button
           onClick={() => swiperRef.current?.slidePrev()}

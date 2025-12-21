@@ -31,7 +31,7 @@ export const projectsData = {
           description:
             "The zLight is a compact, all-in-one device that brings together wireless charging, smart lighting, and environmental sensing. It contributes to a more restful and healthy bedtime routine by automatically adjusting light and temperature conditions to promote relaxation and better sleep quality.",
           buttonText: "Learn more",
-          href: "/product/smart-bedroom-lighting-system",
+          href: "/projects/smart-bedroom-lighting-system",
         },
         {
           image: Thermostat,
@@ -41,7 +41,7 @@ export const projectsData = {
           description:
             "The Smart Thermostat System makes home climate control effortless with an intuitive, user-friendly design. With features like custom schedules, live weather updates, and air quality monitoring, it gives you full control over heating, cooling, and ventilation, without the hassle.",
           buttonText: "Learn more",
-          href: "/product/smart-thermostat-system",
+          href: "/projects/smart-thermostat-system",
         },
         {
           image: Moon,
@@ -51,7 +51,7 @@ export const projectsData = {
           description:
             "The project aimed to be a big step forward in smart home technology, and it progressed to a working prototype phase. Even though it was paused at that stage due to technical constraints, it gave us a lot of valuable insights into system integration that we still carry into our projects today.",
           buttonText: "Learn more",
-          href: "/product/smart-home-hub",
+          href: "/projects/smart-home-hub",
         },
       ],
     },
@@ -69,8 +69,6 @@ export const projectsData = {
           title: "High-Sensitive Vibration Tracking System for High-Power Motors",
           description:
             "A high-sensitive vibration tracking system designed for precision monitoring of high-power motors. Combining robust hardware with AI-driven analytics, the system detects potential issues early, enables predictive maintenance, identifies anomalies, and optimizes motor performance. Built for demanding industrial environments, it reduces downtime, extends equipment lifespan, and provides real-time, actionable insights for smarter operational decisions.",
-          buttonText: "Learn more",
-          href: "/product/high-sensitive-vibration-tracking",
         },
         {
           image: HighPrecision,
@@ -79,8 +77,6 @@ export const projectsData = {
           title: "High-Precision Autonomous Navigation Systems for U.S.",
           description:
             "The high-precision autonomous navigation system is designed to help U.S. emergency responders, especially firefighters, navigate safely and efficiently through the toughest conditions. By combining advanced location tracking, real-time data, and rugged hardware, the system gives teams the guidance they need when every second counts. It can pinpoint the exact location of individual firefighters with an accuracy of up to 5 centimeters, providing unmatched situational awareness and safety in critical moments.",
-          buttonText: "Learn more",
-          href: "/product/high-precision-autonomous-navigation",
         },
       ],
     },
@@ -98,8 +94,6 @@ export const projectsData = {
           title: "Autonomous System of Encrypted Communications",
           description:
             "The Highly Secure Wireless Autonomous Communication System (HSWACS) sets a new benchmark in secure, autonomous connectivity. Designed for demanding environments, it delivers reliable communication, advanced data protection, and intelligent control, all within a modular, future-ready framework. Built to perform when stability and security matter most, HSWACS represents the next step in resilient communication technology.",
-          buttonText: "Learn more",
-          href: "/product/encrypted-communications",
         },
         {
           image: SecureUsb,
@@ -108,8 +102,6 @@ export const projectsData = {
           title: "Highly Secure USB Flash Drive with Fingerprint Technology",
           description:
             "The primary objective of this project is to engineer a highly secure USB flash drive that incorporates advanced fingerprint recognition technology, aimed specifically at meeting the stringent security requirements of special services. This development project focuses on creating a hardware solution that ensures the utmost protection and privacy for sensitive data.",
-          buttonText: "Learn more",
-          href: "/product/secure-usb",
         },
       ],
     },
@@ -127,8 +119,6 @@ export const projectsData = {
           title: "Powered Exoskeleton for Mobility and Neural Recovery",
           description:
             "The advancement of rehabilitation technology presents a new frontier in the treatment and support of individuals with movement disabilities and nervous system impairments. This project is a cutting-edge rehabilitation device designed to help individuals regain mobility and independence. Combining advanced sensors, responsive actuators, and an intuitive control interface, it adapts to each user's movements while supporting personalized therapy programs.",
-          buttonText: "Learn more",
-          href: "/product/powered-exoskeleton",
         },
       ],
     },
