@@ -123,8 +123,79 @@ body {
       --color-secondary: #F6F6F6;
       --color-chocolate: #86563C; 
 
+      --spacing-26: 26px;
       --spacing-60: 60px;
       --spacing-90: 90%;
       --spacing-125: 12.5%;
       --spacing-76: 76.2%;
     }
+
+    @layer utilities {
+      .h1-bold {
+    @apply text-[56px] font-bold leading-tight;
+  }
+
+  .h1-regular {
+    @apply text-[56px] font-normal leading-tight;
+  }
+
+  /* H2 */
+  .h2-bold {
+    @apply text-[32px] font-bold leading-snug;
+  }
+
+  .h2-regular {
+    @apply text-[32px] font-normal leading-snug;
+  }
+
+  /* H3 */
+  .h3-bold {
+    @apply text-[22px] font-bold leading-snug;
+  }
+
+  .h3-regular {
+    @apply text-[22px] font-normal leading-snug;
+  }
+
+  /* H4 */
+  .h4-bold {
+    @apply text-[20px] font-bold leading-snug;
+  }
+
+  .h4-regular {
+    @apply text-[20px] font-normal leading-snug;
+  }
+
+  /* =========================
+     BODY TEXT
+     ========================= */
+
+  .text-bold {
+    @apply text-[16px] font-bold leading-normal;
+  }
+
+  .text-regular {
+    @apply text-[16px] font-normal leading-normal;
+  }
+
+  /* =========================
+     MOBILE
+     ========================= */
+
+  .text-mobile {
+    @apply text-[14px] font-normal leading-normal;
+  }
+  .heading-responsive {
+    @apply text-[56px] max-xl:text-[48px] max-md:text-4xl max-sm:text-[32px] font-bold leading-18 max-xl:leading-14 max-md:leading-12 max-sm:leading-10;
+  }
+  .padding-responsive {
+    @apply mx-auto w-[63%] max-xl:w-[85%] max-md:w-90 max-sm:w-[92%];
+  }
+  
+  .card-blog-description {
+    @apply text-start mx-auto w-[63%] max-xl:w-[85%] max-md:w-90 max-sm:w-full max-sm:px-[4%] max-sm:bg-secondary max-sm:pt-2 max-sm:gap-4 max-sm:h-full;
+  }
+  .padding-image-responsive {
+     @apply mx-auto w-[63%] max-xl:w-[85%] max-md:w-90 max-sm:w-full;
+  }
+}

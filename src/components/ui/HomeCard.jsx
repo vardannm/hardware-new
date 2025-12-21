@@ -9,12 +9,12 @@ export default function HomeCard({
   imageTitle,
   buttonText = "Learn more",
   href,
-   cardMaxW = "max-w-[353px]",
-  SectionH = "h-[220px]",
+   cardMaxW = "w-[353px] max-md:w-auto max-md:max-w-[353px]",
+  SectionH = "h-[220px] max-sm:h-[260px]",
 }) {
   return (
-    <div className={`rounded-2xl shadow-md ${cardMaxW} flex flex-col gap-4 bg-secondary`}>
-      <div className=" rounded-xl flex items-center justify-center w-full">
+    <div className={` shadow-md ${cardMaxW} flex flex-col gap-4 bg-secondary`}>
+      <div className={` flex items-center justify-center w-full overflow-hidden bg-white`}>
         <Image
           src={src}
           alt={alt}

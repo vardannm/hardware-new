@@ -22,7 +22,9 @@ import Arthur from "@/public/aboutus/arthur-movsesyan.png";
 import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import MoonByRing from "@/public/main/moon-by-ring.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Mousewheel, Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 function _StructuredData() {
@@ -125,6 +127,7 @@ export default function HomeClient() {
           <div className="flex gap-10 mt-4 max-md:hidden">
             <HomeCard
               src={ProductTestingValidation}
+              SectionH={"h-[220px] max-[1290px]:h-[270px] max-[1090px]:h-[350px] max-[840px]:h-[360px] max-[790px]:h-[420px] "}
               alt={
                 "Engineers creating custom hardware design solutions at a hardware design company for innovative and durable devices"
               }
@@ -137,6 +140,7 @@ export default function HomeClient() {
             />
             <HomeCard
               src={CustomGardwareDesign}
+              SectionH={"h-[220px] max-[1290px]:h-[270px] max-[1090px]:h-[350px] max-[840px]:h-[360px] max-[790px]:h-[420px]"}
               alt={
                 "Engineers conducting product testing and validation at a hardware design company to ensure performance and safety standards"
               }
@@ -148,6 +152,7 @@ export default function HomeClient() {
               href={"/services/product-testing-and-validation"}
             />
             <HomeCard
+              SectionH={"h-[220px] max-[1290px]:h-[270px] max-[1090px]:h-[350px] max-[840px]:h-[360px] max-[790px]:h-[420px]"}
               src={ConsultingTechnicalSupport}
               alt={
                 "Hardware design company experts providing consulting and technical support to optimize hardware performance and product lifecycle"
@@ -180,6 +185,7 @@ export default function HomeClient() {
                   }
                   href={"/services/custom-hardware-design"}
                   SectionH={"h-[280px]"}
+                  
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -227,7 +233,7 @@ export default function HomeClient() {
         </div>
         <div>
           <p className="text-start font-bold text-3xl max-md:mb-5">Industries</p>
-          <div className="flex gap-10 mt-4 max-md:hidden">
+          <div className="flex gap-10 mt-4 max-xl:hidden">
             <HomeCard
               src={SecurityAndCybersecurity}
               alt={
@@ -239,7 +245,8 @@ export default function HomeClient() {
                 "As a trusted electronic design company, we provide advanced hardware solutions for protection, monitoring, and secure communications. Our hardware design services include access control, surveillance, and threat detection systems to safeguard critical assets."
               }
               href={"/services/custom-hardware-design"}
-              SectionH={"h-[230px]"}
+                            SectionH={"h-[220px] max-[1290px]:h-[310px] max-[1090px]:h-[380px] max-[880px]:h-[450px] max-[790px]:h-[420px] "}
+
             />
             <HomeCard
               src={SmartHomeIotDevices}
@@ -252,7 +259,8 @@ export default function HomeClient() {
                 " From Wi-Fi to Zigbee and Z-Wave, we build intelligent connected devices that enhance comfort, convenience, and energy efficiency. Our custom hardware development ensures seamless integration into modern smart-home ecosystems."
               }
               href={"/services/product-testing-and-validation"}
-              SectionH={"h-[230px]"}
+                            SectionH={"h-[220px] max-[1290px]:h-[310px] max-[1090px]:h-[380px] max-[880px]:h-[450px] max-[790px]:h-[420px] "}
+
             />
             <HomeCard
               src={IndustrialAutomation}
@@ -265,10 +273,11 @@ export default function HomeClient() {
                 "Our hardware engineering company expertise delivers robust systems for precise control, monitoring, and process optimization. With end-to-end hardware development and product prototyping and testing, we help industries increase efficiency and reliability."
               }
               href={"/services/iot-consulting-services"}
-              SectionH={"h-[230px]"}
+                            SectionH={"h-[220px] max-[1290px]:h-[310px] max-[1090px]:h-[380px] max-[880px]:h-[450px] max-[790px]:h-[420px] "}
+
             />
           </div>
-          <div className="md:hidden h-full">
+          <div className="xl:hidden h-full">
             <Swiper
               slidesPerView={1.2}
               spaceBetween={20}
@@ -448,6 +457,7 @@ export default function HomeClient() {
           <div className="flex-1 border-t border-black/50"></div>
         </div>
         <div>
+        {/* 
           <p className="text-start font-bold text-3xl">Our Partners</p>
           <div className="flex  mt-4 w-full justify-between items-center gap-10 max-md:hidden">
             <Image src={Nuve} alt="Nuve company logo" title="Nuve" />
@@ -460,13 +470,35 @@ export default function HomeClient() {
             <Image src={Lanar} alt="Lanar company logo" title="Lanar" />
             <Image src={Is} alt="IS company logo" title="IS" />
             <Image src={Teona} alt="Teona company logo" title="Teona" />
-          </div>
-          <div className="md:hidden flex overflow-x-auto py-4">
+          </div> */}
+          <div className=" flex overflow-x-auto py-4">
   <Swiper
+  loop={true}
     slidesPerView={2.5}
     spaceBetween={20}
     pagination={false}
     navigation={false}
+    
+                modules={[FreeMode, Mousewheel, Autoplay]}
+
+    autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 6,
+                spaceBetween: 30,
+              },
+            }}
   >
     <SwiperSlide>
       <div className="flex items-center justify-center h-full">

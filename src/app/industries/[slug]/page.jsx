@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import BackButton from "../../../components/ui/BackButton";
 import IndustryCard from "../../../components/ui/IndustryCard";
@@ -6,6 +7,10 @@ import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { INDUSTRY_DETAILS } from "../../../data/industryDetail";
 import { notFound } from "next/navigation";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 export default function IndustryPage({ params }) {
     const resolvedParams = React.use(params);
  const slug = resolvedParams.slug;
@@ -52,7 +57,7 @@ function _StructuredData({ industry }) {
             unoptimized
             alt={industry.mainImage.imageAlt}
             title={industry.mainImage.imageTitle}
-            className="max-sm:hidden"
+            className="max-xl:hidden"
           />
           <p className="text-xl">{industry.description}</p>
         </div>
@@ -92,6 +97,21 @@ function _StructuredData({ industry }) {
             <IndustryCard key={i} {...ind} />
           ))}
         </div>
+      </div>
+      <div className="sm:hidden">
+         <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+            {industry.otherIndustries.map((ind, i) =>  (
+            <SwiperSlide key={i}>
+           <IndustryCard  {...ind} />
+            </SwiperSlide>
+          ))}
+          </Swiper>
+
       </div>
 
       <div className="mx-auto flex flex-col gap-6 w-[53%]">
