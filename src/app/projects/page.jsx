@@ -1,0 +1,209 @@
+'use client';
+import Image from "next/image";
+import { IoStorefrontOutline, IoSettingsOutline, IoMedkitOutline } from "react-icons/io5";
+import ProjectsCard from "../../components/ui/ProjectsCard";
+import { projectsData,pageContent } from "../../data/projects";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+export default function Projects() {
+  const { categories } = projectsData;
+const { title, subtitle, categoriesTitle } = pageContent;
+  return (
+    <main className="mt-[93px] flex flex-col gap-6 max-sm:mt-8">
+      <div className="flex flex-col gap-6 mx-12.5 max-sm:mx-4">
+        <p className="text-[56px] font-bold w-[48%] max-sm:w-auto max-sm:text-[32px]">{title}</p>
+        <p>{subtitle}</p>
+        <p className="text-2xl font-bold">{categoriesTitle}</p>
+      </div>
+      <div className="bg-secondary px-12.5 py-10 max-sm:px-0 max-sm:py-2">
+        <div className="my-60 flex flex-col gap-6 max-sm:w-90 max-sm:mx-auto max-sm:my-4">
+          <div className="flex gap-6 items-center">
+            <IoStorefrontOutline className="text-primary text-3xl" />
+            <p className="font-bold text-2xl">{categories.retail.title}</p>
+          </div>
+          <p>{categories.retail.description}</p>
+        </div>
+        <div className="flex flex-wrap gap-8 justify-start max-sm:hidden">
+          {categories.retail.projects.map((project, i) => (
+            <ProjectsCard
+              key={i}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
+            />
+          ))}
+        </div>
+        <div className="sm:hidden pl-5 h-full">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {categories.retail.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              href={project.href}
+              maxSmHeight="max-sm:h-[410px]"
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      </div>
+
+     <div className="bg-secondary px-12.5 py-10 max-sm:px-0 max-sm:py-2">
+        <div className="my-60 flex flex-col gap-6 max-sm:w-90 max-sm:mx-auto max-sm:my-4">
+          <div className="flex gap-6 items-center">
+            <IoSettingsOutline className="text-primary text-3xl" />
+            <p className="text-xl font-bold">{categories.industrial.title}</p>
+          </div>
+          <p>{categories.industrial.description}</p>
+        </div>
+        <div className="flex flex-wrap gap-8 justify-start max-sm:hidden">
+          {categories.industrial.projects.map((project, i) => (
+            <ProjectsCard
+              key={i}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              height="h-[430px]"
+            />
+          ))}
+        </div>
+        <div className="sm:hidden pl-5">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {categories.industrial.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+               maxSmHeight="max-sm:h-[560px]"
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      </div>
+      <div className="bg-secondary px-12.5 py-10 max-sm:px-0 max-sm:py-2">
+        <div className="my-60 flex flex-col gap-6 max-sm:w-90 max-sm:mx-auto max-sm:my-4">
+          <div className="flex gap-6 items-center">
+            <Image className="w-8 h-8" src={categories.private.icon} alt="Private" />
+            <p className="text-xl font-bold">{categories.private.title}</p>
+          </div>
+          <p>{categories.private.description}</p>
+        </div>
+        <div className="flex flex-wrap gap-8 justify-start max-sm:hidden">
+          {categories.private.projects.map((project, i) => (
+            <ProjectsCard
+              key={i}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              height="h-[340px]"
+            />
+          ))}
+        </div>
+        <div className="sm:hidden pl-5">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {categories.private.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              height="h-[380px]"
+              maxSmHeight="max-sm:h-[540px]"
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      </div>
+      <div className="bg-secondary px-12.5 py-10 max-sm:px-0 max-sm:py-2">
+        <div className="my-60 flex flex-col gap-6 max-sm:w-90 max-sm:mx-auto max-sm:my-4">
+          <div className="flex gap-6 items-center">
+            <IoMedkitOutline className="text-primary text-3xl" />
+            <p className="text-xl font-bold">{categories.medical.title}</p>
+          </div>
+          <p>{categories.medical.description}</p>
+        </div>
+        <div className="flex flex-wrap gap-8 justify-start max-sm:hidden">
+          {categories.medical.projects.map((project, i) => (
+            <ProjectsCard
+              key={i}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              height="h-[380px]"
+            />
+          ))}
+        </div>
+        <div className="sm:hidden pl-5">
+        <Swiper
+          slidesPerView={1.3}
+          spaceBetween={20}
+          pagination={false}
+          navigation={false}
+        >
+          {categories.medical.projects.map((project, index) => (
+            <SwiperSlide key={index}>
+             <ProjectsCard
+              key={index}
+              image={project.image}
+              Imagetitle={project.Imagetitle}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              buttonText={project.buttonText}
+              maxSmHeight="max-sm:h-[540px]"
+            />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      </div>
+    </main>
+  );
+}

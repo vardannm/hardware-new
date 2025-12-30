@@ -12,7 +12,7 @@ export default function PerkCard({ headline, text, alt, title, src, width }) {
         <p className="text-gray-600">{text}</p>
       </div>
 
-      <div className="w-full h-48 relative max-sm:h-60">
+      <div className="w-full h-48 relative max-sm:h-">
         <Image
           src={src}
           alt={alt}
