@@ -49,7 +49,7 @@ function _StructuredData({ industry }) {
       </div>
 
       <div className="w-[60%] flex flex-col mx-auto gap-8 max-sm:w-[95%] max-sm:gap-4">
-        <BackButton href={"/industries"} />
+        <BackButton />
         <p className="text-5xl font-bold w-2/3 max-sm:text-2xl">{industry.title}</p>
         <div className="flex gap-6">
           <Image

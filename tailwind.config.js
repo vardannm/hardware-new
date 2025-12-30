@@ -9,6 +9,8 @@ export default {
     extend: {
       fontFamily: {
         gilroy: ["Gilroy", "sans-serif"],
+                inter: ['Inter', 'sans-serif'], // <-- add this
+
       },
     },
   },

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
   font-family: "Gilroy";
@@ -81,7 +82,7 @@
 }
 
 body {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy","Inter," Arial, Helvetica, sans-serif;
   background-color: #ffffff;
 }
 
@@ -139,7 +140,6 @@ body {
     @apply text-[56px] font-normal leading-tight;
   }
 
-  /* H2 */
   .h2-bold {
     @apply text-[32px] font-bold leading-snug;
   }
@@ -148,7 +148,7 @@ body {
     @apply text-[32px] font-normal leading-snug;
   }
 
-  /* H3 */
+
   .h3-bold {
     @apply text-[22px] font-bold leading-snug;
   }
@@ -157,7 +157,7 @@ body {
     @apply text-[22px] font-normal leading-snug;
   }
 
-  /* H4 */
+
   .h4-bold {
     @apply text-[20px] font-bold leading-snug;
   }
@@ -166,9 +166,7 @@ body {
     @apply text-[20px] font-normal leading-snug;
   }
 
-  /* =========================
-     BODY TEXT
-     ========================= */
+
 
   .text-bold {
     @apply text-[16px] font-bold leading-normal;
@@ -178,9 +176,7 @@ body {
     @apply text-[16px] font-normal leading-normal;
   }
 
-  /* =========================
-     MOBILE
-     ========================= */
+
 
   .text-mobile {
     @apply text-[14px] font-normal leading-normal;
@@ -195,7 +191,31 @@ body {
   .card-blog-description {
     @apply text-start mx-auto w-[63%] max-xl:w-[85%] max-md:w-90 max-sm:w-full max-sm:px-[4%] max-sm:bg-secondary max-sm:pt-2 max-sm:gap-4 max-sm:h-full;
   }
+  .card-per-blog-description {
+    @apply text-start py-12 px-[18%] max-xl:px-[7%] max-md:px-[6%] max-sm:px-[5%] max-sm:bg-secondary ;
+  }
   .padding-image-responsive {
      @apply mx-auto w-[63%] max-xl:w-[85%] max-md:w-90 max-sm:w-full;
+  }
+}
+.hero-swiper .swiper-pagination {
+  left: 10% !important;
+  right: auto !important;
+  bottom: 5% !important;
+  width: auto !important;
+  text-align: left;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+@media (max-width: 768px) {
+  .hero-swiper .swiper-pagination {
+    display: none;
   }
 }

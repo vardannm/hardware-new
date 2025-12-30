@@ -63,7 +63,7 @@ export default function ServicePage({ params }) {
           className="hero-background"
         />
         <div className="absolute left-[60%] top-[10%] flex flex-col justify-start gap-6 text-white max-sm:hidden">
-          <BackButton className="self-start" href={"/services"}/>
+          <BackButton className="self-start" />
           <div className="flex flex-col gap-[7px]">
             <p className="text-4xl font-bold w-[37%]">{hero.desktopTitle}</p>
             <p className="text-xl font-bold">{hero.desktopSubtitle}</p>
@@ -76,7 +76,7 @@ export default function ServicePage({ params }) {
    
         <div className="sm:hidden">
          
-          <BackButton className="self-start" href={"/services"}/>
+          <BackButton className="self-start" />
           <div className="flex flex-col gap-[7px]">
             <p className="text-3xl font-bold">
               {hero.mobileTitle || hero.desktopTitle}

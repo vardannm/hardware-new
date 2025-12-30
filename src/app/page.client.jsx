@@ -2,7 +2,7 @@
 import Image from "next/image";
 import HomeCard from "../components/ui/HomeCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Mousewheel, Autoplay } from "swiper/modules";
+import { FreeMode, Mousewheel, Autoplay ,Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -26,35 +26,59 @@ function StructuredData() {
 
 export default function HomeClient() {
   const {
-    hero,
+    heroes,
     services,
     industries,
     projects,
     partners,
     about,
+    welcomeDescription,
+    welcomeTitle
   } = HOME_DATA;
 
   return (
     <div className="flex flex-col">
       <StructuredData />
-      <div className="w-full h-[645px] relative max-md:h-[400px]">
-        <Image
-          src={hero.image}
-          alt={hero.alt}
-          title={hero.title}
-          fill
-          unoptimized
-          className="hero-background"
-        />
-        <div className="absolute left-[10%] bottom-[10%] flex flex-col justify-start gap-6 text-white max-md:hidden">
-          <p className="text-6xl font-bold w-[70%] text-white">
-            {hero.welcomeText}
-          </p>
-        </div>
-      </div>
+       <Swiper
+      modules={[Autoplay, Pagination]}
+      loop
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+      pagination={{ clickable: true }}
+      className="w-full hero-swiper"
+    >
+      {heroes.map((hero, index) => (
+        <SwiperSlide key={index}>
+          <div className="w-full h-[645px] relative max-md:h-[400px]">
+            <Image
+              src={hero.image}
+              alt={hero.alt}
+              title={hero.title}
+              fill
+              unoptimized
+              priority={index === 0}
+              className="hero-background"
+            />
+            {hero.welcomeText && (
+<div
+  className={`absolute left-[10%] bottom-[10%] flex flex-col justify-start gap-2 text-white ${
+    index === 0 ? "max-md:hidden" : ""
+  }`} >
+                <p className="text-[56px] font-bold w-[70%] max-xl:text-[32px] max-xl:w-[80%] max-lg:text-[22px] max-lg:w-[84%]  text-white">
+                  {hero.welcomeText}
+                </p>
+                <p className="text-[22px] max-lg:text-[18px]  w-[70%] text-white">{hero.subText}</p>
+              </div>
+            )}
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
       <div className="mx-auto flex flex-col gap-60 w-76 my-60 max-md:w-[87%] max-md:my-6">
-        <p className="md:hidden text-[32px] font-bold">{hero.welcomeText}</p>
-        <p className="text-xl">{hero.description}</p>
+        <p className="md:hidden text-[32px] font-bold">{welcomeTitle}</p>
+        <p className="text-xl">{welcomeDescription}</p>
         <div>
           <p className="text-start font-bold text-3xl max-md:mb-5">
             {services.title}
@@ -106,7 +130,7 @@ export default function HomeClient() {
           <p className="text-start font-bold text-3xl max-md:mb-5">
             {industries.title}
           </p>
-          <div className="flex gap-10 mt-4 max-xl:hidden">
+          <div className="flex gap-10 mt-4 max-md:hidden">
             {industries.items.map((item, idx) => (
               <HomeCard
                 key={idx}
@@ -122,7 +146,7 @@ export default function HomeClient() {
               />
             ))}
           </div>
-          <div className="xl:hidden h-full">
+          <div className="md:hidden h-full">
             <Swiper slidesPerView={1.2} spaceBetween={20}>
               {industries.items.map((item, idx) => (
                 <SwiperSlide key={idx}>
@@ -174,7 +198,7 @@ export default function HomeClient() {
                 <SwiperSlide key={idx}>
                   <HomeCard
                     src={idx === 0 ? item.mobileImage || item.image : item.image}
-                    SectionH={idx === 0 ? "h-[315px]" : item.sectionH}
+                    SectionH={idx === 0 ? "h-[335px]" : item.sectionH}
                     alt={item.alt}
                     imageTitle={item.imageTitle}
                     title={item.title}
@@ -195,8 +219,6 @@ export default function HomeClient() {
           </Link>
           <div className="flex-1 border-t border-black/50"></div>
         </div>
-
-        {/* Partners Carousel */}
         <div className="flex overflow-x-auto py-4">
           <Swiper
             loop={true}

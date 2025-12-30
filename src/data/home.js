@@ -12,21 +12,49 @@ import Nuve from "@/public/main/nuve.png";
 import Instigate from "@/public/main/instigate.png";
 import Lumiere from "@/public/main/lumiere.png";
 import Lanar from "@/public/main/lanar.png";
+import Lucidtron from "@/public/main/lucidtron.png";
+import Zlight from "@/public/main/zlight.png";
 import Is from "@/public/main/is.png";
 import Teona from "@/public/main/teona.png";
 import Arthur from "@/public/aboutus/arthur-movsesyan.png";
 import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import MoonByRing from "@/public/main/moon-by-ring.png";
-
+import SecondSlide from "@/public/main/SecondSlide.png";
+import ThirdSlide from "@/public/main/ThirdSlide.png";
+import FourthSlide from "@/public/main/FourthSlide.png";
 export const HOME_DATA = {
-  hero: {
+ heroes : [
+  {
     image: HardwareDesignCompany,
     alt: "Engineers working on electronic components at a hardware design company creating innovative devices and systems",
     title: "Hardware Design Company",
     welcomeText: "Welcome to Hardware Design House",
-    description:
-      "At HDH, we transform innovative ideas into real-world hardware solutions. As a leading hardware design company, we support each stage of development, from initial concept to full-scale production. Our team combines deep engineering expertise with cutting-edge technology to create devices and systems that are reliable, efficient, and market-ready. Whether it’s hardware design services, custom hardware development, or end-to-end hardware development, HDH is your trusted partner in turning ideas into reality.",
+   
   },
+  {
+    image: SecondSlide,
+    alt: "Advanced PCB and electronic design solutions",
+    title: "Advanced Hardware Engineering",
+    welcomeText:"CES. January 6–9",
+    subText:"Our team is heading to CES, ready to connect, exchange ideas, and get inspired by the newest shifts in technology. Open for meetings on future technology initiatives.",
+  },
+  {
+    image: ThirdSlide,
+    alt: "Prototype development and testing",
+    title: "Prototype & Validation",
+    welcomeText:"Embedded world. March 6–9",
+    subText:"Meeting our partners and connecting with new ones in the embedded world.Let’s talk about embedded solutions and partnership opportunities.",
+  },
+  {
+    image: FourthSlide,
+    alt: "End-to-end hardware product development",
+    title: "From Concept to Production",
+    welcomeText:"Ongoing partnership since 2024",
+    subText:"We have been official MediaTek partners since 2024.Working together to deliver advanced and innovative hardware solutions.",
+  },
+],
+welcomeTitle:"Welcome to Hardware Design House",
+welcomeDescription: "At HDH, we transform innovative ideas into real-world hardware solutions. As a leading hardware design company, we support each stage of development, from initial concept to full-scale production.",
   services: {
     title: "Services",
     allLink: "/services",
@@ -134,6 +162,8 @@ export const HOME_DATA = {
       { src: Lanar, alt: "Lanar company logo", title: "Lanar" },
       { src: Is, alt: "IS company logo", title: "IS" },
       { src: Teona, alt: "Teona company logo", title: "Teona" },
+      { src: Lucidtron, alt: "Lucidtron company logo", title: "Lucidtron" },
+      { src: Zlight, alt: "Zlight company logo", title: "Zlight" },
     ],
   },
   about: {
