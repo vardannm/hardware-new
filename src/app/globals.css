@@ -197,6 +197,9 @@ body {
   .padding-image-responsive {
      @apply mx-auto w-[63%] max-xl:w-[85%] max-md:w-90 max-sm:w-full;
   }
+  .faq-padding{
+    @apply mx-auto w-[53%] max-xl:w-[65%] max-md:w-[80%] max-sm:w-90 
+  }
 }
 .hero-swiper .swiper-pagination {
   left: 10% !important;
