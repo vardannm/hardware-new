@@ -26,7 +26,7 @@ export default function Navbar() {
         <ul className="flex gap-6 order-3 max-sm:hidden">
           <li>
             <a
-              href="/contact"
+              href="/contact-us"
               className="hover:text-gray-400 rounded-full text-white p-3 bg-primary transition-colors"
             >
               Contact Us
