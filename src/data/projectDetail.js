@@ -45,6 +45,13 @@ import ThermoSlideThird from "@/public/thermostat/slide3.jpg";
 import ThermoSlideFourth from "@/public/thermostat/slide4.jpg";
 import ThermoSlideFive from "@/public/thermostat/slide5.jpg";
 import ThermoSlideSix from "@/public/thermostat/slide6.jpg";
+
+//zlight swiper images
+import SmartBedroomLightingSystemDesign from "@/public/zlight/smart-bedroom-lighting-system-design.jpg";
+import SmartSleepLightingDevice from "@/public/zlight/smart-sleep-lighting-device.jpg";
+import SmartNightstandLightWithSensors from "@/public/zlight/smart-nightstand-light-with-sensors.jpg";
+import SmartSleepLightAlarm from "@/public/zlight/smart-sleep-light-alarm.jpg";
+import SmartBedroomHubDevice from "@/public/zlight/smart-bedroom-hub-device.jpg";
 export const PROJECT_DETAILS = {
   "smart-bedroom-lighting-system": {
     slug: "smart-bedroom-lighting-system",
@@ -148,7 +155,13 @@ export const PROJECT_DETAILS = {
         width: 260,
       },
     ],
-    galleryImages: Array(7).fill(zlighSwipper),
+   galleryImages: [
+      SmartBedroomLightingSystemDesign,
+      SmartSleepLightingDevice,
+      SmartNightstandLightWithSensors,
+      SmartSleepLightAlarm,
+      SmartBedroomHubDevice,
+    ],
     finalText:
       "The zLight is a small, all-in-one device that brings together wireless charging, smart lighting, and environmental sensing. It contributes to a more restful and healthy bedtime routine.",
   },
@@ -308,19 +321,19 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         isLeft: true,
       },
       {
+        src: SmartDeviceIntegration,
+        alt: "Moon by 1-Ring smart home hub designed for efficient smart device integration",
+        title: "Efficient Smart Device Integration",
+        text: "The Moon hub was designed to unify multiple smart devices into a single, efficient system. Development focused on achieving a compact, high-performance design with full 360-degree coverage, balancing power consumption, reliability, and overall system efficiency through extensive testing.",
+        isLeft: false,
+      },
+      {
         src: IntegratedSensors,
         alt: "Compact smart home hub with integrated sensors and camera optics",
         title:
           "Compact Smart Home Hub with Integrated Sensors and Camera Optics",
         text: "The compact size of the hub required careful integration of high-quality sensors, a proper matrix, and camera optics for streaming. Using a System on Module (SOM) enabled smooth live streaming while addressing space, thermal management, and system prioritization challenges.",
         isLeft: true,
-      },
-      {
-        src: SmartDeviceIntegration,
-        alt: "Moon by 1-Ring smart home hub designed for efficient smart device integration",
-        title: "Efficient Smart Device Integration",
-        text: "The Moon hub was designed to unify multiple smart devices into a single, efficient system. Development focused on achieving a compact, high-performance design with full 360-degree coverage, balancing power consumption, reliability, and overall system efficiency through extensive testing.",
-        isLeft: false,
       },
       {
         src: MagneticLevitationDesign,
@@ -382,7 +395,13 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         width: 352,
       },
     ],
-    galleryImages: Array(7).fill(zlighSwipper),
+    galleryImages: [
+      SmartBedroomLightingSystemDesign,
+      SmartSleepLightingDevice,
+      SmartNightstandLightWithSensors,
+      SmartSleepLightAlarm,
+      SmartBedroomHubDevice,
+    ],
     finalText:
       "The Moon project created a smart home hub that brings devices together,automates tasks, and provides all-around home monitoring. Its sensors, high-performance CPU, and innovative design show a practical and forward-thinking approach to smart home technology.The Moon project was fully developed and successfully completed on our side, including a working prototype, though production was not implemented due to marketing considerations. For future collaborators: We invite you to discover the potential for collaboration in bringing the Moon project to life and set new standards in smart home technology.",
   },
