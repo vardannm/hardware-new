@@ -24,7 +24,7 @@ export const ServiceCards = [
     textTitle: "Custom Hardware Design",
     description:
       "HDH delivers full-cycle custom hardware design services, from concept and schematic design to production-ready prototypes. Our team ensures reliable, high-performance, and scalable hardware. With rapid prototyping and tailored solutions, we help clients bring innovative products to market efficiently.",
-    href: "services/custom-hardware-design",
+    href: "/services/custom-hardware-design",
     mobileBg: "#091832",
   },
   {
@@ -34,7 +34,7 @@ export const ServiceCards = [
     textTitle: "Prototype Development",
     description:
       "We bring product concepts to life quickly and accurately through functional prototypes that support design validation, performance testing, and a smooth transition to production, enabling teams to refine designs and identify improvements early in the development process.",
-    href: "services/prototype-development-services",
+    href: "/services/prototype-development-services",
     mobileBg: "#264653",
   },
   {
@@ -44,7 +44,7 @@ export const ServiceCards = [
     textTitle: "System Architecture and Optimization",
     description:
       "HDH ensures hardware, software, and embedded systems work together smoothly from the start. Our system architecture and optimization services simplify complex designs, improve efficiency, and identify potential issues early, providing a dependable foundation for scalable development.",
-    href: "services/embedded-system-architecture",
+    href: "/services/embedded-system-architecture",
     mobileBg: "#403C38",
   },
   {
@@ -54,7 +54,7 @@ export const ServiceCards = [
     textTitle: "Product Testing and Validation",
     description:
       "We verify hardware, firmware, and system performance using advanced testing methods, giving teams confidence in product quality before production. Our approach catches issues early and confirms compliance with industry standards.",
-    href: "services/product-testing-and-validation",
+    href: "/services/product-testing-and-validation",
     mobileBg: "#1B2631",
   },
   {
@@ -64,7 +64,7 @@ export const ServiceCards = [
     textTitle: "Full-Cycle Manufacturing Support",
     description:
       "From validated prototype to finished product, HDH manages sourcing, assembly, testing, and quality control to ensure each batch meets the required standards and stays on schedule. Our strong DFM practices reduce production risks and bring high-quality electronics to market efficiently.",
-    href: "services/electronics-manufacturing-services",
+    href: "/services/electronics-manufacturing-services",
     mobileBg: "#345070",
   },
   {
@@ -74,7 +74,7 @@ export const ServiceCards = [
     textTitle: "Consulting and Technical Advisory",
     description:
       "HDH offers practical IoT and engineering consulting to help teams make informed technical decisions. With deep experience in embedded systems and IoT architecture, we guide clients in refining designs, solving technical challenges, and selecting the right technologies for each project.",
-    href: "services/iot-consulting-services",
+    href: "/services/iot-consulting-services",
     mobileBg: "#1E261E",
   },
   {
@@ -84,7 +84,7 @@ export const ServiceCards = [
     textTitle: "Hardware Updates and Improvements",
     description:
       "We keep your hardware modern, reliable, and efficient through smart upgrades, PCB redesigns, and component improvements. Updates are thoroughly tested for smooth integration and long-term reliability, whether refreshing legacy systems or enhancing current products.",
-    href: "services/hardware-updates-and-improvements",
+    href: "/services/hardware-updates-and-improvements",
     mobileBg: "#2D284D",
   },
 ];
