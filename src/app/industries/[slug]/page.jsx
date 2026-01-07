@@ -44,7 +44,7 @@ function _StructuredData({ industry }) {
           title={industry.hero.imageTitle}
           fill
           unoptimized
-          className="hero-background"
+          className="object-cover"
         />
       </div>
 
@@ -114,7 +114,7 @@ function _StructuredData({ industry }) {
 
       </div>
 
-      <div className="mx-auto flex flex-col gap-6 w-[53%]">
+      <div className="faq-padding flex flex-col gap-6 ">
         <p className="text-3xl font-bold mx-auto">FAQ</p>
         <div className="flex flex-col gap-2">
           {industry.faq.map((item) => (
