@@ -129,7 +129,8 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
         title: "Moon by 1-Ring: Transforming Smart Home Technology",
         text: "Moon by 1-Ring unifies all your devices, automates daily tasks, and keeps your home secure, connecting seamlessly via Wi-Fi, Bluetooth, Zigbee, and Z-Wave.",
         href: "/projects/smart-home-hub",
-        cardMaxW: "max-w-[537px]",
+        cardMaxW: "max-w-[537px] min-w-[353px]",
+        sectionH: "h-[190px]",
         mobileImage: MoonByRing,
       },
       {

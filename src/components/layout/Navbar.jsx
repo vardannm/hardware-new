@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Hardware from "@/public/hardware.svg";
-
+import NavbarIcon from "@/public/navbarIcon.png"
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -20,7 +20,7 @@ export default function Navbar() {
         </div>
 
         <a href="/" className="order-2 max-sm:order-1">
-          <Image src={Hardware} alt="Hardware Icon" className="w-[49px]" />
+          <Image src={NavbarIcon} alt="Hardware Icon" className="w-[240px]" />
         </a>
 
         <ul className="flex gap-6 order-3 max-sm:hidden">

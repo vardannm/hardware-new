@@ -54,7 +54,7 @@ function ServicesClient() {
         ))}
         </div>
         <div className="flex flex-col gap-7 max-sm:mt-10">
-<div className="flex justify-between">
+<div className="flex justify-between max-sm:mx-3">
 <p className="font-bold text-4xl max-sm:text-xl max-sm:w-2/3">{ProjectSection.title}</p>
 <div className="flex  w-[116px] mb-4">
             <Link
@@ -97,6 +97,7 @@ function ServicesClient() {
               description={project.description}
               buttonText={project.buttonText}
               href={project.href}
+              lines="max-[400px]:line-clamp-8"
             />
             </SwiperSlide>
           ))}

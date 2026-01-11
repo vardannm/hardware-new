@@ -14,13 +14,13 @@ export default function HomeCard({
 }) {
   return (
     <div className={` shadow-md ${cardMaxW} flex flex-col gap-4 bg-secondary`}>
-      <div className={` flex items-center justify-center w-full overflow-hidden bg-white`}>
+      <div>
         <Image
           src={src}
           alt={alt}
           title={imageTitle}
           
-          className="object-contain"
+          className="object-fill"
         />
       </div>
       <div className={`flex flex-col gap-2 ${SectionH} relative px-3`}>

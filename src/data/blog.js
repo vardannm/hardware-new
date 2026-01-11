@@ -1,7 +1,7 @@
 import IotHardwareDesign from "@/public/blog/iot-hardware-design.jpg";
 import PcbLayoutGuidelines from "@/public/blog/pcb-layout-guidelines.jpg";
 import PocEvtDvtPvt from "@/public/blog/poc-evt-dvt-pvt.jpg";
-import HardwareRapidPrototyping from "@/public/blog/hardware-rapid-prototyping.png";
+import HardwareRapidPrototyping from "@/public/blog/hardware-rapid-prototyping.jpg";
 import HardwareProductLifecycle from "@/public/blog/hardware-product-lifecycle.jpg";
 export const blogStructuredData = {
   "@context": "https://schema.org",
@@ -115,6 +115,14 @@ export const blogCards = [
     href: "/blog/hardware-product-lifecycle"
   },
   {
+    src: HardwareProductLifecycle,
+    alt: "Comprehensive guide on hardware product lifecycle from concept to market",
+    imageTitle: "Hardware Product Lifecycle",
+    title: "Hardware Design for IoT Projects: A Complete Guide",
+    description: "Unlock the potential of Internet of Things (IoT) devices with a comprehensive hardware development guide. Dive into essential considerations for connectivity, power efficiency, and device reliability in today’s interconnected world.",
+    href: "/blog/iot-hardware-design"
+  },
+  {
     src: PcbLayoutGuidelines,
     alt: "Practical PCB layout guidelines and best practices for component placement, trace routing, and thermal management",
     imageTitle: "PCB Layout Guidelines",
@@ -137,13 +145,5 @@ export const blogCards = [
     title: "The Importance of Rapid Prototyping in the Product Development Lifecycle",
     description: "Rapid prototyping accelerates product development by turning ideas into functional models quickly. Explore its benefits, methods, and role in reducing risk, improving design, and bringing products to market faster. Featured as a key hardware development guide in our blog.",
     href: "/blog/hardware-rapid-prototyping"
-  },
-  {
-    src: HardwareProductLifecycle,
-    alt: "Comprehensive guide on hardware product lifecycle from concept to market",
-    imageTitle: "Hardware Product Lifecycle",
-    title: "Hardware Design for IoT Projects: A Complete Guide",
-    description: "Unlock the potential of Internet of Things (IoT) devices with a comprehensive hardware development guide. Dive into essential considerations for connectivity, power efficiency, and device reliability in today’s interconnected world.",
-    href: "/blog/hardware-design-for-iot-projects"
   },
 ];

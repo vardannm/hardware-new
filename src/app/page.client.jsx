@@ -69,7 +69,7 @@ export default function HomeClient() {
                 <p className="text-[56px] font-bold w-[70%] max-xl:text-[32px] max-xl:w-[80%] max-lg:text-[22px] max-lg:w-[84%]  text-white">
                   {hero.welcomeText}
                 </p>
-                <p className="text-[22px] max-lg:text-[18px]  w-[70%] text-white">{hero.subText}</p>
+                <p className="text-[22px] max-lg:text-[18px]  w-[70%] text-white max-sm:w-[90%]">{hero.subText}</p>
               </div>
             )}
           </div>
@@ -136,7 +136,7 @@ export default function HomeClient() {
                 key={idx}
                 src={item.image}
                 SectionH={
-                  "h-[220px] max-[1290px]:h-[310px] max-[1090px]:h-[380px] max-[880px]:h-[450px] max-[790px]:h-[420px]"
+                  "h-[240px] max-[1290px]:h-[310px] max-[1090px]:h-[380px] max-[880px]:h-[450px] max-[790px]:h-[420px]"
                 }
                 alt={item.alt}
                 imageTitle={item.imageTitle}
@@ -198,7 +198,7 @@ export default function HomeClient() {
                 <SwiperSlide key={idx}>
                   <HomeCard
                     src={idx === 0 ? item.mobileImage || item.image : item.image}
-                    SectionH={idx === 0 ? "h-[335px]" : item.sectionH}
+                    SectionH={idx === 0 ? "h-[308px]" : item.sectionH}
                     alt={item.alt}
                     imageTitle={item.imageTitle}
                     title={item.title}

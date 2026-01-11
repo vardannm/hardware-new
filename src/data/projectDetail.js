@@ -94,7 +94,7 @@ export const PROJECT_DETAILS = {
         alt: "Wireless Thermostat System with Upgraded Hardware and Software",
         title: "Wireless Thermostat System with Upgraded Hardware and Software",
         text: "In order to reduce the impact of possible humidity and temperature alterations, system mechanical components such as plexiglass, an appropriate type of wood and glue were selected.",
-        isLeft: true,
+        isLeft: false,
       },
       {
         src: SmartBedroomLightingSystemDevelopment,
@@ -109,7 +109,7 @@ export const PROJECT_DETAILS = {
         title:
           "Seamless Hardware and Software Integration in Home Automation Thermostat System",
         text: "Our team combined expertise in PCB design, firmware optimization, mechanical integration, and sensor calibration to bring the zLight to life. Careful hardware-software collaboration ensured seamless control through an app, while precision engineering allowed integration of sensors for temperature, humidity, and CO₂ monitoring. The system uses energy-efficient components, delivering reliable performance while fitting naturally in the bedroom environment.",
-        isLeft: true,
+        isLeft: false,
       },
 
       {
@@ -195,7 +195,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         alt: "Wireless Thermostat System with Upgraded Hardware and Software",
         title: "Wireless Thermostat System with Upgraded Hardware and Software",
         text: "In order to reduce the impact of possible humidity and temperature alterations, system mechanical components such as plexiglass, an appropriate type of wood and glue were selected.",
-        isLeft: true,
+        isLeft: false,
       },
       {
         src: SystemContractor,
@@ -210,7 +210,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         title:
           "Seamless Hardware and Software Integration in Home Automation Thermostat System",
         text: "Our team combined expertise in PCB design, firmware optimization, mechanical integration, and sensor calibration to bring the zLight to life. Careful hardware-software collaboration ensured seamless control through an app, while precision engineering allowed integration of sensors for temperature, humidity, and CO₂ monitoring. The system uses energy-efficient components, delivering reliable performance while fitting naturally in the bedroom environment.",
-        isLeft: true,
+        isLeft: false,
       },
 
       {
@@ -318,7 +318,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         alt: "Moon by 1-Ring smart home hub combining smart home sensors and automation features",
         title: "Moon by 1-Ring Smart Home Hub with Sensors and Automation",
         text: "The ball-shaped device includes a camera on one side and microphones on all four sides, providing full environmental awareness. It actively responds to sound, detects nearby activity, and automatically sends alerts or starts live streaming to your phone when events occur.",
-        isLeft: true,
+        isLeft: false,
       },
       {
         src: SmartDeviceIntegration,
@@ -333,7 +333,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         title:
           "Compact Smart Home Hub with Integrated Sensors and Camera Optics",
         text: "The compact size of the hub required careful integration of high-quality sensors, a proper matrix, and camera optics for streaming. Using a System on Module (SOM) enabled smooth live streaming while addressing space, thermal management, and system prioritization challenges.",
-        isLeft: true,
+        isLeft: false,
       },
       {
         src: MagneticLevitationDesign,

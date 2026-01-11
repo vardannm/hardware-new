@@ -17,13 +17,12 @@ export default function BlogPage({ params }) {
 
   return (
     <div className="flex flex-col gap-60 mb-60 w-full">
-      <div className="w-full h-[645px] relative max-sm:h-[400px]">
+      <div className="w-full h-[492px] relative max-sm:h-[400px]">
         <Image
           src={blog.heroImage}
           alt={blog.heroAlt}
           title={blog.heroTitle}
           fill
-          unoptimized
           className="object-cover"
         />
       </div>

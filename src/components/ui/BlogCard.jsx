@@ -12,6 +12,8 @@ export default function BlogCard({src, alt,imageTitle, title, description ,href}
     className="object-cover"
     sizes="(max-width: 640px) 100vw, 63vw"
     priority={false}
+    quality={30}
+
   />
 </div>
         <div className="flex flex-col gap-7 card-blog-description relative">
