@@ -4,11 +4,22 @@ import Hardware from "@/public/hardware.svg";
 import { usePathname } from "next/navigation";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-
+import { useState } from "react";
 export default function Footer() {
   const pathname = usePathname();
   const isContactPage = pathname === "/contact-us";
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+    const handleSend = () => {
+    const subject = encodeURIComponent("Contact request from website");
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    );
 
+    window.location.href =
+      `mailto:info@hardwarehouses.com?subject=${subject}&body=${body}`;
+  };
   return (
     <footer className="text-center py-[54px]  bg-[#DFDFDF] text-gray-400 text-sm flex flex-col ">
                 <div className="w-[45%] max-xl:w-[55%] max-lg:w-[65%] max-md:w-[80%] max-sm:w-[97&] mx-auto">
@@ -38,10 +49,13 @@ export default function Footer() {
                     <div className="flex flex-col items-start pt-[38px]">
                     <a className="text-[24px] font-bold">Contact Us</a>
                   <div className="flex flex-col align-start items-start gap-3 pt-[15px] max-sm:w-full">
-                    <input className="w-[334px] max-sm:w-full h-12 rounded-md bg-[#F3F3F3] pl-2 placeholder:font-medium placeholder:text-black  placeholder:font-inter" placeholder="Name Surname"/>
-                    <input className="w-[334px] max-sm:w-full h-12 rounded-md bg-[#F3F3F3] pl-2 placeholder:font-medium placeholder:text-black  placeholder:font-inter" placeholder="Email Address"/>
-                    <textarea className="w-[334px] max-sm:w-full  rounded-md bg-[#F3F3F3] pl-2 resize-none placeholder:font-medium placeholder:text-black  placeholder:pt-2 placeholder:font-inter" rows="6"  placeholder="Message" />
-                                      {!isContactPage && (<button className="bg-[#31B56A] rounded-md px-4 py-3 text-white sm:hidden self-end mt-4">Send message</button>)}
+                    <input className="w-[334px] max-sm:w-full h-12 rounded-md bg-[#F3F3F3] pl-2 placeholder:font-medium placeholder:text-black  placeholder:font-inter" placeholder="Name Surname"  value={name}
+          onChange={(e) => setName(e.target.value)}/>
+                    <input className="w-[334px] max-sm:w-full h-12 rounded-md bg-[#F3F3F3] pl-2 placeholder:font-medium placeholder:text-black  placeholder:font-inter" placeholder="Email Address" value={email}
+          onChange={(e) => setEmail(e.target.value)}/>
+                    <textarea className="w-[334px] max-sm:w-full  rounded-md bg-[#F3F3F3] pl-2 resize-none placeholder:font-medium placeholder:text-black  placeholder:pt-2 placeholder:font-inter" rows="6"  placeholder="Message"  value={message}
+          onChange={(e) => setMessage(e.target.value)} />
+                                      {!isContactPage && (<button className="bg-[#31B56A] rounded-md px-4 py-3 text-white sm:hidden self-end mt-4 cursor-pointer" onClick={handleSend}>Send message</button>)}
                   </div>
                   </div>
                   </div>)}
@@ -58,7 +72,7 @@ export default function Footer() {
 </a>
 
                  </div>
-                  {!isContactPage && (<button className="bg-[#31B56A] rounded-md px-4 py-3 text-white max-sm:hidden">Send message</button>)}
+                  {!isContactPage && (<button className="bg-[#31B56A] rounded-md px-4 py-3 text-white max-sm:hidden cursor-pointer" onClick={handleSend}>Send message</button>)}
                 </div>
                 <div className="flex justify-between border-t-1 border-t-[#cecece] max-sm:border-t-2 max-sm:flex-col max-sm:justify-center max-sm:pt-4 max-sm:gap-2">
       <p className="text-[#52525B]">©  Copyright {new Date().getFullYear()} All rights reserved.</p>

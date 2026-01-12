@@ -56,7 +56,7 @@ export default function ProjectPage({ params }) {
      <div className="bg-[#dfdfe4] mx-[171px] flex gap-[38px] rounded-[30px] p-8
                 max-sm:p-0 max-xl:flex-col max-sm:mx-0 ">
   
-  {/* Image wrapper */}
+
   <div className="relative w-[396px] h-[426px] shrink-0
                   max-xl:w-full max-sm:h-[280px]">
     <Image
@@ -67,8 +67,6 @@ export default function ProjectPage({ params }) {
       sizes="(max-width: 1280px) 100vw, 396px"
     />
   </div>
-
-  {/* Text */}
   <div className="flex flex-col gap-[38px] max-sm:p-4">
     <p className="font-bold text-3xl">
       {project.technicalApproach.title}
