@@ -37,7 +37,9 @@ import SensorsAutomation from "@/public/moon/sensors-automation.png";
 import HomeAutomationSystem from "@/public/moon/home-automation-system.png";
 import CameraSystem from "@/public/moon/camera-system.png";
 import HomeAutomationController from "@/public/moon/home-automation-controller.png";
-
+import HomeAutomationHub from "@/public/moon/home-automation-hub.png";
+import SmartHomeHubDeviceIntegration from "@/public/moon/smart-home-hub-device-integration.png";
+import SmartHomeAutomationSecurity from "@/public/moon/smart-home-automation-security.png";
 //thermostat swiper images
 import ThermoSlideFirst from "@/public/thermostat/slide1.jpg";
 import ThermoSlideSecond from "@/public/thermostat/slide2.jpg";
@@ -396,11 +398,11 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
       },
     ],
     galleryImages: [
-      SmartBedroomLightingSystemDesign,
-      SmartSleepLightingDevice,
-      SmartNightstandLightWithSensors,
-      SmartSleepLightAlarm,
-      SmartBedroomHubDevice,
+      HomeAutomationHub,
+      SmartHomeHubDeviceIntegration,
+      SmartHomeAutomationSecurity,
+      CameraSystem,
+      HomeAutomationController,
     ],
     finalText:
       "The Moon project created a smart home hub that brings devices together,automates tasks, and provides all-around home monitoring. Its sensors, high-performance CPU, and innovative design show a practical and forward-thinking approach to smart home technology.The Moon project was fully developed and successfully completed on our side, including a working prototype, though production was not implemented due to marketing considerations. For future collaborators: We invite you to discover the potential for collaboration in bringing the Moon project to life and set new standards in smart home technology.",

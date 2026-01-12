@@ -44,7 +44,7 @@ function _StructuredData({ industry }) {
           title={industry.hero.imageTitle}
           fill
           unoptimized
-          className="object-cover"
+          className="object-center object-cover"
         />
       </div>
 
