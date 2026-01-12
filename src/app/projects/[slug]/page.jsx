@@ -36,11 +36,12 @@ export default function ProjectPage({ params }) {
   return (
     <div className="flex flex-col gap-10 m-auto max-sm:mt-0">
       <div className="w-[1098px] mx-auto max-sm:w-auto">
-        <div className="flex justify-end gap-3 items-center">
+        <div className="flex justify-end gap-3 items-center  ">
           <Image
             src={project.hero.icon}
             alt={project.hero.imageAlt}
             title={project.hero.imageTitle}
+            className="max-[500px]:w-[250px] max-[500px]:h-[250px] max-[500px]:object-cover max-[500px]:rounded-[20px] max-[380px]:h-[170px]" 
           />
           <div className="flex flex-col gap-5 w-[358px] z-10 bg-transparent max-sm:gap-1 max-sm:pt-4 max-sm:pr-4">
             <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">
@@ -184,7 +185,7 @@ export default function ProjectPage({ params }) {
         </button>
       </div>
       <p className="font-bold text-4xl mx-auto">Final Result</p>
-      <p className="font-bold mx-auto w-[491px] text-center mb-14 max-sm:w-auto">
+      <p className="font-bold mx-auto w-[491px] text-center mb-14 max-sm:w-[82%]">
         {project.finalText}
       </p>
     </div>
