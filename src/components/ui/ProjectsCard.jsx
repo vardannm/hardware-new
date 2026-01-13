@@ -14,7 +14,7 @@ export default function ProjectsCard({
   lines,
 }) {
   return (
-<div className="bg-white shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col ">
+<div className="bg-white shadow-md min-w-[32%] rounded-lg overflow-hidden max-w-sm flex flex-col ">
   <Image
     src={image}
     alt={alt}
@@ -23,13 +23,13 @@ export default function ProjectsCard({
     unoptimized
   />
 
-  <div className={`p-4 flex flex-col ${height} ${maxSmHeight} relative`}>
+  <div className={`p-4 flex flex-col ${height} ${maxSmHeight}   relative justify-between`}>
     <div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className={`text-gray-600 mb-4 ${lines}`}>{description}</p>
+      <p className={`text-gray-600 mb-4  ${lines}`}>{description}</p>
     </div>
   {href && (
-      <div className="absolute bottom-0 -translate-y-1/3 left-1/2 -translate-x-1/2 flex ">
+      <div className="flex justify-center">
   <Link
     href={href}
     className="px-4 py-2 bg-transparent text-primary border border-primary rounded hover:bg-primary hover:text-white transition"

@@ -42,7 +42,7 @@ export const industriesData = {
       title: "Industrial Solution",
       description:
         "HDH delivers hardware that streamlines industrial operations and improves productivity. Our solutions, including robotics, control systems, and IoT-enabled monitoring devices, are designed for efficiency, durability, and easy deployment across the hardware engineering industries.",
-      link: "/industries/industrial-solutions",
+      link: "/industries/industrial-automation",
       linkLabel: "Learn more",
     },
 

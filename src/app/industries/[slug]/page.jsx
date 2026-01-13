@@ -37,7 +37,7 @@ function _StructuredData({ industry }) {
   return (
     <div className="flex flex-col gap-60 mb-60">
       <_StructuredData industry={industry} />
-      <div className="w-full h-[645px] relative max-sm:h-[400px]">
+      <div className="w-full h-[610px] relative max-sm:h-[400px]">
         <Image
           src={industry.hero.icon}
           alt={industry.hero.imageAlt}

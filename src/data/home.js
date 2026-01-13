@@ -21,7 +21,7 @@ import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import MoonByRing from "@/public/main/moon-by-ring.png";
 import SecondSlide from "@/public/main/SecondSlide.png";
 import ThirdSlide from "@/public/main/ThirdSlide.png";
-import FourthSlide from "@/public/main/FourthSlide.png";
+import FourthSlide from "@/public/main/FourthSlide.svg";
 export const HOME_DATA = {
  heroes : [
   {
@@ -97,7 +97,8 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
         imageTitle: "Security and Cybersecurity Hardware Solutions",
         title: "Security and Cybersecurity",
         text: "As a trusted electronic design company, we provide advanced hardware solutions for protection, monitoring, and secure communications. Our hardware design services include access control, surveillance, and threat detection systems to safeguard critical assets.",
-        href: "/services/custom-hardware-design",
+        href: "/industries/security-and-cybersecurity/",
+        
       },
       {
         image: SmartHomeIotDevices,
@@ -105,7 +106,8 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
         imageTitle: "Smart Home Automation and IoT Device Solutions",
         title: "Smart Home Automation and IoT Devices",
         text: " From Wi-Fi to Zigbee and Z-Wave, we build intelligent connected devices that enhance comfort, convenience, and energy efficiency. Our custom hardware development ensures seamless integration into modern smart-home ecosystems.",
-        href: "/services/product-testing-and-validation",
+        href: "/industries/smart-home-automation/",
+        
       },
       {
         image: IndustrialAutomation,
@@ -113,7 +115,8 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
         imageTitle: "Industrial Automation Hardware",
         title: "Industrial Automation Solutions",
         text: "Our hardware engineering company expertise delivers robust systems for precise control, monitoring, and process optimization. With end-to-end hardware development and product prototyping and testing, we help industries increase efficiency and reliability.",
-        href: "/services/iot-consulting-services",
+        href: "/industries/industrial-automation/",
+        
       },
     ],
   },
@@ -129,8 +132,8 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
         title: "Moon by 1-Ring: Transforming Smart Home Technology",
         text: "Moon by 1-Ring unifies all your devices, automates daily tasks, and keeps your home secure, connecting seamlessly via Wi-Fi, Bluetooth, Zigbee, and Z-Wave.",
         href: "/projects/smart-home-hub",
-        cardMaxW: "max-w-[537px] min-w-[353px]",
-        sectionH: "h-[190px]",
+        cardMaxW: "w-[40%]",
+        sectionH: "h-[190px] max-xl:h-auto",
         mobileImage: MoonByRing,
       },
       {
@@ -140,8 +143,8 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
         title: "Smart Thermostat System  ",
         text: " Effortless home climate control with a user-friendly design. Custom schedules, live weather updates, and air quality monitoring give you full control over heating, cooling, and ventilation.",
         href: "/projects/smart-thermostat-system",
-        cardMaxW: "max-w-[260px]",
-        sectionH: "h-[260px]",
+        cardMaxW: "w-[30%] max-md:max-w-[353px]",
+        sectionH: "h-[260px] max-xl:h-full",
       },
       {
         image: ZlightSmartBedroomLightingHardware,
@@ -150,8 +153,8 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
         title: "zLight Smart Bedroom Lighting System",
         text: "A compact, all-in-one device integrating wireless charging, smart lighting, and environmental sensing. Automatically adjusts light and temperature to promote relaxation and better sleep.",
         href: "/projects/smart-bedroom-lighting-system",
-        cardMaxW: "max-w-[260px]",
-        sectionH: "h-[260px]",
+        cardMaxW: "w-[30%] max-md:max-w-[353px]",
+        sectionH: "h-[260px] max-xl:h-full",
       },
     ],
   },

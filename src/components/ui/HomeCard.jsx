@@ -9,35 +9,38 @@ export default function HomeCard({
   imageTitle,
   buttonText = "Learn more",
   href,
-   cardMaxW = "w-[353px] max-md:w-auto max-md:max-w-[353px]",
-  SectionH = "h-[220px] max-sm:h-[260px]",
+   cardMaxW = "w-[32%] max-md:w-auto max-md:max-w-[353px]",
+  SectionH = "h-[220px] max-sm:h-full",
 }) {
   return (
-    <div className={` shadow-md ${cardMaxW} flex flex-col gap-4 bg-secondary`}>
+    <Link href={href} className={`  ${cardMaxW} flex flex-col gap-4 bg-secondary`}>
+      
       <div>
         <Image
           src={src}
           alt={alt}
           title={imageTitle}
           
-          className="object-fill"
+          className="object-cover w-full"
         />
       </div>
-      <div className={`flex flex-col gap-2 ${SectionH} relative px-3`}>
+      <div className={`flex flex-col gap-2 ${SectionH} relative px-3 justify-between`}>
+        <div>
         <h3 className="text-lg font-semibold ">
           {title}
         </h3>
         <p className="text-sm leading-relaxed">
           {text}
         </p>
+        </div>
       <Link href={href}>
       <button
-        className="absolute bottom-2.5 px-4 py-2 text-sm text-green-600 border border-green-500 rounded-md hover:bg-green-50 transition cursor-pointer"
+        className="px-4 py-2 text-sm text-green-600 border border-green-500 rounded-md hover:bg-green-50 transition cursor-pointer mb-2"
       >
         {buttonText}
       </button>
       </Link>
       </div>
-    </div>
+    </Link>
   );
 }
