@@ -54,7 +54,7 @@ export const HOME_DATA = {
   },
 ],
 welcomeTitle:"Welcome to Hardware Design House",
-welcomeDescription: "At HDH, we transform innovative ideas into real-world hardware solutions. As a leading hardware design company, we support each stage of development, from initial concept to full-scale production.",
+welcomeDescription: "At HDH, we transform innovative ideas into real-world hardware solutions. As a leading hardware design company, we support each stage of development, from initial concept to full-scale production. Our team combines deep engineering expertise with cutting-edge technology to create devices and systems that are reliable, efficient, and market-ready. Whether it’s hardware design services, custom hardware development, or end-to-end hardware development, HDH is your trusted partner in turning ideas into reality.",
   services: {
     title: "Services",
     allLink: "/services",

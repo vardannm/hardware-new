@@ -25,11 +25,11 @@ export default function HomeCard({
         />
       </div>
       <div className={`flex flex-col gap-2 ${SectionH} relative px-3 justify-between`}>
-        <div>
-        <h3 className="text-lg font-semibold ">
+        <div className="flex flex-col gap-4">
+        <h3 className="h3-bold">
           {title}
         </h3>
-        <p className="text-sm leading-relaxed">
+        <p className="text-regular leading-relaxed">
           {text}
         </p>
         </div>
