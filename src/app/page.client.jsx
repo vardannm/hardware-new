@@ -88,9 +88,6 @@ export default function HomeClient() {
               <HomeCard
                 key={idx}
                 src={item.image}
-                SectionH={
-                  "h-[220px] max-[1290px]:h-[270px] max-[1090px]:h-[350px] max-[840px]:h-[360px] max-[790px]:h-[420px]"
-                }
                 alt={item.alt}
                 imageTitle={item.imageTitle}
                 title={item.title}
@@ -110,7 +107,8 @@ export default function HomeClient() {
                     title={item.title}
                     text={item.text}
                     href={item.href}
-                    SectionH={"h-[280px]"}
+                    SectionH={"max-sm:h-[280px]"}
+                    lines={"max-sm:line-clamp-6"}
                   />
                 </SwiperSlide>
               ))}
@@ -157,7 +155,8 @@ export default function HomeClient() {
                     title={item.title}
                     text={item.text}
                     href={item.href}
-                    SectionH={"h-[300px]"}
+                    SectionH={"max-sm:h-[310px]"}
+                    lines={"max-sm:line-clamp-6"}
                   />
                 </SwiperSlide>
               ))}
@@ -198,12 +197,13 @@ export default function HomeClient() {
                 <SwiperSlide key={idx}>
                   <HomeCard
                     src={idx === 0 ? item.mobileImage || item.image : item.image}
-                    SectionH={idx === 0 ? "h-[308px]" : item.sectionH}
+                    SectionH={idx === 0 ? "max-sm:h-[365px]" : "max-sm:h-[310px]"}
                     alt={item.alt}
                     imageTitle={item.imageTitle}
                     title={item.title}
                     text={item.text}
                     href={item.href}
+                    lines={"max-sm:line-clamp-6"}
                   />
                 </SwiperSlide>
               ))}

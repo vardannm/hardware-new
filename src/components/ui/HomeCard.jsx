@@ -11,6 +11,7 @@ export default function HomeCard({
   href,
    cardMaxW = "w-[32%] max-md:w-auto max-md:max-w-[353px]",
   SectionH = "h-[220px] max-sm:h-full",
+  lines,
 }) {
   return (
     <Link
@@ -26,16 +27,17 @@ export default function HomeCard({
     />
   </div>
 
-  <div className={`flex flex-col gap-2 ${SectionH} relative px-3 justify-between`}>
-    <div className="flex flex-col gap-4">
-      <h3 className="h3-bold">{title}</h3>
-      <p className="text-regular leading-relaxed">{text}</p>
-    </div>
-
-    <div className="px-4 py-2 text-sm text-green-600 border border-green-500 rounded-md hover:bg-green-50 transition mb-2 inline-block w-fit">
-      {buttonText}
-    </div>
+ <div className={`flex flex-col gap-2 relative px-3 h-full ${SectionH}`}>
+  <div className="flex flex-col gap-4 flex-1">
+    <h3 className="h3-bold">{title}</h3>
+    <p className={`text-regular leading-relaxed ${lines}`}>{text}</p>
   </div>
+
+  <div className="px-4 py-2 text-green-600 border border-green-500 rounded-md hover:bg-green-50 transition mb-2 w-fit">
+    {buttonText}
+  </div>
+</div>
+
 </Link>
 
   );
