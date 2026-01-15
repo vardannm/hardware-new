@@ -183,7 +183,7 @@ export default function ProjectPage({ params }) {
         </button>
       </div>
       <p className="font-bold text-4xl mx-auto">Final Result</p>
-      <p className="font-bold mx-auto w-[491px] text-center mb-14 max-sm:w-[82%]">
+      <p className="mx-auto font-medium w-[491px] text-center mb-14 max-sm:w-[82%]">
         {project.finalText}
       </p>
     </div>

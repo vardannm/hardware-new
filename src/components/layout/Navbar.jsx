@@ -43,12 +43,12 @@ export default function Navbar() {
       />
 
       <div
-        className={`fixed top-0 left-0 h-full w-[85%] max-w-xs bg-white z-50 p-6 shadow-xl transition-transform duration-300 
+        className={`fixed top-0 left-0 h-full w-[85%] max-w-xs max-md:w-full max-md:max-w-full bg-white z-50 p-6 shadow-xl transition-transform duration-300 
         ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex justify-between mb-6">
         <div className="sm:hidden">
-          <Image src={Hardware} alt="Hardware Icon" className="w-[49px]" />
+          <Image src={NavbarIcon} alt="Hardware Icon" className="w-[60%]" />
         </div>
         <div className=" mb-6 ">
           <X

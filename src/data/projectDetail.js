@@ -10,7 +10,7 @@ import PrecisionSensors from "@/public/thermostat/precision-sensors.png";
 import IntuitiveInterface from "@/public/thermostat/intuitive-interface.png";
 import ModularScalable from "@/public/thermostat/modular-and-scalable-hardware.png";
 import ContractorSupport from "@/public/thermostat/contractor-support.png";
-
+import SmartThermostatSystemHvacControl from "@/public/thermostat/smart-thermostat-system-hvac-control.png";
 import SmartWakeUpLighting from "@/public/zlight/smart-wake-up-lighting.png";
 import WirelessChargingNightstand from "@/public/zlight/wireless-charging-nightstand.png";
 import AppControlledSmartBedroomLighting from "@/public/zlight/app-controlled-smart-bedroom-lighting.png";
@@ -181,7 +181,7 @@ export const PROJECT_DETAILS = {
       icon: Thermostat,
     },
     technicalApproach: {
-      image: SmartBedroomHub,
+      image: SmartThermostatSystemHvacControl,
       title: "Technical approach",
       text: `The thermostat is designed to operate with standard HVAC systems. It offers two methods for user interaction and programming:
 • through its built-in display and interface controls
