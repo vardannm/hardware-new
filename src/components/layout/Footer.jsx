@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer className="text-center py-[54px]  bg-[#DFDFDF] text-gray-400 text-sm flex flex-col ">
       <div className="w-[45%] max-xl:w-[55%] max-lg:w-[65%] max-md:w-[80%] max-sm:w-[97&] mx-auto">
-        <Image src={Hardware} alt="Hardware Icon" className="w-[150px]" />
+        <Image src={Hardware} alt="Hardware Icon" className="w-[170px]" />
         <div className="flex text-black justify-between max-sm:flex-col-reverse pl-2">
           <div className="flex flex-col items-start pt-[38px]">
             <a className="text-[24px] font-bold">Learn More</a>

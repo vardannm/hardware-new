@@ -101,7 +101,7 @@ export const ProjectSection = {
       description:
         "The zLight is a compact, all-in-one device that brings together wireless charging, smart lighting, and environmental sensing. It contributes to a more restful and healthy bedtime routine by automatically adjusting light and temperature conditions to promote relaxation and better sleep quality.",
       buttonText: "Learn more",
-      href: "/product/smart-bedroom-lighting-system",
+      href: "/projects/smart-bedroom-lighting-system",
     },
     {
       image: SmartThermostatSystem,
@@ -111,7 +111,7 @@ export const ProjectSection = {
       description:
         "The Smart Thermostat System makes home climate control effortless with an intuitive, user-friendly design. With features like custom schedules, live weather updates, and air quality monitoring, it gives you full control over heating, cooling, and ventilation, without the hassle.",
       buttonText: "Learn more",
-      href: "/product/smart-thermostat-system",
+      href: "/projects/smart-thermostat-system",
     },
     {
       image: MoonBy1Ring,
@@ -121,7 +121,7 @@ export const ProjectSection = {
       description:
         "The project aimed to be a big step forward in smart home technology, and it progressed to a working prototype phase. Even though it was paused at that stage due to technical constraints, it gave us a lot of valuable insights into system integration that we still carry into our projects today.",
       buttonText: "Learn more",
-      href: "/product/smart-home-hub",
+      href: "/projects/smart-home-hub",
     },
   ],
 };
