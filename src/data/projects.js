@@ -1,5 +1,5 @@
 import Zlight from "@/public/projects/smart-bedroom-lighting-hardware.png";
-import Thermostat from "@/public/projects/smart-thermostat-hardware-design-project.png";
+import Thermostat from "@/public/projects/smart-thermostat-hardware-design-project.jpg";
 import Moon from "@/public/projects/smart-home-hardware-design-project.png";
 import HighPrecision from "@/public/projects/high-precision-autonomous-navigation.png";
 import HighSensitive from "@/public/projects/high-sensitive-vibration-tracking.png";

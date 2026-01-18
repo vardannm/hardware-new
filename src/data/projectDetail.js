@@ -19,7 +19,7 @@ import zlighSwipper from "@/public/zlight/zlight-swiper.png";
 import Thermostat from "@/public/thermostat/thermostat.png";
 import ThermoBox from "@/public/thermostat/thermostatBox.svg";
 //zlight highlights images
-import SmartBedroomHubSecond from "@/public/zlight/smart-bedroom-hub-second.png";
+import SmartBedroomHubSecond from "@/public/zlight/smart-bedroom-hub-second.svg";
 import SmartBedroomLightingSystemEngineering from "@/public/zlight/smart-bedroom-lighting-system-engineering.png";
 import SmartBedroomLightingSystemSensorDesign from "@/public/zlight/smart-bedroom-lighting-system-sensor-design.png";
 import SmartBedroomLightingSystemDevelopment from "@/public/zlight/smart-bedroom-lighting-system-development.png";

@@ -6,7 +6,7 @@ import SecurityAndCybersecurity from "@/public/main/security-and-cybersecurity.p
 import SmartHomeIotDevices from "@/public/main/smart-home-iot-devices.png";
 import IndustrialAutomation from "@/public/main/industrial-automation.png";
 import MoonSmartHomeTechnology from "@/public/main/moon-smart-home-technology.png";
-import SmartThermostatSystems from "@/public/main/smart-thermostat-systems.png";
+import SmartThermostatSystems from "@/public/main/smart-thermostat-systems.jpg";
 import ZlightSmartBedroomLightingHardware from "@/public/main/zlight-smart-bedroom-lighting-hardware.png";
 import Nuve from "@/public/main/nuve.png";
 import Instigate from "@/public/main/instigate.png";
