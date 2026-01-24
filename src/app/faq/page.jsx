@@ -200,9 +200,9 @@ export default function FAQ() {
       <h1 className="text-4xl md:text-5xl font-bold text-start mb-6 text-black">
         {faqHeader.pageTitle}
       </h1>
-      <p className="text-xl md:text-2xl text-start text-black mb-12">
+      <h3 className="text-xl md:text-2xl text-start text-black mb-12">
         {faqHeader.pageDescription}
-      </p>
+      </h3>
 
       <div className="space-y-8">
         {faqCategories.map((category, categoryIndex) => (
@@ -218,7 +218,7 @@ export default function FAQ() {
                   className="bg-[#F8F8F8] rounded-lg shadow-sm border border-[#d0d0d0] overflow-hidden transition-all duration-200 hover:shadow-md"
                 >
                   <Accordion.Trigger className="flex justify-between items-center w-full p-6 text-left font-semibold text-lg  hover:bg-gray-50 transition-colors duration-200 group">
-                    <span className="text-left pr-4">{item.question}</span>
+                    <h3 className="text-left pr-4">{item.question}</h3>
                     <ChevronDownIcon
                       className="transform transition-transform duration-300 group-data-[state=open]:rotate-180 text-[#31B56A] font-bold flex-shrink-0 ml-2"
                       width={35}

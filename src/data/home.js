@@ -159,6 +159,7 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
     ],
   },
   partners: {
+    title: "Our Partners",
     logos: [
       { src: Nuve, alt: "Nuve company logo", title: "Nuve" },
       { src: Lumiere, alt: "Lumiere company logo", title: "Lumiere" },

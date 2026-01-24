@@ -36,7 +36,7 @@ function ServicesClient() {
         <p className="text-5xl font-bold max-sm:text-2xl">
           {heading.title}
         </p>
-        <p className="w-1/2 font-normal text-xl max-sm:w-[95%]">
+        <p className="w-[54%] font-normal text-xl max-sm:w-[95%]">
          {heading.description}
         </p>
       </div>))}
@@ -65,7 +65,7 @@ function ServicesClient() {
             </Link>
           </div>
 </div>
-          <div className="flex flex-wrap gap-8 justify-center max-sm:hidden">
+          <div className="flex  gap-8 justify-center max-sm:hidden">
                     {ProjectSection.projects.map((project, i) => (
                       <ProjectsCard
                         key={i}

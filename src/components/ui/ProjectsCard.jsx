@@ -19,7 +19,7 @@ export default function ProjectsCard({
     src={image}
     alt={alt}
     title={Imagetitle}
-    className="w-full h-[273px] object-cover border-b-2 border-b-primary"
+  className="w-full aspect-[16/12] object-cover border-b-2 border-b-primary"
     unoptimized
   />
 

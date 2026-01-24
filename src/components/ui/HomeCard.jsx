@@ -12,6 +12,7 @@ export default function HomeCard({
    cardMaxW = "w-[32%] max-md:w-auto max-md:max-w-[353px]",
   SectionH = "h-[220px] max-sm:h-full",
   lines,
+  imageHeight= "h-auto"
 }) {
   return (
     <Link
@@ -23,7 +24,7 @@ export default function HomeCard({
       src={src}
       alt={alt}
       title={imageTitle}
-      className="object-cover w-full"
+      className={`object-cover w-full ${imageHeight}`}
     />
   </div>
 

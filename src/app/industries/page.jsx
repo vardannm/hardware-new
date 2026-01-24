@@ -117,7 +117,7 @@ export default function Industries() {
               src={industry.image}
               alt={industry.imageAlt}
               title={industry.imageTitle}
-              className="w-full h-[610px]"
+              className="object-cover w-full h-[610px]"
             />
           )}
           <div className="px-[13%] bg-[#FAFAFA] py-6 flex flex-col mx-auto gap-8 mb-20 max-sm:px-[5%] max-sm:gap-4 text-start">

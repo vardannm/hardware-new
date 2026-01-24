@@ -82,7 +82,7 @@
 }
 
 body {
-  font-family: "Gilroy","Inter," Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", sans-serif;
   background-color: #ffffff;
 }
 
@@ -165,9 +165,27 @@ body {
   .h4-regular {
     @apply text-[20px] font-normal leading-snug;
   }
+  
+.h1-h3-bold {
+    @apply font-bold text-[56px] max-sm:text-[22px];
+  }
 
+.h4-text-mobile{
+    @apply text-[20px] leading-normal max-sm:text-[14px];
+}
+.h3-text-bold{
+    @apply text-[22px] font-bold leading-normal max-sm:text-[16px];
+}
+.h4-text-bold{
+    @apply text-[20px] font-bold leading-normal max-sm:text-[16px];
+}
+.h4-text-regular{
+    @apply text-[20px] leading-normal max-sm:text-[16px];
+}
 
-
+.h4-mobile-text-regular{
+    @apply text-[20px] leading-normal max-sm:text-[14px];
+}
   .text-bold {
     @apply text-[16px] font-bold leading-normal;
   }
@@ -220,5 +238,36 @@ body {
 @media (max-width: 768px) {
   .hero-swiper .swiper-pagination {
     display: none;
+  }
+}
+.partners {
+  width: 100%;
+  overflow: hidden;
+}
+
+.partners-track {
+  display: flex;
+  width: fit-content;
+  animation: partnerScroll 10s linear infinite;
+}
+
+.partner-item {
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.partner-img {
+  object-fit: contain;
+}
+
+@keyframes partnerScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

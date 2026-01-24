@@ -5,7 +5,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = await params;
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug;
   const industry = INDUSTRY_DETAILS[slug];
 
   if (!industry) {

@@ -104,8 +104,11 @@ export const INDUSTRY_DETAILS = {
     benefitsTitle:
       "Benefits of Our Smart Home Automation and IoT Devices services",
     benefitsText: `Custom home automation systems tailored to your vision 
+
 High reliability and security for smart home IoT devices 
+
 Scalable automation solutions for future expansions 
+
 Full-cycle support: smart home product design, prototyping, testing, and deployment`,
     otherIndustries: [
       {
@@ -240,9 +243,13 @@ Full-cycle support: smart home product design, prototyping, testing, and deploym
 
     benefitsTitle: "Benefits of Our Security and Cybersecurity Services",
     benefitsText: `Enhanced protection through hardware-based security and dedicated cybersecurity components
+
 Advanced access control solutions for securing both physical and digital environments
+
 Secure embedded systems and specialized security chips for connected devices
+
 Scalable access control platforms and IoT protection technologies for evolving requirements
+
 Full-cycle support: security system design, prototyping, testing, and deployment`,
 
     otherIndustries: [
@@ -379,15 +386,11 @@ With strong expertise across hardware, embedded software, sensing technologies, 
     benefitsTitle: "Benefits of Our Industrial automation solutions services",
     benefitsText: `Rapid prototyping of industrial automation systems for faster deployment
 
-
 Custom industrial automation solutions tailored to your workflows
-
 
 Reliable, rugged industrial automation hardware for harsh environments
 
-
 Scalable industrial automation control systems for expanding operations
-
 
 Full-cycle support: industrial automation engineering, prototyping, testing, and deployment`,
 

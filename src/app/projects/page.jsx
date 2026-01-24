@@ -13,7 +13,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
   return (
     <main className="mt-[93px] flex flex-col gap-6 max-sm:mt-8">
       <div className="flex flex-col gap-6 mx-auto 2xl:w-[70%] max-2xl:w-[77%] max-sm:w-[92%] ">
-        <p className="text-[56px] font-bold w-[48%] max-sm:w-auto max-sm:text-[32px] max-xl:w-full">{title}</p>
+        <p className="text-[56px] font-bold  max-sm:w-auto max-sm:text-[32px] max-xl:w-full">{title}</p>
         <p>{subtitle}</p>
         <p className="text-2xl font-bold">{categoriesTitle}</p>
       </div>

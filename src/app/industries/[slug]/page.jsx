@@ -37,20 +37,20 @@ function _StructuredData({ industry }) {
   return (
     <div className="flex flex-col gap-60 mb-60">
       <_StructuredData industry={industry} />
-      <div className="w-full h-[610px] relative max-sm:h-[400px]">
+      <div className="w-full h-[610px] relative max-sm:h-[400px] max-sm:hidden">
         <Image
           src={industry.hero.icon}
           alt={industry.hero.imageAlt}
           title={industry.hero.imageTitle}
           fill
           unoptimized
-          className="object-center object-cover"
+          className="object-center object-cover "
         />
       </div>
 
-      <div className="w-[60%] flex flex-col mx-auto gap-8 max-sm:w-[95%] max-sm:gap-4">
+      <div className="w-[60%] flex flex-col mx-auto gap-8 max-sm:w-[95%] max-sm:gap-4 max-sm:pt-10">
         <BackButton />
-        <p className="text-5xl font-bold w-2/3 max-sm:text-2xl">{industry.title}</p>
+        <h1 className="text-5xl font-bold w-2/3 max-sm:text-2xl">{industry.title}</h1>
         <div className="flex gap-6">
           <Image
             src={industry.mainImage.src}
@@ -83,11 +83,12 @@ function _StructuredData({ industry }) {
         </div>
       </div>
 
-      <div className="flex flex-col w-[40%] mx-auto text-center justify-center items-center max-sm:w-90 max-sm:text-start">
+      <div className="flex flex-col w-[44%] mx-auto text-center justify-center items-center max-sm:w-90 max-sm:text-start gap-6">
         <p className="font-bold text-3xl max-sm:text-xl">{industry.benefitsTitle}</p>
-        <p className="leading-12 w-[80%] max-sm:w-90 max-sm:leading-normal">
-          {industry.benefitsText}
-        </p>
+        <p className=" w-[80%] max-sm:w-90 max-sm:leading-normal whitespace-pre-line text-[20px]">
+  {industry.benefitsText}
+</p>
+
       </div>
 
       <div className="mx-auto flex flex-col gap-6 max-sm:hidden">

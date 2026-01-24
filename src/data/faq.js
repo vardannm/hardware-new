@@ -1,6 +1,6 @@
  export const faqCategories = [
     {
-      title: "About Us",
+      title: "About Hardware Design House",
       items: [
         {
           id: 'what-does-hdh-do',
@@ -109,6 +109,6 @@
     }
   ]
 export const faqHeader = {
-    pageTitle:"Hardware Design FAQ",
+    pageTitle:"Frequently Asked Questions (FAQs)",
     pageDescription:"Find answers to common questions about hardware design services, custom solutions, and project support"
 }

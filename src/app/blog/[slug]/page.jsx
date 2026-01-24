@@ -17,7 +17,7 @@ export default function BlogPage({ params }) {
 
   return (
     <div className="flex flex-col gap-60 mb-60 w-full">
-      <div className="w-full h-[492px] relative max-sm:h-[400px]">
+      <div className="w-full h-[492px] relative max-sm:hidden">
         <Image
           src={blog.heroImage}
           alt={blog.heroAlt}
@@ -26,7 +26,7 @@ export default function BlogPage({ params }) {
           className="object-cover"
         />
       </div>
-      <div className="padding-responsive text-start">
+      <div className="padding-responsive text-start max-sm:pt-10">
         <BackButton  />
         <p className="heading-responsive mb-60">{blog.pageTitle}</p>
         <p className="h4-regular">{blog.description}</p>

@@ -10,12 +10,12 @@ export default function ServiceCard({src , alt , title, textTitle, description,h
           unoptimized
           className="service-background w-full max-xl:h-[432px]"
         />
-        <div className="absolute top-1/2 right-28 -translate-y-1/2 flex flex-col gap-5 text-white max-w-[500px] max-xl:hidden">
-          <p className="font-bold text-4xl drop-shadow-lg max-xl:text-xl">
+        <div className="absolute top-1/2 right-28 -translate-y-1/2 flex flex-col gap-5 text-white max-w-[500px] max-[1550px]:right-14 max-[1390px]:right-10 max-[1290px]:right-3 max-xl:hidden">
+          <p className="font-bold max-[2000px]:text-4xl drop-shadow-lg max-xl:text-xl max-[4000px]:text-5xl">
             {textTitle}
           </p>
 
-         <p className="text-[20px] leading-[26px] font-thin max-xl:text-lg">
+         <p className="max-[2000px]:text-[20px] max-[4000px]:text-[26px] leading-[26px] font-thin max-xl:text-lg">
             {description}
           </p>
           <div className="flex  w-[116px] mb-4">

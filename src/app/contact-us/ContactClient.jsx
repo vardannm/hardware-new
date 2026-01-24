@@ -19,7 +19,7 @@ export default function ContactClient() {
 
   return (
     <div className="mx-auto text-center pt-16 flex flex-col gap-6 w-[50%] pb-60 max-sm:w-[95%] max-sm:text-start max-sm:gap-2">
-      <p className="font-bold text-4xl max-sm:text-xl">Contact Hardware Design House</p>
+      <h1 className="font-bold text-4xl max-sm:text-xl">Contact Hardware Design House</h1>
     <p>
       Get in touch with our team of experienced hardware design experts to
       discover effective, innovative solutions focused on your project needs.
@@ -35,7 +35,7 @@ export default function ContactClient() {
       expertise. <br /> <br /> info@hardwarehouses.com +374 55 342 262 | +374
       41 777 704
     </p>
-      <p className="font-bold text-3xl">Drop Us a Message</p>
+      <h2 className="font-bold text-3xl">Drop Us a Message</h2>
 
 <div className="flex flex-col gap-3 pt-[15px] mx-auto max-sm:mx-0">
         <input

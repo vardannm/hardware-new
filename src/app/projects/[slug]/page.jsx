@@ -35,7 +35,7 @@ export default function ProjectPage({ params }) {
 
   return (
     <div className="flex flex-col gap-10 m-auto max-sm:mt-0">
-      <div className="w-[1098px] mx-auto max-sm:w-auto">
+      <div className="w-[1098px] mx-auto max-lg:w-auto">
         <div className="flex justify-end gap-3 items-center  ">
           <Image
             src={project.hero.icon}
@@ -47,8 +47,8 @@ export default function ProjectPage({ params }) {
             <h1 className="text-[56px] font-bold leading-14 max-sm:text-4xl max-sm:leading-10">
               {project.hero.title}
             </h1>
-            <p className="font-bold text-2xl">{project.hero.subtitle}</p>
-            <p className="max-sm:hidden">{project.hero.text}</p>
+            <h2 className="font-bold text-2xl">{project.hero.subtitle}</h2>
+            <h3 className="max-sm:hidden">{project.hero.text}</h3>
           </div>
         </div>
         <p className="hidden max-sm:block p-4">{project.hero.text}</p>
@@ -131,9 +131,11 @@ export default function ProjectPage({ params }) {
       <p className="font-bold text-3xl mx-auto">Product Gallery</p>
       <div className="relative m-auto w-full mt-5">
         <Swiper
-          slidesPerView={5.5}
+          slidesPerView={"auto"}
           spaceBetween={0}
           className="mySwiper"
+         
+          initialSlide={2}
           centeredSlides={true}
           pagination={{ clickable: true }}
           navigation={false}
@@ -141,7 +143,7 @@ export default function ProjectPage({ params }) {
           breakpoints={{
             0: { slidesPerView: 1, centeredSlides: true },
             640: { slidesPerView: 2, centeredSlides: false },
-            1024: { slidesPerView: 2.8, centeredSlides: true },
+            1024: { slidesPerView: "auto", centeredSlides: true },
           }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
@@ -150,20 +152,18 @@ export default function ProjectPage({ params }) {
           onSlideChange={(swiper) => updateSlideOpacities(swiper)}
         >
          {project.galleryImages.map((img, i) => (
-  <SwiperSlide key={i}>
-    <div className="relative w-[430px] h-[400px] overflow-hidden">
-      <Image
-        src={img}
-        alt={`Gallery image ${i + 1}`}
-        fill
-        className="object-cover"
-        sizes="430px"
-        priority={i === 0}
-      />
-    </div>
-  </SwiperSlide>
-))}
-
+    <SwiperSlide key={i} className="!w-[100vw] sm:!w-[400px] lg:!w-[430px] xl:!w-[480px]">  
+      <div className="relative w-full pb-[calc(400/430*100%)] overflow-hidden"> 
+        <Image
+          src={img}
+          alt={`Gallery image ${i + 1}`}
+          fill
+          className="object-cover"
+          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 430px"
+        />
+      </div>
+    </SwiperSlide>
+  ))}
         </Swiper>
         <button
           onClick={() => swiperRef.current?.slidePrev()}

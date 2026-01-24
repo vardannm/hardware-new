@@ -76,11 +76,11 @@ export default function HomeClient() {
         </SwiperSlide>
       ))}
     </Swiper>
-      <div className="mx-auto flex flex-col gap-60 w-76 my-60 max-md:w-[87%] max-md:my-6">
-        <p className="md:hidden text-[32px] font-bold">{welcomeTitle}</p>
-        <p className="text-xl">{welcomeDescription}</p>
+      <div className="mx-auto flex flex-col gap-60 w-76 my-60 max-md:w-[87%] max-md:my-6 max-md:gap-4">
+        <p className="md:hidden h2-bold">{welcomeTitle}</p>
+        <p className="h4-text-regular">{welcomeDescription}</p>
         <div>
-          <p className="text-start font-bold text-3xl max-md:mb-5">
+          <p className="text-start h2-bold max-md:mb-5">
             {services.title}
           </p>
           <div className="flex gap-10 mt-4 max-md:hidden">
@@ -118,14 +118,14 @@ export default function HomeClient() {
         <div className="flex items-center w-full gap-4">
           <div className="flex-1 border-t border-black/50"></div>
           <Link href={services.allLink}>
-            <button className="text-[16px] px-4 py-1 text-sm font-medium bg-[#F8F8F8] rounded-md hover:bg-gray-100 cursor-pointer">
+            <button className="text-regular px-4 py-1 text-sm font-medium bg-[#F8F8F8] rounded-md hover:bg-gray-100 cursor-pointer">
               {services.allButtonText}
             </button>
           </Link>
           <div className="flex-1 border-t border-black/50"></div>
         </div>
         <div>
-          <p className="text-start font-bold text-3xl max-md:mb-5">
+          <p className="text-start h2-bold max-md:mb-5">
             {industries.title}
           </p>
           <div className="flex gap-10 mt-4 max-md:hidden">
@@ -166,14 +166,14 @@ export default function HomeClient() {
         <div className="flex items-center w-full gap-4">
           <div className="flex-1 border-t border-black/50"></div>
           <Link href={industries.allLink}>
-            <button className="text-[16px] px-4 py-1 text-sm font-medium bg-[#F8F8F8] rounded-md hover:bg-gray-100 cursor-pointer">
+            <button className="text-regular px-4 py-1 text-sm font-medium bg-[#F8F8F8] rounded-md hover:bg-gray-100 cursor-pointer">
               {industries.allButtonText}
             </button>
           </Link>
           <div className="flex-1 border-t border-black/50"></div>
         </div>
         <div>
-          <p className="text-start font-bold text-3xl max-md:mb-5">
+          <p className="text-start h2-bold max-md:mb-5">
             {projects.title}
           </p>
           <div className="flex gap-10 mt-4 max-md:hidden">
@@ -188,6 +188,7 @@ export default function HomeClient() {
                 title={item.title}
                 text={item.text}
                 href={item.href}
+                imageHeight={item.imageHeight}
               />
             ))}
           </div>
@@ -213,13 +214,14 @@ export default function HomeClient() {
         <div className="flex items-center w-full gap-4">
           <div className="flex-1 border-t border-black/50"></div>
           <Link href={projects.allLink}>
-            <button className="text-[16px] px-4 py-1 text-sm font-medium bg-[#F8F8F8] rounded-md hover:bg-gray-100 cursor-pointer">
+            <button className="text-regular px-4 py-1 text-sm font-medium bg-[#F8F8F8] rounded-md hover:bg-gray-100 cursor-pointer">
               {projects.allButtonText}
             </button>
           </Link>
           <div className="flex-1 border-t border-black/50"></div>
         </div>
-        <div className="flex overflow-x-auto py-4">
+        <h2 className="text-start h2-bold">{partners.title}</h2>
+        {/* <div className="flex overflow-x-auto py-4">
           <Swiper
             loop={true}
             slidesPerView={2.5}
@@ -240,18 +242,34 @@ export default function HomeClient() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
+         <div className="partners py-4">
+      <div className="partners-track">
+        {[...partners.logos, ...partners.logos].map((logo, idx) => (
+          <div className="partner-item" key={idx}>
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              title={logo.title}
+              width={140}
+              height={80}
+              className="partner-img"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
         <div className="flex flex-col gap-60">
-          <p className="text-start font-bold text-3xl">{about.title}</p>
+          <p className="text-start h2-bold">{about.title}</p>
           <div className="bg-secondary p-6 col-span-3 flex flex-col gap-6 max-md:col-span-1">
-            <p>{about.description}</p>
-            <p className="font-bold text-lg">{about.teamTitle}</p>
-            <ul className="pl-6 list-disc">
+            <p className="h4-regular">{about.description}</p>
+            <p className="h3-bold">{about.teamTitle}</p>
+            <ul className="pl-6 list-disc h4-regular">
               {about.teamPoints.map((point, idx) => (
                 <li key={idx}>{point}</li>
               ))}
             </ul>
-            <div className="w-[63%] flex gap-5 mx-auto max-md:hidden">
+            <div className="w-[63%] flex gap-5 mx-auto max-md:hidden justify-center">
               {about.members.map((member, idx) => (
                 <div key={idx} className="bg-white flex flex-col gap-6 p-6">
                   <Image
@@ -259,8 +277,8 @@ export default function HomeClient() {
                     alt={member.alt}
                     title={member.title}
                   />
-                  <p className="font-bold">{member.name}</p>
-                  <p>{member.position}</p>
+                  <p className="h3-bold">{member.name}</p>
+                  <p className="h4-regular">{member.position}</p>
                 </div>
               ))}
             </div>
