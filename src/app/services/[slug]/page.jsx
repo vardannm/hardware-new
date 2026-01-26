@@ -115,27 +115,27 @@ export default function ServicePage({ params }) {
           </div>
         </div>
         <div className="flex flex-col mx-auto max-sm:hidden ">
-          <div className="grid grid-rows-1 grid-cols-5 gap-2 max-sm:hidden">
+          <div className="grid grid-rows-1 grid-cols-8 gap-2 max-sm:hidden">
             {/* arajin 3 */}
             <div className=" row-start-1 row-end-7 col-start-1 col-end-2 bg-secondary p-3 rounded-md"></div>
             <div className=" row-start-7 row-end-10 col-start-1 col-end-2 bg-secondary p-3 rounded-md"></div>
             <div className=" row-start-10 row-end-13 col-start-1 col-end-2 bg-secondary p-3 rounded-md"></div>
             {/* erkrord 3 */}
-            <div className=" row-start-1 row-end-4 col-start-2 col-end-3 bg-secondary p-3 rounded-md"></div>
-            <ServiceCard {...serviceCards[1]} className=" row-start-4 row-end-9 col-start-2 col-end-3   rounded-md" />
-            <ServiceCard {...serviceCards[4]} className=" row-start-9 row-end-13 col-start-2 col-end-3  rounded-md"/>
+            <div className=" row-start-1 row-end-4 col-start-2 col-end-4 bg-secondary p-3 rounded-md"></div>
+            <ServiceCard {...serviceCards[1]} className=" row-start-4 row-end-9 col-start-2 col-end-4   rounded-md" />
+            <ServiceCard {...serviceCards[4]} className=" row-start-9 row-end-13 col-start-2 col-end-4  rounded-md"/>
             {/* errord 3 */}
-            <ServiceCard {...serviceCards[0]} className=" row-start-1 row-end-5 col-start-3 col-end-4 bg-secondary  rounded-md"/>
-            <ServiceCard {...serviceCards[3]} className=" row-start-5 row-end-7 col-start-3 col-end-4 bg-secondary  rounded-md"/>
-            <div className=" row-start-7 row-end-13 col-start-3 col-end-4 bg-secondary p-3 rounded-md"></div>
+            <ServiceCard {...serviceCards[0]} className=" row-start-1 row-end-5 col-start-4 col-end-6 bg-secondary  rounded-md"/>
+            <ServiceCard {...serviceCards[3]} className=" row-start-5 row-end-7 col-start-4 col-end-6 bg-secondary  rounded-md"/>
+            <div className=" row-start-7 row-end-13 col-start-4 col-end-6 bg-secondary p-3 rounded-md"></div>
             {/* chorrord 3 */}
-            <div className=" row-start-1 row-end-3 col-start-4 col-end-5 bg-secondary p-3 rounded-md"></div>
-            <ServiceCard {...serviceCards[2]} className=" row-start-3 row-end-6 col-start-4 col-end-5 bg-secondary  rounded-md"/>
-            <ServiceCard {...serviceCards[5]} className=" row-start-6 row-end-13 col-start-4 col-end-5 bg-secondary  rounded-md"/>
+            <div className=" row-start-1 row-end-3 col-start-6 col-end-8 bg-secondary p-3 rounded-md"></div>
+            <ServiceCard {...serviceCards[2]} className=" row-start-3 row-end-6 col-start-6 col-end-8 bg-secondary  rounded-md"/>
+            <ServiceCard {...serviceCards[5]} className=" row-start-6 row-end-13 col-start-6 col-end-8 bg-secondary  rounded-md"/>
             {/* hingerord 3 */}
-            <div className=" row-start-1 row-end-7 col-start-5 col-end-5 bg-secondary p-3 rounded-md"></div>
-            <div className=" row-start-7 row-end-10 col-start-5 col-end-5 bg-secondary p-3 rounded-md"></div>
-            <div className=" row-start-10 row-end-13 col-start-5 col-end-5 bg-secondary p-3 rounded-md"></div>
+            <div className=" row-start-1 row-end-7 col-start-8 col-end-8 bg-secondary p-3 rounded-md"></div>
+            <div className=" row-start-7 row-end-10 col-start-8 col-end-8 bg-secondary p-3 rounded-md"></div>
+            <div className=" row-start-10 row-end-13 col-start-8 col-end-8 bg-secondary p-3 rounded-md"></div>
           </div>
         </div>
 
