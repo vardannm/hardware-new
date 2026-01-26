@@ -72,9 +72,9 @@ export default function ServicePage({ params }) {
         </div>
       </div>
 
-      <div className="flex flex-col gap-[120px] mt-5 mb-16 mx-auto w-[100%] max-sm:gap-60">
+      <div className="flex flex-col gap-[120px] mt-5 mb-16 mx-auto w-[100%] max-sm:gap-60 ">
    
-        <div className="sm:hidden">
+        <div className="sm:hidden max-sm:w-90 max-sm:mx-auto">
          
           <BackButton className="self-start" />
           <div className="flex flex-col gap-[7px]">
@@ -86,7 +86,7 @@ export default function ServicePage({ params }) {
           <p>{hero.text}</p>
         </div>
 
-        <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-full">
+        <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-90">
           <p className="font-bold text-3xl max-sm:text-start max-sm:text-2xl">{expertise.title}</p>
           <div className="px-[18px] py-3.5 flex flex-col bg-secondary rounded-[10px] gap-2.5 text-start">
             <p className="font-bold text-2xl max-sm:text-xl">{expertise.highlightTitle}</p>
@@ -190,12 +190,13 @@ export default function ServicePage({ params }) {
         </div>
 
         {/* Testimonials Desktop */}
-        <div className="flex w-[85%] mx-auto text-black max-sm:hidden">
+        <div className="w-[76%]  mx-auto">
+        <div className="flex  text-black max-sm:hidden">
           {testimonials.map((item, index) => (
             <Testimonial key={index} logo={item.logo} text={item.text} name={item.name} position={item.position} />
           ))}
         </div>
-
+</div>
         {/* Testimonials Mobile — FIXED with modules */}
         <div className="sm:hidden pl-5">
           <Swiper

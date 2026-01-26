@@ -262,6 +262,9 @@ body {
 .partner-img {
   object-fit: contain;
 }
+.swiper-slide {
+  display: flex;
+}
 
 @keyframes partnerScroll {
   from {
@@ -270,4 +273,7 @@ body {
   to {
     transform: translateX(-50%);
   }
+}
+.swiper-slide {
+  display: flex;
 }
