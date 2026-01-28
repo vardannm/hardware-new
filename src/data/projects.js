@@ -25,7 +25,7 @@ export const projectsData = {
       projects: [
         {
           image: Zlight,
-          Imagetitle: "Smart Bedroom Lighting",
+          Imagetitle: "",
           alt: "Smart bedroom lighting hardware design project with wireless charging and environmental sensing",
           title: "zLight Smart Bedroom Lighting System",
           description:
@@ -35,7 +35,7 @@ export const projectsData = {
         },
         {
           image: Thermostat,
-          Imagetitle: "Smart Thermostat Hardware Design Project",
+          Imagetitle: "",
           alt: "Smart thermostat hardware design project for climate control with scheduling and air quality monitoring",
           title: "Smart Thermostat System",
           description:
@@ -45,7 +45,7 @@ export const projectsData = {
         },
         {
           image: Moon,
-          Imagetitle: "Smart Home Hardware Design Project",
+          Imagetitle: "",
           alt: "Smart home hardware design projects with integrated system prototype development",
           title: "Moon by 1-Ring: Transforming Smart Home Technology",
           description:
@@ -64,7 +64,7 @@ export const projectsData = {
       projects: [
         {
           image: HighSensitive,
-          Imagetitle: "High Sensitive Vibration Tracking",
+          Imagetitle: "",
           alt: "High sensitive vibration tracking hardware design projects for monitoring high power motors with predictive analytics",
           title: "High-Sensitive Vibration Tracking System for High-Power Motors",
           description:
@@ -72,7 +72,7 @@ export const projectsData = {
         },
         {
           image: HighPrecision,
-          Imagetitle: "High Precision Autonomous Navigation",
+          Imagetitle: "",
           alt: "High precision autonomous navigation hardware design projects for emergency responders with real time tracking",
           title: "High-Precision Autonomous Navigation Systems for U.S.",
           description:
@@ -89,7 +89,7 @@ export const projectsData = {
       projects: [
         {
           image: EncryptedCommunications,
-          Imagetitle: "Encrypted Communications Hardware Design Project",
+          Imagetitle: "",
           alt: "Encrypted communications hardware design projects for secure autonomous wireless connectivity",
           title: "Autonomous System of Encrypted Communications",
           description:
@@ -97,7 +97,7 @@ export const projectsData = {
         },
         {
           image: SecureUsb,
-          Imagetitle: "Secure USB Flash Drive Hardware Design Project",
+          Imagetitle: "",
           alt: "Secure USB flash drive hardware design projects with advanced fingerprint recognition for sensitive data",
           title: "Highly Secure USB Flash Drive with Fingerprint Technology",
           description:
@@ -114,7 +114,7 @@ export const projectsData = {
       projects: [
         {
           image: PoweredExoskeleton,
-          Imagetitle: "Powered Exoskeleton Hardware Design Project",
+          Imagetitle: "",
           alt: "Powered exoskeleton hardware design projects for movement disabilities and nervous system rehabilitation",
           title: "Powered Exoskeleton for Mobility and Neural Recovery",
           description:

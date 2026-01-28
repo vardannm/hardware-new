@@ -91,7 +91,7 @@ export const SERVICE_DETAILS = {
     pageTitle: "Consulting & Technical Advisory Services",
     hero: {
       backgroundImage: ConsultingBg,
-      title: "IoT Consulting Services and Technical Advisory",
+      title: "",
       alt: "IoT consulting services and technical advisory",
       desktopTitle: "Consulting & Technical Support",
       desktopSubtitle: "What We Offer",
@@ -285,7 +285,7 @@ export const SERVICE_DETAILS = {
     pageTitle: "IoT Consulting Services",
     hero: {
       backgroundImage: EmbeddedSystemArchitecture,
-      title: "Embedded System Architecture Services",
+      title: "",
       alt: "Embedded system architecture design",
       desktopTitle: "System Architecture and Optimization",
       desktopSubtitle: "What We Offer",
@@ -479,7 +479,7 @@ export const SERVICE_DETAILS = {
     pageTitle: "Electronics Manufacturing Services",
     hero: {
       backgroundImage: ElectronicsManufacturingServices,
-      title: "Electronics Manufacturing Services and Manufacturing Support",
+      title: "",
       alt: "Electronics manufacturing services and manufacturing support",
       desktopTitle: "Manufacturing Full Cycle",
       desktopSubtitle: "What We Offer",
@@ -671,7 +671,7 @@ export const SERVICE_DETAILS = {
     pageTitle: "Prototype Development Services",
     hero: {
       backgroundImage: PrototypeDevelopmentServices,
-      title: "Prototype Development Services",
+      title: "",
       alt: "Prototype development services",
       desktopTitle: "Prototype Development",
       desktopSubtitle: "What We Offer",
@@ -873,7 +873,7 @@ export const SERVICE_DETAILS = {
     pageTitle: "Hardware Updates and Improvements",
     hero: {
       backgroundImage: HardwareUpdatesAndImprovements,
-      title: "Hardware Updates and Improvements",
+      title: "",
       alt: "Hardware updates and improvements",
       desktopTitle: "Hardware Updates and Improvements",
       desktopSubtitle: "What We Offer",
@@ -1071,7 +1071,7 @@ export const SERVICE_DETAILS = {
     pageTitle: "Product Testing and Validation Services",
     hero: {
       backgroundImage: ProductTestingAndValidation,
-      title: "Product Testing and Validation Services",
+      title: "",
       alt: "Product testing and validation services",
       desktopTitle: "Product Testing and Validation",
       desktopSubtitle: "What We Offer",
@@ -1266,7 +1266,7 @@ export const SERVICE_DETAILS = {
     pageTitle: "Custom Hardware Design Services",
     hero: {
       backgroundImage: HardwareDesignServices,
-      title: "Custom Hardware Design Services",
+      title: "",
       alt: "Custom hardware design services",
       desktopTitle: "Custom Hardware Design",
       desktopSubtitle: "What We Offer",

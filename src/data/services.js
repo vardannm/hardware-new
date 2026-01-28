@@ -20,7 +20,7 @@ export const ServiceCards = [
   {
     src: HardwareDesignServices,
     alt: "Custom hardware design services including schematic design, rapid prototyping, and scalable hardware development",
-    title: "Custom Hardware Design Services",
+    title: "",
     textTitle: "Custom Hardware Design",
     description:
       "HDH delivers full-cycle custom hardware design services, from concept and schematic design to production-ready prototypes. Our team ensures reliable, high-performance, and scalable hardware. With rapid prototyping and tailored solutions, we help clients bring innovative products to market efficiently.",
@@ -30,7 +30,7 @@ export const ServiceCards = [
   {
     src: PrototypeDevelopmentServices,
     alt: "Prototype development services for functional prototypes supporting design validation and hardware engineering improvements",
-    title: "Prototype Development Services",
+    title: "",
     textTitle: "Prototype Development",
     description:
       "We bring product concepts to life quickly and accurately through functional prototypes that support design validation, performance testing, and a smooth transition to production, enabling teams to refine designs and identify improvements early in the development process.",
@@ -40,7 +40,7 @@ export const ServiceCards = [
   {
     src: SystemArchitectureOptimizationServices,
     alt: "System architecture and optimization services ensuring efficient hardware design and embedded systems engineering",
-    title: "System Architecture and Optimization Services",
+    title: "",
     textTitle: "System Architecture and Optimization",
     description:
       "HDH ensures hardware, software, and embedded systems work together smoothly from the start. Our system architecture and optimization services simplify complex designs, improve efficiency, and identify potential issues early, providing a dependable foundation for scalable development.",
@@ -50,7 +50,7 @@ export const ServiceCards = [
   {
     src: ProductTestingValidationServices,
     alt: "Product testing and validation services for hardware, firmware, and embedded systems ensuring reliable performance",
-    title: "Product Testing and Validation Services",
+    title: "",
     textTitle: "Product Testing and Validation",
     description:
       "We verify hardware, firmware, and system performance using advanced testing methods, giving teams confidence in product quality before production. Our approach catches issues early and confirms compliance with industry standards.",
@@ -60,7 +60,7 @@ export const ServiceCards = [
   {
     src: FullCycleManufacturingSupport,
     alt: "Full-cycle manufacturing support services including sourcing, assembly, testing, and quality control for hardware engineering",
-    title: "Full-Cycle Manufacturing Support Services",
+    title: "",
     textTitle: "Full-Cycle Manufacturing Support",
     description:
       "From validated prototype to finished product, HDH manages sourcing, assembly, testing, and quality control to ensure each batch meets the required standards and stays on schedule. Our strong DFM practices reduce production risks and bring high-quality electronics to market efficiently.",
@@ -70,7 +70,7 @@ export const ServiceCards = [
   {
     src: ConsultingTechnicalAdvisory,
     alt: "Consulting and technical advisory services for embedded systems engineering and IoT hardware design",
-    title: "Consulting and Technical Advisory Services",
+    title: "",
     textTitle: "Consulting and Technical Advisory",
     description:
       "HDH offers practical IoT and engineering consulting to help teams make informed technical decisions. With deep experience in embedded systems and IoT architecture, we guide clients in refining designs, solving technical challenges, and selecting the right technologies for each project.",
@@ -80,7 +80,7 @@ export const ServiceCards = [
   {
     src: HardwareUpdatesImprovements,
     alt: "Hardware updates and improvements services including PCB redesigns and component upgrades for reliable hardware engineering",
-    title: "Hardware Updates and Improvements Services",
+    title: "",
     textTitle: "Hardware Updates and Improvements",
     description:
       "We keep your hardware modern, reliable, and efficient through smart upgrades, PCB redesigns, and component improvements. Updates are thoroughly tested for smooth integration and long-term reliability, whether refreshing legacy systems or enhancing current products.",
@@ -95,7 +95,7 @@ export const ProjectSection = {
   projects: [
     {
       image: ZlightSmartBedroomLightingSystem,
-      Imagetitle: "Smart Bedroom Lighting",
+      Imagetitle: "",
       alt: "Smart bedroom lighting hardware design project with wireless charging and environmental sensing",
       title: "zLight Smart Bedroom Lighting System",
       description:
@@ -105,7 +105,7 @@ export const ProjectSection = {
     },
     {
       image: SmartThermostatSystem,
-      Imagetitle: "Smart Thermostat Hardware Design Project",
+      Imagetitle: "",
       alt: "Smart thermostat hardware design project for climate control with scheduling and air quality monitoring",
       title: "Smart Thermostat System",
       description:
@@ -115,7 +115,7 @@ export const ProjectSection = {
     },
     {
       image: MoonBy1Ring,
-      Imagetitle: "Smart Home Hardware Design Project",
+      Imagetitle: "",
       alt: "Smart home hardware design projects with integrated system prototype development",
       title: "Moon by 1-Ring: Transforming Smart Home Technology",
       description:

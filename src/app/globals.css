@@ -186,6 +186,9 @@ body {
 .h4-mobile-text-regular{
     @apply text-[20px] leading-normal max-sm:text-[14px];
 }
+.h2-h4-bold {
+    @apply text-[32px] font-bold leading-snug max-sm:text-[20px];
+  }
   .text-bold {
     @apply text-[16px] font-bold leading-normal;
   }

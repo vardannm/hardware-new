@@ -87,7 +87,7 @@ export default function ServicePage({ params }) {
         </div>
 
         <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-90">
-          <p className="font-bold text-3xl max-sm:text-start max-sm:text-2xl">{expertise.title}</p>
+          <p className="font-bold text-[32px] max-sm:text-start max-sm:text-[20px]">{expertise.title}</p>
           <div className="px-[18px] py-3.5 flex flex-col bg-secondary rounded-[10px] gap-2.5 text-start">
             <p className="font-bold text-2xl max-sm:text-xl">{expertise.highlightTitle}</p>
             <div className="pl-5">
@@ -97,10 +97,10 @@ export default function ServicePage({ params }) {
             </div>
           </div>
         </div>
-        <div className="bg-[#FAFAFA] flex justify-center gap-28 py-8 items-center max-sm:flex-col">
+        <div className="bg-[#FAFAFA] flex justify-center gap-28 py-8 items-center max-sm:flex-col max-sm:gap-2">
           <div className="flex flex-col gap-6 max-w-[27%] max-sm:max-w-[87%]">
-            <p className="font-bold text-3xl">{process.title}</p>
-            <p>{process.description}</p>
+            <p className="font-bold text-[32px] max-sm:text-[20px]">{process.title}</p>
+            <p className="text-regular">{process.description}</p>
           </div>
           <div>
             <div className="flex flex-col items-start space-y-8 relative pl-6">
@@ -108,7 +108,7 @@ export default function ServicePage({ params }) {
               {process.steps.map((step, i) => (
                 <div key={i} className="relative flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary ring-4 ring-primary/30 absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
-                  <p className="pl-[30px] font-bold">{step}</p>
+                  <p className="pl-[30px] font-bold h4-bold">{step}</p>
                 </div>
               ))}
             </div>

@@ -7,6 +7,7 @@ export default function ContactClient() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+
   const handleSend = () => {
     const subject = encodeURIComponent("Contact request from website");
     const body = encodeURIComponent(
@@ -42,14 +43,16 @@ export default function ContactClient() {
           placeholder="Name Surname"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full"
+          className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full placeholder:text-[#5e5e5e] placeholder:font-inter
+             focus:placeholder-transparent"
         />
 
         <input
           placeholder="Email Address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full"
+          className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full placeholder:text-[#5e5e5e] placeholder:font-inter
+             focus:placeholder-transparent"
         />
 
         <textarea
@@ -57,7 +60,8 @@ export default function ContactClient() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows={4}
-          className="w-[334px] rounded-md bg-[#F3F3F3] px-4 max-sm:w-full"
+          className="w-[334px] rounded-md bg-[#F3F3F3] pl-4 pt-2 max-sm:w-full placeholder:text-[#5e5e5e] placeholder:font-inter
+             focus:placeholder-transparent"
         />
 
         <button
