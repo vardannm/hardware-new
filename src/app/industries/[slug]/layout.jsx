@@ -17,8 +17,9 @@ export async function generateMetadata({ params }) {
     title: `${industry.metaTitle} | HDH`,
     description: industry.metaDescription,
     openGraph: {
-      title: `${industry.metaTitle} | HDH`,
-      description: industry.metaDescription,
+      title: industry.og.title,
+      description: industry.og.description,
+      type:"website",
     },
   };
 }

@@ -1,10 +1,16 @@
+import { desc } from "framer-motion/client";
 import ServicesClient from "./page.client";
 
 export const metadata = {
   title: "Full-Cycle Hardware Engineering Services | HDH",
   description:
     "Discover full-cycle hardware engineering services, including custom hardware design, prototyping, system architecture, testing and manufacturing support.",
-};
+openGraph:{
+  title: "Full-Cycle Hardware Engineering Services | HDH",
+  description:"HDH provides end-to-end hardware engineering, electronics design, prototyping, testing, and manufacturing support for production-ready electronic products.",
+  type:"website",
+}
+  };
 
 function CommonStructuredData() {
   return (

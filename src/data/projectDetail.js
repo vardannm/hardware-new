@@ -58,6 +58,10 @@ export const PROJECT_DETAILS = {
   "smart-bedroom-lighting-system": {
     slug: "smart-bedroom-lighting-system",
     pageTitle: "Z-light Smart Bedroom Lighting and Wellness System",
+    og:{
+      title:"Z-light Smart Bedroom Lighting and Wellness System",
+      description:" A wellness-focused bedroom system combining ambient sleep lighting, wireless charging, environmental sensing, and gentle wake-up illumination.",
+    },
     hero: {
       imageTitle: "",
       imageAlt:
@@ -171,6 +175,10 @@ export const PROJECT_DETAILS = {
   "smart-thermostat-system": {
     slug: "smart-thermostat-system",
     pageTitle: "Smart Thermostat System for Home Climate Control",
+    og:{
+     title:"Smart Thermostat System for Intelligent Home Climate Control",
+     description:"A next-generation thermostat with adaptive scheduling, real-time weather data, multi-sensor air quality monitoring, and seamless HVAC integration.",
+    },
     hero: {
       imageTitle: "",
       imageAlt:
@@ -286,6 +294,10 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
   "smart-home-hub": {
     slug: "smart-home-hub",
     pageTitle: "Moon by 1-Ring – Advanced Smart Home Hub",
+    og:{
+     title:"Moon by 1-Ring — Advanced Smart Home Hub",
+     description:"An intelligent hub designed for seamless device integration and home automation, featuring 360-degree security, energy optimization, and unified smart control.",
+    },
     hero: {
       imageTitle: "",
       imageAlt:

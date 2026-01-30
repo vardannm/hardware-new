@@ -77,6 +77,10 @@ export const INDUSTRY_DETAILS = {
     },
     slug: "smart-home-automation",
     metaTitle: "Smart Home Automation and IoT Devices",
+    og:{
+      title:"Smart Home and IoT Development Services | HDH",
+      description:"End-to-end smart home automation and IoT product development by HDH. We design and build connected systems, software, and hardware from concept to launch.",
+    },
     hero: {
       icon: SmartHomeAutomationSystems,
       imageTitle: "",
@@ -215,6 +219,10 @@ Full-cycle support: smart home product design, prototyping, testing, and deploym
     },
     slug: "security-and-cybersecurity",
     metaTitle: "Hardware Security Solutions",
+        og:{
+      title:"Hardware Security Solutions | HDH",
+      description:"Custom hardware security solutions for embedded systems, access control, TPM modules, firewalls, and IoT devices — engineered for trusted, end-to-end digital protection.",
+    },
     hero: {
       icon: HardwareSecurityAndCybersecurity,
       imageTitle: "",
@@ -358,6 +366,10 @@ Full-cycle support: security system design, prototyping, testing, and deployment
     },
     slug: "industrial-automation",
     metaTitle: "Industrial Automation Solutions",
+    og:{
+      title:"Industrial Automation Solutions | HDH",
+      description:"Explore SCADA systems, PLC control units, smart sensors, and custom embedded automation solutions engineered by HDH to improve efficiency and reliability in industrial environments.",
+    },
     hero: {
       icon: IndustrialAutomationSolutions,
       imageTitle: "",

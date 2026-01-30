@@ -6,7 +6,12 @@ export const metadata = {
   title: "Leading Hardware Design Company | HDH",
   description:
     "Learn about Hardware Design House, a leading hardware design company with over 10 years of experience in custom hardware, electronic design, and full-cycle product development for industries ranging from defense to consumer electronics.",
-};
+  openGraph: {
+    title:"Leading Hardware Design Company | HDH",
+    description:"Discover Hardware Design House, a leading hardware design company with over 10 years of experience in custom hardware, electronic design, and product development solutions.",
+    type:"website",
+  }
+  };
 
 function _StructuredData() {
   return (

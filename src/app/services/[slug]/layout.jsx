@@ -1,3 +1,4 @@
+import { type } from "os";
 import { SERVICE_DETAILS } from "../../../data/serviceDetail";
 
 export async function generateStaticParams() {
@@ -17,8 +18,9 @@ export async function generateMetadata({ params }) {
     title: `${service.pageTitle} | HDH`,
     description: service.hero.text.slice(0, 160),
     openGraph: {
-      title: `${service.pageTitle} | HDH`,
-      description: service.hero.text.slice(0, 160),
+      title: `${service.og.title} | HDH`,
+      description: service.og.description,
+      type: "website",
     },
   };
 }

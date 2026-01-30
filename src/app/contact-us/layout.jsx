@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     title: "Contact Hardware Design Company | HDH",
     description:
-      "Get in touch with Hardware Design House for expert hardware design services.",
+      "Get in touch with Hardware Design House for expert hardware design services and consultations. Discuss your project ideas and hardware requirements with our experienced team.",
     url: "https://www.hardwarehouses.com/contact-us",
     siteName: "Hardware Design House",
     type: "website",

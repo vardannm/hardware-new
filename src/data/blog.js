@@ -3,6 +3,7 @@ import PcbLayoutGuidelines from "@/public/blog/pcb-layout-guidelines.jpg";
 import PocEvtDvtPvt from "@/public/blog/poc-evt-dvt-pvt.jpg";
 import HardwareRapidPrototyping from "@/public/blog/hardware-rapid-prototyping.jpg";
 import HardwareProductLifecycle from "@/public/blog/hardware-product-lifecycle.jpg";
+import { type } from "os";
 export const blogStructuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -100,6 +101,12 @@ export const blogMetadata = {
   title: "Hardware Engineering Blog | HDH",
   description:
     "Explore our hardware engineering blog for expert insights, practical tips, and in-depth guides on hardware design, prototyping, PCB layout, and product development.",
+    openGraph: {
+      title:"Hardware Engineering Blog | HDH",
+      description:"Stay ahead with our hardware engineering blog. Access expert tips, practical guides, and the latest insights on hardware design, development, and prototyping.",
+    type:"website",
+      
+    }
 };
 export const blogHeader = {
     title:"Welcome to Our Hardware Engineering Blog",

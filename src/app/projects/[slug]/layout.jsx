@@ -18,8 +18,9 @@ export async function generateMetadata({ params }) {
     title: project.pageTitle + " | HDH",
     description: project.hero.text.slice(0, 160),
     openGraph: {
-      title: project.pageTitle + " | HDH",
-      description: project.hero.text.slice(0, 160),
+      title: project.og.title,
+      description: project.og.descrition,
+      type: "website",
     },
   };
 }

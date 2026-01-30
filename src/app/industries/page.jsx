@@ -6,6 +6,11 @@ export const metadata = {
   title: "Industries We Serve | HDH",
   description:
     "Explore the industries Hardware Design House serves, from Smart Home and Industrial Automation to Security, Defense, Healthcare, Education, and Green Energy.",
+    openGraph: {
+      title: "Industries We Serve | HDH",
+     description: "Discover the full range of industries supported by HDH, including Smart Home, Industrial Automation, Security, Defense, Healthcare, Transportation, and more.",
+     type: "website",
+    }
 };
 
 function _StructuredData() {

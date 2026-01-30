@@ -6,6 +6,11 @@ export const metadata = {
   title: "Hardware Design FAQ | HDH",
   description:
     "Find answers to common questions about hardware design services, custom solutions, prototyping, testing, compliance, project management, and support at Hardware Design House.",
+     openGraph: {
+      title: "Hardware Design FAQ | HDH",
+      description:"Explore our Hardware Design FAQ to get answers on custom hardware design, prototyping, testing, and project support. Learn more about our expert services at Hardware Design House.",
+      type:"website",
+    },
 };
 
 function _StructuredData() {

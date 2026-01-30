@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 export default function Projects() {
   const { categories } = projectsData;
 const { title, subtitle, categoriesTitle } = pageContent;
