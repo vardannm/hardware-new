@@ -107,7 +107,7 @@ export default function HomeClient() {
                     title={item.title}
                     text={item.text}
                     href={item.href}
-                    SectionH={"max-sm:h-[280px]"}
+                    SectionH={"max-sm:h-[260px]"}
                     lines={"max-sm:line-clamp-6"}
                   />
                 </SwiperSlide>
@@ -155,7 +155,7 @@ export default function HomeClient() {
                     title={item.title}
                     text={item.text}
                     href={item.href}
-                    SectionH={"max-sm:h-[310px]"}
+                    SectionH={"max-sm:h-[260px]"}
                     lines={"max-sm:line-clamp-6"}
                   />
                 </SwiperSlide>

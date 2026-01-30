@@ -109,7 +109,7 @@ export const blogCards = [
   {
     src: IotHardwareDesign,
     alt: "Comprehensive guide on IoT hardware design from architecture and prototyping to testing and mass production",
-    imageTitle: "IoT Hardware Design",
+    imageTitle: "",
     title: "From Circuit to Customer: Managing the End-to-End Hardware Product Lifecycle",
     description: "Explore the complete journey of a hardware product, from initial concept and prototyping to manufacturing and delivery. Learn strategies to streamline development, reduce costs, and bring your ideas to market efficiently. A must-read among our hardware design articles.",
     href: "/blog/hardware-product-lifecycle"
@@ -117,7 +117,7 @@ export const blogCards = [
   {
     src: HardwareProductLifecycle,
     alt: "Comprehensive guide on hardware product lifecycle from concept to market",
-    imageTitle: "Hardware Product Lifecycle",
+    imageTitle: "",
     title: "Hardware Design for IoT Projects: A Complete Guide",
     description: "Unlock the potential of Internet of Things (IoT) devices with a comprehensive hardware development guide. Dive into essential considerations for connectivity, power efficiency, and device reliability in today’s interconnected world.",
     href: "/blog/iot-hardware-design"
@@ -125,7 +125,7 @@ export const blogCards = [
   {
     src: PcbLayoutGuidelines,
     alt: "Practical PCB layout guidelines and best practices for component placement, trace routing, and thermal management",
-    imageTitle: "PCB Layout Guidelines",
+    imageTitle: "",
     title: "PCB Design Layout Guidelines and Best Practices for Engineers",
     description: "Master the art of printed circuit board (PCB) design with practical layout tips, common pitfalls to avoid, and techniques to optimize performance. Ideal for engineers looking for actionable hardware design insights.",
     href: "/blog/pcb-layout-guidelines"
@@ -133,7 +133,7 @@ export const blogCards = [
   {
     src: PocEvtDvtPvt,
     alt: "Guide to POC EVT DVT PVT stages in hardware product development from concept to production",
-    imageTitle: "POC EVT DVT PVT",
+    imageTitle: "",
     title: "Hardware Product Development Stages: POC – EVT – DVT – PVT Explained",
     description: "Gain a clear understanding of critical stages of hardware product development: Proof of Concept (POC), Engineering Validation Test (EVT), Design Validation Test (DVT), and Production Validation Test (PVT). Learn what each stage involves and why it’s essential for successful product launches.",
     href: "/blog/poc-evt-dvt-pvt-stages"
@@ -141,7 +141,7 @@ export const blogCards = [
   {
     src: HardwareRapidPrototyping,
     alt: "Guide to hardware rapid prototyping for faster product development and early design validation",
-    imageTitle: "Hardware Rapid Prototyping",
+    imageTitle: "",
     title: "The Importance of Rapid Prototyping in the Product Development Lifecycle",
     description: "Rapid prototyping accelerates product development by turning ideas into functional models quickly. Explore its benefits, methods, and role in reducing risk, improving design, and bringing products to market faster. Featured as a key hardware development guide in our blog.",
     href: "/blog/hardware-rapid-prototyping"

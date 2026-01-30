@@ -2,16 +2,15 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import Hardware from "@/public/hardware.svg";
-import NavbarIcon from "@/public/navbarIcon.png"
+import NavbarIcon from "@/public/navbarIcon.png";
+import Link from "next/link";
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-
       <nav className="flex justify-between items-center px-8 py-4 bg-white sticky top-0 z-50 border-b border-[#DCDBE1] shadow-sm">
-
         <div
           onClick={() => setOpen(true)}
           className="flex items-center order-1 max-sm:order-3"
@@ -19,9 +18,9 @@ export default function Navbar() {
           <Menu className="bg-[rgba(194,194,194,0.4)] w-8 h-8 cursor-pointer p-1 border border-[#C2C2C2] rounded" />
         </div>
 
-        <a href="/" className="order-2 max-sm:order-1">
-          <Image src={NavbarIcon} alt="Hardware Icon" className="w-[240px]" />
-        </a>
+        <Link href="/" className="order-2 max-sm:order-1">
+          <Image src={NavbarIcon} alt="Hardware Icon" className="w-[240px] max-sm:w-[140px]" />
+        </Link>
 
         <ul className="flex gap-6 order-3 max-sm:hidden">
           <li>
@@ -47,26 +46,34 @@ export default function Navbar() {
         ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex justify-between mb-6">
-        <div className="sm:hidden">
-          <Image src={NavbarIcon} alt="Hardware Icon" className="w-[60%]" />
+          <div className="sm:hidden">
+            <Image src={NavbarIcon} alt="Hardware Icon" className="w-[60%]" />
+          </div>
+          <div className=" mb-6 ">
+            <X
+              className="w-11 h-11 bg-gray-200 p-3 rounded-[10px] border border-[#C2C2C2] cursor-pointer"
+              onClick={() => setOpen(false)}
+            />
+          </div>
         </div>
-        <div className=" mb-6 ">
-          <X
-            className="w-11 h-11 bg-gray-200 p-3 rounded-[10px] border border-[#C2C2C2] cursor-pointer"
-            onClick={() => setOpen(false)}
-          />
-        </div>
-</div>
-        <ul className="flex flex-col gap-6 text-[18px] font-bold">
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/industries">Industries</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/about-us">About us</a></li>
-          <li><a href="/contact-us">Contact us</a></li>
-        </ul>
+       <ul className="flex flex-col gap-6 text-[18px] font-bold">
+  {[
+    { href: "/", label: "Home" },
+    { href: "/projects", label: "Projects" },
+    { href: "/services", label: "Services" },
+    { href: "/industries", label: "Industries" },
+    { href: "/blog", label: "Blog" },
+    { href: "/faq", label: "FAQ" },
+    { href: "/about-us", label: "About us" },
+    { href: "/contact-us", label: "Contact us" },
+  ].map((link) => (
+    <li key={link.href}>
+      <Link href={link.href} onClick={() => setOpen(false)}>
+        {link.label}
+      </Link>
+    </li>
+  ))}
+</ul>
 
         <div className="absolute bottom-6 text-sm text-black">
           <p>info@hardwarehouses.com</p>

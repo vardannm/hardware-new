@@ -107,7 +107,7 @@ Our full-cycle approach covers everything from concept to shipping, ensuring rel
         <div className="bg-white flex flex-col gap-6 p-6">
           <Image src={Arthur} 
           alt="Arthur Movsesyan Co-Founder and CEO of HDH"
-          title="Arthur Movsesyan, Co-Founder and CEO of HDH"
+          title=""
           />
           <p className="font-bold">Arthur Movsesyan</p>
           <p>Co-Founder, CEO at Hardware Design House</p>
@@ -115,7 +115,7 @@ Our full-cycle approach covers everything from concept to shipping, ensuring rel
         <div className="bg-white flex flex-col gap-6 p-6">
           <Image src={Gevorg} 
           alt="Gevorg Martirosyan, Co-Founder and CTO of HDH"
-          title="Gevorg Martirosyan, Co-Founder and CTO of HDH"
+          title=""
           />
           <p className="font-bold">Gevorg Martirosyan</p>
           <p>Co-Founder, CTO at Hardware Design House</p>
@@ -126,7 +126,7 @@ Our full-cycle approach covers everything from concept to shipping, ensuring rel
         <div className="bg-secondary flex flex-col gap-6 p-6 ">
           <Image src={Arthur} 
           alt="Arthur Movsesyan Co-Founder and CEO of HDH"
-          title="Arthur Movsesyan, Co-Founder and CEO of HDH"
+          title=""
           />
           <h3 className="h3-bold">Arthur Movsesyan</h3>
           <p className="h4-regular">Co-Founder, CEO at Hardware Design House</p>
@@ -134,7 +134,7 @@ Our full-cycle approach covers everything from concept to shipping, ensuring rel
         <div className="bg-secondary flex flex-col gap-6 p-6">
           <Image src={Gevorg} 
           alt="Gevorg Martirosyan, Co-Founder and CTO of HDH"
-          title="Gevorg Martirosyan, Co-Founder and CTO of HDH"
+          title=""
           />
           <h3 className="h3-bold">Gevorg Martirosyan</h3>
           <p className="h4-regular">Co-Founder, CTO at Hardware Design House</p>

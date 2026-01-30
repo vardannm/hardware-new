@@ -14,7 +14,7 @@ export const industriesData = {
       image: SmartHomeAndIotIndustry,
       imageAlt:
         "Smart home and IoT devices ensuring secure and reliable home automation",
-      imageTitle: "Smart Home and IoT",
+      imageTitle: "",
       title: "Smart Home & IoT",
       description:
         "We design connected devices that make homes smarter and more efficient. Leveraging our background in embedded systems and electronics engineering, we deliver smart lighting, sensors, and home automation systems that are secure, reliable, and seamlessly integrated.",
@@ -26,7 +26,7 @@ export const industriesData = {
       image: AccessControlFirewalls,
       imageAlt:
         "Access control systems biometric devices and hardware firewalls protecting physical and digital assets",
-      imageTitle: "Security and Cybersecurity",
+      imageTitle: "",
       title: "Security and Cybersecurity",
       description:
         "We provide hardware to protect physical and digital assets. Our solutions, including access control systems, biometric devices, and hardware firewalls, deliver secure, resilient, and future-ready protection. With expertise in hardware industries, we integrate advanced security practices to safeguard every stage of your system’s operation.",
@@ -38,7 +38,7 @@ export const industriesData = {
       image: IndustrialOperations,
       imageAlt:
         "Industrial operations with robotics control systems and IoT monitoring devices",
-      imageTitle: "Industrial Solution",
+      imageTitle: "",
       title: "Industrial Solution",
       description:
         "HDH delivers hardware that streamlines industrial operations and improves productivity. Our solutions, including robotics, control systems, and IoT-enabled monitoring devices, are designed for efficiency, durability, and easy deployment across the hardware engineering industries.",

@@ -59,7 +59,7 @@ export const PROJECT_DETAILS = {
     slug: "smart-bedroom-lighting-system",
     pageTitle: "Z-light Smart Bedroom Lighting and Wellness System",
     hero: {
-      imageTitle: "Smart Bedroom Lighting System",
+      imageTitle: "",
       imageAlt:
         "A smart bedroom lighting system that gently guides your sleep and wake cycle with soothing light",
       title: "zLight",
@@ -94,14 +94,14 @@ export const PROJECT_DETAILS = {
       {
         src: SmartBedroomHubSecond,
         alt: "Wireless Thermostat System with Upgraded Hardware and Software",
-        title: "Wireless Thermostat System with Upgraded Hardware and Software",
+        title: "",
         text: "In order to reduce the impact of possible humidity and temperature alterations, system mechanical components such as plexiglass, an appropriate type of wood and glue were selected.",
         isLeft: false,
       },
       {
         src: SmartBedroomLightingSystemDevelopment,
         alt: "Training and support for installing and maintaining the smart thermostat system for efficient home automation",
-        title: "Contractor Training and Support for Smart Thermostat System",
+        title: "",
         text: "Our team of engineers, in collaboration with designers, put everything together from conception to delivery, paying close attention to every detail. We also developed a flatter, more lightweight version of the product.",
         isLeft: false,
       },
@@ -109,7 +109,7 @@ export const PROJECT_DETAILS = {
         src: SmartBedroomLightingSystemEngineering,
         alt: "Home automation thermostat with seamless hardware and software integration",
         title:
-          "Seamless Hardware and Software Integration in Home Automation Thermostat System",
+          "",
         text: "Our team combined expertise in PCB design, firmware optimization, mechanical integration, and sensor calibration to bring the zLight to life. Careful hardware-software collaboration ensured seamless control through an app, while precision engineering allowed integration of sensors for temperature, humidity, and CO₂ monitoring. The system uses energy-efficient components, delivering reliable performance while fitting naturally in the bedroom environment.",
         isLeft: false,
       },
@@ -118,7 +118,7 @@ export const PROJECT_DETAILS = {
         src: SmartBedroomLightingSystemSensorDesign,
         alt: "Smart thermostat system with modular hardware design and scalable PCB layout",
         title:
-          "Modular Hardware Design and Scalable PCB in Smart Thermostat System",
+          "",
         text: "To achieve accurate ambient temperature measurements, the sensor position was selected with consideration of the system's mechanical and electrical characteristics, ensuring laminar airflow around the sensor and minimizing measurement errors.",
         isLeft: false,
       },
@@ -129,7 +129,7 @@ export const PROJECT_DETAILS = {
         text: "Gentle, comfortable light gradually activates to signal wake-up time, adjusting to ambient conditions and supporting your sleep-wake cycle.",
         src: SmartWakeUpLighting,
         alt: "Smart wake up lighting with gentle gradual brightness",
-        title: "Smart Wake Up Lighting",
+        title: "",
         width: 260,
       },
       {
@@ -137,7 +137,7 @@ export const PROJECT_DETAILS = {
         text: "Fast and convenient wireless charging for mobile devices, built into the nightstand for easy access.",
         src: WirelessChargingNightstand,
         alt: "Wireless charging nightstand with fast and convenient charging for mobile devices integrated into the smart bedroom system",
-        title: "Wireless Charging Nightstand",
+        title: "",
         width: 260,
       },
       {
@@ -145,7 +145,7 @@ export const PROJECT_DETAILS = {
         text: "App-based control for scheduling, brightness adjustment, and color, adapting to ambient light and bedroom conditions.",
         src: AppControlledSmartBedroomLighting,
         alt: "App controlled smart bedroom lighting system for scheduling brightness and color adjustment based on ambient conditions",
-        title: "App Controlled Smart Bedroom Lighting",
+        title: "",
         width: 260,
       },
       {
@@ -153,7 +153,7 @@ export const PROJECT_DETAILS = {
         text: "Integrated sensors for precise measurements of air quality (CO₂e and TVOC), temperature, and humidity.",
         src: SmartEnvironmental,
         alt: "Smart bedroom lighting system with integrated sensors that monitor air quality temperature and humidity for a healthier environment",
-        title: "Smart Environmental Sensors",
+        title: "",
         width: 260,
       },
     ],
@@ -172,7 +172,7 @@ export const PROJECT_DETAILS = {
     slug: "smart-thermostat-system",
     pageTitle: "Smart Thermostat System for Home Climate Control",
     hero: {
-      imageTitle: "Smart Thermostat System for Home Climate Control",
+      imageTitle: "",
       imageAlt:
         "Smart thermostat system for home climate control with energy-saving automation and wireless temperature management",
       title: "Smart Thermostat System",
@@ -195,14 +195,14 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
       {
         src: WirelessThermostat,
         alt: "Wireless Thermostat System with Upgraded Hardware and Software",
-        title: "Wireless Thermostat System with Upgraded Hardware and Software",
+        title: "",
         text: "In order to reduce the impact of possible humidity and temperature alterations, system mechanical components such as plexiglass, an appropriate type of wood and glue were selected.",
         isLeft: false,
       },
       {
         src: SystemContractor,
         alt: "Training and support for installing and maintaining the smart thermostat system for efficient home automation",
-        title: "Contractor Training and Support for Smart Thermostat System",
+        title: "",
         text: "Our team of engineers, in collaboration with designers, put everything together from conception to delivery, paying close attention to every detail. We also developed a flatter, more lightweight version of the product.",
         isLeft: false,
       },
@@ -210,7 +210,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: SystemIntegration,
         alt: "Home automation thermostat with seamless hardware and software integration",
         title:
-          "Seamless Hardware and Software Integration in Home Automation Thermostat System",
+          "",
         text: "Our team combined expertise in PCB design, firmware optimization, mechanical integration, and sensor calibration to bring the zLight to life. Careful hardware-software collaboration ensured seamless control through an app, while precision engineering allowed integration of sensors for temperature, humidity, and CO₂ monitoring. The system uses energy-efficient components, delivering reliable performance while fitting naturally in the bedroom environment.",
         isLeft: false,
       },
@@ -219,7 +219,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: ModularHardware,
         alt: "Smart thermostat system with modular hardware design and scalable PCB layout",
         title:
-          "Modular Hardware Design and Scalable PCB in Smart Thermostat System",
+          "",
         text: "To achieve accurate ambient temperature measurements, the sensor position was selected with consideration of the system's mechanical and electrical characteristics, ensuring laminar airflow around the sensor and minimizing measurement errors.",
         isLeft: false,
       },
@@ -231,7 +231,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: EnergyEfficiency,
         alt: "Smart thermostat system for home climate control with adaptive energy-saving thermostat features",
         title:
-          "Adaptive Control for Energy Efficiency in Smart Thermostat System",
+          "",
         width: 352,
       },
       {
@@ -240,7 +240,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: PrecisionSensors,
         alt: "Smart thermostat system with thermostat sensors and wireless connectivity",
         title:
-          "Precision Sensors and Reliable Connectivity in Smart Thermostat System",
+          "",
         width: 352,
       },
       {
@@ -258,7 +258,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: ModularScalable,
         alt: "Smart thermostat system with modular and scalable thermostat hardware",
         title:
-          "Modular and Scalable Hardware Design in Smart Thermostat System",
+          "",
         width: 352,
       },
       {
@@ -267,7 +267,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: ContractorSupport,
         alt: "Energy-saving thermostat with contractor-friendly support, installation guides, and troubleshooting tools",
         title:
-          "Contractor-Friendly Support and Integration in Smart Thermostat System",
+          "",
         width: 352,
       },
     ],
@@ -287,7 +287,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
     slug: "smart-home-hub",
     pageTitle: "Moon by 1-Ring – Advanced Smart Home Hub",
     hero: {
-      imageTitle: "Advanced Smart Home Hub for Automation and Security",
+      imageTitle: "",
       imageAlt:
         "Advanced smart home hub for home automation and security with 360-degree monitoring and centralized device control",
       title: "Moon by 1-Ring",
@@ -318,14 +318,14 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
       {
         src: MoonBy1Ring,
         alt: "Moon by 1-Ring smart home hub combining smart home sensors and automation features",
-        title: "Moon by 1-Ring Smart Home Hub with Sensors and Automation",
+        title: "",
         text: "The ball-shaped device includes a camera on one side and microphones on all four sides, providing full environmental awareness. It actively responds to sound, detects nearby activity, and automatically sends alerts or starts live streaming to your phone when events occur.",
         isLeft: false,
       },
       {
         src: SmartDeviceIntegration,
         alt: "Moon by 1-Ring smart home hub designed for efficient smart device integration",
-        title: "Efficient Smart Device Integration",
+        title: "",
         text: "The Moon hub was designed to unify multiple smart devices into a single, efficient system. Development focused on achieving a compact, high-performance design with full 360-degree coverage, balancing power consumption, reliability, and overall system efficiency through extensive testing.",
         isLeft: false,
       },
@@ -333,14 +333,14 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: IntegratedSensors,
         alt: "Compact smart home hub with integrated sensors and camera optics",
         title:
-          "Compact Smart Home Hub with Integrated Sensors and Camera Optics",
+          "",
         text: "The compact size of the hub required careful integration of high-quality sensors, a proper matrix, and camera optics for streaming. Using a System on Module (SOM) enabled smooth live streaming while addressing space, thermal management, and system prioritization challenges.",
         isLeft: false,
       },
       {
         src: MagneticLevitationDesign,
         alt: "Moon by 1-Ring smart home hub with levitating magnetic ball",
-        title: "Magnetic Levitation Design for Moon by 1-Ring",
+        title: "",
         text: "Precise magnetic calculations and mechanical engineering allowed the ball to levitate steadily and move smoothly up and down. The lightweight design includes built-in magnets, enabling easy placement on refrigerators or other metal surfaces, enhancing both usability and practicality.",
         isLeft: false,
       },
@@ -352,7 +352,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         text: "High-performance, low-power CPU for complex computations, seamless multitasking, and efficient automation.",
         src: SmartHomeSecuritySystem,
         alt: "Smart home security system with high-performance low-power CPU designed for efficient automation, seamless multitasking, and reliable smart home technology",
-        title: "High-Performance CPU for Smart Home Automation Hub",
+        title: "",
         width: 352,
       },
       {
@@ -360,7 +360,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         text: "Supports Wi-Fi, Bluetooth, Zigbee, and Z-Wave, enabling seamless communication and compatibility with a wide range of smart devices.",
         src: MultiProtocolConnectivity,
         alt: "Smart device integration and reliable home automation",
-        title: "Smart Home Hub with Multi-Protocol Connectivity",
+        title: "",
         width: 352,
       },
       {
@@ -369,7 +369,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: SensorsAutomation,
         alt: "Smart home hub with ambient light, temperature, and motion sensors for intelligent automation and real-time monitoring across the smart home ecosystem",
         title:
-          "Smart Home Hub with Ambient Light, Temperature, and Motion Sensors",
+          "",
         width: 352,
       },
       {
@@ -377,7 +377,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         text: "360-degree HD panoramic camera providing comprehensive home surveillance and activity monitoring.",
         src: HomeAutomationSystem,
         alt: "Smart home hub camera system with HD panoramic view for comprehensive home surveillance and intelligent monitoring within the smart home security system",
-        title: "HD Panoramic Camera System for Smart Home Security",
+        title: "",
         width: 352,
       },
       {
@@ -385,7 +385,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         text: "Equipped with a camera on one side and microphones on all four sides, the device reacts to nearby sounds by sending alerts or starting a live stream to your phone.",
         src: CameraSystem,
         alt: "Smart home hub camera system with HD panoramic view for comprehensive home surveillance and intelligent monitoring within the smart home security system",
-        title: "HD Panoramic Camera System for Smart Home Security",
+        title: "",
         width: 352,
       },
       {
@@ -393,7 +393,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         text: "Customizable automation and security features that are energy-efficient and designed to protect your home.",
         src: HomeAutomationController,
         alt: "Home automation controller with customizable automation and energy-efficient smart home security features for reliable protection and home control",
-        title: "Customizable Automation and Security in Smart Home Hub",
+        title: "",
         width: 352,
       },
     ],

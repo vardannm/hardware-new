@@ -72,9 +72,9 @@ export default function ServicePage({ params }) {
         </div>
       </div>
 
-      <div className="flex flex-col gap-[120px] mt-5 mb-16 mx-auto w-[100%] max-sm:gap-60">
+      <div className="flex flex-col gap-[120px] mt-5 mb-16 mx-auto w-[100%] max-sm:gap-60 ">
    
-        <div className="sm:hidden">
+        <div className="sm:hidden max-sm:w-90 max-sm:mx-auto">
          
           <BackButton className="self-start" />
           <div className="flex flex-col gap-[7px]">
@@ -86,8 +86,8 @@ export default function ServicePage({ params }) {
           <p>{hero.text}</p>
         </div>
 
-        <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-full">
-          <p className="font-bold text-3xl max-sm:text-start max-sm:text-2xl">{expertise.title}</p>
+        <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-90">
+          <p className="font-bold text-[32px] max-sm:text-start max-sm:text-[20px]">{expertise.title}</p>
           <div className="px-[18px] py-3.5 flex flex-col bg-secondary rounded-[10px] gap-2.5 text-start">
             <p className="font-bold text-2xl max-sm:text-xl">{expertise.highlightTitle}</p>
             <div className="pl-5">
@@ -97,10 +97,10 @@ export default function ServicePage({ params }) {
             </div>
           </div>
         </div>
-        <div className="bg-[#FAFAFA] flex justify-center gap-28 py-8 items-center max-sm:flex-col">
+        <div className="bg-[#FAFAFA] flex justify-center gap-28 py-8 items-center max-sm:flex-col max-sm:gap-2">
           <div className="flex flex-col gap-6 max-w-[27%] max-sm:max-w-[87%]">
-            <p className="font-bold text-3xl">{process.title}</p>
-            <p>{process.description}</p>
+            <p className="font-bold text-[32px] max-sm:text-[20px]">{process.title}</p>
+            <p className="text-regular">{process.description}</p>
           </div>
           <div>
             <div className="flex flex-col items-start space-y-8 relative pl-6">
@@ -108,29 +108,34 @@ export default function ServicePage({ params }) {
               {process.steps.map((step, i) => (
                 <div key={i} className="relative flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary ring-4 ring-primary/30 absolute -left-[17px] top-1/2 -translate-y-1/2"></div>
-                  <p className="pl-[30px] font-bold">{step}</p>
+                  <p className="pl-[30px] font-bold h4-bold">{step}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        <div className="flex flex-col mx-auto max-sm:hidden">
-          <div className="grid grid-rows-13 grid-cols-5 gap-2 max-sm:hidden">
-            <div className="row-span-7 bg-secondary p-3 rounded-md"></div>
-            <div className="row-span-3 bg-secondary p-3 rounded-md"></div>
-            <ServiceCard {...serviceCards[0]} className="row-span-4" />
-            <div className="row-span-3 bg-secondary p-3 rounded-md"></div>
-            <div className="row-span-7 bg-secondary p-3 rounded-md"></div>
-            <ServiceCard {...serviceCards[1]} className="row-span-5" />
-            <ServiceCard {...serviceCards[2]} className="row-span-6" />
-            <ServiceCard {...serviceCards[3]} className="row-span-6" />
-            <div className="row-span-2 bg-secondary p-3 rounded-md"></div>
-            <div className="row-span-2 bg-secondary p-3 rounded-md"></div>
-            <ServiceCard {...serviceCards[4]} className="row-span-5" />
-            <div className="row-span-4 bg-secondary p-3 rounded-md"></div>
-            <ServiceCard {...serviceCards[5]} className="row-span-4" />
-            <div className="row-span-4 bg-secondary p-3 rounded-md"></div>
-            <div className="row-span-3 bg-secondary p-3 rounded-md"></div>
+        <div className="flex flex-col mx-auto max-sm:hidden ">
+          <div className="grid grid-rows-1 grid-cols-8 gap-2 max-sm:hidden">
+            {/* arajin 3 */}
+            <div className=" row-start-1 row-end-7 col-start-1 col-end-2 bg-secondary p-3 rounded-md"></div>
+            <div className=" row-start-7 row-end-10 col-start-1 col-end-2 bg-secondary p-3 rounded-md"></div>
+            <div className=" row-start-10 row-end-13 col-start-1 col-end-2 bg-secondary p-3 rounded-md"></div>
+            {/* erkrord 3 */}
+            <div className=" row-start-1 row-end-4 col-start-2 col-end-4 bg-secondary p-3 rounded-md"></div>
+            <ServiceCard {...serviceCards[1]} className=" row-start-4 row-end-9 col-start-2 col-end-4   rounded-md" />
+            <ServiceCard {...serviceCards[4]} className=" row-start-9 row-end-13 col-start-2 col-end-4  rounded-md"/>
+            {/* errord 3 */}
+            <ServiceCard {...serviceCards[0]} className=" row-start-1 row-end-5 col-start-4 col-end-6 bg-secondary  rounded-md"/>
+            <ServiceCard {...serviceCards[3]} className=" row-start-5 row-end-7 col-start-4 col-end-6 bg-secondary  rounded-md"/>
+            <div className=" row-start-7 row-end-13 col-start-4 col-end-6 bg-secondary p-3 rounded-md"></div>
+            {/* chorrord 3 */}
+            <div className=" row-start-1 row-end-3 col-start-6 col-end-8 bg-secondary p-3 rounded-md"></div>
+            <ServiceCard {...serviceCards[2]} className=" row-start-3 row-end-6 col-start-6 col-end-8 bg-secondary  rounded-md"/>
+            <ServiceCard {...serviceCards[5]} className=" row-start-6 row-end-13 col-start-6 col-end-8 bg-secondary  rounded-md"/>
+            {/* hingerord 3 */}
+            <div className=" row-start-1 row-end-7 col-start-8 col-end-8 bg-secondary p-3 rounded-md"></div>
+            <div className=" row-start-7 row-end-10 col-start-8 col-end-8 bg-secondary p-3 rounded-md"></div>
+            <div className=" row-start-10 row-end-13 col-start-8 col-end-8 bg-secondary p-3 rounded-md"></div>
           </div>
         </div>
 
@@ -190,12 +195,13 @@ export default function ServicePage({ params }) {
         </div>
 
         {/* Testimonials Desktop */}
-        <div className="flex w-[85%] mx-auto text-black max-sm:hidden">
+        <div className="w-[76%]  mx-auto">
+        <div className="flex  text-black max-sm:hidden">
           {testimonials.map((item, index) => (
             <Testimonial key={index} logo={item.logo} text={item.text} name={item.name} position={item.position} />
           ))}
         </div>
-
+</div>
         {/* Testimonials Mobile — FIXED with modules */}
         <div className="sm:hidden pl-5">
           <Swiper

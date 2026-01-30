@@ -16,7 +16,7 @@ export const BLOG_DETAILS = {
     description: `Bringing a hardware product from concept to the customer delivery is a complex, multi-stage journey that spans engineering, procurement, manufacturing, testing, logistics, and post-launch support. This entire journey is known as the hardware product lifecycle, and effective management of it has become a strategic differentiator in the modern electronics industry. From the moment a Bill of Materials (BOM) is drafted to the moment the product is packaged and shipped, companies must align teams, tools, and data to ensure a predictable and scalable development pipeline. In today’s fast-moving electronics market, organizations that master the end-to-end process, often described as the “BOM to box” pipeline, gain a competitive edge through speed, quality, and supply chain resilience. This whitepaper explores how businesses can optimize every phase of the hardware product lifecycle, from initial design to post-launch, using best practices in hardware lifecycle management, digital collaboration, supply chain orchestration, and continuous improvement strategies.`,
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
-    heroTitle: "From Circuit to Customer",
+    heroTitle: "",
     sections: [
       {
         type: "card",
@@ -265,7 +265,7 @@ This guide explores the complete IoT hardware development process, from early ar
 `,
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
-    heroTitle: "From Circuit to Customer",
+    heroTitle: "",
     sections: [
       {
         type: "card",
@@ -547,7 +547,7 @@ This guide provides practical, engineering-focused strategies for PCB layout des
 `,
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
-    heroTitle: "From Circuit to Customer",
+    heroTitle: "",
     sections: [
       {
         type: "card",
@@ -841,7 +841,7 @@ Understanding these hardware validation stages enables engineering teams to plan
 `,
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
-    heroTitle: "From Circuit to Customer",
+    heroTitle: "",
     sections: [
       {
         type: "card",
@@ -1166,7 +1166,7 @@ By creating early prototypes, teams can identify design flaws, refine mechanical
 `,
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
-    heroTitle: "From Circuit to Customer",
+    heroTitle: "",
     sections: [
       {
         type: "card",

@@ -53,7 +53,7 @@ export default function ProjectPage({ params }) {
         </div>
         <p className="hidden max-sm:block p-4">{project.hero.text}</p>
       </div>
-     <div className="bg-[#dfdfe4] mx-[171px] flex gap-[38px] rounded-[30px] p-8
+     <div className="bg-[#dfdfe4] w-[76%] mx-auto flex gap-[38px] rounded-[30px] p-8
                 max-sm:p-0 max-xl:flex-col max-sm:mx-0 ">
   
 
@@ -78,7 +78,7 @@ export default function ProjectPage({ params }) {
       <div className="m-auto p-1 rounded-[10px] border-[#dedede] border bg-[#f1f1f1]">
         <Image src={project.boxImage} alt="" />
       </div>
-      <p className="m-auto text-3xl font-bold">Process Highlights</p>
+      <p className="m-auto text-[32px] max-sm:text-[20px] font-bold">Process Highlights</p>
       <div className="flex gap-6 m-auto max-xl:flex-col max-sm:mx-3">
         <div className="flex flex-col gap-3">
           {project.processHighlights

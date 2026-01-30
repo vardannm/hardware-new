@@ -79,14 +79,14 @@ export const INDUSTRY_DETAILS = {
     metaTitle: "Smart Home Automation and IoT Devices",
     hero: {
       icon: SmartHomeAutomationSystems,
-      imageTitle: "Smart Home Automation Systems and Innovative loT Devices",
+      imageTitle: "",
       imageAlt: "Smart home automation systems and innovative loT devices",
     },
     metaDescription:
       "Smart home automation, IoT devices and product development services by HDH. We build smart home systems, software and IoT hardware from concept to launch.",
     mainImage: {
       src: SmartHomeAutomation,
-      imageTitle: "Smart Home Automation",
+      imageTitle: "",
       imageAlt: "Smart home automation and loT devices",
     },
     title: "Smart Home Automation and IoT Devices",
@@ -115,14 +115,14 @@ Full-cycle support: smart home product design, prototyping, testing, and deploym
         src: SecurityAndCybersecurity,
         text: "Security and Cybersecurity",
         alt: "Security and cybersecurity protection",
-        title: "Security and Cybersecurity",
+        title: "",
         href: "/industries/security-and-cybersecurity",
       },
       {
         src: IndustrialAutomation,
         text: "Industrial Automation Solutions",
         alt: "Hardware security solutions for industrial automation systems",
-        title: "Industrial Automation",
+        title: "",
         href: "/industries/industrial-automation",
       },
     ],
@@ -217,7 +217,7 @@ Full-cycle support: smart home product design, prototyping, testing, and deploym
     metaTitle: "Hardware Security Solutions",
     hero: {
       icon: HardwareSecurityAndCybersecurity,
-      imageTitle: "Security and Cybersecurity",
+      imageTitle: "",
       imageAlt:
         "Hardware security solutions and access control systems protecting devices networks and physical spaces",
     },
@@ -225,7 +225,7 @@ Full-cycle support: smart home product design, prototyping, testing, and deploym
       "Custom hardware security solutions for embedded systems, access control, TPM modules, firewalls, and IoT devices designed for trusted digital protection.",
     mainImage: {
       src: HardwareSecuritySolutions,
-      imageTitle: "Hardware Security and Cybersecurity",
+      imageTitle: "",
       imageAlt:
         "Secure embedded systems and modern authentication technologies",
     },
@@ -257,14 +257,14 @@ Full-cycle support: security system design, prototyping, testing, and deployment
         src: SmartHomeIot,
         text: "Smart Home Automation and IoT Devices",
         alt: "Smart home and IoT security systems",
-        title: "Smart Home and IoT",
+        title: "",
         href: "/industries/security-and-cybersecurity",
       },
       {
         src: IndustrialAutomationSystem,
         text: "Industrial Automation Solutions",
         alt: "Industrial automation and IoT security systems",
-        title: "Industrial Automation",
+        title: "",
         href: "/industries/industrial-automation",
       },
     ],
@@ -360,7 +360,7 @@ Full-cycle support: security system design, prototyping, testing, and deployment
     metaTitle: "Industrial Automation Solutions",
     hero: {
       icon: IndustrialAutomationSolutions,
-      imageTitle: "Industrial Automation Solutions",
+      imageTitle: "",
       imageAlt:
         "Industrial automation and automotive systems ensuring precision and reliability",
     },
@@ -368,7 +368,7 @@ Full-cycle support: security system design, prototyping, testing, and deployment
       "Custom hardware security solutions for embedded systems, access control, TPM modules, firewalls, and IoT devices designed for trusted digital protection.",
     mainImage: {
       src: SolutionsForIndustrialAutomation,
-      imageTitle: "Industrial Automation Solutions",
+      imageTitle: "",
       imageAlt:
         "Industrial automation and embedded systems in automotive HVAC and smart manufacturing",
     },
@@ -399,14 +399,14 @@ Full-cycle support: industrial automation engineering, prototyping, testing, and
         src: SmartHomeIotDevices,
         text: "Smart Home Automation and IoT Devices",
         alt: "Smart home automation and IoT",
-        title: "Smart Home and IoT Devices",
+        title: "",
         href: "/industries/smart-home-automation",
       },
       {
         src: SecurityAndCybersecuritySolutions,
         text: "Security and Cybersecurity",
         alt: "Security and cybersecurity protection solutions",
-        title: "Security and Cybersecurity Solutions",
+        title: "",
         href: "/industries/security-and-cybersecurity",
       },
     ],
