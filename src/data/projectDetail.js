@@ -10,7 +10,7 @@ import PrecisionSensors from "@/public/thermostat/precision-sensors.png";
 import IntuitiveInterface from "@/public/thermostat/intuitive-interface.png";
 import ModularScalable from "@/public/thermostat/modular-and-scalable-hardware.png";
 import ContractorSupport from "@/public/thermostat/contractor-support.png";
-import SmartThermostatSystemHvacControl from "@/public/thermostat/smart-thermostat-system-hvac-control.jpg";
+import SmartThermostatSystemHvacControl from "@/public/thermostat/smart-thermostat-system-hvac-control.webp";
 import SmartWakeUpLighting from "@/public/zlight/smart-wake-up-lighting.png";
 import WirelessChargingNightstand from "@/public/zlight/wireless-charging-nightstand.png";
 import AppControlledSmartBedroomLighting from "@/public/zlight/app-controlled-smart-bedroom-lighting.png";
