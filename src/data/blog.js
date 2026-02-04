@@ -1,4 +1,4 @@
-import IotHardwareDesign from "@/public/blog/iot-hardware-design.jpg";
+import IotHardwareDesign from "@/public/blog/iot-hardware-design.webp";
 import PcbLayoutGuidelines from "@/public/blog/pcb-layout-guidelines.jpg";
 import PocEvtDvtPvt from "@/public/blog/poc-evt-dvt-pvt.jpg";
 import HardwareRapidPrototyping from "@/public/blog/hardware-rapid-prototyping.jpg";
