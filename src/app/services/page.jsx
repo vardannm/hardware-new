@@ -1,4 +1,3 @@
-import { desc } from "framer-motion/client";
 import ServicesClient from "./page.client";
 
 export const metadata = {
