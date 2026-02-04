@@ -71,7 +71,7 @@ export default function ProjectPage({ params }) {
     <p className="font-bold text-3xl">
       {project.technicalApproach.title}
     </p>
-    <p>{project.technicalApproach.text}</p>
+    <p className="whitespace-pre-line">{project.technicalApproach.text}</p>
   </div>
 </div>
 
@@ -183,7 +183,7 @@ export default function ProjectPage({ params }) {
         </button>
       </div>
       <p className="font-bold text-4xl mx-auto">Final Result</p>
-      <p className="mx-auto font-medium w-[491px] text-center mb-14 max-sm:w-[82%]">
+      <p className="mx-auto font-medium w-[491px] whitespace-pre-line text-center mb-14 max-sm:w-[82%]">
         {project.finalText}
       </p>
     </div>

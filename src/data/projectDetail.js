@@ -74,24 +74,9 @@ export const PROJECT_DETAILS = {
     technicalApproach: {
       image: SmartBedroomHub,
       title: "Technical approach",
-      text: `The project was focused on developing a smart sleep-lighting system
-            to improve sleep quality through gentle, controlled lighting. The
-            system was designed to combine a number of functions into a compact
-            and user-friendly nightstand device, including scheduled lighting,
-            wireless charging, and environmental sensing. By reducing reliance
-            on smartphones before bed and during the night, it helps create a
-            healthier bedtime routine. When placed on a nightstand, zLight
-            produces a gentle glow that is both bright enough to indicate when
-            it is time to wake up and not so bright as to interfere with sleep.
-            The original concept was developed by Mark Zuckerberg and later
-            commercialized by other companies. To achieve accurate ambient
-            temperature measurements, the sensor position was selected with
-            consideration of the system's mechanical and electrical
-            characteristics, ensuring laminar airflow around the sensor and
-            minimizing measurement errors. In order to reduce the impact of
-            possible humidity and temperature alterations, system mechanical
-            components such as organic glass, an appropriate type of wood and
-            glue were selected.`,
+      text: `The project was focused on developing a smart sleep-lighting system to improve sleep quality through gentle, controlled lighting. The system was designed to combine a number of functions into a compact and user-friendly nightstand device, including scheduled lighting, wireless charging, and environmental sensing. By reducing reliance on smartphones before bed and during the night, it helps create a healthier bedtime routine. When placed on a nightstand, zLight produces a gentle glow that is both bright enough to indicate when it is time to wake up and not so bright as to interfere with sleep. The original concept was developed by Mark Zuckerberg and later commercialized by other companies.
+             
+      To achieve accurate ambient temperature measurements, the sensor position was selected with consideration of the system's mechanical and electrical characteristics, ensuring laminar airflow around the sensor and minimizing measurement errors. In order to reduce the impact of possible humidity and temperature alterations, system mechanical components such as organic glass, an appropriate type of wood and glue were selected.`,
     },
     boxImage: ZlightBox,
     processHighlights: [
@@ -192,8 +177,10 @@ export const PROJECT_DETAILS = {
       image: SmartThermostatSystemHvacControl,
       title: "Technical approach",
       text: `The thermostat is designed to operate with standard HVAC systems. It offers two methods for user interaction and programming:
-• through its built-in display and interface controls
-• over the Internet via web hosting
+
+            • through its built-in display and interface controls
+            • over the Internet via web hosting
+            
 The thermostat operates using remote sensors that measure temperature and humidity.
 Even minor cosmetic enhancements introduced mechanical and electrical challenges, which were addressed and resolved during development. Additional features include a user interface with system status indicators, a self-diagnostics function for reliable operation across seasonal or climate changes, and integrated pressure sensors to detect open windows or possible duct damage.
 The thermostat is made up of a main unit and a backplate. The main unit includes the main processor and the user interface display, while the backplate provides connection with the HVAC system and represents the switching system. For switching, solid-state relays were used in pairs with overcurrent protection circuitry.`,
@@ -310,20 +297,11 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
     technicalApproach: {
       image: SmartHomeHubDegree,
       title: "Technical approach",
-      text: `The Moon project was designed to be the central home automation hub
-            for a smart home system, bringing devices together in a seamless,
-            intuitive way. From the start, our focus was on creating a system
-            that was compact, efficient, and stable. To achieve this, we
-            selected high-performance, low-power processors, advanced sensors,
-            and a 360-degree HD camera to support security, automation, and
-            environmental monitoring. The home automation controller also
-            supported Wi-Fi, Bluetooth, Zigbee, and Z-Wave, making it compatible
-            with a wide variety of devices. While the system was designed to be
-            compact and efficient, integrating high-performance streaming
-            hardware with a System on Module (SOM) required careful management
-            of power and heat. This ensured smooth full-view video streaming
-            while maintaining reliable performance for other smart home
-            functions.`,
+      text: `The Moon project was designed to be the central home automation hub for a smart home system, bringing devices together in a seamless, intuitive way. From the start, our focus was on creating a system that was compact, efficient, and stable.
+      
+      To achieve this, we selected high-performance, low-power processors, advanced sensors, and a 360-degree HD camera to support security, automation, and environmental monitoring. The home automation controller also supported Wi-Fi, Bluetooth, Zigbee, and Z-Wave, making it compatible with a wide variety of devices.
+            
+            While the system was designed to be compact and efficient, integrating high-performance streaming hardware with a System on Module (SOM) required careful management of power and heat. This ensured smooth full-view video streaming while maintaining reliable performance for other smart home functions.`,
     },
     boxImage: MoonBox,
     processHighlights: [
@@ -417,6 +395,8 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
       HomeAutomationController,
     ],
     finalText:
-      "The Moon project created a smart home hub that brings devices together,automates tasks, and provides all-around home monitoring. Its sensors, high-performance CPU, and innovative design show a practical and forward-thinking approach to smart home technology.The Moon project was fully developed and successfully completed on our side, including a working prototype, though production was not implemented due to marketing considerations. For future collaborators: We invite you to discover the potential for collaboration in bringing the Moon project to life and set new standards in smart home technology.",
+      `The Moon project created a smart home hub that brings devices together,automates tasks, and provides all-around home monitoring. Its sensors, high-performance CPU, and innovative design show a practical and forward-thinking approach to smart home technology.
+      
+      The Moon project was fully developed and successfully completed on our side, including a working prototype, though production was not implemented due to marketing considerations. For future collaborators: We invite you to discover the potential for collaboration in bringing the Moon project to life and set new standards in smart home technology.`,
   },
 };
