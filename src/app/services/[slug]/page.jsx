@@ -65,10 +65,10 @@ export default function ServicePage({ params }) {
         <div className="absolute left-[60%] top-[10%] flex flex-col justify-start gap-6 text-white max-sm:hidden">
           <BackButton className="self-start" />
           <div className="flex flex-col gap-[7px]">
-            <p className="text-4xl font-bold w-[37%]">{hero.desktopTitle}</p>
-            <p className="text-xl font-bold">{hero.desktopSubtitle}</p>
+            <p className="text-[56px] max-[1000px]:text-[40px] font-bold leading-tight whitespace-pre-line">{hero.desktopTitle}</p>
+            <p className="h3-bold">{hero.desktopSubtitle}</p>
           </div>
-          <p className="w-[50%]">{hero.text}</p>
+          <p className="w-[50%] max-[1920px]:w-[90%] text-regular">{hero.text}</p>
         </div>
       </div>
 
@@ -206,7 +206,7 @@ export default function ServicePage({ params }) {
         <div className="sm:hidden pl-5">
           <Swiper
             slidesPerView={1.1}
-            spaceBetween={35}
+            spaceBetween={1}
             pagination={false}
             navigation={false}
             className="pb-16"

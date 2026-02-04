@@ -64,7 +64,7 @@ export default function Footer() {
               <div
                 className={`flex ${
                   isContactPage ? "flex-row" : "flex-col"
-                } gap-4 align-start items-start`}
+                } gap-4 align-start items-start max-[350px]:hidden`}
               >
                 <a className="font-medium" href="/about-us">
                   About

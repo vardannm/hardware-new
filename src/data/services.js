@@ -6,8 +6,8 @@ import FullCycleManufacturingSupport from "@/public/services/full-cycle-manufact
 import ConsultingTechnicalAdvisory from "@/public/services/consulting-technical-advisory.png";
 import HardwareUpdatesImprovements from "@/public/services/hardware-updates-improvements.png";
 import MoonBy1Ring from "@/public/services/moon-by-1-ring.png";
-import SmartThermostatSystem from "@/public/services/smart-thermostat-system.png";
-import ZlightSmartBedroomLightingSystem from "@/public/services/zlight-smart-bedroom-lighting-system.png";
+import SmartThermostatSystem from "@/public/services/smart-thermostat-system.jpg";
+import ZlightSmartBedroomLightingSystem from "@/public/services/zlight-smart-bedroom-lighting-system.webp";
 export const ServiceHeading = [
   {
     title: "Full-Cycle Hardware Engineering Services",
