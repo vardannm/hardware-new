@@ -1,6 +1,7 @@
 import ProjectsClient from "./page.client";
 
 export const metadata = {
+    alternates: { canonical: "https://www.hardwarehouses.com/projects/" },
   title: "Hardware Design Projects | HDH",
   description:
     "Explore our hardware design projects across industrial, medical, consumer, and secure systems. From electronics and firmware to prototyping and testing.",

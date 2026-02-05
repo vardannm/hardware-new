@@ -17,6 +17,9 @@ export async function generateMetadata({ params }) {
   return {
     title: project.pageTitle + " | HDH",
     description: project.hero.text.slice(0, 160),
+    alternates: {
+      canonical: `https://www.hardwarehouses.com/projects/${slug}`,
+    },
     openGraph: {
       title: project.og.title,
       description: project.og.descrition,

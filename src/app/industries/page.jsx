@@ -3,6 +3,7 @@ import Link from "next/link";
 import { industriesData } from "../../data/industries";
 
 export const metadata = {
+      alternates: { canonical: "https://www.hardwarehouses.com/industries/" },
   title: "Industries We Serve | HDH",
   description:
     "Explore the industries Hardware Design House serves, from Smart Home and Industrial Automation to Security, Defense, Healthcare, Education, and Green Energy.",

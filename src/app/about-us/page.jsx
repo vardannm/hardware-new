@@ -3,6 +3,9 @@ import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: {
+      canonical: `https://www.hardwarehouses.com/about-us/`,
+    },
   title: "Leading Hardware Design Company | HDH",
   description:
     "Learn about Hardware Design House, a leading hardware design company with over 10 years of experience in custom hardware, electronic design, and full-cycle product development for industries ranging from defense to consumer electronics.",

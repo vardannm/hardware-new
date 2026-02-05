@@ -98,6 +98,7 @@ export const blogStructuredData = {
   ]
 };
 export const blogMetadata = {
+    alternates: { canonical: "https://www.hardwarehouses.com/blog/" },
   title: "Hardware Engineering Blog | HDH",
   description:
     "Explore our hardware engineering blog for expert insights, practical tips, and in-depth guides on hardware design, prototyping, PCB layout, and product development.",

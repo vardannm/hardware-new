@@ -3,6 +3,9 @@ import { ChevronDownIcon } from '@radix-ui/react-icons';
 import { faqCategories, faqHeader } from '../../data/faq';
 
 export const metadata = {
+  alternates: {
+      canonical: `https://www.hardwarehouses.com/faq/`,
+    },
   title: "Hardware Design FAQ | HDH",
   description:
     "Find answers to common questions about hardware design services, custom solutions, prototyping, testing, compliance, project management, and support at Hardware Design House.",

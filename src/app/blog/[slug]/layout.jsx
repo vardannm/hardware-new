@@ -13,6 +13,9 @@ export async function generateMetadata({ params }) {
   }
 
   return {
+    alternates: {
+      canonical: `https://www.hardwarehouses.com/blog/${slug}`,
+    },
     title: `${blog.metaTitle} | HDH`,
     description: blog.metaDescription,
     openGraph: {

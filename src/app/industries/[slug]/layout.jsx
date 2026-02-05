@@ -16,6 +16,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `${industry.metaTitle} | HDH`,
     description: industry.metaDescription,
+    alternates: {
+      canonical: `https://www.hardwarehouses.com/industries/${slug}`,
+    },
     openGraph: {
       title: industry.og.title,
       description: industry.og.description,

@@ -1,4 +1,5 @@
 export const metadata = {
+        alternates: { canonical: "https://www.hardwarehouses.com/contact-us/" },
   title: "Contact Hardware Design Company | HDH",
   description:
     "Contact Hardware Design House for hardware design services and consultations.",
