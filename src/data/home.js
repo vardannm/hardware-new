@@ -1,4 +1,4 @@
-import HardwareDesignCompany from "@/public/main/hardware-design-company.png";
+import HardwareDesignCompany from "@/public/main/hardware-design-company.webp";
 import CustomGardwareDesign from "@/public/main/product-testing-validation.png";
 import ProductTestingValidation from "@/public/main/custom-hardware-design.png";
 import ConsultingTechnicalSupport from "@/public/main/consulting-technical-support.png";
@@ -19,9 +19,9 @@ import Teona from "@/public/main/teona.png";
 import Arthur from "@/public/aboutus/arthur-movsesyan.png";
 import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import MoonByRing from "@/public/main/moon-by-ring.png";
-import SecondSlide from "@/public/main/SecondSlide.png";
-import ThirdSlide from "@/public/main/ThirdSlide.png";
-import FourthSlide from "@/public/main/FourthSlide.svg";
+import SecondSlide from "@/public/main/SecondSlide.webp";
+import ThirdSlide from "@/public/main/ThirdSlide.webp";
+import FourthSlide from "@/public/main/FourthSlide.webp";
 export const HOME_DATA = {
  heroes : [
   {
