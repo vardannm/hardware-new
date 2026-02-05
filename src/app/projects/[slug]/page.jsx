@@ -68,9 +68,9 @@ export default function ProjectPage({ params }) {
     />
   </div>
   <div className="flex flex-col gap-[38px] max-sm:p-4">
-    <p className="font-bold text-3xl">
+    <h2 className="font-bold text-3xl">
       {project.technicalApproach.title}
-    </p>
+    </h2>
     <p className="whitespace-pre-line">{project.technicalApproach.text}</p>
   </div>
 </div>
@@ -78,7 +78,7 @@ export default function ProjectPage({ params }) {
       <div className="m-auto p-1 rounded-[10px] border-[#dedede] border bg-[#f1f1f1]">
         <Image src={project.boxImage} alt="" />
       </div>
-      <p className="m-auto text-[32px] max-sm:text-[20px] font-bold">Process Highlights</p>
+      <h3 className="m-auto text-[32px] max-sm:text-[20px] font-bold">Process Highlights</h3>
       <div className="flex gap-6 m-auto max-xl:flex-col max-sm:mx-3">
         <div className="flex flex-col gap-3">
           {project.processHighlights
@@ -96,7 +96,7 @@ export default function ProjectPage({ params }) {
         </div>
       </div>
       <div className="m-auto w-[1098px] max-sm:w-auto">
-        <p className="font-bold text-[32px] text-left">Perks</p>
+        <h3 className="font-bold text-[32px] text-left">Perks</h3>
       </div>
       {project.perks.length < 5 ? (
         <div className="hidden sm:flex flex-wrap justify-center gap-5 m-auto">
@@ -128,7 +128,7 @@ export default function ProjectPage({ params }) {
           ))}
         </Swiper>
       </div>
-      <p className="font-bold text-3xl mx-auto">Product Gallery</p>
+      <h3 className="font-bold text-3xl mx-auto">Product Gallery</h3>
       <div className="relative m-auto w-full mt-5">
         <Swiper
           slidesPerView={"auto"}
@@ -182,7 +182,7 @@ export default function ProjectPage({ params }) {
           <FaArrowRight size={14} className="text-white" />
         </button>
       </div>
-      <p className="font-bold text-4xl mx-auto">Final Result</p>
+      <h3 className="font-bold text-4xl mx-auto">Final Result</h3>
       <p className="mx-auto font-medium w-[491px] whitespace-pre-line text-center mb-14 max-sm:w-[82%]">
         {project.finalText}
       </p>

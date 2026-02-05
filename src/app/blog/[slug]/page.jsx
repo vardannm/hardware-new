@@ -28,14 +28,14 @@ export default function BlogPage({ params }) {
       </div>
       <div className="padding-responsive text-start max-sm:pt-10">
         <BackButton  />
-        <p className="heading-responsive mb-60">{blog.pageTitle}</p>
+        <h1 className="heading-responsive mb-60">{blog.pageTitle}</h1>
         <p className="h4-regular">{blog.description}</p>
       </div>
       {blog.sections.map((section, index) => (
         <div key={index}>
           {section.type === "card" && (
             <div className="card-per-blog-description space-y-4 bg-secondary">
-              <p className="h2-bold">{section.title}</p>
+              <h2 className="h2-bold">{section.title}</h2>
               <p className="h4-regular">{section.highlight}</p>
 
               {section.lists?.map((list, listIndex) => (

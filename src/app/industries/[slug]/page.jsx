@@ -66,7 +66,7 @@ function _StructuredData({ industry }) {
       <div className="bg-[#FAFAFA] max-sm:bg-white">
         <div className="w-[55%] flex justify-center gap-16 py-8 items-center max-sm:flex-col mx-auto max-sm:w-[95%]">
           <div className="flex flex-col gap-6 w-[80%] max-sm:w-[95%]">
-            <p className="font-bold text-3xl">{industry.technologiesTitle}</p>
+            <h2 className="font-bold text-3xl">{industry.technologiesTitle}</h2>
             <p>{industry.technologiesText}</p>
           </div>
           <div>
@@ -84,7 +84,7 @@ function _StructuredData({ industry }) {
       </div>
 
       <div className="flex flex-col w-[44%] mx-auto text-center justify-center items-center max-sm:w-90 max-sm:text-start gap-6">
-        <p className="font-bold text-3xl max-sm:text-xl">{industry.benefitsTitle}</p>
+        <h2 className="font-bold text-3xl max-sm:text-xl">{industry.benefitsTitle}</h2>
         <p className=" w-[80%] max-sm:w-90 max-sm:leading-normal whitespace-pre-line text-[20px]">
   {industry.benefitsText}
 </p>
@@ -92,7 +92,7 @@ function _StructuredData({ industry }) {
       </div>
 
       <div className="mx-auto flex flex-col gap-6 max-sm:hidden">
-        <p className="text-3xl font-bold mx-auto">Other Industries We Serve</p>
+        <h2 className="text-3xl font-bold mx-auto">Other Industries We Serve</h2>
         <div className="flex gap-6">
           {industry.otherIndustries.map((ind, i) => (
             <IndustryCard key={i} {...ind} />
@@ -116,7 +116,7 @@ function _StructuredData({ industry }) {
       </div>
 
       <div className="faq-padding flex flex-col gap-6 ">
-        <p className="text-3xl font-bold mx-auto">FAQ</p>
+        <h2 className="text-3xl font-bold mx-auto">FAQ</h2>
         <div className="flex flex-col gap-2">
           {industry.faq.map((item) => (
             <Accordion.Root key={item.id} type="single" collapsible className="space-y-3">
@@ -125,7 +125,7 @@ function _StructuredData({ industry }) {
                 className="bg-[#F8F8F8] overflow-hidden transition-all duration-200 hover:shadow-md rounded-lg"
               >
                 <Accordion.Trigger className="flex justify-between items-center w-full p-2 text-left font-bold text-lg text-black hover:bg-gray-50 transition-colors duration-200 group">
-                  <span className="text-left pr-4">{item.question}</span>
+                  <h3 className="text-left pr-4">{item.question}</h3>
                   <ChevronDownIcon
                     className="transform transition-transform duration-300 group-data-[state=open]:rotate-180 text-[#31B56A] font-bold flex-shrink-0 ml-2"
                     width={35}

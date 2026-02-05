@@ -17,7 +17,7 @@ export default function BlogCard({src, alt,imageTitle, title, description ,href}
   />
 </div>
         <div className="flex flex-col gap-7 card-blog-description relative">
-        <h4 className="heading-responsive">{title}</h4>
+        <h3 className="heading-responsive">{title}</h3>
         <p className="text-[20px] max-sm:mb-20 max-sm:text-[14px]">{description}</p>
         {href && (
       <div>

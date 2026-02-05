@@ -14,15 +14,15 @@ const { title, subtitle, categoriesTitle } = pageContent;
   return (
     <main className="mt-[93px] flex flex-col gap-6 max-sm:mt-8">
       <div className="flex flex-col gap-6 mx-auto 2xl:w-[70%] max-2xl:w-[77%] max-sm:w-[92%] ">
-        <p className="text-[56px] font-bold  max-sm:w-auto max-sm:text-[32px] max-xl:w-full">{title}</p>
+        <h1 className="text-[56px] font-bold  max-sm:w-auto max-sm:text-[32px] max-xl:w-full">{title}</h1>
         <p>{subtitle}</p>
-        <p className="text-2xl font-bold">{categoriesTitle}</p>
+        <h2 className="text-2xl font-bold">{categoriesTitle}</h2>
       </div>
       <div className="bg-secondary  py-10 max-sm:px-0 max-sm:py-2">
         <div className="my-60 flex flex-col gap-6 mx-auto 2xl:w-[70%] max-2xl:w-[77%] max-sm:w-[92%] max-sm:my-4">
           <div className="flex gap-6 items-center">
             <IoStorefrontOutline className="text-primary text-3xl" />
-            <p className="font-bold text-2xl">{categories.retail.title}</p>
+            <h3 className="font-bold text-2xl">{categories.retail.title}</h3>
           </div>
           <p>{categories.retail.description}</p>
         </div>
@@ -72,7 +72,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
         <div className="my-60 flex flex-col gap-6 mx-auto 2xl:w-[70%] max-2xl:w-[77%]  max-sm:w-90  max-sm:my-4">
           <div className="flex gap-6 items-center">
             <IoSettingsOutline className="text-primary text-3xl" />
-            <p className="text-xl font-bold">{categories.industrial.title}</p>
+            <h3 className="text-xl font-bold">{categories.industrial.title}</h3>
           </div>
           <p>{categories.industrial.description}</p>
         </div>
@@ -118,7 +118,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
         <div className="my-60 flex flex-col gap-6 mx-auto 2xl:w-[70%] max-2xl:w-[77%]  max-sm:w-90  max-sm:my-4">
           <div className="flex gap-6 items-center">
             <Image className="w-8 h-8" src={categories.private.icon} alt="Private" />
-            <p className="text-xl font-bold">{categories.private.title}</p>
+            <h3 className="text-xl font-bold">{categories.private.title}</h3>
           </div>
           <p>{categories.private.description}</p>
         </div>
@@ -165,7 +165,7 @@ const { title, subtitle, categoriesTitle } = pageContent;
         <div className="my-60 flex flex-col gap-6 mx-auto 2xl:w-[70%] max-2xl:w-[77%]  max-sm:w-90  max-sm:my-4">
           <div className="flex gap-6 items-center">
             <IoMedkitOutline className="text-primary text-3xl" />
-            <p className="text-xl font-bold">{categories.medical.title}</p>
+            <h3 className="text-xl font-bold">{categories.medical.title}</h3>
           </div>
           <p>{categories.medical.description}</p>
         </div>

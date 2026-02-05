@@ -33,9 +33,9 @@ function ServicesClient() {
         <_StructuredData />
         {ServiceHeading.map((heading)=>(
       <div key={heading.title} className="flex flex-col gap-3 max-sm:mx-[3%]">
-        <p className="text-5xl font-bold max-sm:text-2xl">
+        <h1 className="text-5xl font-bold max-sm:text-2xl">
           {heading.title}
-        </p>
+        </h1>
         <p className="w-[54%] font-normal text-xl max-sm:w-[95%]">
          {heading.description}
         </p>
@@ -55,7 +55,7 @@ function ServicesClient() {
         </div>
         <div className="flex flex-col gap-7 max-sm:mt-10">
 <div className="flex justify-between max-sm:mx-3">
-<p className="font-bold text-4xl max-sm:text-xl max-sm:w-2/3">{ProjectSection.title}</p>
+<h2 className="font-bold text-4xl max-sm:text-xl max-sm:w-2/3">{ProjectSection.title}</h2>
 <div className="flex  w-[116px] mb-4">
             <Link
               href={ProjectSection.href}

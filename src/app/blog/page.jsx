@@ -21,9 +21,9 @@ export default function Blog() {
         <h1 className="heading-responsive">
           {blogHeader.title}
         </h1>
-        <h4 className="text-[20px] mb-6 max-sm:text-[14px]">
+        <p className="text-[20px] mb-6 max-sm:text-[14px]">
           {blogHeader.description}
-        </h4>
+        </p>
       </div>
 
       <div className="flex flex-col gap-60 max-sm:gap-20">

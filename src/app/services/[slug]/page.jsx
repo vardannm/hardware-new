@@ -65,8 +65,8 @@ export default function ServicePage({ params }) {
         <div className="absolute left-[60%] top-[10%] flex flex-col justify-start gap-6 text-white max-sm:hidden">
           <BackButton className="self-start" />
           <div className="flex flex-col gap-[7px]">
-            <p className="text-[56px] max-[1000px]:text-[40px] font-bold leading-tight whitespace-pre-line">{hero.desktopTitle}</p>
-            <p className="h3-bold">{hero.desktopSubtitle}</p>
+            <h1 className="text-[56px] max-[1000px]:text-[40px] font-bold leading-tight whitespace-pre-line">{hero.desktopTitle}</h1>
+            <h2 className="h3-bold">{hero.desktopSubtitle}</h2>
           </div>
           <p className="w-[50%] max-[1920px]:w-[90%] text-regular">{hero.text}</p>
         </div>
@@ -87,9 +87,9 @@ export default function ServicePage({ params }) {
         </div>
 
         <div className="mx-auto flex flex-col gap-6 text-center w-[37%] max-sm:w-90">
-          <p className="font-bold text-[32px] max-sm:text-start max-sm:text-[20px]">{expertise.title}</p>
+          <h2 className="font-bold text-[32px] max-sm:text-start max-sm:text-[20px]">{expertise.title}</h2>
           <div className="px-[18px] py-3.5 flex flex-col bg-secondary rounded-[10px] gap-2.5 text-start">
-            <p className="font-bold text-2xl max-sm:text-xl">{expertise.highlightTitle}</p>
+            <h3 className="font-bold text-2xl max-sm:text-xl">{expertise.highlightTitle}</h3>
             <div className="pl-5">
               {expertise.items.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -99,7 +99,7 @@ export default function ServicePage({ params }) {
         </div>
         <div className="bg-[#FAFAFA] flex justify-center gap-28 py-8 items-center max-sm:flex-col max-sm:gap-2">
           <div className="flex flex-col gap-6 max-w-[27%] max-sm:max-w-[87%]">
-            <p className="font-bold text-[32px] max-sm:text-[20px]">{process.title}</p>
+            <h3 className="font-bold text-[32px] max-sm:text-[20px]">{process.title}</h3>
             <p className="text-regular">{process.description}</p>
           </div>
           <div>
@@ -170,14 +170,14 @@ export default function ServicePage({ params }) {
           </div>
         {/* FAQ */}
         <div className="mx-auto flex flex-col gap-7 w-[63%] max-sm:w-[87%]">
-          <p className="font-bold text-2xl text-center">{faq.title}</p>
+          <h2 className="font-bold text-2xl text-center">{faq.title}</h2>
           <div className="flex flex-col gap-2">
             {faq.items.map((item, index) => (
               <div key={index} className="space-y-4">
                 <Accordion.Root type="single" collapsible className="space-y-3">
                   <Accordion.Item value={item.question} className="bg-[#F8F8F8] overflow-hidden transition-all duration-200 hover:shadow-md rounded-lg">
                     <Accordion.Trigger className="flex justify-between items-center w-full p-2 text-left font-bold text-lg text-black hover:bg-gray-50 transition-colors duration-200 group">
-                      <span className="text-left pr-4">{item.question}</span>
+                      <h3 className="text-left pr-4">{item.question}</h3>
                       <ChevronDownIcon
                         className="transform transition-transform duration-300 group-data-[state=open]:rotate-180 text-[#31B56A] font-bold flex-shrink-0 ml-2"
                         width={35}

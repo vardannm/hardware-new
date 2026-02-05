@@ -66,9 +66,9 @@ export default function HomeClient() {
   className={`absolute left-[12%] bottom-[10%] flex flex-col justify-start gap-2 text-white max-sm:left-[7%] max-sm:bottom-[9%] ${
     index === 0 ? "max-md:hidden" : ""
   }`} >
-                <p className="text-[56px] font-bold w-[70%] max-xl:text-[32px] max-xl:w-[80%] max-lg:text-[22px] max-lg:w-[84%]  text-white">
+                <h1 className="text-[56px] font-bold w-[70%] max-xl:text-[32px] max-xl:w-[80%] max-lg:text-[22px] max-lg:w-[84%]  text-white">
                   {hero.welcomeText}
-                </p>
+                </h1>
                 <p className="text-[22px] max-lg:text-[18px]  w-[70%] text-white max-sm:w-[90%]">{hero.subText}</p>
               </div>
             )}
@@ -77,12 +77,12 @@ export default function HomeClient() {
       ))}
     </Swiper>
       <div className="mx-auto flex flex-col gap-60 w-76 my-60 max-md:w-[87%] max-md:my-6 max-md:gap-4">
-        <p className="md:hidden h2-bold">{welcomeTitle}</p>
+        <h1 className="md:hidden h2-bold">{welcomeTitle}</h1>
         <p className="h4-text-regular">{welcomeDescription}</p>
         <div>
-          <p className="text-start h2-bold max-md:mb-5">
+          <h2 className="text-start h2-bold max-md:mb-5">
             {services.title}
-          </p>
+          </h2>
           <div className="flex gap-10 mt-4 max-md:hidden">
             {services.items.map((item, idx) => (
               <HomeCard
@@ -125,9 +125,9 @@ export default function HomeClient() {
           <div className="flex-1 border-t border-black/50"></div>
         </div>
         <div>
-          <p className="text-start h2-bold max-md:mb-5">
+          <h2 className="text-start h2-bold max-md:mb-5">
             {industries.title}
-          </p>
+          </h2>
           <div className="flex gap-10 mt-4 max-md:hidden">
             {industries.items.map((item, idx) => (
               <HomeCard
@@ -173,9 +173,9 @@ export default function HomeClient() {
           <div className="flex-1 border-t border-black/50"></div>
         </div>
         <div>
-          <p className="text-start h2-bold max-md:mb-5">
+          <h2 className="text-start h2-bold max-md:mb-5">
             {projects.title}
-          </p>
+          </h2>
           <div className="flex gap-10 mt-4 max-md:hidden">
             {projects.items.map((item, idx) => (
               <HomeCard

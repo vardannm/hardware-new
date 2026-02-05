@@ -112,7 +112,7 @@ export default function Industries() {
       <_StructuredData />
 
       <div className="w-[73%] flex flex-col mx-auto gap-8 mb-20 max-sm:w-[95%] max-sm:gap-4 text-start">
-        <p className="font-bold text-[56px] max-sm:text-[32px]">{header.title}</p>
+        <h1 className="font-bold text-[56px] max-sm:text-[32px]">{header.title}</h1>
         <p className="text-[20px] w-2/3 max-sm:w-90">{header.description}</p>
       </div>
       {industries.map((industry) => (
@@ -126,7 +126,7 @@ export default function Industries() {
             />
           )}
           <div className="px-[13%] bg-[#FAFAFA] py-6 flex flex-col mx-auto gap-8 mb-20 max-sm:px-[5%] max-sm:gap-4 text-start">
-            <p className="font-bold text-[32px]">{industry.title}</p>
+            <h2 className="font-bold text-[32px]">{industry.title}</h2>
             <p className="text-[20px]">{industry.description}</p>
 
             <Link href={industry.link}>
