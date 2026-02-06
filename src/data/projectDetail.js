@@ -148,10 +148,10 @@ export const PROJECT_DETAILS = {
     ],
    galleryImages: [
       SmartBedroomLightingSystemDesign,
-      SmartSleepLightingDevice,
       SmartNightstandLightWithSensors,
-      SmartSleepLightAlarm,
       SmartBedroomHubDevice,
+      SmartSleepLightingDevice,
+      SmartSleepLightAlarm,
     ],
     finalText:
       "The zLight is a small, all-in-one device that brings together wireless charging, smart lighting, and environmental sensing. It contributes to a more restful and healthy bedtime routine.",
