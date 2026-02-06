@@ -14,6 +14,8 @@ export const metadata = {
       description:"Explore our Hardware Design FAQ to get answers on custom hardware design, prototyping, testing, and project support. Learn more about our expert services at Hardware Design House.",
       type:"website",
     },
+            keywords: [ "hardware design questions", "hardware development FAQ", "custom hardware solutions FAQ","prototyping and testing questions", "hardware project support"]
+
 };
 
 function _StructuredData() {

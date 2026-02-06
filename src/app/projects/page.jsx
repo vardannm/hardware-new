@@ -9,6 +9,8 @@ openGraph:{
   title: "Hardware Design Projects | Hardware Design House",
   description:"See how HDH develops market-ready hardware solutions across industrial, medical, consumer, and secure systems — electronics, embedded and prototyping.",
   type:"website",
+    keywords: [ "hardware design projects" ,"electronics design projects" , "embedded hardware projects"]
+
 }
   };
   function CommonStructuredData() {

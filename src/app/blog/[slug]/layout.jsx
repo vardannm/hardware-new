@@ -23,6 +23,7 @@ export async function generateMetadata({ params }) {
       description: blog.metaDescription,
       type: "article",
     },
+    keywords:blog.keyword
   };
 }
 

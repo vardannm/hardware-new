@@ -24,6 +24,7 @@ export async function generateMetadata({ params }) {
       description: industry.og.description,
       type:"website",
     },
+    keywords:industry.keyword,
   };
 }
 

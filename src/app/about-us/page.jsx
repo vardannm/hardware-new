@@ -13,7 +13,9 @@ export const metadata = {
     title:"Leading Hardware Design Company | HDH",
     description:"Discover Hardware Design House, a leading hardware design company with over 10 years of experience in custom hardware, electronic design, and product development solutions.",
     type:"website",
-  }
+  },
+      keywords: [ "hardware design house", "hardware engineering company", "electronic design experts","custom hardware development","end-to-end product design"]
+
   };
 
 function _StructuredData() {

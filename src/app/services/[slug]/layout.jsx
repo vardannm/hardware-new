@@ -25,6 +25,7 @@ export async function generateMetadata({ params }) {
       description: service.og.description,
       type: "website",
     },
+    keywords:service.keyword,
   };
 }
 

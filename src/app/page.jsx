@@ -12,6 +12,8 @@ export const metadata = {
     description:
       "HDH delivers custom hardware design, product development, prototyping, testing, and full-cycle engineering solutions for IoT, defense, healthcare, and more.",
     type: "website",
+                keywords: [ "hardware design company"]
+
   },
 };
 

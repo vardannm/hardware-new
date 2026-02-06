@@ -5,6 +5,7 @@ import { industriesData } from "../../data/industries";
 export const metadata = {
       alternates: { canonical: "https://www.hardwarehouses.com/industries/" },
   title: "Industries We Serve | HDH",
+      keywords: [ "industries served", "hardware industries", "embedded systems industries" , "electronics engineering industries"],
   description:
     "Explore the industries Hardware Design House serves, from Smart Home and Industrial Automation to Security, Defense, Healthcare, Education, and Green Energy.",
     openGraph: {
@@ -12,6 +13,7 @@ export const metadata = {
      description: "Discover the full range of industries supported by HDH, including Smart Home, Industrial Automation, Security, Defense, Healthcare, Transportation, and more.",
      type: "website",
     }
+    
 };
 
 function _StructuredData() {

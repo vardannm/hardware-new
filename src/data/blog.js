@@ -106,6 +106,7 @@ export const blogMetadata = {
       title:"Hardware Engineering Blog | HDH",
       description:"Stay ahead with our hardware engineering blog. Access expert tips, practical guides, and the latest insights on hardware design, development, and prototyping.",
     type:"website",
+          keywords: [ "hardware engineering blog"]
       
     }
 };

@@ -11,6 +11,7 @@ export const metadata = {
       "HDH provides end-to-end hardware engineering, electronics design, prototyping, testing, and manufacturing support for production-ready electronic products.",
     type: "website",
   },
+  keywords: [ "hardware engineering services", "electronics design services", "hardware design and development", "embedded systems engineering services"]
 };
 
 function CommonStructuredData() {

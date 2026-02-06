@@ -62,6 +62,7 @@ export const PROJECT_DETAILS = {
       title:"Z-light Smart Bedroom Lighting and Wellness System",
       description:" A wellness-focused bedroom system combining ambient sleep lighting, wireless charging, environmental sensing, and gentle wake-up illumination.",
     },
+    keyword:["smart bedroom lighting system"],
     hero: {
       imageTitle: "",
       imageAlt:
@@ -164,6 +165,7 @@ export const PROJECT_DETAILS = {
      title:"Smart Thermostat System for Intelligent Home Climate Control",
      description:"A next-generation thermostat with adaptive scheduling, real-time weather data, multi-sensor air quality monitoring, and seamless HVAC integration.",
     },
+    keyword:["smart thermostat system"],
     hero: {
       imageTitle: "",
       imageAlt:
@@ -285,6 +287,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
      title:"Moon by 1-Ring — Advanced Smart Home Hub",
      description:"An intelligent hub designed for seamless device integration and home automation, featuring 360-degree security, energy optimization, and unified smart control.",
     },
+    keyword:["smart home hub"],
     hero: {
       imageTitle: "",
       imageAlt:

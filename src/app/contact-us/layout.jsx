@@ -19,6 +19,8 @@ export const metadata = {
   alternates: {
     canonical: "https://www.hardwarehouses.com/contact-us",
   },
+        keywords: [ "get in touch with hardware design experts", "contact hardware design house, talk to our hardware engineers", "hardware design consultation","request a hardware design quote"]
+
 };
 
 export default function ContactLayout({ children }) {

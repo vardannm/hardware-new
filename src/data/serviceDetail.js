@@ -93,6 +93,7 @@ export const SERVICE_DETAILS = {
       title:"IoT Consulting Services | HDH",
       description:"Enhance your product development with expert IoT consulting services. From concept to deployment, we provide technical advisory and embedded system support for smarter electronics solutions.",
     },
+    keyword:["iot consulting services"],
     hero: {
       backgroundImage: ConsultingBg,
       title: "",
@@ -291,6 +292,7 @@ export const SERVICE_DETAILS = {
      title:"Embedded System Architecture Design | HDH",
      description:"Design and optimize embedded system architecture for IoT and electronic products. Get custom hardware and software solutions to boost performance and reliability.",
     },
+    keyword:["embedded system architecture"],
     hero: {
       backgroundImage: EmbeddedSystemArchitecture,
       title: "",
@@ -489,6 +491,7 @@ export const SERVICE_DETAILS = {
       title:"Electronics Manufacturing Services | HDH",
       description:"Streamline your production with our complete electronics manufacturing services. From DFM to logistics, we provide expert support at every step of the manufacturing process.",
     },
+    keyword:["electronics manufacturing services"],
     hero: {
       backgroundImage: ElectronicsManufacturingServices,
       title: "",
@@ -685,6 +688,7 @@ export const SERVICE_DETAILS = {
     title:"Prototype Development Services | HDH",
     description:"Accelerate your product launch with fast, expert prototype development services. From concept to functional hardware, we bring your electronic product ideas to life.",
     },
+    keyword:["prototype development services"],
     hero: {
       backgroundImage: PrototypeDevelopmentServices,
       title: "",
@@ -891,6 +895,7 @@ export const SERVICE_DETAILS = {
       title:"Hardware Updates and Improvements | HDH",
       description:"Upgrade your product with professional hardware updates and improvements. We enhance performance through optimized schematics, PCB layout, and electronic refinements.",
     },
+    keyword:["hardware updates and improvements"],
     hero: {
       backgroundImage: HardwareUpdatesAndImprovements,
       title: "",
@@ -1093,6 +1098,7 @@ export const SERVICE_DETAILS = {
       title: "Product Testing and Validation Services | HDH",
       description:"Ensure quality and performance with our expert product testing and validation services. We support electronics, IoT, and embedded development to ensure reliable results.",
     },
+    keyword:["product testing and validation"],
     hero: {
       backgroundImage: ProductTestingAndValidation,
       title: "",
@@ -1293,6 +1299,7 @@ export const SERVICE_DETAILS = {
       title: "Custom Hardware Design Services | HDH",
       description:"Expert custom hardware design services for electronic products, from schematic design to prototyping. We help turn your ideas into reliable hardware solutions.",
     },
+    keyword:["hardware design services"],
     hero: {
       backgroundImage: HardwareDesignServices,
       title: "",

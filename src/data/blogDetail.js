@@ -17,6 +17,7 @@ export const BLOG_DETAILS = {
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
     heroTitle: "",
+    keyword:["hardware product lifecycle"],
     sections: [
       {
         type: "card",
@@ -266,6 +267,7 @@ This guide explores the complete IoT hardware development process, from early ar
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
     heroTitle: "",
+    keyword:["IoT hardware design"],
     sections: [
       {
         type: "card",
@@ -548,6 +550,7 @@ This guide provides practical, engineering-focused strategies for PCB layout des
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
     heroTitle: "",
+    keyword:["PCB layout guidelines"],
     sections: [
       {
         type: "card",
@@ -842,6 +845,7 @@ Understanding these hardware validation stages enables engineering teams to plan
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
     heroTitle: "",
+    keyword:["POC, EVT, DVT, PVT"],
     sections: [
       {
         type: "card",
@@ -1167,6 +1171,7 @@ By creating early prototypes, teams can identify design flaws, refine mechanical
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
     heroTitle: "",
+    keyword:["hardware rapid prototyping"],
     sections: [
       {
         type: "card",

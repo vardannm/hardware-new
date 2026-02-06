@@ -25,6 +25,7 @@ export async function generateMetadata({ params }) {
       description: project.og.descrition,
       type: "website",
     },
+    keywords:project.keyword,
   };
 }
 
