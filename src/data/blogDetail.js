@@ -59,7 +59,15 @@ export const BLOG_DETAILS = {
           "Once the BOM is finalized, engineers transform the design into tangible prototypes. This stage is critical for identifying design flaws, validating functionality, and preparing the product for mass production.",
         lists: [
           {
-            title: "Key validation stages in hardware prototyping:",
+             title: [
+    "Key validation stages in ",
+    {
+      type: "link",
+      text: "hardware prototyping",
+      url: "https://www.hardwarehouses.com/services/prototype-development-services/"
+    },
+    ":"
+  ],
             items: [
               {
                 bold: "Engineering Validation Testing (EVT):",
@@ -119,8 +127,13 @@ export const BLOG_DETAILS = {
       {
         type: "card",
         title: "Manufacturing: Bringing the Product to Life",
-        highlight:
-          "Manufacturing is the stage where hardware becomes a tangible, scalable product. Engineering files, BOMs, and test specifications are translated into repeatable, high-yield assembly processes that ensure consistency and quality at scale.",
+        highlight:[
+          {
+            type: "link",
+            text: "Manufacturing",
+            url: "https://www.hardwarehouses.com/services/electronics-manufacturing-services/"
+          },
+          " is the stage where hardware becomes a tangible, scalable product. Engineering files, BOMs, and test specifications are translated into repeatable, high-yield assembly processes that ensure consistency and quality at scale.", ],
         lists: [
           {
             title: "Core production processes:",
@@ -245,9 +258,18 @@ export const BLOG_DETAILS = {
         type: "card",
         title: "Conclusion",
         paragraphs: [
-          "Managing the hardware product lifecycle, from circuit to customer, requires tight coordination, modern tools, and strong supplier relationships. Companies that excel in BOM management, engineering validation, sourcing, manufacturing, testing, packaging, and post-launch support can reduce costs, avoid delays, and consistently deliver high-quality products.",
-          "In today’s rapidly evolving electronics market, streamlined hardware lifecycle management is one of the most important competitive advantages. It transforms complex engineering processes into efficient, scalable, and market-ready hardware solutions, ensuring that every product—from the first circuit to the customer’s hands—is reliable, compliant, and successful.",
-        ],
+  [
+    "Managing the hardware product lifecycle, from circuit to customer, requires tight coordination, modern tools, and strong supplier relationships. Companies that excel in BOM management,",
+    {
+      type: "link",
+      text: " engineering validation",
+      url: "https://www.hardwarehouses.com/services/product-testing-and-validation/"
+    },
+    ", sourcing, manufacturing, testing, packaging, and post-launch support can reduce costs, avoid delays, and consistently deliver high-quality products."
+  ],
+  "In today’s rapidly evolving electronics market, streamlined hardware lifecycle management is one of the most important competitive advantages. It transforms complex engineering processes into efficient, scalable, and market-ready hardware solutions, ensuring that every product—from the first circuit to the customer’s hands—is reliable, compliant, and successful."
+],
+
         takeaway:
           "Effective lifecycle management is not just about production—it is about creating a seamless, end-to-end process that connects engineering, manufacturing, supply chain, and customers into a single, optimized workflow.",
       },
@@ -260,10 +282,20 @@ export const BLOG_DETAILS = {
     metaDescription:
       "Learn how to design IoT hardware—from architecture and BOM selection to prototyping, testing, power optimization, and preparing devices for mass production.",
     heroImage: HardwareProductLifecycle,
-    description: `The foundation of any successful IoT solution lies in its hardware design. As the Internet of Things transforms industries, from manufacturing and healthcare to agriculture, smart homes, and logistics, the design of the IoT device itself becomes critical. A well-engineered IoT hardware design determines the device performance, connectivity, power efficiency, security, and long-term reliability.
-Discussions about IoT often focus on software, analytics, and cloud platforms, yet the physical device remains the foundation of the IoT ecosystem. Its reliability, durability, and sophistication ultimately determine how well the system performs in real-world environments.
-This guide explores the complete IoT hardware development process, from early architecture planning and IoT prototype creation to validation and preparation for mass production. It is designed for engineers, product managers, and IoT innovators building devices that are robust, scalable, and secure.
-`,
+    description: [
+  "The foundation of any successful IoT solution lies in its hardware design. As the Internet of Things transforms industries, from manufacturing and healthcare to agriculture, smart homes, and logistics, the design of the IoT device itself becomes critical. A well-engineered IoT hardware design determines the device performance, connectivity, power efficiency, security, and long-term reliability.Discussions about IoT often focus on software, analytics, and cloud platforms, yet the physical device remains the foundation of the IoT ecosystem. Its reliability, durability, and sophistication ultimately determine how well the system performs in real-world environments.This guide explores the complete IoT hardware development process, from early architecture planning and IoT prototype creation ",
+
+  [
+    " ",
+    {
+      type: "link",
+      text: "to validation",
+      url: "https://www.hardwarehouses.com/services/product-testing-and-validation/"
+    },
+    " and preparation for mass production. It is designed for engineers, product managers, and IoT innovators building devices that are robust, scalable, and secure."
+  ]
+],
+
     heroAlt:
       "Hardware product lifecycle from circuit design to customer delivery",
     heroTitle: "",
@@ -317,6 +349,7 @@ This guide explores the complete IoT hardware development process, from early ar
           },
           {
             bold: "System Architecture Design:",
+            url:"https://www.hardwarehouses.com/services/embedded-system-architecture/",
             text: "Combine electronics, mechanical design, firmware, and communications technologies into a cohesive system framework.",
           },
           {
@@ -325,8 +358,14 @@ This guide explores the complete IoT hardware development process, from early ar
           },
           {
             bold: "IoT Prototype Development:",
-            text: "Develop functional prototypes to validate the architecture, test core features, and simulate real-world operating conditions.",
-          },
+            text: ["",
+            {
+      type: "link",
+      text: "Develop functional prototypes",
+      url: "https://www.hardwarehouses.com/services/prototype-development-services/"
+    },
+            " to validate the architecture, test core features, and simulate real-world operating conditions.",
+        ]},
           {
             bold: "Testing & Certification:",
             text: "Perform EMC tests, RF performance analysis, SAR testing (for cellular devices), thermal verification, stress tests, waterproofing, and durability assessments.",
@@ -527,10 +566,18 @@ This guide explores the complete IoT hardware development process, from early ar
       {
         type: "card",
         title: "Conclusion",
-        paragraphs: [
-          "The success of any IoT solution heavily depends heavily on its IoT hardware design. By thoughtfully  planning the architecture, selecting reliable components, building and testing functional prototypes, and preparing for scalable production, companies can deliver devices that are efficient, secure, and future-ready.",
-          "As IoT adoption expands across industries, investing in end-to-end IoT hardware development becomes a strategic advantage that accelerates innovation and reduces risk.",
-        ],
+       paragraphs: [
+  [
+    "The success of any IoT solution heavily depends heavily on its IoT hardware design. By thoughtfully planning the architecture, selecting reliable components, building and ",
+    {
+      type: "link",
+      text: "testing functional prototypes",
+      url: "https://www.hardwarehouses.com/services/product-testing-and-validation/"
+    },
+    ", and preparing for scalable production, companies can deliver devices that are efficient, secure, and future-ready."
+  ],
+  "As IoT adoption expands across industries, investing in end-to-end IoT hardware development becomes a strategic advantage that accelerates innovation and reduces risk."
+],
         takeaway:
           "In IoT, software may attract attention, but hardware drives performance, reliability, and long-term success.",
       },
@@ -861,9 +908,24 @@ Understanding these hardware validation stages enables engineering teams to plan
             text: "Ensure the product idea is technically feasible and solves the intended problem.",
           },
           {
-            bold: "Identify technical risks:",
-            text: "Detect challenges in hardware design, component availability, system architecture, or integration.",
-          },
+  bold: "Identify technical risks:",
+  text: [
+    "Detect challenges in ",
+    {
+      type: "link",
+      text: "hardware design",
+      url: "https://www.hardwarehouses.com/services/custom-hardware-design/"
+    },
+    ", component availability, ",
+    {
+type: "link",
+      text: "system architecture",
+      url: "https://www.hardwarehouses.com/services/embedded-system-architecture/"
+    },
+    
+    " , or integration."
+  ],
+},
           {
             bold: "Test basic compatibility:",
             text: "Confirm that target components, like sensors, microcontrollers, or power modules, work together seamlessly.",
@@ -914,8 +976,14 @@ Understanding these hardware validation stages enables engineering teams to plan
       {
         type: "card",
         title: "Engineering Validation Testing (EVT)",
-        highlight:
-          "After the POC demonstrates feasibility, teams move to Engineering Validation Testing (EVT). EVT converts the POC prototypes into functional models resembling the final product, allowing engineers to evaluate performance, component selection, and manufacturing readiness.",
+        highlight:[
+          "After the POC demonstrates feasibility, teams move to Engineering Validation Testing (EVT). EVT converts the POC prototypes into functional models resembling the final product, allowing engineers to evaluate performance, component selection, and ",
+        {
+      type: "link",
+      text: "manufacturing readiness.",
+      url: "https://www.hardwarehouses.com/services/electronics-manufacturing-services/"
+        }
+        ],
           lists:[
             {title: "EVT Objectives:",
         items: [
@@ -1210,8 +1278,16 @@ By creating early prototypes, teams can identify design flaws, refine mechanical
       },
     ],
     paragraphs: [
-          "The main goal is to accelerate hardware prototype development, allowing teams to iterate designs, validate concepts, and improve performance efficiently. For instance, during the development of a levitating 360° camera called Moon, our team used hardware rapid prototyping extensively to tackle one of the most challenging hardware concepts imaginable.",
-        ],
+  [
+    "The main goal is to accelerate ",
+    {
+      type: "link",
+      text: "hardware rapid prototyping",
+      url: "https://www.hardwarehouses.com/services/prototype-development-services/"
+    },
+    ", allowing teams to iterate designs, validate concepts, and improve performance efficiently. For instance, during the development of a levitating 360° camera called Moon, our team used hardware rapid prototyping extensively to tackle one of the most challenging hardware concepts imaginable."
+  ]
+]
       },
       {
         type: "card",
@@ -1256,9 +1332,10 @@ By creating early prototypes, teams can identify design flaws, refine mechanical
             text: "Prototypes are continuously refined using testing data, helping teams identify issues in thermal management, structural stability, electronics layout, and overall system performance.",
           },
           {
-            bold: "Validation and Testing:",
-            text: "Functional, performance, and stress testing ensure that prototypes meet design requirements, including durability, responsiveness, and system behavior.",
-          },
+  bold: "Validation and Testing:",
+  url: "https://www.hardwarehouses.com/services/product-testing-and-validation/",
+  text: "Functional, performance, and stress testing ensure that prototypes meet design requirements, including durability, responsiveness, and system behavior.",
+},
           {
             bold: "Pre-Production:",
             text: "Designs are optimized for manufacturability, ensuring that the final product can be produced efficiently and consistently.",
