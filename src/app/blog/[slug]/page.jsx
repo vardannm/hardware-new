@@ -41,7 +41,7 @@ export default function BlogPage({ params }) {
                   <a
                     key={index}
                     href={part.url}
-                    target="_blank"
+                    
                     rel="noopener noreferrer"
                     className="text-inherit underline hover:opacity-70 transition"
                   >
@@ -74,7 +74,7 @@ export default function BlogPage({ params }) {
             <a
               key={index}
               href={part.url}
-              target="_blank"
+              
               rel="noopener noreferrer"
               className="text-inherit underline hover:opacity-70 transition"
             >
@@ -102,7 +102,7 @@ export default function BlogPage({ params }) {
               <a
                 key={index}
                 href={part.url}
-                target="_blank"
+                
                 rel="noopener noreferrer"
                 className="text-inherit underline hover:opacity-70 transition"
               >
@@ -125,7 +125,7 @@ export default function BlogPage({ params }) {
           item.url ? (
             <a
               href={item.url}
-              target="_blank"
+              
               rel="noopener noreferrer"
               className="h4-bold text-inherit underline hover:opacity-70 transition"
             >
@@ -147,7 +147,7 @@ export default function BlogPage({ params }) {
                     <a
                       key={index}
                       href={part.url}
-                      target="_blank"
+                      
                       rel="noopener noreferrer"
                       className="text-inherit underline hover:opacity-70 transition"
                     >
@@ -189,7 +189,7 @@ export default function BlogPage({ params }) {
                   <a
                     key={index}
                     href={part.url}
-                    target="_blank"
+                    
                     rel="noopener noreferrer"
                     className=" underline"
                   >
