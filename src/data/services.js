@@ -129,7 +129,7 @@ export const SERVICES_STRUCTURED_DATA = {
   collectionPage: {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    url: "https://www.hardwarehouses.com/services",
+    url: "https://www.hardwarehouses.com/services/",
     name: "Full-Cycle Hardware Engineering Services | HDH",
     headline: "Full-Cycle Hardware Engineering Services",
     description:

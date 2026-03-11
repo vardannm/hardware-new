@@ -61,7 +61,7 @@ function _StructuredData() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          "url": "https://www.hardwarehouses.com/about-us",
+          "url": "https://www.hardwarehouses.com/about-us/",
           "name": "Leading Hardware Design Company | HDH",
           "headline": "About Hardware Design House",
           "description": "Learn about Hardware Design House, a leading hardware design company with over 10 years of experience in custom hardware, electronic design, and full-cycle product development for industries ranging from defense to consumer electronics.",

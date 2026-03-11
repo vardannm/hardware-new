@@ -64,7 +64,7 @@ function _StructuredData() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            "url": "https://www.hardwarehouses.com/industries",
+            "url": "https://www.hardwarehouses.com/industries/",
             "name": "Industries We Serve | HDH",
             "headline": "Industries We Serve",
             "description": "Explore the industries Hardware Design House serves, from Smart Home and Industrial Automation to Security, Defense, Healthcare, Education, and Green Energy.",

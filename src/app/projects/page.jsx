@@ -67,7 +67,7 @@ openGraph:{
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             "@id": "https://www.hardwarehouses.com/projects#collectionpage",
-            url: "https://www.hardwarehouses.com/projects",
+            url: "https://www.hardwarehouses.com/projects/",
             name: "Hardware Design Projects | HDH",
             headline: "Our Hardware Design Projects",
             description:

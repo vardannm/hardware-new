@@ -66,7 +66,7 @@ function _StructuredData() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "url": "https://www.hardwarehouses.com/faq",
+            "url": "https://www.hardwarehouses.com/faq/",
             "name": "Hardware Design FAQ | HDH",
             "headline": "Frequently Asked Questions – Hardware Design House",
             "description": "Find answers to common questions about hardware design services, custom solutions, prototyping, testing, compliance, project management, and support at Hardware Design House.",
