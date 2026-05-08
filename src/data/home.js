@@ -10,8 +10,11 @@ import SmartThermostatSystems from "@/public/main/smart-thermostat-systems.png";
 import ZlightSmartBedroomLightingHardware from "@/public/main/zlight-smart-bedroom-lighting-hardware.png";
 import Nuve from "@/public/main/nuve.png";
 import Instigate from "@/public/main/instigate.png";
+import Mediatek from "@/public/main/mediatek.png";
 import Lumiere from "@/public/main/lumiere.png";
+import Infineon from "@/public/main/infineon.png";
 import Lanar from "@/public/main/lanar.png";
+import LcdMail from "@/public/main/lcdMail.png";
 import Lucidtron from "@/public/main/lucidtron.png";
 import Zlight from "@/public/main/zlight.png";
 import Is from "@/public/main/is.png";
@@ -178,6 +181,9 @@ welcomeDescription: "At HDH, we transform innovative ideas into real-world hardw
     logos: [
       { src: Nuve, alt: "Nuve company logo", title: "" },
       { src: Lumiere, alt: "Lumiere company logo", title: "" },
+      { src: Mediatek, alt: "Mediatek company logo", title: "" },
+      { src: Infineon, alt: "Infineon company logo", title: "" },
+      { src: LcdMail, alt: "Lcd Mail company logo", title: "" },
       { src: Instigate, alt: "Instigate company logo", title: "" },
       { src: Lanar, alt: "Lanar company logo", title: "" },
       { src: Is, alt: "IS company logo", title: "" },
