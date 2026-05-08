@@ -19,9 +19,10 @@ import Teona from "@/public/main/teona.png";
 import Arthur from "@/public/aboutus/arthur-movsesyan.png";
 import Gevorg from "@/public/aboutus/gevorg-martirosyan.png";
 import MoonByRing from "@/public/main/moon-by-ring.png";
-import SecondSlide from "@/public/main/SecondSlide.webp";
-import ThirdSlide from "@/public/main/ThirdSlide.webp";
+import SecondSlide from "@/public/main/Leap.webp";
+import ThirdSlide from "@/public/main/Embedded.webp";
 import FourthSlide from "@/public/main/FourthSlide.webp";
+import FifthSlide from "@/public/main/Ieee.webp";
 export const HOME_DATA = {
  heroes : [
   {
@@ -32,18 +33,26 @@ export const HOME_DATA = {
    
   },
   {
-    image: SecondSlide,
-    alt: "Advanced PCB and electronic design solutions",
+    image: FifthSlide,
+    alt: "IEEE IEDM 2026",
     title: "",
+    middleText: "Dec 12-16 | San Francisco, USA",
+    welcomeText:"IEEE IEDM 2026",
+    subText:"We will be following this leading global conference on semiconductor devices and advanced electronics to stay aligned with the latest innovations and industry trends.",
+  },
+  {
+    image: SecondSlide,
+    alt: "LEAP East 2026",
+    title: "July",
     welcomeText:"CES. January 6–9",
-    subText:"Our team is heading to CES, ready to connect, exchange ideas, and get inspired by the newest shifts in technology. Open for meetings on future technology initiatives.",
+    subText:"We will be attending this global tech event in Hong Kong to explore innovation, connect with partners, and identify new business opportunities.",
   },
   {
     image: ThirdSlide,
     alt: "Prototype development and testing",
     title: "",
-    welcomeText:"Embedded world. March 6–9",
-    subText:"Meeting our partners and connecting with new ones in the embedded world.Let’s talk about embedded solutions and partnership opportunities.",
+    welcomeText:"Embedded world North America 2026",
+    subText:"Sept 22-24, 2026 | Anaheim, USA",
   },
   {
     image: FourthSlide,

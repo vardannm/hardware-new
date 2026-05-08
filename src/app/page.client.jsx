@@ -66,10 +66,11 @@ export default function HomeClient() {
   className={`absolute left-[12%] bottom-[10%] flex flex-col justify-start gap-2 text-white max-sm:left-[7%] max-sm:bottom-[9%] ${
     index === 0 ? "max-md:hidden" : ""
   }`} >
-                <h2 className="text-[56px] font-bold w-[70%] max-xl:text-[32px] max-xl:w-[80%] max-lg:text-[22px] max-lg:w-[84%]  text-white">
+                <h2 className="text-[56px] font-bold w-[100%] max-xl:text-[32px] max-xl:w-[80%] max-lg:text-[22px] max-lg:w-[84%]  text-white">
                   {hero.welcomeText}
                 </h2>
-                <p className="text-[22px] max-lg:text-[18px]  w-[70%] text-white max-sm:w-[90%]">{hero.subText}</p>
+                <p className="text-[20px] max-lg:text-[16px]">{hero?.middleText}</p>
+                <p className="text-[22px] max-lg:text-[18px]   w-[70%] text-white max-sm:w-[90%]">{hero.subText}</p>
               </div>
             )}
           </div>
