@@ -59,8 +59,11 @@ export default function HomeClient() {
               fill
               unoptimized
               priority={index === 0}
-              className="hero-background"
+              className={`hero-background ${hero.imageClassName || ""}`}
             />
+            {hero.hasTextGradient && (
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.1)_42.66%,rgba(0,0,0,0.6)_100%)]" />
+            )}
             {hero.welcomeText && (
 <div
   className={`absolute left-[12%] bottom-[10%] flex flex-col justify-start gap-2 text-white max-sm:left-[7%] max-sm:bottom-[9%] ${

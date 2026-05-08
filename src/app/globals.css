@@ -106,6 +106,13 @@ body {
   .hero-background {
     object-position: calc(50% + 150px) center; 
   }
+
+  .second-slide-background {
+    object-position:  center; 
+  }
+  .third-slide-background {
+  object-position: calc(25% + 80px) center;
+}
 }
 .service-background {
   object-fit: cover;
