@@ -5,6 +5,7 @@ import { useSelectedLayoutSegment } from "next/navigation";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
+import { trackMetaEvent } from "@/lib/meta";
 export default function Footer() {
   const segment = useSelectedLayoutSegment();
   const isContactPage = segment === "contact-us";
@@ -13,6 +14,25 @@ export default function Footer() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const handleSend = () => {
+    const trimmedName = name.trim();
+    const [firstName, ...restOfName] = trimmedName
+      ? trimmedName.split(/\s+/)
+      : [""];
+
+    // Fires the browser Pixel event and the server-side Conversions API copy
+    // under one shared event_id, so Meta counts this submission once.
+    trackMetaEvent("Lead", {
+      customData: {
+        content_name: "Footer form",
+        content_category: "Contact",
+      },
+      userData: {
+        email: email.trim(),
+        firstName,
+        lastName: restOfName.join(" "),
+      },
+    });
+
     const subject = encodeURIComponent("Contact request from website");
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,

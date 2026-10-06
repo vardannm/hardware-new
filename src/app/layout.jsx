@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ScrollManager from "@/components/layout/scroll-restoration";
+import MetaPageView from "@/components/analytics/MetaPageView";
 import Script from "next/script";
 
 export const metadata = {
@@ -22,6 +23,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5VGMCZCH');`}
         </Script>
 
+        {/* Meta Pixel Code */}
+        <Script id="meta-pixel" strategy="beforeInteractive">
+          {`!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3150437118680744');`}
+        </Script>
+        {/* End Meta Pixel Code */}
+
       </head>
       <body className="bg-gray-50 font-gilroy" suppressHydrationWarning>
 
@@ -35,6 +50,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
       
 
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            alt=""
+            src="https://www.facebook.com/tr?id=3150437118680744&ev=PageView&noscript=1"
+          />
+        </noscript>
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7MMNDMV7VV"
           strategy="afterInteractive"
@@ -47,6 +73,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             gtag('config', 'G-7MMNDMV7VV');
           `}
         </Script>
+
+        {/* Sends PageView with an event_id so the server copy can be deduped.
+            Route changes are re-fired by the Pixel itself. */}
+        <MetaPageView />
 
         <ScrollManager />
         <Navbar />
