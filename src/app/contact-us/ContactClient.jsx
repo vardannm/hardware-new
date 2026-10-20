@@ -1,42 +1,12 @@
 'use client';
 
-import { useState } from "react";
-import { trackMetaEvent } from "@/lib/meta";
+import { useContactForm } from "@/lib/useContactForm";
 
 export default function ContactClient() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-
-  const handleSend = () => {
-    const trimmedName = name.trim();
-    const [firstName, ...restOfName] = trimmedName
-      ? trimmedName.split(/\s+/)
-      : [""];
-
-    // Fires the browser Pixel event and the server-side Conversions API copy
-    // under one shared event_id, so Meta counts this submission once.
-    trackMetaEvent("Lead", {
-      customData: {
-        content_name: "Contact page form",
-        content_category: "Contact",
-      },
-      userData: {
-        email: email.trim(),
-        firstName,
-        lastName: restOfName.join(" "),
-      },
-    });
-
-    const subject = encodeURIComponent("Contact request from website");
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    );
-
-    window.location.href =
-      `mailto:info@hardwarehouses.com?subject=${subject}&body=${body}`;
-  };
+  const {
+    name, setName, email, setEmail, message, setMessage,
+    website, setWebsite, sending, feedback, handleSend,
+  } = useContactForm("Contact page form");
 
   return (
     <div className="mx-auto text-center pt-16 flex flex-col gap-6 w-[50%] pb-60 max-sm:w-[95%] max-sm:text-start max-sm:gap-2">
@@ -58,9 +28,9 @@ export default function ContactClient() {
     </p>
       <h2 className="font-bold text-3xl">Drop Us a Message</h2>
 
-<div className="flex flex-col gap-3 pt-[15px] mx-auto max-sm:mx-0">
+      <form onSubmit={handleSend} className="flex flex-col gap-3 pt-[15px] mx-auto max-sm:mx-0">
         <input
-          placeholder="Name Surname"
+          name="name" required maxLength={150} autoComplete="name" aria-label="Name Surname" placeholder="Name Surname"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full placeholder:text-[#5e5e5e] placeholder:font-inter
@@ -68,7 +38,7 @@ export default function ContactClient() {
         />
 
         <input
-          placeholder="Email Address"
+          name="email" type="email" required maxLength={254} autoComplete="email" aria-label="Email Address" placeholder="Email Address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="w-[334px] h-10 rounded-md bg-[#F3F3F3] px-4 max-sm:w-full placeholder:text-[#5e5e5e] placeholder:font-inter
@@ -76,7 +46,7 @@ export default function ContactClient() {
         />
 
         <textarea
-          placeholder="Message"
+          name="message" required maxLength={10000} aria-label="Message" placeholder="Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows={4}
@@ -84,13 +54,15 @@ export default function ContactClient() {
              focus:placeholder-transparent"
         />
 
+        <input name="website" value={website} onChange={(e) => setWebsite(e.target.value)} tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
+        {feedback && <p role={feedback.success ? "status" : "alert"} className={feedback.success ? "text-green-700 max-w-[334px]" : "text-red-700 max-w-[334px]"}>{feedback.text}</p>}
         <button
-          onClick={handleSend}
-          className="bg-[#31B56A] rounded-md px-4 py-3 mx-auto text-white w-[43%]"
+          type="submit" disabled={sending}
+          className="bg-[#31B56A] rounded-md px-4 py-3 mx-auto text-white w-[43%] disabled:opacity-60 disabled:cursor-wait"
         >
-          Send message
+          {sending ? "Sending…" : "Send message"}
         </button>
-      </div>
+      </form>
     </div>
   );
 }

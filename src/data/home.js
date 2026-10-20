@@ -33,6 +33,7 @@ export const HOME_DATA = {
     alt: "Engineers working on electronic components at a hardware design company creating innovative devices and systems",
     title: "",
     welcomeText: "Welcome to Hardware Design House",
+    cta: { label: "Get a quote", href: "/contact-us" },
    
   },
   {
@@ -43,25 +44,6 @@ export const HOME_DATA = {
     hasTextGradient: true,
     welcomeText:"IEEE IEDM 2026",
     subText:"We will be following this leading global conference on semiconductor devices and advanced electronics to stay aligned with the latest innovations and industry trends.",
-  },
-  {
-    image: SecondSlide,
-    alt: "LEAP East 2026",
-    title: "",
-    middleText:"July",
-    hasTextGradient: true,
-    imageClassName: "second-slide-background",
-    welcomeText:"LEAP East 2026",
-    subText:"We will be attending this global tech event in Hong Kong to explore innovation, connect with partners, and identify new business opportunities.",
-  },
-  {
-    image: ThirdSlide,
-    alt: "Prototype development and testing",
-    title: "",
-    hasTextGradient: true,
-    imageClassName: "third-slide-background",
-    welcomeText:"Embedded world North America 2026",
-    subText:"Sept 22-24, 2026 | Anaheim, USA",
   },
   {
     image: FourthSlide,

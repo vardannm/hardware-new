@@ -72,7 +72,7 @@ export function trackMetaEvent(eventName, options = {}) {
           fbc: getFbc(),
         },
       }),
-      // Survives the navigation a mailto: link triggers right afterwards.
+      // Allow tracking to finish if the visitor navigates away.
       keepalive: true,
     }).catch(() => {});
   } catch {

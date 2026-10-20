@@ -1,48 +1,22 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Hardware from "@/public/navbarIcon.png";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { useState } from "react";
-import { trackMetaEvent } from "@/lib/meta";
+import { useContactForm } from "@/lib/useContactForm";
 export default function Footer() {
   const segment = useSelectedLayoutSegment();
   const isContactPage = segment === "contact-us";
-  console.log(isContactPage);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const handleSend = () => {
-    const trimmedName = name.trim();
-    const [firstName, ...restOfName] = trimmedName
-      ? trimmedName.split(/\s+/)
-      : [""];
+  const {
+    name, setName, email, setEmail, message, setMessage,
+    website, setWebsite, sending, feedback, handleSend,
+  } = useContactForm("Footer form");
 
-    // Fires the browser Pixel event and the server-side Conversions API copy
-    // under one shared event_id, so Meta counts this submission once.
-    trackMetaEvent("Lead", {
-      customData: {
-        content_name: "Footer form",
-        content_category: "Contact",
-      },
-      userData: {
-        email: email.trim(),
-        firstName,
-        lastName: restOfName.join(" "),
-      },
-    });
-
-    const subject = encodeURIComponent("Contact request from website");
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-    );
-
-    window.location.href = `mailto:info@hardwarehouses.com?subject=${subject}&body=${body}`;
-  };
   return (
     <footer className="text-center py-[54px]  bg-[#DFDFDF] text-gray-400 text-sm flex flex-col ">
-      <div className="w-[45%] max-xl:w-[55%] max-lg:w-[65%] max-md:w-[80%] max-sm:w-[97&] mx-auto">
+      <form onSubmit={handleSend} className="w-[45%] max-xl:w-[55%] max-lg:w-[65%] max-md:w-[80%] max-sm:w-[97&] mx-auto">
         <Image src={Hardware} alt="Hardware Icon" className="w-[170px]" />
         <div className="flex text-black justify-between max-sm:flex-col-reverse pl-2">
           <div className="flex flex-col items-start ">
@@ -56,43 +30,43 @@ export default function Footer() {
                   isContactPage ? "flex-row" : "flex-col"
                 } gap-4 align-start items-start`}
               >
-                <a className="font-medium" href="/">
+                <Link className="font-medium" href="/">
                   Home
-                </a>
-                <a className="font-medium" href="/projects">
+                </Link>
+                <Link className="font-medium" href="/projects">
                   Projects
-                </a>
-                <a className="font-medium" href="/services">
+                </Link>
+                <Link className="font-medium" href="/services">
                   Services
-                </a>
+                </Link>
               </div>
               <div
                 className={`flex ${
                   isContactPage ? "flex-row" : "flex-col"
                 } gap-4 align-start items-start`}
               >
-                <a className="font-medium" href="/industries">
+                <Link className="font-medium" href="/industries">
                   Industries
-                </a>
-                <a className="font-medium" href="/blog">
+                </Link>
+                <Link className="font-medium" href="/blog">
                   Blog
-                </a>
-                <a className="font-medium" href="/faq">
+                </Link>
+                <Link className="font-medium" href="/faq">
                   FAQ
-                </a>
+                </Link>
               </div>
               <div
                 className={`flex ${
                   isContactPage ? "flex-row" : "flex-col"
                 } gap-4 align-start items-start max-[350px]:hidden`}
               >
-                <a className="font-medium" href="/about-us">
+                <Link className="font-medium" href="/about-us">
                   About
-                </a>
+                </Link>
                 {!isContactPage && (
-                  <a className="font-medium" href="/contact-us">
+                  <Link className="font-medium" href="/contact-us">
                     Contact
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>
@@ -106,7 +80,7 @@ export default function Footer() {
                     className="w-[334px] max-sm:w-full h-12 rounded-md bg-[#F3F3F3] pl-2
              placeholder:font-medium placeholder:text-[#5e5e5e] placeholder:font-inter
              focus:placeholder-transparent"
-                    placeholder="Name Surname"
+                    name="name" required maxLength={150} autoComplete="name" aria-label="Name Surname" placeholder="Name Surname"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -115,7 +89,7 @@ export default function Footer() {
                     className="w-[334px] max-sm:w-full h-12 rounded-md bg-[#F3F3F3] pl-2
              placeholder:font-medium placeholder:text-[#5e5e5e] placeholder:font-inter
              focus:placeholder-transparent"
-                    placeholder="Email Address"
+                    name="email" type="email" required maxLength={254} autoComplete="email" aria-label="Email Address" placeholder="Email Address"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -125,17 +99,19 @@ export default function Footer() {
              placeholder:font-medium placeholder:text-[#5e5e5e] placeholder:font-inter
              focus:placeholder-transparent"
                     rows="6"
-                    placeholder="Message"
+                    name="message" required maxLength={10000} aria-label="Message" placeholder="Message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   />
 
+                  <input name="website" value={website} onChange={(e) => setWebsite(e.target.value)} tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
+                  {feedback && <p role={feedback.success ? "status" : "alert"} className={feedback.success ? "text-green-700 max-w-[334px]" : "text-red-700 max-w-[334px]"}>{feedback.text}</p>}
                   {!isContactPage && (
                     <button
-                      className="bg-[#31B56A] rounded-md px-4 py-3 text-white sm:hidden self-end mt-4 cursor-pointer"
-                      onClick={handleSend}
+                      className="bg-[#31B56A] rounded-md px-4 py-3 text-white sm:hidden self-end mt-4 cursor-pointer disabled:opacity-60 disabled:cursor-wait"
+                      type="submit" disabled={sending}
                     >
-                      Send message
+                      {sending ? "Sending…" : "Send message"}
                     </button>
                   )}
                 </div>
@@ -164,10 +140,10 @@ export default function Footer() {
           </div>
           {!isContactPage && (
             <button
-              className="bg-[#31B56A] rounded-md px-4 py-3 text-white max-sm:hidden cursor-pointer"
-              onClick={handleSend}
+              className="bg-[#31B56A] rounded-md px-4 py-3 text-white max-sm:hidden cursor-pointer disabled:opacity-60 disabled:cursor-wait"
+              type="submit" disabled={sending}
             >
-              Send message
+              {sending ? "Sending…" : "Send message"}
             </button>
           )}
         </div>
@@ -179,7 +155,7 @@ export default function Footer() {
             +37455342262 <br /> info@hardwarehouses.com
           </p>
         </div>
-      </div>
+      </form>
     </footer>
   );
 }

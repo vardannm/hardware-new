@@ -193,14 +193,14 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         src: WirelessThermostat,
         alt: "Wireless Thermostat System with Upgraded Hardware and Software",
         title: "",
-        text: "In order to reduce the impact of possible humidity and temperature alterations, system mechanical components such as plexiglass, an appropriate type of wood and glue were selected.",
+        text: " Post-deployment feedback continued to guide improvements in both software and thermostat hardware, ensuring the system stays efficient and contractor-friendly.",
         isLeft: false,
       },
       {
         src: SystemContractor,
         alt: "Training and support for installing and maintaining the smart thermostat system for efficient home automation",
         title: "",
-        text: "Our team of engineers, in collaboration with designers, put everything together from conception to delivery, paying close attention to every detail. We also developed a flatter, more lightweight version of the product.",
+        text: "Adopted modular hardware design, scalable PCB layouts, and components with sufficient computing power to support upgrades and long-term reliability.",
         isLeft: false,
       },
       {
@@ -208,7 +208,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         alt: "Home automation thermostat with seamless hardware and software integration",
         title:
           "",
-        text: "Our team combined expertise in PCB design, firmware optimization, mechanical integration, and sensor calibration to bring the zLight to life. Careful hardware-software collaboration ensured seamless control through an app, while precision engineering allowed integration of sensors for temperature, humidity, and CO₂ monitoring. The system uses energy-efficient components, delivering reliable performance while fitting naturally in the bedroom environment.",
+        text: "Ensured seamless integration between hardware and software by selecting components with native compatibility and standard communication protocols.",
         isLeft: false,
       },
 
@@ -217,7 +217,7 @@ The thermostat is made up of a main unit and a backplate. The main unit includes
         alt: "Smart thermostat system with modular hardware design and scalable PCB layout",
         title:
           "",
-        text: "To achieve accurate ambient temperature measurements, the sensor position was selected with consideration of the system's mechanical and electrical characteristics, ensuring laminar airflow around the sensor and minimizing measurement errors.",
+        text: "We also provided contractors with hands-on training and ongoing support for setup and maintenance, including troubleshooting both hardware and software, so they could fully utilize the smart thermostat.",
         isLeft: false,
       },
     ],
