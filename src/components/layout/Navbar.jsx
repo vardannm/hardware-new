@@ -57,7 +57,7 @@ export default function Navbar() {
         </Link>
 
         <ul
-          className="hidden xl:flex items-center gap-5 2xl:gap-6 order-2 ml-auto text-xl font-bold"
+          className="hidden xl:flex items-center gap-6 2xl:gap-12 order-2 ml-auto text-xl font-bold"
           onKeyDown={(event) => {
             if (event.key === "Escape") {
               event.currentTarget.querySelector('[aria-expanded="true"]')?.focus();

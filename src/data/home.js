@@ -33,6 +33,7 @@ export const HOME_DATA = {
     alt: "Engineers working on electronic components at a hardware design company creating innovative devices and systems",
     title: "",
     welcomeText: "Welcome to Hardware Design House",
+    middleText: "From idea to production-ready hardware",
     cta: { label: "Get a quote", href: "/contact-us" },
    
   },
@@ -44,6 +45,7 @@ export const HOME_DATA = {
     hasTextGradient: true,
     welcomeText:"IEEE IEDM 2026",
     subText:"We will be following this leading global conference on semiconductor devices and advanced electronics to stay aligned with the latest innovations and industry trends.",
+    cta: { label: "Get a quote", href: "/contact-us" },  
   },
   {
     image: FourthSlide,
@@ -51,7 +53,8 @@ export const HOME_DATA = {
     title: "",
     welcomeText:"Ongoing partnership since 2024",
     subText:"We have been official MediaTek partners since 2024.Working together to deliver advanced and innovative hardware solutions.",
-  },
+    cta: { label: "Get a quote", href: "/contact-us" }
+  }
 ],
 welcomeTitle:"Welcome to Hardware Design House",
 welcomeDescription: "At HDH, we transform innovative ideas into real-world hardware solutions. As a leading hardware design company, we support each stage of development, from initial concept to full-scale production. Our team combines deep engineering expertise with cutting-edge technology to create devices and systems that are reliable, efficient, and market-ready. Whether it’s hardware design services, custom hardware development, or end-to-end hardware development, HDH is your trusted partner in turning ideas into reality.",
