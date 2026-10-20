@@ -34,6 +34,7 @@ export const HOME_DATA = {
     title: "",
     welcomeText: "Welcome to Hardware Design House",
     middleText: "From idea to production-ready hardware",
+    middleTextClassName: "text-[28px] max-lg:text-[18px]",
     cta: { label: "Get a quote", href: "/contact-us" },
    
   },
@@ -49,10 +50,11 @@ export const HOME_DATA = {
   },
   {
     image: FourthSlide,
+    imageClassName: "partnership-slide-background",
     alt: "End-to-end hardware product development",
     title: "",
     welcomeText:"Ongoing partnership since 2024",
-    subText:"We have been official MediaTek partners since 2024.Working together to deliver advanced and innovative hardware solutions.",
+    subText:"Official MediaTek Partner Since 2024, Driving Hardware Innovation.",
     cta: { label: "Get a quote", href: "/contact-us" }
   }
 ],

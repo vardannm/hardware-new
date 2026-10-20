@@ -71,15 +71,15 @@ export default function HomeClient() {
                 <h2 className={`text-[56px] font-bold w-[100%] max-xl:text-[32px] max-xl:w-[80%] max-lg:text-[22px] max-lg:w-[84%] text-white ${index === 0 ? "max-md:hidden" : ""}`}>
                   {hero.welcomeText}
                 </h2>
-                <p className="text-[20px] max-lg:text-[16px]">{hero?.middleText}</p>
+                <p className={hero.middleTextClassName || "text-[20px] max-lg:text-[16px]"}>{hero?.middleText}</p>
                 <p className="text-[22px] max-lg:text-[18px]   w-[70%] text-white max-sm:w-[90%]">{hero.subText}</p>
                 {hero.cta && (
                   <Link
                     href={hero.cta.href}
-                    className="mt-4 inline-flex items-center gap-3 self-start rounded-full border border-transparent bg-primary px-6 py-4 text-2xl font-bold text-white transition-colors hover:border-primary hover:bg-white hover:text-primary"
+                    className="mt-4 inline-flex items-center gap-3 self-start rounded-full border border-transparent bg-primary px-6 py-4 text-2xl font-bold text-white transition-colors hover:border-primary hover:bg-white hover:text-primary max-sm:gap-2 max-sm:px-4 max-sm:py-2.5 max-sm:text-base"
                   >
                     {hero.cta.label}
-                    <ArrowRight aria-hidden="true" className="h-6 w-6" />
+                    <ArrowRight aria-hidden="true" className="h-6 w-6 max-sm:h-4 max-sm:w-4" />
                   </Link>
                 )}
               </div>

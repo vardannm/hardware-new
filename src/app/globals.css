@@ -113,6 +113,10 @@ body {
   .third-slide-background {
   object-position: calc(25% + 80px) center;
 }
+  .partnership-slide-background {
+    top: -24px !important;
+    height: calc(100% + 2px) !important;
+  }
 }
 .service-background {
   object-fit: cover;
