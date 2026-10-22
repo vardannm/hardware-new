@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { useContactForm } from "@/lib/useContactForm";
 export default function Footer() {
   const segment = useSelectedLayoutSegment();
-  const isContactPage = segment === "contact-us";
+  const isContactPage = segment === "contact-us" || segment === "thank-you";
   const {
     name, setName, email, setEmail, message, setMessage,
     website, setWebsite, sending, feedback, handleSend,

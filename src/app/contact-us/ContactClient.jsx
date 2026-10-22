@@ -1,17 +1,12 @@
 'use client';
 
 import { useContactForm } from "@/lib/useContactForm";
-import ContactSuccess from "@/components/ui/ContactSuccess";
 
 export default function ContactClient() {
   const {
     name, setName, email, setEmail, message, setMessage,
     website, setWebsite, sending, feedback, handleSend,
   } = useContactForm("Contact page form");
-
-  if (feedback?.success) {
-    return <ContactSuccess />;
-  }
 
   return (
     <div className="mx-auto text-center pt-16 flex flex-col gap-6 w-[50%] pb-60 max-sm:w-[95%] max-sm:text-start max-sm:gap-2">

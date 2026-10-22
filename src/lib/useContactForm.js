@@ -1,9 +1,12 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { trackMetaEvent } from "@/lib/meta";
+import { rememberContactSubmission } from "@/lib/contactSession";
 
 export function useContactForm(source) {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -44,6 +47,8 @@ export function useContactForm(source) {
       setName("");
       setEmail("");
       setMessage("");
+      rememberContactSubmission();
+      router.push("/thank-you/");
     } catch (error) {
       setFeedback({
         success: false,
