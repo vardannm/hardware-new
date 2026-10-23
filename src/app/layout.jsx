@@ -14,7 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-     
+        <meta
+          name="facebook-domain-verification"
+          content="zca2zwlx45hw95q3n3jzdcwnkio07j"
+        />
+
         <Script id="google-tag-manager" strategy="beforeInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
